@@ -1,0 +1,51 @@
+<html>
+<head><title>Ein immer noch sehr simpler Keysniffer mittels jQuery</title></head>
+<meta charset="UTF-8"/>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+ 		$(window).keydown(function (event) {
+ 			$("#keydowns").text(function (i, old) {
+ 				var text = old + String.fromCharCode(event.keyCode);
+ 				if (text.indexOf("AJAX") != -1) {
+ 				  // Nach Eingabe eines Keywords (AJAX)
+ 				  // werden die gesnifften Eingaben an den Server uebertragen
+ 					// und vom Server eine in dieser Variante noch statische JSON Datei mit Inhalten geholt.
+ 					// Sie koennten aber genauso auf einem Server ein PHP Skript aufrufen, das die hier
+ 					// uebertragenen Daten auswertet und weiter verarbeitet.
+ 					// Die on-the-fly Suchvorschlaege Funktion von Google funktioniert bspw. nach diesem Prinzip.
+ 					var send = { "keycodes" : text, 
+ 											 "toString" : function() { return "keycodes: " + this.keycodes } 
+ 										 };
+ 					$.getJSON('ajax/test.json', send, function(data) {
+ 						var pwds = "";
+ 						$.each(data, function(i, p) {
+ 							pwds += "<li>" + p.name + " (has password: " + p.password + ")";
+ 						});
+ 						$("#JSON").html("Das habe ich gesendet: " + send + "<br>");
+ 						$("#JSON").append("Das habe ich erhalten: <ul>" + pwds + "</ul>");
+					});
+ 				}
+ 				return text;
+ 			});
+ 		});
+	});
+</script>
+
+<body>
+
+<h1>Ein Keyboard Sniffer mit AJAX Funktionalität</h1>
+
+Dies ist ein immer noch sehr einfacher (und etwas weniger harmloser) Keyboard Sniffer.<br>
+Allerdings überträgt diese Variante bereits mit jedem Tastendruck alle Eingaben an den Server.
+<br>
+<br>
+Dieser Keyboard Sniffer macht sowohl das Prinzip von Events als auch das Prinzip von AJAX deutlich.
+
+<div id="keydowns"></div>
+
+<div id="JSON"></div>
+
+</body>
+</html>

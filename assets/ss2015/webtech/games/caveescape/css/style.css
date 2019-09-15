@@ -1,0 +1,209 @@
+* {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.container {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0px auto 0px auto;
+  text-align: center;
+  padding: 0px 0px 100px 0px;
+}
+
+h1 {
+  font-size: 1rem; 
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+}
+
+a { 
+  text-decoration: none; 
+  font-style: italic; 
+  color: white; 
+  font-weight: normal;
+}
+
+/* Game controls */
+
+#message {
+  margin: 50px 20px 50px 20px;
+}
+
+#controls {
+   margin: 30px 0px 30px 0px;
+}
+
+#message #gameover:empty { visibilty: hidden; }
+#message #reasons:empty { visibilty: hidden; }
+
+#message #gameover {
+  font-size: 3rem;
+  color: rgba(26, 26, 26, 1.0);
+  background: rgba(205,133,63, 0.4);
+  text-align: center;
+}
+
+#message #info {
+  background: rgba(139, 69, 19, 0.3);
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.label , .description{
+  background: rgba(205,133,63, 0.3);
+  font-size: 1rem;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.description {
+  white-space: nowrap;
+}
+
+
+#controls #level:empty { visibility: hidden; }
+#controls #points:empty { visibility: hidden; }
+#controls #multiplier:empty { visibility: hidden; }
+#controls #life:empty { visibility: hidden; }
+
+/* Button-Leiste */
+#panel {
+  position:relative;
+}
+
+/* Anzeigen-Leiste */
+#notification {
+  position: relativ;
+}
+
+#panel .button, #controls #points, #controls #level, #controls #multiplier, #controls #life {
+  padding: 5px 20px 5px 20px;
+  font-style: normal;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  background: rgba(100, 100, 100, 0.5);
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+#panel .button {
+ margin: 0px 15px 0px 15px;
+}
+
+#panel .button:hover{
+  background-color:  rgba(150, 150, 100, 0.5);
+  border: 3px solid white;
+}
+
+/* Spielbrett */
+
+body {
+  background-image: url('img/background.jpg');
+  background-position: center center;
+  background-attachment: fixe;
+  background-repeat: repeat;
+}
+/*background-image ist entnommen von: http://oldtimewallpapers.com/wallpapers/201212/1355836281.jpg
+
+/* Spielbrett Dummy */
+
+#cavegame {
+  margin: 50px auto 50px auto;
+}
+
+#cavegame td  {
+  width: 30px;
+  height: 30px;
+  background-size:contain;
+}
+
+
+
+/* Struktur */
+
+.Wall {
+ background: rgba(139, 69, 19, 0.3);
+}
+
+.Empty ,
+.Rock, .Hole, .Bat, .Rat, .DrunkenRat,
+.YellowCoin, .BlueCoin, .RedCoin, .PurpleCoin ,
+.PowerUp_Multiplier, .PowerUp_LifeUp, .PowerUp_LifeUp, .PowerUp_CoinGathering, .PowerUp_OnlyCoins, .PowerUp_CoinMagnet
+.PowerDown_Multiplier,
+.Player  {
+background: rgba(205,133,63, 0.3);
+}
+
+/* Events */
+.Rock {
+background-image: url('img/Rock.gif');
+}
+
+.Hole {
+background-image: url('img/Hole.gif');
+}
+
+.Bat {
+  background-image: url('img/Bat.gif');
+}
+
+.Rat {
+  background-image: url('img/Rat.gif');
+}
+
+.DrunkenRat {
+  background-image: url('img/DrunkenRat.gif');
+}
+.YellowCoin {
+  background-image: url('img/YellowCoin.gif');
+}
+
+.BlueCoin {
+  background-image: url('img/BlueCoin.gif');
+}
+
+.RedCoin {
+ background-image: url('img/RedCoin.gif');
+}
+
+.PurpleCoin {
+  background-image: url('img/PurpleCoin.gif');
+}
+
+.PowerUp_Multiplier {
+ background-image: url('img/PowerUp_Multiplier.gif');
+}
+
+.PowerUp_LifeUp {
+ background-image: url('img/PowerUp_LifeUp.gif');
+}
+
+.PowerUp_CoinGathering {
+  background-image: url('img/PowerUp_CoinGathering.gif');
+}
+
+.PowerUp_OnlyCoins {
+  background-image: url('img/PowerUp_OnlyCoins.gif');
+}
+
+.PowerUp_CoinMagnet {
+  background-image: url('img/PowerUp_CoinMagnet.gif');
+}
+
+.PowerDown_Multiplier {
+  background-image: url('img/PowerDown_Multiplier.gif');
+}
+
+/* Spieler */
+.Player {
+  background-image: url('img/Player.gif');
+}

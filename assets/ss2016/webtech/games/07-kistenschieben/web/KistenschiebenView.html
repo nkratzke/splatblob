@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    <title>KistenschiebenView</title>
+    <script type="application/dart" src="Main.dart"></script>
+    <script defer src="packages/browser/dart.js"></script>
+    <link rel="stylesheet" type="text/css" href="KistenschiebenView.css"/>
+</head>
+<body>
+<h1 id="header">Kistenschieben</h1>
+<div id="start"></div>
+<div id="registered"></div>
+<div id="userinput"></div>
+<div id="edituser"></div>
+<div id="about"></div>
+<div id="win"></div>
+<div id="status">
+    <userstatus id="userstatus">Userstatus: Not logged in</userstatus>
+    <gamekeystatus id="gamekeystatus">Gamekeystatus: Not connected</gamekeystatus>
+    <messagefield id="messagefield"></messagefield>
+</div>
+<div id="level">
+    <div id="gamebuttons">
+        <button id="pullbutton">Sticky gloves(0)(G)</button>
+        <button id="resetbutton">Reset(&#x2190)</button>
+        <button id="pushbutton">Steroids(0)(P)</button>
+    </div>
+    <div id="fieldlevel">
+        <div>
+            <objectlayer id="objectlayer"></objectlayer>
+        </div>
+        <div>
+            <groundlayer id="groundlayer"></groundlayer>
+        </div>
+    </div>
+    <div>
+        <statistics id="statistics"></statistics>
+    </div>
+    </div>
+</div>
+</body>
+</html>

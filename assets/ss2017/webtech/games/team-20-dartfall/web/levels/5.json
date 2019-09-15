@@ -1,0 +1,121 @@
+{
+    "scrollSpeed": 1,
+    "moveTimerMillis": 50,
+    "checkTimerMillis": 333,
+    "beginnTop": 30,
+    "bars":
+    [
+        {
+            "whitespaces":
+            [
+                {
+                    "id": "ws1",
+                    "type": "static",
+                    "width": 30,
+                    "marginLeft": 15
+                },
+                {
+                    "id": "ws2",
+                    "type": "static",
+                    "width": 20,
+                    "marginLeft": 75
+                },
+                {
+                    "id": "ws3",
+                    "type": "static",
+                    "width": 20,
+                    "marginLeft": 30
+                }
+            ],
+            "powerups":
+            [
+                {
+                    "id": "pu1",
+                    "type": "minimize",
+                    "marginLeft": 55
+                }
+            ]
+        },
+        {
+            "whitespaces":
+            [
+                {
+                    "id": "ws4",
+                    "type": "static",
+                    "width": 30,
+                    "marginLeft": 2
+                },
+                {
+                    "id": "ws5",
+                    "type": "static",
+                    "width": 20,
+                    "marginLeft": 30
+                },
+                {
+                    "id": "ws6",
+                    "type": "static",
+                    "width": 20,
+                    "marginLeft": 8
+                }
+            ],
+            "powerups":
+            [
+                {
+                    "id": "pu3",
+                    "type": "speed",
+                    "marginLeft": 75
+                }
+            ]
+        },
+        {
+            "whitespaces":
+            [
+                {
+                    "id": "ws7",
+                    "type": "static",
+                    "width": 30,
+                    "marginLeft": 15
+                },
+                {
+                    "id": "ws8",
+                    "type": "static",
+                    "width": 10,
+                    "marginLeft": 25
+                },
+                {
+                    "id": "ws9",
+                    "type": "static",
+                    "width": 20,
+                    "marginLeft": 25
+                }
+            ],
+            "powerups":
+            [
+                {
+                    "id": "pu2",
+                    "type": "minimize",
+                    "marginLeft": 30
+                }
+
+            ]
+        }
+    ],
+    "fallObjects":
+    [
+        {
+            "id": "fallObj1",
+            "type": "static",
+            "width": 8
+        },
+        {
+            "id": "fallObj2",
+            "type": "static",
+            "width": 10
+        },
+        {
+            "id": "fallObj3",
+            "type": "static",
+            "width": 8
+        }
+    ]
+}

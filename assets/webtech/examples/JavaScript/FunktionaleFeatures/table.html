@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Tabellen rein funktional mit JavaScript erzeugen</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<script type="text/javascript">
+
+// Unsere funktionalen Basisfunktionen
+function first(xs) { return xs[0] }
+function rest(xs) { return xs.slice(1) }
+function notEmpty(xs) { return xs.length > 0 }
+function single(xs) { return xs.length == 1 }
+
+// Unsere funktionalen "Arbeitspferde" 
+function map(f, xs) {
+  return notEmpty(xs) ? [f(first(xs))].concat(map(f, rest(xs))) : [];
+}
+
+function reduce(f, xs) {
+    return single(as) ? first(xs) : f(first(xs), reduce(f, rest(xs)));
+}
+
+// Die Datenstruktur, die zur Tabelle werden soll
+var vs = [
+  [1, 2, 3, 4],
+  [5, 6, 7],
+  [8, 9],
+  [0]
+];
+
+function td(e) { return "<td>" + e + "</td>" }
+function tr(r) { return "<tr>" + map(td, r).join("") + "</tr>"; } 
+function table(rs) { return "<table border=1>" + map(tr, rs).join("") + "</table>"; }
+
+document.writeln(table(vs));
+
+</script>
+</body>
+</html>

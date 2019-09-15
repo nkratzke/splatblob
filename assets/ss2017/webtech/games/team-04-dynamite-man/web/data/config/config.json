@@ -1,0 +1,22 @@
+{
+  "gameSpeed" : 100,
+  "maxLvl" : 11,
+  "startLvl" : 6,
+  "startLife" : 3,
+  "dynamiteExplosionTime" : 4000,
+  "fireDuration" : 1000,
+  "images_path" : "data/images/",
+  "viewOrder" : [
+    "SPEEDBUFF",
+    "DYNAMITERANGE",
+    "PLAYER",
+    "PORTAL",
+    "MAYA",
+    "FIRE",
+    "FASTELLE",
+    "FRIDOLIN",
+    "DYNAMITE",
+    "DESTROYABLE_BLOCK",
+    "UNDESTROYABLE_BLOCK"
+  ]
+}

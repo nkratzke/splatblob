@@ -1,0 +1,47 @@
+{
+    "spawnText": "Who are you?",
+    "size": [1700.0, 1200.0],
+    "actors": [
+        {
+            "type": "bigspider",
+            "location": [1000.0, 750.0]
+        },
+        {
+            "type": "spider",
+            "location": [700.0, 700.0]
+        },
+        {
+            "type": "spider",
+            "location": [1300.0, 780.0]
+        },
+        {
+            "type": "spider",
+            "location": [1020.0, 1000.0]
+        },
+        {
+            "type": "board",
+            "location": [1350.0, -50.0]
+        },
+        {
+            "type": "board",
+            "location": [1450.0, -50.0]
+        },
+        {
+            "type": "smallbed",
+            "location": [900.0, 500.0],
+            "rotation": [-0.1, 0.9]
+        },
+        {
+            "type": "flower",
+            "location": [1000.0, 320.0]
+        },
+        {
+            "type": "bigbed",
+            "location": [350.0, 50.0]
+        },
+        {
+            "type": "lamp",
+            "location": [490.0, 0.0]
+        }
+    ]
+}

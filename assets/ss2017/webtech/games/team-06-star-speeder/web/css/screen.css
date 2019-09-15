@@ -1,0 +1,573 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    font-family: 'Audiowide', Verdana, sans-serif;
+    letter-spacing: 0.03em;
+    color: white;
+    resize: none;
+    color: gold;
+}
+/*
+* Styling for desktop devices
+*/
+p{
+    color: white;
+    font-size: 100%;
+}
+
+h1{
+    font-size: 200%;
+    width: 100%;
+    left: auto;
+    right: auto;
+}
+
+h2{
+    font-size: 140%;
+}
+
+h3{
+    font-size: 100%;
+    margin-top: 5%;
+}
+
+a{
+    color: gold;
+    text-decoration: none;
+}
+
+a:active{
+    color: red;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.gameContainer{
+    z-index: 0;
+    position: fixed;
+    background-image: url("../img/spaceMilky.jpg");
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/*
+*   defined overlay settings for each overlay
+*/
+.overlay{
+    overflow-y: auto;
+    position: fixed;  /*Sit on top of the page content */
+    text-align: center;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0,0,0,0.7) ; /* Black background with opacity */
+    background-size: 100% 100%;
+    z-index: 10; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    visibility: hidden;
+}
+
+/*
+*   Css-Code (Loadingscreen) starts here
+*/
+#loadingOverlay{
+    z-index: 100;
+    font-size: xx-large;
+    visibility: visible;
+    animation: loadingTextPulse 3s infinite;
+}
+
+#loadingImg{
+    width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    animation: loadingImgRotation 3s infinite;
+}
+
+/*
+*   Css-code (Menu) starts here
+*
+*   Rootmenu for navigation to other menusections and gamestart
+*/
+#menuOverlay table tr{
+    line-height: 150%;
+}
+
+#menuContent{
+    margin-top: 15%;
+    width: 100%;
+}
+
+#menuTable{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*
+*   Css-code (Gameplay-Section) starts here
+*/
+#controlDeviceText{
+    color: white;
+    font-size: 75%;
+}
+
+#checkboxAlternativeInput{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+#settings{
+    margin-top: 5%;
+    left: auto;
+    right: auto;
+    font-size: larger;
+    height: 10%;
+    width: 100%;
+}
+
+#gameplayExplanation{
+    margin-top: 5%;
+    background-image: url("../img/tapPhone.png");
+    width: 100%;
+    height: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: explanationSwap infinite 3s steps(1);
+}
+
+.backToMenuButton{
+    width: 100%;
+    left: auto;
+    right: auto;
+    margin-top: 8%;
+}
+
+/*
+*   Warning screen for no-localStorage-support
+*/
+#localStorageWarningOverlay{
+    display: table;
+}
+
+#localStorageWarning{
+    font-size: 150%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*
+*   Css-code (Description-Section) starts here
+*/
+#manualOverlay{
+    z-index: 10;
+}
+
+.manualItem img{
+    width: 15%;
+    background-size: contain;
+}
+
+.manualItem{
+    width: 50%;
+}
+
+.manualDescription{
+    width: 50%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#tableManual {
+    margin-top: 5%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+*   Css-code (Highscore-Section) starts here
+*/
+#highscore{
+    margin-top: 10%;
+}
+
+#topThreeScores{
+    text-align: center;
+}
+
+#topThreeScores tr td{
+    width: 15%;
+}
+
+/*
+*   Css-code (Credits-Section) starts here
+*/
+#creditsContent{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*
+*   Css-code (Gameoverscreen) starts here
+*/
+#gameoveroverlay {
+    background-color: rgba(200,0,0,0.7); /* Red background with opacity */
+}
+
+.overlayTagBig {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    font-size: 25px;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.overlayTagSmall {
+    position: relative;
+    top: 25%;
+    left: 50%;
+    font-size: 25px;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.textFieldSave {
+    width: 25%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #000000 2px;
+}
+
+/*
+*   Buttons to save Highscore/cancel saving
+*/
+.btnSave {
+    background: #2fc439;
+    background-image: -webkit-linear-gradient(top, #2fc439, #0c6e20);
+    background-image: -moz-linear-gradient(top, #2fc439, #0c6e20);
+    background-image: -ms-linear-gradient(top, #2fc439, #0c6e20);
+    background-image: -o-linear-gradient(top, #2fc439, #0c6e20);
+    background-image: linear-gradient(to bottom, #2fc439, #0c6e20);
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btnSave:hover {
+    background: #248a38;
+    background-image: -webkit-linear-gradient(top, #248a38, #146330);
+    background-image: -moz-linear-gradient(top, #248a38, #146330);
+    background-image: -ms-linear-gradient(top, #248a38, #146330);
+    background-image: -o-linear-gradient(top, #248a38, #146330);
+    background-image: linear-gradient(to bottom, #248a38, #146330);
+    text-decoration: none;
+}
+
+.btnSkip {
+    background: #fa4b4b;
+    background-image: -webkit-linear-gradient(top, #fa4b4b, #731d1d);
+    background-image: -moz-linear-gradient(top, #fa4b4b, #731d1d);
+    background-image: -ms-linear-gradient(top, #fa4b4b, #731d1d);
+    background-image: -o-linear-gradient(top, #fa4b4b, #731d1d);
+    background-image: linear-gradient(to bottom, #fa4b4b, #731d1d);
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btnSkip:hover {
+    background: #a82222;
+    background-image: -webkit-linear-gradient(top, #a82222, #631e1e);
+    background-image: -moz-linear-gradient(top, #a82222, #631e1e);
+    background-image: -ms-linear-gradient(top, #a82222, #631e1e);
+    background-image: -o-linear-gradient(top, #a82222, #631e1e);
+    background-image: linear-gradient(to bottom, #a82222, #631e1e);
+    text-decoration: none;
+}
+
+
+/*
+*   Css-code (Gamefield) starts here
+*/
+#game{
+    visibility: hidden;
+}
+/*Styling for the table representing the game field*/
+#gameField{
+    z-index: 0;
+    table-layout: fixed;
+    border: solid black;
+    background-image: url("../img/space.jpg");
+    background-size: cover;
+    width: 33%;
+    min-height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2px;
+}
+/*Styling for table cells*/
+#gameField td {
+    padding-top: 8%;
+    padding-bottom: 3%;
+    table-layout: fixed;
+}
+#gameField .empty,.coin,.player,.premium,.speedown,.speedup,.pointreduce,.multiplikator,.wall{
+    min-height: 100%;
+}
+
+/*
+*   Css-code (Informationbar above Gamefield) starts here
+*/
+#information{
+    position: relative;
+    z-index: 120;
+    table-layout: fixed;
+    text-align: center;
+    background: black;
+    border: 1px solid black;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.informationFields {
+    border: 1px solid black;
+    background: linear-gradient(to bottom, black, rgb(35,35,35), black);
+}
+
+/*
+*   Css-code (Overlay for controll the player via touch) starts here
+*/
+#controlField{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}
+/*Styling of individual control button*/
+#control{
+    width: 100%;
+    height: 100%;
+}
+
+/*
+*   Css-code (items on field) starts here
+*/
+/*Styling for player figure*/
+.player{
+    height: auto;
+    animation: animationPlayer;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+    background-image: url("../img/speeder.png") !important;
+    background: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*Styling for Wall item*/
+.wall {
+    height: auto;
+    animation: animationItems;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+    background-image: url("../img/wall.png") !important;
+    background: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*Styling for Coin item*/
+.coin{
+    height: auto;
+    animation: animationItems;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+    background-image: url("../img/coin.png") !important;
+    background: no-repeat;
+    background-position: center;
+    background-size: contain;
+ }
+/*Styling for PointReduce item*/
+.pointreduce{
+    height: auto;
+    animation: animationItems;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+    background-image: url("../img/pointReduce.png") !important;
+    background: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*Styling for Premium item*/
+.premium{
+    height: auto;
+    animation: animationItems;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+    background-image: url("../img/premium.png") !important;
+    background: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*Styling for SpeedUp item*/
+.speedup{
+    height: auto;
+    animation: animationItems;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+    background-image: url("../img/speedUp.png") !important;
+    background: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*Styling for SpeedDown item*/
+.speedown{
+    height: auto;
+    animation: animationItems;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+    background-image: url("../img/speedDown.png") !important;
+    background: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*Styling for Multiplicator item*/
+.multiplikator{
+    height: auto;
+    animation: animationItems;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+    background-image: url("../img/multiplikator.png") !important;
+    background: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*Styling for Autopilot item*/
+.invulnerable{
+    height: auto;
+    animation: animationItems;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+    background-image: url("../img/autopilot.png") !important;
+    background: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/*
+*   animation that shows autopilot item duration
+*/
+#autopilotFeedbackOverlay{
+    z-index: 100;
+    display: table;
+    background-color: transparent;
+    animation: autopilotFeedbackPulse 1s infinite;
+}
+/*Styling for text displayed while autopilot is active*/
+#autopilotFeedback{
+    font-size: 5em;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*
+*   Css-code (Css-Keyframe Animations) starts here
+*/
+@keyframes  autopilotFeedbackPulse{
+    0%, 100%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0.1;
+    }
+}
+@keyframes explanationSwap {
+    0%, 100% {transform: scaleX(1)}
+    50% {transform: scaleX(-1)}
+}
+@keyframes greenAnimation {
+    from {background-color: darkgray;}
+    to {background-color: greenyellow;}
+}
+@keyframes animationPlayer{
+     0%{
+         background-position: 50%;
+         background-image: url("../img/speeder.png");
+     }
+     50%{
+         background-position: 52%;
+         background-image: url("../img/speeder2.png");
+     }
+     100%{
+         background-position: 50%;
+         background-image: url("../img/speeder.png");
+     }
+}
+@keyframes animationItems{
+    0%{
+        background-position: 50%;
+    }
+    50%{
+        background-position: 48%;
+    }
+    100%{
+         background-position: 50%;
+     }
+}
+@keyframes loadingImgRotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes loadingTextPulse {
+    0%{
+        color: white;
+    }
+    50%{
+        color: transparent;
+    }
+    100%{
+        color: white;
+    }
+}

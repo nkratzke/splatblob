@@ -1,0 +1,84 @@
+<!DOCTYPE html><!--
+  Copyright (c) 2017, Max Sternitzke, Hendrik Luttmann. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+  See also: www.max-sternitzke.de
+--><html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    <title>DartFall Game</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./icon/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icon/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icon/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icon/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icon/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icon/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icon/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icon/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image./icon/favicons/png" sizes="192x192" href="./icon/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image./icon/favicons/png" sizes="32x32" href="./icon/favicons/favicon-32x32.png">
+    <link rel="icon" type="image./icon/favicons/png" sizes="96x96" href="./icon/favicons/favicon-96x96.png">
+    <link rel="icon" type="image./icon/favicons/png" sizes="16x16" href="./icon/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="./icon/favicons/ms-icon-144x144.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <script defer="" src="main.dart.js"></script>
+    
+</head>
+<body id="body">
+    <div id="loading" class="show">
+        <div id="loading_fish"></div>
+        <div id="loading_pirate"></div>
+    </div>
+    <div id="rotatedevice"></div>
+    <div id="howtoplaywrapper" class="hide">
+        <div id="howtoplay">
+            <div id="howtoplay_close">X</div>
+            <div>
+                <p>
+                    Help to feed the <img draggable="false" src="icon/loading_pirate.png" id="howtoplay_pirate">!
+                </p>
+                <p>
+                    Tap/click and move a <img draggable="false" src="icon/blubber_ohne_klein.png" id="howtoplay_whitespace"> to make the <img draggable="false" src="icon/dropfish.png" id="howtoplay_dropfish"> fall down without touching a <img draggable="false" src="icon/bar_small.png" id="howtoplay_bar">.
+                </p>
+                <p>
+                    A <img draggable="false" src="icon/powerup.png" id="howtoplay_powerup"> gives you points but could also make the game more difficult.
+                </p>
+                <p>
+                    Once a level is reached, play it again whenever you want.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" class="hide">
+        <div id="overlay_pictures">
+            <div id="overlay_pirate"></div>
+            <div id="overlay_fish"></div>
+        </div>
+        <div id="overlaycontent">
+            <div>
+                <p><span id="warningArea" class="hide">Window resized!<br>Click to start again!</span></p>
+                <div id="levelSelectionArea"></div>
+                <p><span id="startbutton" class="show">Start</span></p>
+                <p><span id="howtoplay_button" class="show">How to play</span></p>
+                <p><span id="gameOver" class="hide">Game Over!<br>Click to start again!</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="gamecontent">
+
+    </div>
+
+    <div id="footer" class="hide">
+        <div id="highscore">Level: 1 | Highscore: 0</div>
+    </div>
+
+    <div id="copyright">©&nbsp;Hendrik Luttmann<br>&nbsp;&nbsp;&nbsp;&nbsp;&amp;&nbsp;Max Sternitzke</div>
+
+
+</body></html>

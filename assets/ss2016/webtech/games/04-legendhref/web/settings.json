@@ -1,0 +1,12 @@
+{
+  "gamekey": {
+    "id": "fa18b7e0-f2a6-4a14-934f-329296d6883d",
+    "host": "212.201.22.169",
+    "port": "50001"
+  },
+  "gamesettings": {
+  	"turnbased": false,
+  	"debug": false,
+  	"duration": 500
+  }
+}

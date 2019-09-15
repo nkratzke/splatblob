@@ -1,0 +1,13 @@
+{
+  "NAME":"Batmeister",
+  "MAXFREQUENZ":1000,
+  "MAXPOINTS":5000,
+  "YellowCoin":200,
+  "PowerUp_Multiplier":8,
+  "Bat":400,
+  "BlueCoin":50,
+  "PowerUp_LifeUp":1,
+  "PowerDown_Multiplier":5,
+  "PowerUp_CoinMagnet":10
+
+}

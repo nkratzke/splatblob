@@ -1,0 +1,67 @@
+[
+  {
+    "id": 0,
+    "name": "Shabby Hood",
+    "display": "Helmet",
+    "type": 1,
+    "value": 1,
+    "quality": 0,
+
+    "icon":"helmets/helmet_leather_hood.png"
+  },
+  {
+    "id": 1,
+    "name": "Reinforced Cap",
+    "display": "Helmet",
+    "type": 1,
+    "value": 2,
+    "quality": 1,
+    "mods": {
+      "health": 1,
+      "constitution": 1
+    },
+    "icon":"helmets/helmet_dark_mask.png"
+  },
+  {
+    "id": 2,
+    "name": "Yeti's Ice Mask",
+    "display": "Helmet",
+    "type": 1,
+    "value": 3,
+    "quality": 2,
+    "mods": {
+      "strength": 3,
+      "crit-chance": 2
+    },
+    "icon":"helmets/helmet_ice_mask.png"
+  },
+  {
+    "id": 3,
+    "name": "Plated Helm",
+    "display": "Helmet",
+    "type": 1,
+    "value": 4,
+    "quality": 3,
+    "mods": {
+      "health": 2,
+      "constitution": 2,
+      "strength": 3
+    },
+    "icon":"helmets/helmet_iron_berserk.png"
+  },
+
+  {
+    "id": 4,
+    "name": "Black Knight Helm of Death",
+    "display": "Helmet",
+    "type": 1,
+    "value": 5,
+    "quality": 4,
+    "mods": {
+      "constitution": 3,
+      "strength": 3,
+      "crit-chance": 2
+    },
+    "icon":"helmets/helmet_dark_horns.png"
+  }
+]

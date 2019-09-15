@@ -1,0 +1,21 @@
+{
+  "COLORS_SHARE":{
+    "yellow":50,
+    "red":50,
+    "green":50,
+    "blue":50
+  },
+  "SOLID_COLORS_SHARE":{
+    "black":40
+  },
+  "POWERUPS_SHARE":{
+    "powerup_heart":10,
+    "powerup_bomb":20,
+    "powerup_coin":10,
+    "powerup_lightning":20
+  }, 
+  "END_POINTS":200,  
+  "FALLING_SPEED":250,
+  "CREATION_SPEED":10
+}
+ 

@@ -1,0 +1,10 @@
+{
+  "game": "Breakout",
+  "level": 4,
+  "lifes": 3,
+  "ballspeed": 120,
+  "fieldSize": [
+    60,
+    50
+  ]
+}

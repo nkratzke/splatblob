@@ -1,0 +1,99 @@
+{
+   "1":
+   {
+      "stoneSpeedInMilliseconds":1000,
+      "rowsToNextLevel":1,
+      "possibleStones":[
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7
+      ],
+      "shouldTetrisFieldRotate":false,
+      "messageAfterLevel":"Level 2 reached<hr>Attention: Tetris field will rotate!"
+   },
+   "2":
+   {
+      "stoneSpeedInMilliseconds":1000,
+      "rowsToNextLevel":2,
+      "possibleStones": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7
+      ],
+      "shouldTetrisFieldRotate":true,
+      "messageAfterLevel":"Level 3 reached<hr>More speed and only two stones"
+   },
+   "3":
+   {
+      "stoneSpeedInMilliseconds":800,
+      "rowsToNextLevel":4,
+      "possibleStones": [
+         3,
+         4
+      ],
+      "shouldTetrisFieldRotate":false,
+      "messageAfterLevel":"Level 4 reached<hr>Even more speed and three stones"
+   },
+   "4":
+   {
+      "stoneSpeedInMilliseconds":700,
+      "rowsToNextLevel":8,
+      "possibleStones": [
+         1,
+         3,
+         4
+      ],
+      "shouldTetrisFieldRotate":false,
+      "messageAfterLevel":"Level 5 reached<hr>Now it's getting really fast ..."
+   },
+   "5":
+   {
+         "stoneSpeedInMilliseconds":600,
+         "rowsToNextLevel":16,
+         "possibleStones": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+         ],
+         "shouldTetrisFieldRotate":false,
+         "messageAfterLevel":"Level 6 reached<hr>Only one stone and rotations"
+   },
+   "6":
+   {
+      "stoneSpeedInMilliseconds":600,
+      "rowsToNextLevel":16,
+      "possibleStones": [
+         3
+      ],
+      "shouldTetrisFieldRotate":true,
+      "messageAfterLevel":"Level 7 reached<hr>Can you destroy 32 rows?"
+   },
+   "7":
+   {
+      "stoneSpeedInMilliseconds":600,
+      "rowsToNextLevel":32,
+      "possibleStones": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7
+      ],
+      "shouldTetrisFieldRotate":true,
+      "messageAfterLevel":""
+   }
+}

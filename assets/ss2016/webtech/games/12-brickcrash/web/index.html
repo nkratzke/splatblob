@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!--
+    Brick Crash v2.0
+    Developed & designed by Mihail Usenko & Johann Schnitkov
+    2016
+-->
+
+<html>
+    <head>
+        <title>Brick Crash v2.0</title>
+        <link rel="stylesheet" href="css/main.css">
+
+        <script defer src="main.dart" type="application/dart"></script>
+        <script defer src="packages/browser/dart.js"></script>
+    </head>
+
+    <body>
+        <div id="mainWrap">
+            <div id="mainFrame"></div>
+
+            <div id="rightFrame">
+                <table height="100%" width="100%">
+                    <tr>
+                        <td valign="top">
+                            <div id="levelInformation">
+                                Level #<span id="levelId"></span><br><br>
+                                Your Score:<br><span id="currentScore">0</span><br>
+                                Lives: <span id="lives">3</span>
+                                <div id="powerups" ></div>
+                                <div id="debug" style="background:#000; color: #fff;"></div>
+                                <br>
+                                <div id="howToPlay">
+                                    How to play:<br>
+                                    <table border="0">
+                                        <tr>
+                                            <td>
+                                                <span class="tutorial_button">A</span>
+                                                <span class="tutorial_button">&lt;</span>
+                                            </td>
+                                            <td>
+                                                Move left
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="tutorial_button">D</span>
+                                                <span class="tutorial_button">&gt;</span>
+                                            </td>
+                                            <td>
+                                                Move right
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="tutorial_button">P</span></td>
+                                            <td>Pause</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3">
+                                                <span class="tutorial_button">SPACE</span> Start
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:60px">
+                            <div id="usernamePlaceholder"></div>
+                            <div id="gameKeyStatus"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

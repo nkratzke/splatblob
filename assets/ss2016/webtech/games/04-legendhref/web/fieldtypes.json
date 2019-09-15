@@ -1,0 +1,51 @@
+{
+	"fieldtypes": [
+		{
+			"id": 0,
+			"name": "dirt",
+			"pa": true,
+			"overlay": false
+		},
+		{
+			"id": 1,
+			"name": "grass",
+			"pa": true,
+			"overlay": false
+		},
+		{
+			"id": 2,
+			"name": "water",
+			"pa": false,
+			"overlay": false
+		},
+		{
+			"id": 3,
+			"name": "road",
+			"pa": true,
+			"overlay": true,
+			"multipart": {
+				"c": {
+					"suffix": "corner"
+				},
+				"t": {
+					"suffix": "t_intersection"
+				},
+				"x": {
+					"suffix": "intersection"
+				},
+				"e": {
+					"suffix": "dead_end"
+				},
+				"|": {
+					"suffix": "narrow"
+				}
+			}
+		},
+		{
+			"id": 4,
+			"name": "wall",
+			"pa": false,
+			"overlay": false
+		}
+	]
+}

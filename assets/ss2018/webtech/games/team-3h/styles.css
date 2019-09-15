@@ -1,0 +1,284 @@
+@media screen {
+    div#preloader {
+        position: absolute;
+        left: -9999px;
+        top:  -9999px;
+    }
+    div#preloader img {
+        display: block;
+    }
+}
+@media print {
+    div#preloader,
+    div#preloader img {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+.endScreenHeader {
+    margin-top: 5vh;
+    font-size: 10vh;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  touch-action: manipulation;
+}
+
+h1 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 5vh;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 3vh;
+}
+
+p {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 2vh;
+}
+
+main {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+#powerUpLabel {
+    background: url("img/PowerUps/noPowerUp.png");
+    margin-left: 80vw;
+    margin-top: 5vh;
+    height: 10vh;
+    width: 10vh;
+    background-size: cover;
+}
+
+.menuControls {
+    outline: 0;
+    margin-top: 30vh;
+    border: none;
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+}
+
+#btnCreditsScreen {
+    background: url("img/credits.png");
+    background-size: cover;
+    border: none;
+    width: 18vh;
+    height: 6vh;
+}
+
+#backToLevelSelect {
+    margin-right: 10vh;
+    background: url("img/Buttons/backToMenuButton.png");
+}
+
+#backToLevelSelect_Credits {
+    background: url("img/Buttons/backToMenuButton.png");
+    background-size: cover;
+    height: 12vh;
+    width: 12vh;
+    margin-top: 5vh;
+    border: none;
+}
+
+#topCredit {
+    margin-top: 5vh;
+}
+
+#backToLevelSelect_Failure {
+    margin-right: 10vh;
+    background: url("img/Buttons/backToMenuButton.png");
+}
+
+#retryLevel {
+    margin-left: 10vh;
+    background: url("img/Buttons/retryLevelButton.png");
+}
+
+#nextLevel {
+    margin-left: 10vh;
+    background: url("img/Buttons/nextLevelButton.png");
+}
+
+#powerUpButton {
+    margin-left: 50vw;
+}
+
+.mobileControls {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-appearance: none;
+    outline: 0;
+    background: transparent;
+    border: none !important;
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+}
+
+/*noinspection ALL*/
+#finishedLevel {
+    margin-top: 10%;
+}
+
+#header {
+    margin-top: 5vh;
+}
+
+#levelSelectDiv {
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  background: url("img/LevelBackgrounds/forest.png");
+  background-size: cover;
+  text-align: center;
+}
+
+#SuccessScreen {
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    background-color: rgba(00, 255, 00, .3);
+    text-align: center;
+}
+
+#FailureScreen {
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    background-color: rgba(255, 00, 00, .3);
+    text-align: center;
+}
+
+#CreditsScreen {
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    background: url("img/LevelBackgrounds/castle.png");
+    background-size: cover;
+    text-align: center;
+}
+
+#PauseScreen {
+    padding-top: 15vh;
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    background-color: black;
+    text-align: center;
+    color: white;
+    align-content: center;
+    font-size: 25vw;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+#rotateLabel {
+    margin-top: 15vh;
+    font-size: 8vw;
+}
+
+#GameField {
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+    border: 0;
+    padding: 0;
+    border-spacing: 0;
+    size: landscape;
+}
+
+#buttonTable {
+  margin-left: auto;
+  margin-right: auto;
+  height: 40vh;
+  width:40vh;
+}
+
+.levelButton {
+    border: none;
+    background: url("img/LevelButtons/transparent.png");
+    background-size: cover;
+    width: 10vh;
+    height: 10vh;
+}
+
+.player {
+    background-image: url("img/alien.ico");
+    background-size: cover;
+}
+
+/*noinspection CssUnusedSymbol*/
+.walker {
+    background-image: url("img/Enemys/Walker/walker.gif");
+    background-size: cover;
+}
+
+/*noinspection CssUnusedSymbol*/
+.slime {
+    background-image: url("img/Enemys/Slime/Slime.png");
+    background-size: cover;
+}
+
+/*noinspection CssUnusedSymbol*/
+.jumper {
+    background-image: url("img/Enemys/Jumper/Jumper.png");
+    background-size: cover;
+}
+
+/*noinspection CssUnusedSymbol*/
+.brick {
+    background-image: url("img/Brick/Brick.png");
+    background-size: cover;
+}
+
+/*noinspection CssUnusedSymbol*/
+.projectile {
+    background-image: url("img/Projectile/projectile.png");
+    background-size: cover;
+}
+
+/*noinspection CssUnusedSymbol*/
+.powerUpBlock {
+    background-image: url("img/PowerUps/powerUpBlock.png");
+    background-size: cover;
+}
+
+/*noinspection CssUnusedSymbol*/
+.grass {
+    background-image: url("img/Grass/GrassCenterCenter.png");
+    background-size: cover;
+}
+
+/*noinspection CssUnusedSymbol*/
+.goal {
+    background-image: url("img/Goal/Goal.gif");
+    background-size: cover;
+}
+
+/*noinspection CssUnusedSymbol*/
+.noneClass {
+    background-color: black !important;
+}
+
+

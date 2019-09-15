@@ -1,0 +1,368 @@
+// Variables
+@see: 1px solid grey;
+@brickpadding:1px;
+@ballcolor:#f7f7f7;
+@bgcolor:#161616;
+@fontcolor:#f7f7f7;
+@overlay:rgba(0,0,0,0.6);
+
+// Brick color variables
+@brickhead: rgba(241,241,241,1);
+@heavybrick:rgba(129,129,129,1);
+@splitbrick:rgb(246,137,23);
+
+// Button color variables
+@colorgreen:#37ba00;
+@coloryellow:#efc50b;
+@colorblue:#0073d3;
+@colorred:#f71111;
+@colororange:#f29c09;
+@colorpurple:#c43be2;
+@colorgrey:#999999;
+@colorlightblue:#38a4f7;
+@colorturquoise:#15f1e6;
+@colortabasco:#f14815;
+
+// Button border color variables
+@colorbordergreen:#1f6801;
+@colorborderyellow:#997d06;
+@colorborderblue:#004f91;
+@colorborderred:#a30909;
+@colorborderorange:#966106;
+@colorborderpurple:#6e1382;
+@colorbordergrey:#515151;
+@colorborderlightblue:#076fbf;
+@colorborderturqoise:#0c968f;
+@colorbordertabasco:#992c0c;
+
+.background(@color, @bordercolor) {
+	background-color:@color;
+	border:2px solid @bordercolor;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Aldrich');
+html {
+	box-sizing:border-box;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+	html {
+		transform: rotate(-90deg);
+		transform-origin: left top;
+		width: 100vh;
+		overflow-x: hidden;
+		position: absolute;
+		top: 100%;
+		left: 0;
+	}
+}
+*, *:after, *:before {
+	box-sizing:inherit;
+	font-family:"Aldrich", sans-serif;
+	-webkit-touch-callout: none;
+    -webkit-user-callout: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-modify: none;
+    -webkit-highlight: none;
+}
+@keyframes powerup {
+	from {
+		opacity:1.0;
+		top:25%;
+	}
+	to {
+		opacity:0.0;
+		top:20%;
+	}
+}
+@keyframes splitbrick {
+	0% {
+		.background(@colororange, @colorborderlightblue);
+	}
+	100% {
+		.background(@colorlightblue, @colorborderorange);
+	}
+}
+main {
+
+	h1 {
+		margin:10px;
+		text-align: center;
+	}
+
+	.debug {
+		position:absolute;
+		left:30%;
+		top:200px;
+	}
+
+	.field {
+		border:@see;
+		margin:auto;
+		position:relative;
+		background-color:@bgcolor;
+		background-image:url("../images/bg2.jpg");
+		z-index:1000;
+		.menubutton {
+			position:absolute;
+			bottom:-45px;
+			width:100%;
+			background-color:#444444;
+			color:white;
+			border:1px solid black;
+			padding:10px;
+
+		}
+
+
+		.skiplevel {
+			bottom:-60px;
+			border:1px solid orange;
+		}
+
+		div {
+			position:absolute;
+			z-index:1;
+		}
+		.overlay {
+			position:absolute;
+			width:100%;
+			height:100%;
+			background-color:@overlay;
+			padding-top:9%;
+			z-index:1000;
+
+			&.ingame-menu {
+				button {
+					margin-top:50px;
+					padding:0;
+				}
+			}
+
+			.title {
+				margin:auto;
+				display:block;
+				width:100%;
+				height:auto;
+				text-align:center;
+				color:white;
+				font-weight:bold;
+				font-size:28px;
+				text-transform:uppercase;
+			}
+
+			.textfield {
+				color: white;
+				font-size:18px;
+				width: 200px;
+				margin-left:115px;
+				margin-top:30px;
+				&.credits {
+					margin:50px auto;
+					text-align:center;
+				}
+			}
+			.checkbox{
+
+				float:left;
+				margin-top:40px;
+				margin-left:90px;
+				color : white;
+			}
+
+			button {
+				width:100px;
+				margin:auto;
+				display:block;
+				margin-top:80px;
+				width:150px;
+				height:40px;
+				color:@fontcolor;
+				font-size:24px;
+				padding-top:5px;
+				border-radius:5px;
+				padding:0;
+				&.newgame {
+					.background(@colorgreen, @colorbordergreen);
+				}
+				&.continue {
+					.background(@coloryellow, @colorborderyellow)
+				}
+				&.retry {
+					.background(@colorblue, @colorborderblue);
+				}
+				&.back {
+					.background(@colorred, @colorborderred);
+				}
+				&.continue {
+					.background(@colorgreen, @colorbordergreen);
+				}
+				&.skiplevel {
+					.background(@colorpurple, @colorborderpurple);
+				}
+			}
+
+			// Main menu style
+			.menu {
+				position:static;
+				button {
+					margin-top:50px;
+					&.tutorial {
+						.background(@coloryellow, @colorborderyellow);
+					}
+					&.credits {
+						.background(@colorblue, @colorborderblue);
+					}
+					&.controlls {
+						.background(@colorpurple, @colorborderpurple);
+					}
+				}
+			}
+		} // .overlay
+
+		.timernumber {
+			color:white;
+			font-size:40px;
+			text-align:center;
+			margin-top:150px;
+		}
+
+		// Tutorial style
+		.tutorial-container {
+			position:relative;
+			height:100%;
+			&:after {
+				display:block;
+				content:'';
+				background:linear-gradient(0deg, @overlay, transparent);
+				width:100%;
+				height:80%;
+				position:absolute;
+				bottom:0;
+				z-index:-10;
+			}
+			.arrow {
+				position:absolute;
+				font-size:60px;
+				color:@colororange;
+				text-shadow:0 0 10px @colorborderred;
+			}
+			.text {
+				position:absolute;
+				top:200px;
+				color:white;
+				width:100%;
+				text-align:center;
+				font-size:20px;
+			}
+			button {
+				.background(@colororange, @colorborderorange);
+				color:white;
+				width:80px;
+				position:absolute;
+				top:320px;
+				left:50%;
+				margin-left:-40px;
+				height:30px;
+			}
+		}
+
+		// Ball Styling
+		.ball {
+			border-radius:50px;;
+			background-color:@ballcolor;
+		}
+
+		// Platform styling
+		.platform {
+			border:2px solid @colorborderlightblue;
+			background-color:@colorlightblue;
+			border-radius:4px;
+		}
+
+		// Brick styling
+		.brick {
+			border-radius:2px;
+			background: @colorgreen;
+			border:2px solid @colorbordergreen ;
+			&.brick-speed {
+				.background(@coloryellow, @colorborderyellow);
+			}
+			&.brick-heavy {
+				.background(@colorgrey, @colorbordergrey);
+				&.broken1 {
+					border-style:dotted;
+				}
+				&.broken2 {
+					border-style:dashed;
+				}
+				// &.broken3 {
+				// 	background: linear-gradient(0deg, @heavybrick 0%, rgba(255,255,255,0) 20%, @heavybrick 80%, @brickhead 100%);
+				// }
+			}
+			&.brick-slow {
+				.background(@colorblue, @colorborderblue);
+			}
+			&.brick-explosion {
+				.background(@colororange, @colorborderorange);
+			}
+			&.brick-teleport {
+				.background(@colorpurple, @colorborderpurple);
+			}
+			&.brick-penetrate {
+				.background(@colorred, @colorborderred);
+			}
+			&.brick-split {
+				animation:splitbrick 1s infinite;
+				animation-direction:alternate;
+			}
+			&.brick-invert {
+				background:linear-gradient(90deg, @colorturquoise, @colortabasco);
+				border:2px solid @colorborderturqoise;
+			}
+		} // .brick
+
+		#platform {
+			-webkit-touch-callout: none; /* iOS Safari */
+			-webkit-user-select: none; /* Safari */
+			-khtml-user-select: none; /* Konqueror HTML */
+			-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* Internet Explorer/Edge */
+			user-select: none;
+		}
+		.powerup {
+			position:absolute;
+			color:white;
+			font-size:28px;
+			text-transform:uppercase;
+			left:50%;
+			transform:translate(-50%);
+			-webkit-transform: translateX(-50%);
+			top:25%;
+			display:none;
+			animation:powerup 2s;
+			&.speed {
+				color:@coloryellow;
+			}
+			&.slow {
+				color:@colorblue;
+			}
+			&.explosion {
+				color:@colororange;
+			}
+			&.teleport {
+				color:@colorpurple;
+			}
+			&.penetrate {
+				color:@colorred;
+			}
+			&.split {
+				color:@splitbrick;
+			}
+			&.invert {
+				color:@colorturquoise;
+			}
+		}
+	} // .field
+} // main

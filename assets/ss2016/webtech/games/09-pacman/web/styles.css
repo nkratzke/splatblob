@@ -1,0 +1,297 @@
+* {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    padding: 0px 0px 100px 0px;
+}
+
+h1 {
+    font-size: 2rem;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 0%;
+}
+
+#title {
+    font-size: 2rem;
+    padding: 25px;
+    background-color: transparent;
+    color: WHITESMOKE;
+    margin-bottom: 50px;
+}
+
+#entwickler{
+    font-size: 10px;
+    padding: 15%;
+}
+
+#overlay {
+
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+    text-align: center;
+    font-size: 21px;
+    color: greenyellow;
+}
+
+#highscore3{
+    margin-top: 2%;
+}
+
+
+#highscoreform {
+    margin: 42%;
+    margin-top: 3%;
+    background: transparent;
+    /* z-index: 0; */
+    /* background-color: white; */
+}
+
+#highscoreform input {
+    color: green;
+    border: 0px solid beige;
+    background: beige;
+    appearance: 10px;
+    box-shadow: mediumspringgreen;
+    border-radius: 6px;
+    padding: 1%;
+    margin: 2%;
+    z-index: 1;
+}
+
+button {
+    color: green;
+    border: 2px solid yellow;
+    background: palegreen;
+    padding: 1%;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 7px;
+}
+
+#close {
+    background: lightsalmon;
+    color: green;
+    border: 2px solid yellow;
+    text-decoration: none;
+    padding: 1%;
+    border-radius: 23px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin: 8px;
+}
+
+#highscoreClose {
+    background: lightsalmon;
+    color: green;
+    border: 2px solid yellow;
+    text-decoration: none;
+    position: fixed;
+    left:45%;
+    bottom: 40%;
+    padding: 1%;
+    border-radius: 23px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin: 8px;
+
+}
+
+#start {
+    padding: 0% 3% 0% 3%;
+    font-style: normal;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    background: green;
+    border: 1px solid white;
+    border-radius: 19%;
+}
+
+#failedsave {
+
+    text-align: center;
+    color: red;
+    bottom: 50%;
+    left: 37%;
+}
+
+#warning {
+    /* position: absolute; */
+    /* padding-bottom: 1%; */
+    /* margin-bottom: -23%; */
+    color: red;
+   /* margin-top: -38%;*/
+    /* color: white; */
+    /*border-radius: 16%;*/
+    /*border-style: groove;*/
+    width: 96%;
+    padding: -2%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+   /* border: 5px solid green;*/
+   /* background: rgba(255,216,176,0.8);*/
+    z-index: 2;
+}
+
+#highscore {
+    padding: 0% 3% 0% 3%;
+    font-style: normal;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    background: rgba(171, 44, 44, 0.5);
+    border: 1px solid white;
+    border-radius: 19%;
+}
+
+/* Spielbrett */
+body {
+    overflow: hidden;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+#breakoutgame {
+    margin: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-collapse: collapse;
+}
+
+#breakoutgame td {
+    width: 10px;
+    height: 10px;
+    border: 0px;
+    border-collapse: collapse;
+}
+
+.Stone7 {
+    background-color: purple !important;
+}
+
+.Stone6 {
+    background-color: blue !important;
+}
+
+.Stone5 {
+    background-color: darkblue !important;
+}
+
+.Stone4 {
+    background-color: red !important;
+}
+
+.Stone3 {
+    background-color: orange !important;
+}
+
+.Stone2 {
+    background-color: yellow !important;
+}
+
+.Stone1 {
+    background-color: yellowgreen !important;
+}
+
+.InDesStone {
+    background-color: lawngreen !important;
+}
+
+.Ball {
+    background-color: white !important;
+}
+
+.Panel {
+    background-color: gray !important;
+}
+
+#infotable{
+    margin: auto;
+}
+
+
+#right {
+    height: 90%;
+    width: 40%;
+    right: 12px;
+    position: absolute;
+    padding: 10px;
+    top: 0px;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+
+#left {
+    height: 80%;
+    width: 40%;
+    left: 12px;
+    position: absolute;
+    padding: 10px;
+    top: 0px;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+
+#down {
+    height: 18%;
+    width: 100%;
+    position: absolute;
+    top: 83%;
+    font-style: normal;
+    text-align: center;
+
+
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+#scorelist {
+    color: white;
+    border-radius: 16%;
+    border-style: groove;
+    width: 37%;
+    padding: -2%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid green;
+    background: rgba(255,255,255,0.5);
+}
+
+#scorelist ol {
+    list-style-type: decimal;
+    list-style-position: outside;
+    margin: 0px;
+}
+
+#scorelist li {
+    font-size: 1.1em;
+    margin: 0px 5px 5px 5px;
+    padding: 5px;
+    color: black;
+    display: block;
+    border-radius: 20px;
+}

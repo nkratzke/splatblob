@@ -1,0 +1,14 @@
+                RRR RRR RRR
+                GGG
+                BBB
+                GGG
+                BBB
+YYY RRR RRR RRR RRR RRR ZZZ ZZZ ZZZ ZZZ ZZZ ZZZ ZZZ
+YYY RRR RRR RRR RRR RRR ZZZ ZZZ ZZZ ZZZ ZZZ ZZZ ZZZ ZZZ
+YYY RRR RRR RRR RRR RRR ZZZ ZZZ ZZZ ZZZ ZZZ ZZZ ZZZ ZZZ
+YYY RRR RRR RRR RRR RRR ZZZ ZZZ ZZZ ZZZ ZZZ ZZZ ZZZ
+                GGG
+                BBB
+                GGG
+                BBB
+                RRR RRR RRR

@@ -1,0 +1,28 @@
+<html>
+<head><title>DOM Transformation mittels jQuery</title></head>
+<meta charset="UTF-8"/>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+		$("#ps p.li").wrapInner("<li></li>");
+		$("#ps li").unwrap();
+		$("#ps li").wrapAll("<ul></ul>");
+	});
+</script>
+
+<body>
+
+<div id="ps">
+
+<p class="li">A</p>
+<p class="li">B</p>
+<p class="li">C</p>
+<p class="li">D</p>
+<p class="li">E</p>
+
+</div>
+
+</body>
+</html>

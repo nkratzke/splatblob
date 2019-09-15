@@ -1,0 +1,324 @@
+@font-face {
+  font-family: 'Aldrich';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Aldrich Regular'), local('Aldrich-Regular'), url(https://fonts.gstatic.com/s/aldrich/v8/MCoTzAn-1s3IGyJMVacY2g.ttf) format('truetype');
+}
+html {
+  box-sizing: border-box;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  font-family: "Aldrich", sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-callout: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-modify: none;
+  -webkit-highlight: none;
+}
+@keyframes powerup {
+  from {
+    opacity: 1.0;
+    top: 25%;
+  }
+  to {
+    opacity: 0.0;
+    top: 20%;
+  }
+}
+@keyframes splitbrick {
+  0% {
+    background-color: #f29c09;
+    border: 2px solid #076fbf;
+  }
+  100% {
+    background-color: #38a4f7;
+    border: 2px solid #966106;
+  }
+}
+main h1 {
+  margin: 10px;
+  text-align: center;
+}
+main .debug {
+  position: absolute;
+  left: 30%;
+  top: 200px;
+}
+main .field {
+  border: 1px solid grey;
+  margin: auto;
+  position: relative;
+  background-color: #161616;
+  background-image: url("../images/bg2.jpg");
+  z-index: 1000;
+}
+main .field .menubutton {
+  position: absolute;
+  bottom: -45px;
+  width: 100%;
+  background-color: #444444;
+  color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+main .field .skiplevel {
+  bottom: -60px;
+  border: 1px solid orange;
+}
+main .field div {
+  position: absolute;
+  z-index: 1;
+}
+main .field .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 9%;
+  z-index: 1000;
+}
+main .field .overlay.ingame-menu button {
+  margin-top: 50px;
+  padding: 0;
+}
+main .field .overlay .title {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+main .field .overlay .textfield {
+  color: white;
+  font-size: 18px;
+  width: 200px;
+  margin-left: 115px;
+  margin-top: 30px;
+}
+main .field .overlay .textfield.credits {
+  margin: 50px auto;
+  text-align: center;
+}
+main .field .overlay .checkbox {
+  float: left;
+  margin-top: 40px;
+  margin-left: 90px;
+  color: white;
+}
+main .field .overlay button {
+  width: 100px;
+  margin: auto;
+  display: block;
+  margin-top: 80px;
+  width: 150px;
+  height: 40px;
+  color: #f7f7f7;
+  font-size: 24px;
+  padding-top: 5px;
+  border-radius: 5px;
+  padding: 0;
+}
+main .field .overlay button.newgame {
+  background-color: #37ba00;
+  border: 2px solid #1f6801;
+}
+main .field .overlay button.continue {
+  background-color: #efc50b;
+  border: 2px solid #997d06;
+}
+main .field .overlay button.retry {
+  background-color: #0073d3;
+  border: 2px solid #004f91;
+}
+main .field .overlay button.back {
+  background-color: #f71111;
+  border: 2px solid #a30909;
+}
+main .field .overlay button.continue {
+  background-color: #37ba00;
+  border: 2px solid #1f6801;
+}
+main .field .overlay button.skiplevel {
+  background-color: #c43be2;
+  border: 2px solid #6e1382;
+}
+main .field .overlay .menu {
+  position: static;
+}
+main .field .overlay .menu button {
+  margin-top: 50px;
+}
+main .field .overlay .menu button.tutorial {
+  background-color: #efc50b;
+  border: 2px solid #997d06;
+}
+main .field .overlay .menu button.credits {
+  background-color: #0073d3;
+  border: 2px solid #004f91;
+}
+main .field .overlay .menu button.controlls {
+  background-color: #c43be2;
+  border: 2px solid #6e1382;
+}
+main .field .timernumber {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 150px;
+}
+main .field .tutorial-container {
+  position: relative;
+  height: 100%;
+}
+main .field .tutorial-container:after {
+  display: block;
+  content: '';
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent);
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  z-index: -10;
+}
+main .field .tutorial-container .arrow {
+  position: absolute;
+  font-size: 60px;
+  color: #f29c09;
+  text-shadow: 0 0 10px #a30909;
+}
+main .field .tutorial-container .text {
+  position: absolute;
+  top: 200px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+main .field .tutorial-container button {
+  background-color: #f29c09;
+  border: 2px solid #966106;
+  color: white;
+  width: 80px;
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  margin-left: -40px;
+  height: 30px;
+}
+main .field .ball {
+  border-radius: 50px;
+  background-color: #f7f7f7;
+}
+main .field .platform {
+  border: 2px solid #076fbf;
+  background-color: #38a4f7;
+  border-radius: 4px;
+}
+main .field .brick {
+  border-radius: 2px;
+  background: #37ba00;
+  border: 2px solid #1f6801;
+}
+main .field .brick.brick-speed {
+  background-color: #efc50b;
+  border: 2px solid #997d06;
+}
+main .field .brick.brick-heavy {
+  background-color: #999999;
+  border: 2px solid #515151;
+}
+main .field .brick.brick-heavy.broken1 {
+  border-style: dotted;
+}
+main .field .brick.brick-heavy.broken2 {
+  border-style: dashed;
+}
+main .field .brick.brick-slow {
+  background-color: #0073d3;
+  border: 2px solid #004f91;
+}
+main .field .brick.brick-explosion {
+  background-color: #f29c09;
+  border: 2px solid #966106;
+}
+main .field .brick.brick-teleport {
+  background-color: #c43be2;
+  border: 2px solid #6e1382;
+}
+main .field .brick.brick-penetrate {
+  background-color: #f71111;
+  border: 2px solid #a30909;
+}
+main .field .brick.brick-split {
+  animation: splitbrick 1s infinite;
+  animation-direction: alternate;
+}
+main .field .brick.brick-invert {
+  background: linear-gradient(90deg, #15f1e6, #f14815);
+  border: 2px solid #0c968f;
+}
+main .field #platform {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+main .field .powerup {
+  position: absolute;
+  color: white;
+  font-size: 28px;
+  text-transform: uppercase;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translateX(-50%);
+  top: 25%;
+  display: none;
+  animation: powerup 2s;
+}
+main .field .powerup.speed {
+  color: #efc50b;
+}
+main .field .powerup.slow {
+  color: #0073d3;
+}
+main .field .powerup.explosion {
+  color: #f29c09;
+}
+main .field .powerup.teleport {
+  color: #c43be2;
+}
+main .field .powerup.penetrate {
+  color: #f71111;
+}
+main .field .powerup.split {
+  color: #f68917;
+}
+main .field .powerup.invert {
+  color: #15f1e6;
+}

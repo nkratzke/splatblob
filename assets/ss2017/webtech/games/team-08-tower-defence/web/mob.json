@@ -1,0 +1,17 @@
+{
+  "mobSmall" : {
+    "lifePoints" : 10,
+    "speed": 1,
+    "goldDrop" : 1
+  },
+  "mobBig" : {
+    "lifePoints" : 25,
+    "speed": 3,
+    "goldDrop" : 2
+  },
+  "mobBoss" : {
+    "lifePoints" : 150,
+    "speed" : 5,
+    "goldDrop" : 10
+  }
+}

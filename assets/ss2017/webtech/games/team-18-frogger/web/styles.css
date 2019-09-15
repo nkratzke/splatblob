@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/* Base Body */
+html, body
+{
+    width:      auto;
+    height:     auto;
+    margin-left:    auto;
+    margin-right:   auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.Hide
+{
+    display: none;
+}
+
+.CenterPos
+{
+    margin-left:    auto;
+    margin-right:   auto;
+}
+
+/* Game Area DIV */
+div.gameArea
+{
+    position: absolute;
+    display: block;
+    height: 480px;
+    width:  800px;
+    margin-left: 5px;
+    background-color: transparent;
+    background-image: url("resources/bg.jpg");
+    border: solid;
+    border-color: saddlebrown;
+}
+
+/* DIVs Inside the Game Area*/
+div.fieldDiv
+{
+    margin: auto;
+}
+
+div.infoArea
+{
+    background-image: url("resources/InfoHud.png");
+    position: absolute;
+    display: none;
+    height: 75px;
+    width:  800px;
+}
+
+div.flashMessageContainer
+{
+    position: relative;
+    top:    25%;
+    width:  90%;
+    height: 250px;
+
+    background-color: transparent;
+    border: solid;
+    border-color: darkgrey;
+}
+
+div.flashMessage
+{
+    position: relative;
+    width:  100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    /* line-height: 250px; */
+    font-size: 40px;
+}
+
+table.infoTable
+{
+    margin-top: 2%;
+    margin-left: 5%;
+    border-spacing: 25px 0;
+}
+
+
+#menuArea
+{
+    position: relative;
+    top:    10%;
+    width:  500px;
+    height: 320px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    /*background-color: red;*/
+    background-color: transparent;
+
+    border: solid;
+    border-color: darkgrey;
+}
+
+#hint
+{
+    width: 480px;
+    background-color: gray;
+    border: double;
+    border-width: 5px;
+    margin-right: -50%;
+    transform: translate(+1%, -50%)
+}
+
+#menuHeader
+{
+    width:  400px;
+    height: 150px;
+    background-image: url(resources/FrogTitle.png);
+    background-size: 400px 150px;
+    background-repeat: no-repeat;
+}
+
+/* Menu */
+button.MenuEntry
+{
+    display:    block;
+    width:      200px;
+    height:     50px;
+}
+
+/* Game Field Table */
+table.gameplayField
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Field Cells */
+
+td.tableCell, .goalCell, .waterCell, .grassCell, .streetCell, .highGrassCell, .goalFrogCell
+{
+    width: 45px;
+    height:45px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+}
+
+td.waterCell
+{
+    background-color: darkblue;
+}
+
+
+.entity
+{
+    position: absolute;
+    height:99%;
+    width: 100%;
+    top: -2px;
+}
+
+p
+{
+    text-align: center;
+    vertical-align: middle;
+    z-index: -1;
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+/* End Field Cells */

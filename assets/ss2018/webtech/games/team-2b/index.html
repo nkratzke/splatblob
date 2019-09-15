@@ -1,0 +1,441 @@
+<html>
+<head>
+    <title>DartRogue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-title" content="DartRogue">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="DartRogue">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="msapplication-TileImage" content="img/fav/mstile-144x144.png">
+    <meta name="msapplication-config" content="img/fav/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+    <link rel="manifest" href="img/fav/site.webmanifest">
+    <link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/fav/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/tiles.css">
+    <link rel="stylesheet" href="style/player.css">
+    <link rel="stylesheet" href="style/enemies.css">
+
+    <script type='application/dart' src='rogue.dart'></script>
+    <script src='packages/browser/dart.js'></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="home">
+            <div id="start-menu" class="visible">
+                <h1>DartRogue</h1>
+
+                <ul>
+                    <li><input type="button" id="start-game-button" value="New Game"></li>
+                    <li><input type="button" id="highscore-button" value="Highscore"></li>
+                    <li><input type="button" id="howToPlay-button" value="How To Play"></li>
+                    <li><input type="button" id="about-button" value="About"></li>
+                </ul>
+
+                <p>
+                    Please use fullscreenmode!
+                </p>
+            </div>
+
+            <div id="name-input-menu" class="invisible">
+                <h1>New Game</h1>
+                <ul>
+                    <li><input type="text" id="name-input" class="text-input" value="Enter your name here"></li>
+                    <li><input type="button" id="name-submit"  value="Start game!"></li>
+                    <li><input type="button" id="name-input-back" value="Back"></li>
+                </ul>
+            </div>
+
+            <div id="highscore" class="invisible">
+                <h1>Highscore</h1>
+
+                <div id="highscore-board">
+                    <ul>
+                        <li id="highscore-first"></li>
+                        <li id="highscore-second"></li>
+                        <li id="highscore-third"></li>
+                    </ul>
+                </div>
+
+                <ul>
+                    <li><input type="button" id="back-highscore-button" class="back-button" value="Back"></li>
+                </ul>
+            </div>
+
+            <div id="how-to-play" class="invisible">
+                <h1>How To Play</h1>
+
+                <div class="plain">
+                    <p >
+                        You are a furious and fearless warrior living in a cruel world populated by dangerous monsters.
+                        Dive into the adventure and try to save the world.
+                        As the chosen one you need to kill all the seven dungeon bosses to achieve your aim.
+                    </p>
+                    <p>
+                        - move your warrior by clicking where you want to go<br>
+                        - the fighting system is turn-based and each skill is different<br>
+                        - enemies differ in strength and stamina<br>
+                        - the enemies get stronger each stage you complete<br>
+                        - items can be obtained by both treasures and monsters<br>
+                        - new found items are moved directly into your inventory<br>
+                        - equip items to get stronger, deal more and resist damage<br>
+                    </p>
+                </div>
+
+                <ul>
+                    <li><input type="button" id="back-howToPlay-button" class="back-button" value="Back"></li>
+                </ul>
+            </div>
+
+            <div id="about" class="invisible">
+                <h1>About</h1>
+
+                <div class="plain">
+                    <p>
+                        <h4>Coded by:</h4>
+                        <span>Ruben Maurer</span>
+                        <span>Jannik Schwardt</span>
+                    </p>
+                    <p>
+                        <h4>Supporters:</h4>
+                        <span>Nane Kratzke</span>
+                        <span>Mum & Dad</span>
+                    </p>
+                    <p>
+                        <h4>Playtesters:</h4>
+                        <span>IceColdWulf</span>
+                        <span>Doomroach</span>
+                        <span>KraIstGerecht</span>
+                        <span>Freezy</span>
+                        <span>Jeromus</span>
+                        <span>Ronny</span>
+                    </p>
+
+                    <p>
+                        <h4>Assets designed by:</h4>
+                        <span>twitter.com/DerNaderer</span>
+                        <span>x72.itch.io/</span>
+                    </p>
+                    <h4>Web Technology Project 2018</h4>
+                </div>
+
+                <ul>
+                    <li><input type="button" id="back-about-button" class="back-button" value="Back"></li>
+                </ul>
+            </div>
+
+            <div id="game-over" class="invisible">
+                <div id="end-screen">
+                    <h1>YOU DIED</h1>
+                    <p>
+                        You achieved <span id="loose-highscore"></span> points!
+                    </p>
+                    <ul>
+                        <li>
+                            <input type="button" id="back-game-over" value="Back to main menu">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="game-win" class="invisible">
+                <div id="win-screen">
+                    <h1>You beat the final boss!</h1>
+                    <p>
+                        You achieved <span id="win-highscore"></span> points!
+                    </p>
+                    <ul>
+                        <li>
+                            <input type="button" id="back-game-win" value="Back to main menu">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="game" class="invisible">
+            <div id="upper-bar">
+                <div id="health-container">
+                    <div id="health-bar-outer">
+                        <span id="player-health-text"></span>
+                        <div id="health-bar-inner"></div>
+                    </div>
+
+                    <div id="ep-bar-outer">
+                        <span id="player-ep-text"></span>
+                        <div id="ep-bar-inner"></div>
+                    </div>
+                </div>
+
+                <div id="stage-name-container">
+                    <span id="stage-name">Stage X</span>
+                </div>
+
+                <div id="command-buttons">
+                    <input type="submit" id="potion-screen-button" class="bar-button" value="">
+                    <input type="submit" id="hero-screen-button" class="bar-button" value="">
+                </div>
+            </div>
+
+            <div id="dungeon">
+                <div id="overlay">
+                    <div id="hero-screen" class="invisible overlay">
+                        <div id="top-bar">
+                            <div id="hero-inventory" class="clickable">Inventory</div>
+                            <div id="hero-equipment" class="item-active clickable">Equipment</div>
+                            <div id="hero-attributes" class="clickable">Attributes</div>
+                        </div>
+
+                        <div id="hero-inventory-screen" class="invisible">
+                            <div id="inventory-grid" class="inventory-background">
+                                <div id="slot-0" class="inventory-item item-slot common">
+                                    <div class="item"></div>
+                                </div>
+
+                                <div id="slot-1" class="inventory-item item-slot common">
+                                    <div class="item"></div>
+                                </div>
+
+                                <div id="slot-2" class="inventory-item item-slot common">
+                                    <div class="item"></div>
+                                </div>
+
+                                <div id="slot-3" class="inventory-item item-slot common">
+                                    <div class="item"></div>
+                                </div>
+
+                                <div id="slot-4" class="inventory-item item-slot common">
+                                    <div class="item"></div>
+                                </div>
+
+                                <div id="slot-5" class="inventory-item item-slot common">
+                                    <div class="item"></div>
+                                </div>
+
+                                <div id="slot-6" class="inventory-item item-slot common">
+                                    <div class="item"></div>
+                                </div>
+
+                                <div id="slot-7" class="inventory-item item-slot common">
+                                    <div class="item"></div>
+                                </div>
+
+                                <div id="slot-8" class="inventory-item item-slot common">
+                                    <div class="item"></div>
+                                </div>
+
+                                <div id="slot-9" class="inventory-item item-slot common">
+                                    <div class="item"></div>
+                                </div>
+
+                                <div id="slot-10" class="inventory-item item-slot common">
+                                    <div class="item"></div>
+                                </div>
+
+                                <div id="slot-11" class="inventory-item item-slot common">
+                                    <div class="item"></div>
+                                </div>
+                            </div>
+
+                            <div id="inventory-preview">
+                                <div id="preview-item-wrapper">
+                                    <div id="preview-item">
+                                        <div id="preview-item-name"></div>
+                                        <div class="item-slot">
+                                            <div id="preview-item-icon" class="item"></div>
+                                        </div>
+
+                                        <div id="preview-item-details">
+                                            <div id="preview-item-quality"></div>
+                                            <div id="preview-item-type"></div>
+                                            <div id="preview-item-value"></div>
+                                            <div id="preview-item-key"></div>
+                                        </div>
+
+                                        <div id="preview-item-mods" class="magic-color">
+                                            <ul></ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="equip-wrapper">
+                                    <input id="equip-item-button" type="button" value="Equip">
+                                    <input id="drop-item-button" type="button" value="Drop">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="hero-equipment-screen">
+                            <!-- LEFT BAR -->
+                            <div id="helmet-slot" class="item-slot-framed">
+                                <div id="helmet" class="item"></div>
+                            </div>
+
+                            <div id="chest-slot" class="item-slot-framed">
+                                <div id="chest" class="item"></div>
+                            </div>
+
+                            <div id="boots-slot" class="item-slot-framed">
+                                <div id="boots" class="item"></div>
+                            </div>
+
+                            <!-- RIGHT BAR -->
+                            <div id="weapon-slot" class="item-slot-framed">
+                                <div id="weapon" class="item"></div>
+                            </div>
+
+                            <div id="gloves-slot" class="item-slot-framed">
+                                <div id="gloves" class="item"></div>
+                            </div>
+
+                            <div id="legs-slot" class="item-slot-framed">
+                                <div id="legs" class="item"></div>
+                            </div>
+
+                            <!-- SELECTED ITEM -->
+                            <div id="selected-item-wrapper">
+                                <div id="selected-item">
+                                    <div id="item-name" class="magic-color"></div>
+                                    <div class="item-slot magic">
+                                        <div id="item-icon" class="item"></div>
+                                    </div>
+
+                                    <div id="item-details">
+                                        <div id="item-quality" class="magic-color"></div>
+                                        <div id="item-type"></div>
+                                        <div id="item-value"></div>
+                                        <div id="item-key"></div>
+                                    </div>
+
+                                    <div id="item-mods" class="magic-color">
+                                        <ul></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="hero-attributes-screen" class="invisible">
+                            <div id="offense-col" class="attribute-col">
+                                <div>Offensive</div>
+                                <ul>
+                                    <li><span>Strength: </span><span id="hero-strength"></span></li>
+                                    <li><span>Damage: </span><span id="hero-damage"></span></li>
+                                    <li><span>Crit-Chance: </span><span id="hero-crit"></span></li>
+                                    <li><span>Crit-Damage: </span><span id="hero-crit-dmg"></span></li>
+                                </ul>
+                            </div>
+
+                            <div id="defense-col" class="attribute-col">
+                                <div>Defensive</div>
+                                <ul>
+                                    <li><span>Armor: </span><span id="hero-armor"></span></li>
+                                </ul>
+                            </div>
+
+                            <div id="life-col" class="attribute-col">
+                                <div>Health</div>
+                                <ul>
+                                    <li><span>Constitution: </span><span id="hero-const"></span></li>
+                                    <li><span>Max Health: </span><span id="hero-max-life"></span></li>
+                                </ul>
+                            </div>
+
+                            <div id="adventure-col" class="attribute-col">
+                                <div>Adventure</div>
+                                <ul>
+                                    <li><span>Hero-Level: </span> <span id="hero-level"></span></li>
+                                    <li><span>Speed: </span><span id="hero-speed"></span></li>
+                                    <li><span>Luck: </span><span id="hero-luck"></span></li>
+                                    <li><span>Score: </span><span id="hero-score"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="potions-menu" class="invisible">
+                        <input type="submit" id="potion-s" class="potion-button potion-button-1">
+                        <input type="submit" id="potion-m" class="potion-button potion-button-2">
+                        <input type="submit" id="potion-l" class="potion-button potion-button-3">
+                    </div>
+
+                    <div id="event-window" class="invisible centered">
+                        <div id="event-text" class="text-window"></div>
+                        <input type="button" id="hide-event-button" value="Close" class="bar-button"/>
+                    </div>
+
+                    <div id="fighting-screen" class="invisible overlay">
+                        <div id="fight-top-bar" class="top-bar"></div>
+                        <div id="player-fight-health-container" class="top-left-bar">
+                            <span id="player-fight-health"></span>/<span id="player-fight-max-health"></span>
+                            <div id="player-health-bar" class="progress-bar">
+                                <div id="player-health-outer" class="progress-bar-outer">
+                                    <div id="player-fight-health-inner" class="health-bar-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="monster-fight-health-container" class="top-right-bar">
+                            <span id="monster-fight-health"></span>/<span id="monster-fight-max-health"></span>
+                            <div id="monster-health-bar" class="progress-bar">
+                                <div id="monster-health-outer" class="progress-bar-outer">
+                                    <div id="monster-fight-health-inner" class="health-bar-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="sprite-player" class="sprite-container"></div>
+                        <div id="sprite-monster" class="sprite-container"></div>
+                        <div id="sprite-mimic" class="sprite-container invisible"></div>
+
+                        <div id="fighting-options" class="centered">
+                            <ul class="button-list">
+                                <li><input type="button" id="attack" value="Attack" class="bar-button"></li>
+                                <li><input type="button" id="use-potion" value="Use Potion" class="bar-button"></li>
+                            </ul>
+                        </div>
+                        <div id="skills" class="invisible centered">
+                            <ul>
+                                <li>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <input type="button" id="s0" class="bar-button">
+                                                <input type="button" id="s1" class="bar-button">
+                                            </td>
+                                            <td>
+                                                <input type="button" id="s2" class="bar-button">
+                                                <input type="button" id="s3" class="bar-button">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <input type="button" id="backAttack" value="Back" class="bar-button">
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="fight-end" class="invisible centered">
+                            <div id="fight-end-message" class="text-window"></div>
+                            <input type="button" id="leave-fight-end" value="Leave Fight" class="bar-button">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tiles"></div>
+            </div>
+        </div>
+
+        <div id="portrait-message">
+            <p>
+                Works only in landscape mode!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

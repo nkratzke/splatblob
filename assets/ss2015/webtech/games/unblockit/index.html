@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    <title>WebTechProjekt</title>
+
+    <link rel="stylesheet" href="styles/style.css"> 
+    
+</head>
+
+<body>
+
+  <h1>UnBlock IT</h1>
+  
+  <div id="game">
+          <div id="levelbar" class="bar">
+               <button id="prev"></button>  
+               <h2  id="levelText">&nbsp;</h2>
+               <button  id="next"></button>
+          </div>
+        
+          <div id="field"></div>
+          
+          <div id="bottombar" class="bar clearfix">
+               <button id="reload" class="baritem"></button>
+                              
+               <fieldset class="baritem">
+                    <legend>Moves</legend>
+                    <span id="moves"></span>
+               </fieldset>
+               <fieldset class="baritem">
+                    <legend>Best</legend>
+                    <span id="best"></span>
+               </fieldset>
+               
+               <a href="#helpBox" class="baritem">
+                   <button id="help"></button>
+               </a>
+          </div>
+          
+          <div id="helpBox" class="dialogBox">
+              <div>
+                  <a href="#close" title="Close" class="close">X</a>               
+                  <h2>How to Play</h2>
+                  <p>
+                      Ziel des Spiels ist es, den roten Block nach rechts zum roten Strich zu navigieren.
+                  </p>
+                  <p>
+                      Dabei können horizontale Blöcke können nur nach links und rechts verschoben werden, vertikale Blöcke nur nach oben und unten.
+                  </p>     
+                  <p>
+                      Orangene Blöcke können auf jeden freien Bereich bewegt werden.
+                  </p>
+                  <p>
+                      Graue Blöcke können nicht bewegt werden.
+                  </p>
+                  <p>
+                      Viel Erfolg! :-)
+                  </p>               
+                         
+              </div>
+          </div>
+  </div>
+  <div id="copyright">
+    Copyright by Marco Buchholz, Timo Hamann &amp; Florian Richter
+  </div>
+
+<script type="application/dart" src="unblockmeclient.dart"></script>
+<script data-pub-inline src="packages/browser/dart.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "scoreCherry": 200,
+  "scorePill": 50,
+  "scorePowerPill" : 100,
+  "scoreSingleGhost" : 200,
+  "GamekeyHost": "212.201.22.169",
+  "GamekeyPort" : 50001,
+  "GamekeyID" : "db4413fb-d02e-4048-b2f3-f78dee77e4c0",
+  "GamekeySecret": "3ac6c71309d4e012"
+}

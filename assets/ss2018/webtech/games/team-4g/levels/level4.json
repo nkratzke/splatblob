@@ -1,0 +1,17 @@
+{
+	"name": "Level 4",
+	"config": {
+		"platformLength": 100,
+		"ballSpeed":57,
+		"bricksPerRow": 7,
+		"rowsWithBricks": 4,
+		"specialBricksEnabled": true,
+		"specialBricks": {
+			"heavy": 4,
+			"speed": 2,
+			"explosion": 2,
+			"slow": 1,
+			"teleport": 4
+		}
+	}
+}

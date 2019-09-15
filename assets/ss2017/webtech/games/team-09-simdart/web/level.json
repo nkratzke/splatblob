@@ -1,0 +1,137 @@
+{
+	"Levelnumbers": [
+		{
+			"Levelnumber": 1,
+			"Field": [
+				"3,1,2,2,2,2,2,2,2,2",
+				"2,1,2,1,1,1,1,1,1,2",
+				"2,1,2,1,2,2,2,2,2,2",
+				"2,1,2,1,2,1,1,1,1,1",
+				"2,1,2,1,2,1,2,2,2,2",
+				"2,1,2,1,2,1,2,1,1,2",
+				"2,1,2,1,2,1,2,1,1,2",
+				"2,1,2,1,2,1,4,1,1,2",
+				"2,1,2,1,2,1,1,1,1,2",
+				"2,2,2,1,2,2,2,2,2,2"
+
+			],
+			"Points": 0,
+			"Background" : "backgruen.jpg",
+			"Gamefield" : "level1.png",
+			"Preview" : "b2.jpg",
+			"Sphere1" : "coconutred",
+			"Sphere2" : "coconutblue",
+			"Sphere3" : "coconutyellow",
+			"Sphere4" : "coconutgreen",
+			"Bomb" : "bomb",
+			"CutterH" : "cutterH",
+			"CutterV" : "cutterV"
+
+		},
+		{
+			"Levelnumber": 2,
+			"Field": [
+				"3,1,2,2,2,2,2,2,2,2",
+				"2,1,2,1,1,1,1,1,1,2",
+				"2,1,2,1,2,2,2,2,1,2",
+				"2,1,2,1,2,1,1,2,1,2",
+				"2,1,2,1,2,1,1,2,1,2",
+				"2,1,2,1,4,1,1,2,1,2",
+				"2,1,2,1,1,1,1,2,1,2",
+				"2,1,2,2,2,2,2,2,1,2",
+				"2,1,1,1,1,1,1,1,1,2",
+				"2,2,2,2,2,2,2,2,2,2"
+			],
+			"Points": 0,
+			"Background" : "backmarone.png",
+			"Gamefield" : "level2.png",
+			"Preview" : "hilfe.jpg",
+			"Sphere1" : "red",
+			"Sphere2" : "blue",
+			"Sphere3" : "yellow",
+			"Sphere4" : "green",
+			"Bomb" : "bomb",
+			"CutterH" : "cutterH",
+			"CutterV" : "cutterV"
+
+		},
+		{
+			"Levelnumber": 3,
+			"Field": [
+				"2,2,2,2,2,2,2,2,2,2",
+				"4,1,1,1,1,1,1,1,1,2",
+				"1,1,1,1,1,1,1,1,1,2",
+				"2,2,2,2,2,2,2,2,2,2",
+				"2,1,1,1,1,1,1,1,1,1",
+				"2,2,2,2,2,2,2,2,2,2",
+				"1,1,1,1,1,1,1,1,1,2",
+				"2,2,2,2,2,2,2,2,2,2",
+				"2,1,1,1,1,1,1,1,1,1",
+				"2,2,2,2,2,2,2,2,2,3"
+			],
+			"Points": 0,
+			"Background" : "backblau.jpg",
+			"Gamefield" : "level3.png",
+			"Preview" : "bb.jpg",
+			"Sphere1" : "red",
+			"Sphere2" : "blue",
+			"Sphere3" : "yellow",
+			"Sphere4" : "green",
+			"Bomb" : "bomb",
+			"CutterH" : "cutterH",
+			"CutterV" : "cutterV"
+		},
+		{
+			"Levelnumber": 4,
+			"Field": [
+				"2,2,2,2,1,1,2,2,2,2",
+				"2,1,1,2,2,2,2,1,1,2",
+				"2,1,1,1,1,1,1,1,1,2",
+				"2,1,1,1,1,1,1,1,1,2",
+				"2,2,2,2,1,4,2,2,2,2",
+				"2,2,2,3,3,2,2,2,2,2",
+				"2,1,1,1,1,1,1,1,1,2",
+				"2,1,1,1,1,1,1,1,1,2",
+				"2,1,1,2,2,2,2,1,1,2",
+				"2,2,2,2,1,1,2,2,2,2"
+			],
+			"Points": 0,
+			"Background" : "b2.jpg",
+			"Gamefield" : "level4.png",
+			"Preview" : "grunen.jpg",
+			"Sphere1" : "ballred",
+			"Sphere2" : "ballblue",
+			"Sphere3" : "ballyellow",
+			"Sphere4" : "ballgreen",
+			"Bomb" : "bomb",
+			"CutterH" : "cutterH",
+			"CutterV" : "cutterV"
+		},
+		{
+			"Levelnumber": 5,
+			"Field": [
+				"3,2,2,2,2,2,2,2,2,2",
+				"2,2,2,2,2,2,2,2,2,2",
+				"2,1,1,1,1,1,1,1,1,1",
+				"2,2,2,2,2,2,2,2,2,2",
+				"1,1,1,1,1,1,1,1,1,2",
+				"2,2,2,2,2,2,2,2,2,2",
+				"2,1,1,1,1,1,1,1,1,1",
+				"2,2,2,2,2,2,2,2,2,2",
+				"2,2,2,2,2,2,2,2,2,2",
+				"2,2,2,2,2,2,2,2,2,4"
+			],
+			"Points": 0,
+			"Background" : "backblau.jpg",
+			"Gamefield" : "level5.png",
+			"Preview" : "level.jpg",
+			"Sphere1" : "red",
+			"Sphere2" : "blue",
+			"Sphere3" : "yellow",
+			"Sphere4" : "green",
+			"Bomb" : "bomb",
+			"CutterH" : "cutterH",
+			"CutterV" : "cutterV"
+		}
+	]
+}

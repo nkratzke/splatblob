@@ -1,0 +1,653 @@
+{
+  "stone": [
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 1,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 18,
+          "posY": 5
+        },
+        {
+          "posX": 19,
+          "posY": 5
+        },
+        {
+          "posX": 18,
+          "posY": 6
+        },
+        {
+          "posX": 19,
+          "posY": 6
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 1,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 21,
+          "posY": 5
+        },
+        {
+          "posX": 22,
+          "posY": 5
+        },
+        {
+          "posX": 21,
+          "posY": 6
+        },
+        {
+          "posX": 22,
+          "posY": 6
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 1,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 24,
+          "posY": 5
+        },
+        {
+          "posX": 25,
+          "posY": 5
+        },
+        {
+          "posX": 24,
+          "posY": 6
+        },
+        {
+          "posX": 25,
+          "posY": 6
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 2,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 27,
+          "posY": 8
+        },
+        {
+          "posX": 28,
+          "posY": 8
+        },
+        {
+          "posX": 27,
+          "posY": 9
+        },
+        {
+          "posX": 28,
+          "posY": 9
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 2,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 30,
+          "posY": 8
+        },
+        {
+          "posX": 31,
+          "posY": 8
+        },
+        {
+          "posX": 30,
+          "posY": 9
+        },
+        {
+          "posX": 31,
+          "posY": 9
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 2,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 33,
+          "posY": 8
+        },
+        {
+          "posX": 34,
+          "posY": 8
+        },
+        {
+          "posX": 33,
+          "posY": 9
+        },
+        {
+          "posX": 34,
+          "posY": 9
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 3,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 36,
+          "posY": 11
+        },
+        {
+          "posX": 37,
+          "posY": 11
+        },
+        {
+          "posX": 36,
+          "posY": 12
+        },
+        {
+          "posX": 37,
+          "posY": 12
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 3,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 39,
+          "posY": 11
+        },
+        {
+          "posX": 40,
+          "posY": 11
+        },
+        {
+          "posX": 39,
+          "posY": 12
+        },
+        {
+          "posX": 40,
+          "posY": 12
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 3,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 42,
+          "posY": 11
+        },
+        {
+          "posX": 43,
+          "posY": 11
+        },
+        {
+          "posX": 42,
+          "posY": 12
+        },
+        {
+          "posX": 43,
+          "posY": 12
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 2,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 27,
+          "posY": 14
+        },
+        {
+          "posX": 28,
+          "posY": 14
+        },
+        {
+          "posX": 27,
+          "posY": 15
+        },
+        {
+          "posX": 28,
+          "posY": 15
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 2,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 30,
+          "posY": 14
+        },
+        {
+          "posX": 31,
+          "posY": 14
+        },
+        {
+          "posX": 30,
+          "posY": 15
+        },
+        {
+          "posX": 31,
+          "posY": 15
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 2,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 33,
+          "posY": 14
+        },
+        {
+          "posX": 34,
+          "posY": 14
+        },
+        {
+          "posX": 33,
+          "posY": 15
+        },
+        {
+          "posX": 34,
+          "posY": 15
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 1,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 18,
+          "posY": 17
+        },
+        {
+          "posX": 19,
+          "posY": 17
+        },
+        {
+          "posX": 18,
+          "posY": 18
+        },
+        {
+          "posX": 19,
+          "posY": 18
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 1,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 21,
+          "posY": 17
+        },
+        {
+          "posX": 22,
+          "posY": 17
+        },
+        {
+          "posX": 21,
+          "posY": 18
+        },
+        {
+          "posX": 22,
+          "posY": 18
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 1,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 24,
+          "posY": 17
+        },
+        {
+          "posX": 25,
+          "posY": 17
+        },
+        {
+          "posX": 24,
+          "posY": 18
+        },
+        {
+          "posX": 25,
+          "posY": 18
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 4,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 45,
+          "posY": 11
+        },
+        {
+          "posX": 46,
+          "posY": 11
+        },
+        {
+          "posX": 45,
+          "posY": 12
+        },
+        {
+          "posX": 46,
+          "posY": 12
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 4,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 45,
+          "posY": 9
+        },
+        {
+          "posX": 46,
+          "posY": 9
+        },
+        {
+          "posX": 45,
+          "posY": 8
+        },
+        {
+          "posX": 46,
+          "posY": 8
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 4,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 45,
+          "posY": 6
+        },
+        {
+          "posX": 46,
+          "posY": 6
+        },
+        {
+          "posX": 45,
+          "posY": 5
+        },
+        {
+          "posX": 46,
+          "posY": 5
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 4,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 45,
+          "posY": 14
+        },
+        {
+          "posX": 46,
+          "posY": 14
+        },
+        {
+          "posX": 45,
+          "posY": 15
+        },
+        {
+          "posX": 46,
+          "posY": 15
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 4,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 45,
+          "posY": 17
+        },
+        {
+          "posX": 46,
+          "posY": 17
+        },
+        {
+          "posX": 45,
+          "posY": 18
+        },
+        {
+          "posX": 46,
+          "posY": 18
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 4,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 48,
+          "posY": 9
+        },
+        {
+          "posX": 49,
+          "posY": 9
+        },
+        {
+          "posX": 48,
+          "posY": 8
+        },
+        {
+          "posX": 49,
+          "posY": 8
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 4,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 48,
+          "posY": 11
+        },
+        {
+          "posX": 49,
+          "posY": 11
+        },
+        {
+          "posX": 48,
+          "posY": 12
+        },
+        {
+          "posX": 49,
+          "posY": 12
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 4,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 48,
+          "posY": 14
+        },
+        {
+          "posX": 49,
+          "posY": 14
+        },
+        {
+          "posX": 48,
+          "posY": 15
+        },
+        {
+          "posX": 49,
+          "posY": 15
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 4,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 51,
+          "posY": 11
+        },
+        {
+          "posX": 52,
+          "posY": 11
+        },
+        {
+          "posX": 51,
+          "posY": 12
+        },
+        {
+          "posX": 52,
+          "posY": 12
+        }
+      ]
+    }
+
+  ]
+}

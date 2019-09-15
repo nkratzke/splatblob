@@ -1,0 +1,85 @@
+{
+  "scrollSpeed": 4,
+  "moveTimerMillis": 30,
+  "checkTimerMillis": 333,
+  "beginnTop": 50,
+  "bars":
+      [
+        {
+          "whitespaces":
+          [
+            {
+              "id": "ws1",
+              "type": "static",
+              "width": 30,
+              "marginLeft": 10
+            }
+          ],
+          "powerups":
+          [
+			{
+			  "id": "pu1",
+			  "type": "speed",
+			  "marginLeft": 35
+			}
+          ]
+        },
+		{
+          "whitespaces":
+          [
+            {
+              "id": "ws2",
+              "type": "static",
+              "width": 20,
+              "marginLeft":60
+            }
+          ],
+          "powerups":
+          [
+			{
+			  "id": "pu2",
+			  "type": "minimize",
+			  "marginLeft": 15
+			}
+          ]
+        },
+		{
+          "whitespaces":
+          [
+            {
+              "id": "ws3",
+              "type": "static",
+              "width": 15,
+              "marginLeft": 70
+            }
+          ],
+          "powerups":
+          [
+
+          ]
+        },
+		{
+          "whitespaces":
+          [
+            {
+              "id": "ws4",
+              "type": "static",
+              "width": 30,
+              "marginLeft": 50
+            }
+          ],
+          "powerups":
+          [
+
+          ]
+        }
+      ],
+  "fallObjects":
+  [
+    {
+      "id": "fallObj1",
+      "type": "static",
+      "width": 10
+    }
+  ]
+}

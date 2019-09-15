@@ -1,0 +1,387 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: myFirstFont;
+    overflow: hidden;
+}
+
+#leftSite {
+    width: 50%;
+    height: 100%;
+    left: 0%;
+    background: transparent;
+    position: absolute;
+}
+
+#rightSite {
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    background: transparent;
+    position: absolute;
+}
+
+#tutorialWindow {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    background-image:url("resources/tutorial.png");
+    z-index: 20;
+    visibility: hidden;
+    border-radius: 25px;
+}
+
+#tutorialButton {
+    width: 70%;
+    height: 30%;
+    position: relative;
+    background: url("resources/button1.png");
+    background-size: 100% 100%;
+    border: none;
+    font-size: 4vmax;
+    font-family: myFirstFont;
+    top: 70%;
+    left: 15%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+
+#tutorialMessage {
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    right: 5%;
+    font-size: 1.5vmax ;
+    font-family: myFirstFont;
+    word-wrap: normal;
+}
+
+#tutorialPicture {
+    position: absolute;
+    background-size: contain;
+    background: url("resources/bomb.png") no-repeat;
+    left: 10%;
+    top: 30%;
+    width: 20%;
+    height: 20%;
+}
+
+#startScreen {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("resources/back.png");
+    background-size: 100% 130%;
+    overflow: hidden;
+}
+
+#gameName {
+    width: 60%;
+    height: 20%;
+    font-size: 4.5vmax;
+    position: absolute;
+    top: 47%;
+    left: 40%;
+}
+
+#resetButton{
+    width: 30%;
+    height: 30%;
+    position: relative;
+    font-size: 4vmax;
+    z-index: 2;
+    background: url("resources/button1.png");
+    background-size: 100% 100%;
+    border: none;
+    font-family: myFirstFont;
+    padding-right: 2%;
+    padding-bottom: 1%;
+}
+
+#startButtonStartScreen {
+    width: 60%;
+    height: 20%;
+    position: absolute;
+    background: url("resources/button1.png");
+    background-size: 100% 100%;
+    border: none;
+    font-size: 4.5vmax;
+    font-family: myFirstFont;
+    top: 53%;
+    left: 40%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    z-index: 1;
+}
+
+#tutorialButtonStartScreen {
+    width: 60%;
+    height: 20%;
+    position: absolute;
+    background: url("resources/button1.png");
+    background-size: 100% 100%;
+    border: none;
+    font-size: 4.5vmax;
+    font-family: myFirstFont;
+    top: 70%;
+    left: 40%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    z-index: 20;
+}
+
+#sunStart {
+    width: 40%;
+    height: 30%;
+    background: url("resources/sun.png");
+    background-size: 100% 100%;
+    bottom: 75%;
+    left: 63%;
+    position: absolute;
+}
+
+#treeStart {
+    width: 70%;
+    height: 105%;
+    background: url("resources/baum.png");
+    background-size: 100% 100%;
+    bottom: -5%;
+    left: -5%;
+    position: absolute;
+}
+
+#highscoreStartScreen {
+    width: 60%;
+    height: 20%;
+    font-size: 4.5vmax;
+    position: absolute;
+    top: 85%;
+    left: 40%;
+}
+
+#startButton {
+    width: 70%;
+    height: 30%;
+    position: absolute;
+    background: url("resources/button1.png");
+    background-size: 100% 100%;
+    border: none;
+    font-size: 5vmax;
+    font-family: myFirstFont;
+    top: 65%;
+    left: 30%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+
+#textOrientation {
+    width: 70%;
+    height: 30%;
+    font-size: 5vmax;
+    position: absolute;
+    top: 55%;
+    left: 30%;
+}
+
+#orientationInfo {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 150%;
+    position: absolute;
+    background: url("resources/back.png");
+    background-size: 100% 130%;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+#treeOrientation {
+    width: 70%;
+    height: 105%;
+    background: url("resources/baum.png");
+    background-size: 100% 100%;
+    bottom: -5%;
+    left: -5%;
+    position: absolute;
+    z-index: -10;
+}
+
+#sunOrientation {
+    width: 40%;
+    height: 30%;
+    background: url("resources/sun.png");
+    background-size: 100% 100%;
+    bottom: 75%;
+    left: 63%;
+    position: absolute;
+    z-index: -11;
+}
+
+#basket {
+    width: 16.5%;
+    height: 30%;
+    background: url("resources/korb.png");
+    background-size: 100% 100%;
+    bottom: -2%;
+    left: 85%;
+    position: absolute;
+    z-index: -1;
+}
+
+#treeLeft {
+    width: 31%;
+    height: 105%;
+    background: url("resources/baum.png");
+    background-size: 100% 100%;
+    bottom: -5%;
+    left: -5%;
+    position: absolute;
+    z-index: -6;
+}
+
+#treeRight {
+    width: 31%;
+    height: 105%;
+    background: url("resources/baum.png");
+    background-size: 100% 100%;
+    bottom: -5%;
+    left: 82%;
+    position: absolute;
+    z-index: -6;
+    transform: scaleX(-1);
+}
+
+#grass1 {
+     width: 110%;
+     height: 20%;
+     background: url("resources/rasen.png");
+     background-size: 100% 100%;
+     bottom: -10%;
+     left: -5%;
+     position: absolute;
+     z-index: 10;
+     transform: scaleX(-1);
+ }
+
+#grass2 {
+    width: 100%;
+    height: 20%;
+    background: url("resources/rasen.png");
+    background-size: 100% 100%;
+    bottom: -6%;
+    left: 0%;
+    position: absolute;
+    z-index: -7;
+}
+
+#sun {
+    width: 27%;
+    height: 31%;
+    background: url("resources/sun.png");
+    background-size: 100% 100%;
+    bottom: 75%;
+    left: 63%;
+    position: absolute;
+    z-index: -11;
+}
+
+#cloud1 {
+    width: 30%;
+    height: 30%;
+    background: url(resources/wolke1.png);
+    background-size: 100% 100%;
+    bottom: 70%;
+    left: 20%;
+    position: absolute;
+    z-index: -12;
+}
+
+#cloud2 {
+    width: 30%;
+    height: 30%;
+    background: url(resources/wolke2.png);
+    background-size: 100% 100%;
+    bottom: 75%;
+    left: 35%;
+    position: absolute;
+    z-index: -13;
+}
+
+#frank {
+    width: 15.6%;
+    height: 27.8%;
+    position: absolute;
+    background: url("resources/frank.png");
+    background-size: 100% 100%;
+    bottom: 0%;
+    z-index: 0;
+}
+
+#field {
+    font-size: 5vmax;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("resources/back.png");
+    background-size: 100% 125%;
+    z-index: -2;
+    overflow: hidden;
+}
+
+#attemps {
+    height: 5%;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    background: url("resources/herts.png");
+    z-index: 30;
+}
+
+#score {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vmax;
+}
+
+#level {
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 3vmax;
+}
+
+#gameoverScreen{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background-color: transparent;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+#endscore{
+    padding-top: 20%;
+    text-align: center;
+    font-size: 4vmax;
+}
+
+#highscore {
+    text-align: center;
+    font-size: 4vmax;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/painting-with-chocolate.regular.ttf);
+}

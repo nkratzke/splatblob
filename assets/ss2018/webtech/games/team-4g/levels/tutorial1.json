@@ -1,0 +1,15 @@
+{
+	"name": "Tutorial 1",
+	"config": {
+		"platformLength": 100,
+		"ballSpeed":50,
+		"bricksPerRow": 3,
+		"rowsWithBricks": 1,
+		"specialBricksEnabled": true,
+		"specialBricks": {
+			"heavy": 1,
+			"speed": 1,
+			"slow": 1
+		}
+	}
+}

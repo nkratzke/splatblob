@@ -1,0 +1,287 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+@media only screen {
+    html, body {
+        width: 100%;
+        height: 70%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        background: url("./img/grey_wash_wall.png");
+    }
+    #controlhelp {
+        float: left;
+        color: white;
+    }
+    #header {
+        margin: 0 auto;
+        margin-top: 6%;
+        width: 500px;
+        margin-bottom: 7px;
+    }
+
+    #container {
+        margin: 0 auto;
+        width: 500px;
+        height: auto;
+    }
+
+    #copyright {
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 500px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    #wrapper {
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    #startButton {
+        background: #000000;
+        color: #ffffff;
+        font-size: 2em;
+        position: absolute;
+        margin-top: 10px;
+        padding: 12px;
+    }
+
+    #nextLevelButton {
+        background: #000000;
+        color: #ffffff;
+        font-size: 2em;
+        position: absolute;
+        margin-top: 10px;
+        padding: 12px;
+        display: none;
+    }
+
+    #buttonarea {
+        margin: 0 auto;
+        width: 100px;
+        height: 75px;
+    }
+
+    #overlaywrapper {
+        position: absolute;
+        background-color: grey;
+        width: 100%;
+        top: 0;
+    }
+
+    #overlaycontent {
+        margin: 0 auto;
+        width: 500px;
+        color: white;
+        text-align: center;
+    }
+
+    #highscoreform {
+        margin-bottom: 20px;
+    }
+
+    #stats {
+        color: #ffffff;
+    }
+
+    #tanktable {
+        background-image: url(./img/bg.jpg);
+        width: 500px;
+    }
+
+    #tanktable td {
+        width: 11px;
+        height: 11px;
+    }
+
+    #warningoverlay {
+        margin: 0 auto;
+        width: 540px;
+        background-color: red;
+    }
+
+    /* Zum testen der Update Methode um etwas zu sehen */
+    .playerTank {
+        background: green;
+    }
+
+    .enemyTank {
+        background: lightsteelblue;
+    }
+
+    .wall {
+        background: lightcoral;
+    }
+
+    .base {
+        background: #000000;
+    }
+
+    .bullet {
+        border-radius: 50%;
+        background: #000000;
+    }
+
+    .lenkrakete {
+        border-radius: 50%;
+        background: deeppink;
+    }
+
+    #steuerkreuz {
+        display: none;
+    }
+}
+
+@media (min-device-width: 300px)
+and (max-device-width: 700px) and (orientation: portrait) {
+    html {
+        font-size: 100%;
+    }
+    #controlhelp {
+        display: none;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    #tanktable {
+        width: 100vw;
+        height: 100vw;
+    }
+
+    #tanktable td {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    #container {
+        width: 100%;
+        height: auto;
+    }
+
+    #overlaycontent {
+        width: 100%;
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    #copyright {
+        width: 100%;
+    }
+
+    #wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    #warningoverlay {
+        width: 100%;
+    }
+
+    #header img {
+        width: 50%;
+    }
+
+    #steuerkreuz {
+        width: 100%;
+        display: table;
+    }
+
+    #steuerkreuz td {
+        width: 30%;
+        height: 30%;
+        text-align: center;
+    }
+
+    .button {
+        background: #3e6700;
+
+    }
+
+    #gamebuttons {
+        display: block;
+    }
+
+    #buttonLeft, #buttonDown, #buttonRight, #buttonUp, #buttonShoot, #buttonLenkrakete {
+        margin: 0 auto;
+    }
+}
+
+@media (min-device-width: 600px)
+and (max-device-width: 960px) and (orientation: landscape) {
+    html {
+        font-size: 100%;
+    }
+    #controlhelp {
+        display: none;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    #tanktable {
+        width: 50vw;
+        height: 50vw;
+        float: left;
+    }
+
+    #tanktable td {
+        width: 1vw;
+        height: 1vw;
+    }
+
+    #container {
+        width: 100%;
+        height: auto;
+    }
+
+    #overlaycontent {
+        width: 100%;
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    #copyright {
+        width: 100%;
+    }
+
+    #wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    #warningoverlay {
+        width: 100%;
+    }
+
+    #header img {
+        width: 50%;
+    }
+
+    #steuerkreuz {
+        width: 50vw;
+        float: left;
+        display: table;
+    }
+
+    #steuerkreuz td {
+        width: 30%;
+        height: 30%;
+    }
+
+    .button {
+        background: #3e6700;
+        text-align: center;
+    }
+
+    #buttonLeft, #buttonDown, #buttonRight, #buttonUp, #buttonShoot, #buttonLenkrakete {
+        margin: 0 auto;
+    }
+}

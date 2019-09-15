@@ -1,0 +1,49 @@
+{
+	"neededPoints": 1000,
+	"nextObstacleDistance": 30,
+	"possibleObstacles": [
+		[{
+			"posX": 0,
+			"posY": 0,
+			"width": 2,
+			"height": 5
+		}, {
+			"posX": 0,
+			"posY": 0,
+			"width": 3,
+			"height": 2
+		}],
+		[{
+			"posX": 0,
+			"posY": 0,
+			"width": 2,
+			"height": 3
+		}, {
+			"posX": 0,
+			"posY": 0,
+			"width": 5,
+			"height": 2
+		}],
+		[{
+			"posX": 0,
+			"posY": 0,
+			"width": 7,
+			"height": 1
+		}, {
+			"posX": 1,
+			"posY": 1,
+			"width": 5,
+			"height": 1
+		}, {
+			"posX": 2,
+			"posY": 2,
+			"width": 3,
+			"height": 1
+		}, {
+			"posX": 3,
+			"posY": 3,
+			"width": 1,
+			"height": 1
+		}]
+	]
+}

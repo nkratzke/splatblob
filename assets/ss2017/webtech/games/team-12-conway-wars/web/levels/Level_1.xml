@@ -1,0 +1,26 @@
+<game>
+    <players count="1"></players>
+    <ais count="1"></ais>
+    <field width="10" height="10">
+        <cell player="0" life = "1" weight = "1" data_x = "1" data_y = "1"></cell>
+        <cell player="0" life = "1" weight = "1" data_x = "1" data_y = "2"></cell>
+        <cell player="0" life = "1" weight = "1" data_x = "2" data_y = "1"></cell>
+        <cell player="0" life = "1" weight = "1" data_x = "2" data_y = "2"></cell>
+
+        <cell player="0" life = "1" weight = "1" data_x = "1" data_y = "7"></cell>
+        <cell player="0" life = "1" weight = "1" data_x = "2" data_y = "7"></cell>
+        <cell player="0" life = "1" weight = "1" data_x = "3" data_y = "7"></cell>
+
+        <cell player="1" life = "1" weight = "1" data_x = "8" data_y = "8"></cell>
+        <cell player="1" life = "1" weight = "1" data_x = "7" data_y = "8"></cell>
+        <cell player="1" life = "1" weight = "1" data_x = "8" data_y = "7"></cell>
+        <cell player="1" life = "1" weight = "1" data_x = "7" data_y = "7"></cell>
+
+        <cell player="1" life = "1" weight = "1" data_x = "7" data_y = "1"></cell>
+        <cell player="1" life = "1" weight = "1" data_x = "7" data_y = "2"></cell>
+        <cell player="1" life = "1" weight = "1" data_x = "7" data_y = "3"></cell>
+    </field>
+    <powerups>
+
+    </powerups>
+</game>

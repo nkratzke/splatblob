@@ -1,0 +1,65 @@
+/*
+* Styling for tablets with large screens (iPad plus for example)
+*/
+
+h3{
+    font-size: 100%;
+    margin-top: 5%;
+}
+
+.overlay{
+    font-size: 18pt;
+}
+
+#loadingOverlay{
+    font-size: xx-large;
+}
+
+#loadingImg{
+    width: 20%;
+    margin-top: 50%;
+}
+
+#tableManual{
+    height: 65%;
+}
+
+.manualItem{
+    width: 40%;
+}
+
+#tableManual img{
+    width: 25%;
+}
+
+#menuOverlay table{
+    margin-top: 35%;
+}
+
+#menuOverlay table tr{
+    line-height: 250%;
+}
+
+#highscore{
+    margin-top: 30%;
+}
+
+#creditsContent{
+    margin-bottom: 20%;
+}
+
+#autopilotFeedback{
+    font-size: 4em;
+}
+
+#topThreeScores tr td{
+    width: 15%;
+}
+
+#gameField{
+    width: 85%;
+}
+
+#information{
+    width: 85%;
+}

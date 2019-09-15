@@ -1,0 +1,115 @@
+{
+  "level": [{
+    "zeit" : 30,
+    "n" : 2,
+    "m" : 3,
+    "anzahlSchaetze" : 2,
+    "anzahlFallen" : 2,
+    "life" : 2,
+    "required" : 2
+  },
+    {
+      "zeit" : 30,
+      "n" : 2,
+      "m" : 4,
+      "anzahlSchaetze" : 3,
+      "anzahlFallen" : 2,
+      "life" : 1,
+      "required" : 2
+
+    },
+    {
+      "zeit" : 40,
+      "n" : 3,
+      "m" : 4,
+      "anzahlSchaetze" : 3,
+      "anzahlFallen" : 3,
+      "life" : 1,
+      "required" : 2
+
+    },
+    {
+      "zeit" : 40,
+      "n" : 3,
+      "m" : 4,
+      "anzahlSchaetze" : 4,
+      "anzahlFallen" : 3,
+      "life" : 1,
+      "required" : 3
+
+    },
+    {
+      "zeit" : 50,
+      "n" : 4,
+      "m" : 4,
+      "anzahlSchaetze" : 5,
+      "anzahlFallen" : 4,
+      "life" : 1,
+      "required" : 4
+
+    },
+    {
+      "zeit" : 40,
+      "n" : 4,
+      "m" : 4,
+      "anzahlSchaetze" : 4,
+      "anzahlFallen" : 5,
+      "life" : 1,
+      "required" : 4
+
+    },
+    {
+      "zeit" : 50,
+      "n" : 4,
+      "m" : 5,
+      "anzahlSchaetze" : 6,
+      "anzahlFallen" : 6,
+      "life" : 1,
+      "required" : 4
+
+    },
+    {
+      "zeit" : 60,
+      "n" : 5,
+      "m" : 6,
+      "anzahlSchaetze" : 6,
+      "anzahlFallen" : 7,
+      "life" : 1,
+      "required" : 4
+
+    },
+    {
+      "zeit" : 60,
+      "n" : 6,
+      "m" : 6,
+      "anzahlSchaetze" : 7,
+      "anzahlFallen" : 7,
+      "life" : 1,
+      "required" : 5
+
+    },
+    {
+      "zeit" : 65,
+      "n" : 6,
+      "m" : 6,
+      "anzahlSchaetze" : 6,
+      "anzahlFallen" : 7,
+      "life" : 1,
+      "required" : 4
+
+    },
+    {
+      "zeit" : 70,
+      "n" : 8,
+      "m" : 6,
+      "anzahlSchaetze" : 6,
+      "anzahlFallen" : 8,
+      "life" : 1,
+      "required" : 5
+
+    }],
+  "Schaetze": ["diamant1","diamant2","schatzkiste3","gold","gold1","diamant3","coins"],
+  "Fallen": ["trapSpide","trapFlower","trapMario","pirate"],
+  "Nieten": ["niete1","niete2","niete3"],
+  "allowedPowerUps": ["LENS","TORCH","TIMEFORWARD","LIFE"]
+}

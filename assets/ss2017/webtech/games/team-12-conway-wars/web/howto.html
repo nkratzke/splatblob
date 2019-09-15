@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConwayWars</title>
+    <link rel="stylesheet" href="css/modules/howto/styles.css">
+    <link rel="stylesheet" href="css/modules/all/stars.css">
+    <link rel="stylesheet" href="css/modules/all/header.css">
+    <link rel="stylesheet" href="css/modules/all/elements.css">
+</head>
+
+<body>
+<div id="foreground">
+    <div id="top">
+        <div id="topleft">
+            <div id="textleft">Conway Wars - Staying Alive</div>
+
+            <nav>
+                <ul>
+                    <li><a href="/">Menu</a></li>
+                    <li><a href="game.html">Start Game</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="topright">
+            <div id="textright">Jan-Ole H&uuml;bner<br>Cedric Pump<br>Katja Krause</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="centered">
+            <h1>How to play ConwayWars</h1>
+            <h2>Game of Life</h2>
+            <p>
+                The game ConwayWars is based on Game of Life, designed by John Horton Conway in 1970.<br>
+                This game consists of a x times y grid, containing cells, that are awoken or die depending on their
+                neighbours.
+                There are four rules for the cells state after each iteration.
+            </p>
+            <h3>Rules</h3>
+            <ol>
+                <li>Any alive cell with fewer than two alive neighbours dies of underpopulation</li>
+                <li>Any alive cell with two or three alive neighbours keeps living</li>
+                <li>Any alive cell with more than tree alive neighbours dies of overpopulation</li>
+                <li>Any dead cell with exactly three alive neighbours is awoken in the next generation</li>
+            </ol>
+            <div class="example">
+                <label for="empl1">Underpopulation</label>
+                <img id="empl1" src="images/example1.gif" alt="Example Underpopulation" height="200" width="200">
+            </div>
+            <div class="example">
+                <label for="empl2">Staying Alive</label>
+                <img id="empl2" src="images/example2.gif" alt="Example Stay Alife" height="200" width="200">
+            </div>
+            <div class="example">
+                <label for="empl3">Overpopulation</label>
+                <img id="empl3" src="images/example3.gif" alt="Example Overpopulation" height="200" width="200">
+            </div>
+            <div class="example">
+                <label for="empl4">Awoken</label>
+                <img id="empl4" src="images/example4.gif" alt="Example Awoken" height="200" width="200">
+            </div>
+
+            <h2>Making it a game</h2>
+            <p>
+                To make this an interesting game one defines that each cell belongs to a player and, lets the players
+                interact with the lifecycle to influence the next generation and make one's cells dominate the grid.<br>
+                The cell's player is indicated by the cell's colour. Each time a new cell is awoken it's player depends
+                on witch players their neighbours belong to. A new cell always has 3 neighbours so under normal
+                circumstances
+                it should always be defined.
+            </p>
+            <h2>Interaction</h2>
+            <p>
+                There are two basic types for a player to interact with the game. Each player has his own turn one after
+                another and each turn triggers a new generation of the cell population. For these interactions each
+                player has to invest points. By default each player gets one point at the beginning of his turn.
+            </p>
+            <h3>Kill</h3>
+            <p>
+                A player can invest one point to kill a cell. Sometimes it can even be worth it to kill one own's cell.
+            </p>
+            <h3>Awake</h3>
+            <p>
+                A player can invest two points to awake a cell. For that it's necessary to save points in the first
+                place.
+            </p>
+            <h3>Skip</h3>
+            <p>
+                A player can skip his turn to save points, if he has absolutely no idea what to do or to give his opponent
+                a fair chance.
+            </p>
+            <p>
+                To kill a cell simply click or tap on a living cell. To awake a cell click or tap on a dead cell and
+                to skip click ot tap onto the skip button.
+            </p>
+            <h2>End Of Game</h2>
+            <p>
+                As soon as a player has lost all of his cells he is removed from the game. The last player that still has
+                cells wins and the game ends. If all remaining players lose their cells in the same turn it is a considered a
+                draw.
+            </p>
+            <h2>Preview</h2>
+            <p>
+                To make it easier for players to see what will happen in the next generation, each cell shows a preview. The inner part
+                of the cell shows the cells state in the next generation. Black means that it will die.
+            </p>
+            <h2>Cell Life and Weight</h2>
+            <p>
+                To make the game even more complex, cells can have multiple lives an weight. By default these are
+                one.<br>
+                A cell with more than one life can survive an evolution even if it would die and loses one life instead.
+                If it reaches zero lives it finally dies.<br>
+                To kill a cell with several lives a Player also needs more than one action, reducing the cells lives to
+                zero.<br>
+                On the other hand a cell whose weight is bigger than one counts as more cells when calculating if a
+                neighbour
+                dies, stays alive or is awoken. so a cell could be awoken by a single cell with weight equal to 3.
+            </p>
+            <h2>Powerups</h2>
+            <p>
+                For advanced interaction with the game, players can use powerups to solve difficult levels.
+                These powerups differ in types and can have additional attributes.
+            </p>
+            <h3>Powerup Kill</h3>
+            <div class="powericons">
+                <div class="powericon">
+                    <img id="pow1" src="images/powerupButton_kill.png" alt="powerup button kill" height="100"
+                         width="100"></div>
+                <div class="powericon">
+                    <img id="pow2" src="images/powerupButton_kill_range.png" alt="powerup button kill range"
+                         height="100"
+                         width="100">
+                </div>
+            </div>
+            <p>
+                The Kill powerup acts like a normal Kill action, but has a range and a force.
+                If this powerup comes with a range, it does not only kill the cell selected, but also the surrounding
+                cells
+                within the range.<br>
+                The force defines the amount of lives a cell loses if the player tries to kill it.
+            </p>
+            <h3>Powerup Awake</h3>
+            <div class="powericons">
+                <div class="powericon">
+                    <img id="pow5" src="images/powerupButton_wakeup_1.png" alt="powerup button awake" height="100"
+                         width="100"></div>
+                <div class="powericon">
+                    <img id="pow3" src="images/powerupButton_3life.png" alt="powerup button 3 life" height="100"
+                         width="100"></div>
+                <div class="powericon">
+                    <img id="pow4" src="images/powerupButton_weight.png" alt="powerup button weight" height="100"
+                         width="100">
+                </div>
+            </div>
+            <p>
+                The Awake powerup also acts like a normal awake action, but gives the new cell more lives and/or weight.
+            </p>
+            <h3>Powerup Repeat</h3>
+            <div class="powericons">
+                <div class="powericon">
+                    <img id="pow6" src="images/powerupButton_repeat.png" alt="powerup repeat" height="100"
+                         width="100">
+                </div>
+            </div>
+            <p>
+                The Repeat powerup gives the player a second turn.
+            </p>
+            <h3>Powerup +1 Point</h3>
+            <div class="powericons">
+                <div class="powericon">
+                    <img id="pow7" src="images/powerupButton_plusone.png" alt="powerup plus one" height="100"
+                         width="100">
+                </div>
+            </div>
+            <p>
+                The +1 point powerup gives the player +1 Point. Who would have thought that?
+            </p>
+            <h3>Powerup Ugly Goo</h3>
+            <div class="powericons">
+                <div class="powericon">
+                    <img id="pow8" src="images/powerupButton_goo.png" alt="powerup ugly goo" height="100"
+                         width="100">
+                </div>
+            </div>
+            <p>
+                This powerup spawns a new kind of cell that dominates Player and Ai Cells and slowly takes more and more
+                space if you don't pay attention.
+            </p>
+            <h2>Overview</h2>
+
+            <img id="overview" src="images/overview.png" alt="overview" height="600"
+                 width="600">
+            <a href="http://conwaywars.de/">ConwayWars.de</a><br>
+
+        </div>
+    </div>
+    <div id="main" class="content">
+        <div class="centered"></div>
+    </div>
+</div>
+<div id="background"></div>
+<div id='stars'></div>
+<div id='stars2'></div>
+
+</body>
+
+</html>

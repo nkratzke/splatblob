@@ -1,0 +1,119 @@
+=== Präfixe ===
+Einfach
+Verstärkt
+Abgenutzt
+Abgetragen
+Beschädigt
+Verstärkt
+Gefüttert
+Beschlagen
+Verziehrt
+Gehärtet
+Spröde
+Stabil
+Gerissen
+Zerbochen
+Beschädigt
+Verbessert
+
+=== Armor - Helmet (0) ===
+== Normal/ Magic/ Rare ==
+Einfache Kapuze
+Zaubererkapuze
+Abgetragene Kapuze
+Einfacher Lederhelm
+Verstärkter Lederhelm
+Eisenhelm
+Stahlhelm
+Stahlhaube
+
+== Epic/ Legendary ==
+Aschekapuze
+
+=== Armor - Chest (1) ===
+== Normal/ Magic/ Rare ==
+Abgetragener Wams
+Einfache Robe
+Stoffrüstung
+Einfache Jacke
+Verstärkte Jacke
+Brustschutz
+Stofftunika
+Lederwams
+Ledertunika
+Lederharnisch
+Kederrpstung
+Kettenhemd
+Kettenrüstung
+Plattenharnisch
+Plattenrüstung
+
+== Epic/ Legendary ==
+Aschemantel
+
+=== Armor - Gloves (2) ===
+== Normal/ Magic/ Rare ==
+Stoffhandschuhe
+Lederhandschuhe
+Eisenhandschuh
+Stahlhandschuh
+
+== Epic/ Legendary ==
+Aschehandschuhe
+
+=== Armor - Legs (3) ===
+== Normal/ Magic/ Rare ==
+Stoffhose
+Leinenhose
+Lederhose
+
+== Epic/ Legendary ==
+Aschehose
+
+=== Armor - Boots (4) ===
+== Normal/ Magic/ Legendary ==
+Sandahlen
+Lederstiefel
+Eisenstulpen
+Stahlstulpen
+
+== Epic/ Legendary ==
+Aschestiefel
+
+=== Armor - Shield (5) ===
+== Normal/ Magic/ Rare ==
+Lederschild
+Eisenschild
+Stahlschild
+
+== Epic/ Legendary ==
+Wächter
+Verteidiger des Westen
+
+=== Weapons - Single (6) ===
+== Normal/ Magic/ Rare ==
+Dolch
+Kurzschwert
+Langschwert
+Schlagring
+Knüppel
+Einhandstab
+Keule
+Morgenstern
+Hammer
+Spitzhacke
+
+== Epic/ Legendary ==
+Schattendolch
+
+=== Weapons - Two (7) ===
+== Normal/ Magic/ Rare ==
+Claymore
+Zweihänder
+Zweihandstab
+Kriegshammer
+
+== Epic/ Legendary ==
+Schlächter von Cyseal
+Schänder des Norden
+Drachenzahn

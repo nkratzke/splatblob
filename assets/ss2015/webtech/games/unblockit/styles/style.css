@@ -1,0 +1,227 @@
+@font-face {
+  font-family: 'Chewy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Chewy'), url('../fonts/chewy.woff2') format('woff2');
+}
+
+* {
+  outline: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../rsrc/img/bg.jpg");
+    overflow: hidden;
+}
+
+h1, h2 {
+   text-align:center;
+   font-family: 'Chewy', cursive;
+   font-weight: 400;
+   color: white;
+   text-shadow: 0px 0px 20px #000;
+}
+h1 {
+   font-size: 60px;
+}
+h2 {
+   font-size: 40px;
+   margin: 0;
+   line-height: 1.25em;
+}
+
+#game {
+  width: 300px;
+  margin: 0 auto;
+  border: 5px solid black;
+  background-color: silver;
+  position: relative;
+}
+
+#field {
+  height: 300px;
+  position: relative;  
+}
+#field:after {
+    position: absolute;
+    top: 100px;
+    bottom: 150px;
+    left: 300px;
+    border-left: 5px solid red;
+    content: ''; 
+}
+
+#copyright {
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 5px #000;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.block {
+  background-color: tan;
+  box-sizing: border-box;
+  position: absolute;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.block.main{
+  background-color: red;
+  border-color: maroon;
+}
+.block.jump{
+  background-color: darkorange;
+}
+.block.fixed{
+  background-color: darkgray;
+}
+
+.moving {
+  background-color: rgba(0,255,0,0.75) !important;
+  border-color: green !important;
+  z-index: 10;
+}
+
+#reload{
+  background-image: url("../rsrc/img/refresh57.png");
+}
+#help{
+  background-image: url("../rsrc/img/questionmark5.png");
+}
+#prev{
+  background-image: url("../rsrc/img/chevron20.png");
+  left: 0;
+}
+#prev:hover {
+  background-image: url("../rsrc/img/chevron20_hover.png");
+}
+#next{
+  background-image: url("../rsrc/img/next21.png");
+  right: 0;
+}
+#next:hover {
+  background-image: url("../rsrc/img/next21_hover.png");
+}
+
+button {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+#levelbar button {
+  background-color: transparent;
+  border: hidden;
+  position: absolute;
+  top: 0;
+}
+#bottombar button{
+  border-radius:25px;
+  border:3px solid black;
+}
+#bottombar button:hover {
+  background-color:grey;
+}
+
+#levelbar {
+  border-bottom: 3px solid black;
+}
+#bottombar {
+  border-top: 3px solid black;
+  padding: 5px;
+  width: 290px;
+}
+
+.bar {
+   width: 300px;
+   margin: 0 auto;
+}
+.baritem {
+  float: left;
+}
+.baritem + .baritem {
+  margin-left: 11px;
+}
+
+fieldset{
+  margin: 0;
+  width: 50px;
+  height: 25px;
+  text-align: center;
+}
+
+#prev, #next, #LevelText{
+  display:inline-block;
+}
+
+
+.dialogBox {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.dialogBox:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.dialogBox > div {
+  height: 400px;
+  position: relative;
+  padding: 5px 20px 10px 20px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.close {
+    background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 12px;
+	box-shadow: 1px 1px 3px #000;
+}
+
+
+.close:hover {
+  background-color: grey; 
+}
+
+.clearfix:before, 
+.clearfix:after { 
+  content: " "; 
+  display: table; 
+} 
+
+.clearfix:after { 
+  clear: both; 
+}
+
+.clearfix { 
+  *zoom: 1; /* Für den IE6 und IE7 */ 
+}
+

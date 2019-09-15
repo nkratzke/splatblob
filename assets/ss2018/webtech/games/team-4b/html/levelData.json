@@ -1,0 +1,80 @@
+[
+    {
+      "level": 1,
+      "nextLevelValue": 10,
+      "speedIncrease": 1,
+      "maxSpeed": 5
+    },
+    {
+      "level": 2,
+      "nextLevelValue": 30,
+      "speedIncrease": 1,
+      "maxSpeed": 8
+    },
+    {
+      "level": 3,
+      "nextLevelValue": 60,
+      "speedIncrease": 1,
+      "maxSpeed": 10
+    },
+    {
+      "level": 4,
+      "nextLevelValue": 90,
+      "speedIncrease": 1,
+      "maxSpeed": 13
+    },
+    {
+     "level": 5,
+      "nextLevelValue": 120,
+      "speedIncrease": 1,
+      "maxSpeed": 17
+    },
+    {
+      "level": 6,
+      "nextLevelValue": 150,
+      "speedIncrease": 1,
+      "maxSpeed": 25
+    },
+    {
+      "level": 7,
+      "nextLevelValue": 180,
+      "speedIncrease": 1,
+      "maxSpeed": 28
+    },
+    {
+      "level": 8,
+      "nextLevelValue": 210,
+      "speedIncrease": 1,
+      "maxSpeed": 31
+    },
+    {
+      "level": 9,
+      "nextLevelValue": 240,
+      "speedIncrease": 2,
+      "maxSpeed": 60
+    },
+    {
+      "level": 10,
+      "nextLevelValue": 270,
+      "speedIncrease": 3,
+      "maxSpeed": 90
+    },
+    {
+      "level": 11,
+      "nextLevelValue": 300,
+      "speedIncrease": 3,
+      "maxSpeed": 130
+    },
+    {
+      "level": 12,
+      "nextLevelValue": 330,
+      "speedIncrease": 4,
+      "maxSpeed": 200
+    },
+    {
+      "level": 13,
+      "nextLevelValue": 360,
+      "speedIncrease": 8,
+      "maxSpeed": 999999
+    }
+  ]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 0,
+    "name": "Shabby Harness",
+    "display": "Chest",
+    "type": 2,
+    "value": 1,
+    "quality": 0,
+
+    "icon": "chests/chest_leather_armless.png"
+  },
+  {
+    "id": 1,
+    "name": "Battle Armor",
+    "display": "Chest",
+    "type": 2,
+    "value": 2,
+    "quality": 1,
+    "mods": {
+      "health": 2,
+      "armor": 2
+    },
+    "icon": "chests/chest_leather_strong_shoulders.png"
+  },
+  {
+    "id": 2,
+    "name":"Plated Chest",
+    "display": "Chest",
+    "type": 2,
+    "quality": 2,
+    "value-range": [
+      [3, 4]
+    ],
+    "mods": {
+      "constitution": 2,
+      "armor": 2,
+      "strength": 1
+    },
+    "icon": "chests/chest_moon_armor.png"
+  },
+  {
+    "id": 3,
+    "name": "Plated Chest of Valor",
+    "display": "Chest",
+    "type": 2,
+    "quality": 3,
+    "value-range": [
+      [4, 5]
+    ],
+    "mods": {
+      "constitution": 2,
+      "armor": 3,
+      "strength": 2
+    },
+    "icon":"chests/chest_moon_highlord.png"
+  },
+  {
+    "id": 4,
+    "name": "Highlord Orhan's Bloody Plates",
+    "display": "Chest",
+    "type": 2,
+    "value": 5,
+    "quality": 4,
+    "mods": {
+      "strength": 3,
+      "constitution": 3,
+      "armor": 4,
+      "crit-chance": 2
+    },
+    "icon": "chests/chest_fire_highlord.png"
+  }
+]

@@ -1,0 +1,266 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+html, body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.backgroundImage {
+  background-size: auto 100%;
+  width: auto;
+
+}
+
+#gameObjects{
+    visibility: hidden;
+}
+
+#spaceship {
+  position: absolute;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+#flame {
+  position: absolute;
+  background-image: url('../res/flame.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+#fuelGauge{
+  position: absolute;
+  width: 100%;
+  height: 2.6%;
+  bottom: 0%;
+}
+
+#fuelGaugeInner{
+  background-color: blue;
+  opacity: 0.7;
+  margin: 1px;
+  height: 100%;
+}
+
+#boxWrapper {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+
+}
+
+#infoBox{
+  width: 50%;
+  padding: 3%;
+  color: #f8f8f8;
+  opacity: 0.8;
+  height: 70%;
+  font-size:25px;
+  visibility: hidden;
+  box-shadow: #030303;
+}
+
+#boxWrapper{
+
+}
+
+#infoBox{
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  scroll-sn: 10%;
+  transform: translate(-50%,0);
+  margin-bottom: 10%;
+  overflow-y: auto !important;
+  overflow-scrolling: touch !important;
+  overflow: auto !important;
+  text-after-overflow: 10%;
+}
+
+
+#laser {
+  position: absolute;
+  opacity: 10;
+  background-size: cover;
+  background-position: center;
+}
+
+#meteor {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  background-image: url('../res/meteor.png');
+  background-size: cover;
+  z-index: -2;
+}
+
+#fuelstation {
+  position: absolute;
+  left: 0;
+  background-image: url('../res/Fuelstation.png');
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  margin: 0pt;
+  padding-top: 30pt;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  color: #d7ebe8;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 4px 4px 4px #060002;
+}
+
+#mainButtons {
+  text-align: center;
+}
+
+#fuelText {
+    visibility: hidden;
+}
+
+#highscoreText{
+  position: absolute;
+  right: 5%;
+  top: 2px;
+}
+
+#gameOverText {
+  position: absolute;
+  font-size: 250%;
+  top: 30%;
+  left: 3%;
+  right: 3%;
+  color: #ff353b;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 4px 4px 4px #060002;
+  z-index: -1;
+}
+
+#levelTransitionText {
+  position: absolute;
+  font-size: 250%;
+  top: 30%;
+  left: 3%;
+  right: 3%;
+  color: #ff353b;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 4px 4px 4px #060002;
+}
+
+#levelText{
+  z-index: 10020;
+  position: absolute;
+  left: 5%;
+  top: 2px;
+}
+
+.moveBackground {
+  position: absolute;
+  background: url('../res/milkyways.PNG');
+  top: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#playButton {
+  position: center;
+  background: transparent;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 7px 40px 7px 40px;
+  text-decoration: none;
+  margin-top: 30%;
+  z-index: 100;
+}
+
+#playButton:hover {
+  color: #787878;
+  text-decoration: none;
+}
+
+#replayButton {
+  position: relative;
+  background: transparent;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 7px 40px 7px 40px;
+  text-decoration: none;
+  margin-top: 30%;
+  visibility: hidden;
+  z-index: 90;
+}
+
+#playButton:hover {
+  color: #787878;
+  text-decoration: none;
+}
+
+#startButton {
+    background: transparent;
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 7px 40px 7px 40px;
+    text-decoration: none;
+}
+
+#startButton:hover {
+    color: #787878;
+    text-decoration: none;
+}
+
+#turnAroundText {
+  color: white;
+  margin: auto;
+  position: absolute;
+  visibility: hidden
+}
+
+#landscape {
+  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  #playButton {
+    margin-top: 60%;
+  }
+  @media (orientation: landscape) {
+    #landscape {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      visibility: visible;
+      background-color: Black;
+      z-index: 20000;
+      color: white;
+      text-align: center;
+    }
+  }
+}

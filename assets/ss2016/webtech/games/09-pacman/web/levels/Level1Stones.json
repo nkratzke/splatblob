@@ -1,0 +1,154 @@
+{
+  "stone": [
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 1,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 19,
+          "posY": 20
+        },
+        {
+          "posX": 20,
+          "posY": 20
+        },
+        {
+          "posX": 21,
+          "posY": 20
+        },
+        {
+          "posX": 22,
+          "posY": 20
+        },
+        {
+          "posX": 19,
+          "posY": 21
+        },
+        {
+          "posX": 20,
+          "posY": 21
+        },
+        {
+          "posX": 21,
+          "posY": 21
+        },
+        {
+          "posX": 22,
+          "posY": 21
+        },
+        {
+          "posX": 19,
+          "posY": 22
+        },
+        {
+          "posX": 20,
+          "posY": 22
+        },
+        {
+          "posX": 21,
+          "posY": 22
+        },
+        {
+          "posX": 22,
+          "posY": 22
+        },
+        {
+          "posX": 19,
+          "posY": 23
+        },
+        {
+          "posX": 20,
+          "posY": 23
+        },
+        {
+          "posX": 21,
+          "posY": 23
+        },
+        {
+          "posX": 22,
+          "posY": 23
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 2,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 19,
+          "posY": 10
+        },
+        {
+          "posX": 20,
+          "posY": 10
+        },
+        {
+          "posX": 21,
+          "posY": 10
+        },
+        {
+          "posX": 22,
+          "posY": 10
+        },
+        {
+          "posX": 19,
+          "posY": 11
+        },
+        {
+          "posX": 20,
+          "posY": 11
+        },
+        {
+          "posX": 21,
+          "posY": 11
+        },
+        {
+          "posX": 22,
+          "posY": 11
+        },
+        {
+          "posX": 19,
+          "posY": 12
+        },
+        {
+          "posX": 20,
+          "posY": 12
+        },
+        {
+          "posX": 21,
+          "posY": 12
+        },
+        {
+          "posX": 22,
+          "posY": 12
+        },
+        {
+          "posX": 19,
+          "posY": 13
+        },
+        {
+          "posX": 20,
+          "posY": 13
+        },
+        {
+          "posX": 21,
+          "posY": 13
+        },
+        {
+          "posX": 22,
+          "posY": 13
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+<html>
+<head><title>Call by Value in JavaScript</title></head>
+<body>
+<script type="text/javascript">
+
+function swap(x1, x2) {
+	var dummy = x1;
+	x1 = x2;
+	x2 = dummy;
+}
+
+function swap(xs) {
+	var dummy = xs[0];
+	xs[0] = xs[1];
+	xs[1] = dummy;
+}
+
+// Es werden zwei Variablen mit Wertesemantik in der
+// swap(x1, x2) Methode getauscht.
+// Die Aenderungen an den Parametern innerhalb der Funktion schlagen
+// nicht nach aussen durch.
+var s1 = "Hello";
+var s2 = "World";
+
+swap(s1, s2);
+document.writeln(s1 + " " + s2 + "<br>");
+
+
+// Es werden zwei Variablen mit Referenzsemantik in der
+// swap(x1, x2) Methode getauscht.
+// Die Aenderungen an den Parametern innerhalb der Funktion schlagen
+// nicht nach aussen durch, da die Objekte an sich nicht geaendert
+// werden.
+var S1 = new String("HELLO");
+var S2 = new String("WORLD");
+swap(S1, S2);
+document.writeln(S1 + " " + S2 + "<br>");
+
+// Es werden zwei Variablen die in einem Array stehen in der
+// swap(xs) Methode getauscht.
+// Die Aenderungen an dem Parameter (Array) innerhalb der Funktion
+// schlagen nach aussen durch, da die Objekte im Array geaendert 
+// werden.
+var strs = ["Hello", "World"];
+swap(strs);
+document.writeln(strs[0] + " " + strs[1] + "<br>");
+
+
+</script>
+</body>
+</html>

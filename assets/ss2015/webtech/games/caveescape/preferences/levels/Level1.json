@@ -1,0 +1,7 @@
+{
+  "NAME":"Startlevel",
+  "MAXFREQUENZ":1000,
+  "MAXPOINTS":100,
+  "YellowCoin":200,
+  "PowerUp_Multiplier":5
+}

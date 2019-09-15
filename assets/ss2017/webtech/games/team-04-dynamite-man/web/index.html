@@ -1,0 +1,75 @@
+<!DOCTYPE html><!--
+  Copyright (c) 2017, Johannes, Marco, Erik. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+--><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+        <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+        <title>Dynamite Game</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <!--
+        <link rel="stylesheet" media="all and (orientation:portrait) and (min-device-width 600:px)" href="styles_portrait.css">
+        <link rel="stylesheet" media="all and (orientation:landscape)" href="styles_landscape.css">
+        -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+    </head>
+    <body>
+        <div id="statusBar" class="unselectable">
+            <table>
+                <tbody><tr>
+                    <td class="header_level unselectable"><span id="lvlType">Tutorial</span> <span id="lvl"></span></td>
+                    <td class="header_leftTime unselectable"><span id="leftTime"></span></td>
+                    <td class="header_lives unselectable"><span>❤ </span><span id="life">3</span></td>
+                    <td class="header_dynamites unselectable">
+                        <img src="data/images/icon_dynamite.png" alt="💣">
+                        <span id="dynamites">-</span> /
+                        <span id="maxDynamites">-</span>
+                    </td>
+            </tr></tbody></table>
+            <div id="scores"><div></div></div>
+        </div>
+
+        <div id="contentGame">
+
+            <div id="level"> <!-- shows level success -->
+                <div id="level_header"></div>
+                <div id="level_content">
+                    <div id="level_announcement"></div>
+                    <div id="level_result"></div>
+                    <input id="level_accept" type="submit" value="">
+                </div>
+            </div>
+
+            <div id="gameField"></div>
+        </div>
+
+        <input id="mStart" class="init" type="button">
+
+        <div id="mobileControl">
+            <table>
+                <tbody><tr>
+                    <td></td>
+                    <td><input id="mUp" type="button"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input id="mLeft" type="button"></td>
+                    <td><input id="mDynamite" type="button"></td>
+                    <td><input id="mRight" type="button"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input id="mDown" type="button"></td>
+                    <td></td>
+                </tr>
+            </tbody></table>
+        </div>
+
+        <script type="text/javascript"> document.addEventListener('click', function(e) { if(document.activeElement.id == 'mStart'){ document.activeElement.blur(); } }); </script>
+        <script src="main.dart.js"></script>
+        
+    
+
+</body></html>

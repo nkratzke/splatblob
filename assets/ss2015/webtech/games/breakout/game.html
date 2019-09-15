@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>game</title>
+  </head>
+ 
+  <body>
+  <div id="message"></div>
+  <div id="error"></div>
+  <div id="wrapper">
+          <div id="header">
+          <h1 align="center">Breakout</h1>
+          <a class="info" href="#">Gameinfo 
+           <span>You can move 1 space with the arrowkeys left and right and two spaces with "a" and "d"! You can pause/unpause the game with the spacebar.</span></a>
+           </div>
+          </div>
+           
+          
+          <div id="content">
+          <table></table>
+          <table class="menu">
+          <tr>
+          <td>Live:</td>
+          <td class="live"></td>
+          </tr>
+          <tr>
+          <td>Score:</td>
+          <td class="score"></td>
+          </tr>
+          <tr>
+          <td>Level:</td>
+          <td class="level"></td>
+          </tr>
+     
+          </table>
+          </div>
+           
+           <div id="leftcolumn">
+           <a href="game.html" class="btnn" >Play again ?</a>
+          
+            
+            <div id="footer">
+            <p align = "center">© Marcel Bosma, Lars Fenske und Lukas Brodacki </p>
+             </div>
+        
+            </div>
+  
+    <script type="application/dart" src="main.dart"></script>
+    <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
+    <script src="main.dart.js"></script>
+  </body>
+</html>

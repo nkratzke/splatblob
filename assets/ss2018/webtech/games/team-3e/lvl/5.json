@@ -1,0 +1,1551 @@
+{
+  "Level": [
+    {
+      "type": "Scenery",
+      "positionX": 0,
+      "positionY": 0,
+      "baseSprite": "hightower3",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 0,
+      "positionY": 0,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 1,
+      "positionY": 0,
+      "baseSprite": "hightower",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 1,
+      "positionY": 0,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 2,
+      "positionY": 0,
+      "baseSprite": "hightower",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 2,
+      "positionY": 0,
+      "baseSprite": "asphalt",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 3,
+      "positionY": 0,
+      "baseSprite": "road_basic_a",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 4,
+      "positionY": 0,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 5,
+      "positionY": 0,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 6,
+      "positionY": 0,
+      "baseSprite": "road_basic_a",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 7,
+      "positionY": 0,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 8,
+      "positionY": 0,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 9,
+      "positionY": 0,
+      "baseSprite": "block",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 9,
+      "positionY": 0,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 10,
+      "positionY": 0,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 11,
+      "positionY": 0,
+      "baseSprite": "flower1",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 12,
+      "positionY": 0,
+      "baseSprite": "flower4",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 13,
+      "positionY": 0,
+      "baseSprite": "flower1",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 14,
+      "positionY": 0,
+      "baseSprite": "flower4",
+      "orientation": "up"
+    },
+    {
+      "type": "BasicTank",
+      "positionX": 15,
+      "positionY": 0,
+      "baseSprite": "enemyBasic",
+      "orientation": "down"
+    },
+    {
+      "type": "Background",
+      "positionX": 15,
+      "positionY": 0,
+      "baseSprite": "flower2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 16,
+      "positionY": 0,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 17,
+      "positionY": 0,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 0,
+      "positionY": 1,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 1,
+      "positionY": 1,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 2,
+      "positionY": 1,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 3,
+      "positionY": 1,
+      "baseSprite": "road_L_a",
+      "orientation": "left"
+    },
+    {
+      "type": "Background",
+      "positionX": 4,
+      "positionY": 1,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 5,
+      "positionY": 1,
+      "baseSprite": "hightower_right",
+      "orientation": "left"
+    },
+    {
+      "type": "Background",
+      "positionX": 6,
+      "positionY": 1,
+      "baseSprite": "road_basic_a",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 7,
+      "positionY": 1,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 8,
+      "positionY": 1,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 9,
+      "positionY": 1,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 10,
+      "positionY": 1,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 11,
+      "positionY": 1,
+      "baseSprite": "tree2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 11,
+      "positionY": 1,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 12,
+      "positionY": 1,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 12,
+      "positionY": 1,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 13,
+      "positionY": 1,
+      "baseSprite": "tree2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 13,
+      "positionY": 1,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 14,
+      "positionY": 1,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 14,
+      "positionY": 1,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 15,
+      "positionY": 1,
+      "baseSprite": "flower3",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 16,
+      "positionY": 1,
+      "baseSprite": "tree2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 17,
+      "positionY": 1,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 0,
+      "positionY": 2,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 1,
+      "positionY": 2,
+      "baseSprite": "hightower2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 1,
+      "positionY": 2,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 2,
+      "positionY": 2,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 3,
+      "positionY": 2,
+      "baseSprite": "hightower2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 3,
+      "positionY": 2,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 4,
+      "positionY": 2,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 5,
+      "positionY": 2,
+      "baseSprite": "hightower_left",
+      "orientation": "left"
+    },
+    {
+      "type": "Background",
+      "positionX": 6,
+      "positionY": 2,
+      "baseSprite": "road_basic_a",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 7,
+      "positionY": 2,
+      "baseSprite": "hightower2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 8,
+      "positionY": 2,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 9,
+      "positionY": 2,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 10,
+      "positionY": 2,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 11,
+      "positionY": 2,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 11,
+      "positionY": 2,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 12,
+      "positionY": 2,
+      "baseSprite": "park_tl",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 13,
+      "positionY": 2,
+      "baseSprite": "park_tr",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 14,
+      "positionY": 2,
+      "baseSprite": "tree2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 14,
+      "positionY": 2,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 15,
+      "positionY": 2,
+      "baseSprite": "flower3",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 16,
+      "positionY": 2,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 17,
+      "positionY": 2,
+      "baseSprite": "tree2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 0,
+      "positionY": 3,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 1,
+      "positionY": 3,
+      "baseSprite": "block",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 1,
+      "positionY": 3,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 2,
+      "positionY": 3,
+      "baseSprite": "hightower2_right",
+      "orientation": "down"
+    },
+    {
+      "type": "Background",
+      "positionX": 2,
+      "positionY": 3,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 3,
+      "positionY": 3,
+      "baseSprite": "hightower2_left",
+      "orientation": "down"
+    },
+    {
+      "type": "Background",
+      "positionX": 3,
+      "positionY": 3,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 4,
+      "positionY": 3,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 5,
+      "positionY": 3,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 6,
+      "positionY": 3,
+      "baseSprite": "road_basic_a",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 7,
+      "positionY": 3,
+      "baseSprite": "hightower4",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 8,
+      "positionY": 3,
+      "baseSprite": "hightower2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 9,
+      "positionY": 3,
+      "baseSprite": "hightower3_left",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 10,
+      "positionY": 3,
+      "baseSprite": "hightower3_right",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 11,
+      "positionY": 3,
+      "baseSprite": "tree2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 11,
+      "positionY": 3,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 12,
+      "positionY": 3,
+      "baseSprite": "park_bl",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 13,
+      "positionY": 3,
+      "baseSprite": "park_br",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 14,
+      "positionY": 3,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 14,
+      "positionY": 3,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 15,
+      "positionY": 3,
+      "baseSprite": "flower1",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 16,
+      "positionY": 3,
+      "baseSprite": "flower",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 17,
+      "positionY": 3,
+      "baseSprite": "flower",
+      "orientation": "up"
+    },
+    {
+      "type": "Player",
+      "positionX": 0,
+      "positionY": 4,
+      "baseSprite": "player",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 0,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 1,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 2,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 3,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 4,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 5,
+      "positionY": 4,
+      "baseSprite": "block",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 5,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 6,
+      "positionY": 4,
+      "baseSprite": "road_intersection_a",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 7,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 8,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 9,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 10,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 11,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 12,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 13,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 14,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 15,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 16,
+      "positionY": 4,
+      "baseSprite": "block",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 16,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "ArmoredTank",
+      "positionX": 17,
+      "positionY": 4,
+      "baseSprite": "enemyHeavy",
+      "orientation": "left"
+    },
+    {
+      "type": "Background",
+      "positionX": 17,
+      "positionY": 4,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 0,
+      "positionY": 5,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 1,
+      "positionY": 5,
+      "baseSprite": "block",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 1,
+      "positionY": 5,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 2,
+      "positionY": 5,
+      "baseSprite": "hightower_left",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 2,
+      "positionY": 5,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 3,
+      "positionY": 5,
+      "baseSprite": "hightower_right",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 3,
+      "positionY": 5,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 4,
+      "positionY": 5,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 5,
+      "positionY": 5,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 6,
+      "positionY": 5,
+      "baseSprite": "road_basic_a",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 7,
+      "positionY": 5,
+      "baseSprite": "hightower",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 8,
+      "positionY": 5,
+      "baseSprite": "hightower2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 9,
+      "positionY": 5,
+      "baseSprite": "hightower_right",
+      "orientation": "down"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 10,
+      "positionY": 5,
+      "baseSprite": "hightower_left",
+      "orientation": "down"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 11,
+      "positionY": 5,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 11,
+      "positionY": 5,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 12,
+      "positionY": 5,
+      "baseSprite": "park_tl",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 13,
+      "positionY": 5,
+      "baseSprite": "park_tr",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 14,
+      "positionY": 5,
+      "baseSprite": "tree2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 14,
+      "positionY": 5,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 15,
+      "positionY": 5,
+      "baseSprite": "flower",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 16,
+      "positionY": 5,
+      "baseSprite": "flower3",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 17,
+      "positionY": 5,
+      "baseSprite": "flower2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 0,
+      "positionY": 6,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 1,
+      "positionY": 6,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 2,
+      "positionY": 6,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 3,
+      "positionY": 6,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 4,
+      "positionY": 6,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 5,
+      "positionY": 6,
+      "baseSprite": "hightower_left",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 6,
+      "positionY": 6,
+      "baseSprite": "road_basic_a",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 7,
+      "positionY": 6,
+      "baseSprite": "hightower2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 8,
+      "positionY": 6,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 9,
+      "positionY": 6,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 10,
+      "positionY": 6,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 11,
+      "positionY": 6,
+      "baseSprite": "tree2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 11,
+      "positionY": 6,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 12,
+      "positionY": 6,
+      "baseSprite": "park_bl",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 13,
+      "positionY": 6,
+      "baseSprite": "park_br",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 14,
+      "positionY": 6,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 14,
+      "positionY": 6,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 15,
+      "positionY": 6,
+      "baseSprite": "flower3",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 16,
+      "positionY": 6,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 17,
+      "positionY": 6,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 0,
+      "positionY": 7,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 1,
+      "positionY": 7,
+      "baseSprite": "hightower2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 1,
+      "positionY": 7,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 2,
+      "positionY": 7,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 3,
+      "positionY": 7,
+      "baseSprite": "hightower2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 3,
+      "positionY": 7,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 4,
+      "positionY": 7,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 5,
+      "positionY": 7,
+      "baseSprite": "hightower_right",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 6,
+      "positionY": 7,
+      "baseSprite": "road_basic_a",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 7,
+      "positionY": 7,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 8,
+      "positionY": 7,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 9,
+      "positionY": 7,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 10,
+      "positionY": 7,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 11,
+      "positionY": 7,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 11,
+      "positionY": 7,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 12,
+      "positionY": 7,
+      "baseSprite": "tree2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 12,
+      "positionY": 7,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 13,
+      "positionY": 7,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 13,
+      "positionY": 7,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 14,
+      "positionY": 7,
+      "baseSprite": "tree2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 14,
+      "positionY": 7,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 15,
+      "positionY": 7,
+      "baseSprite": "flower1",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 16,
+      "positionY": 7,
+      "baseSprite": "tree2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 17,
+      "positionY": 7,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 0,
+      "positionY": 8,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 1,
+      "positionY": 8,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 2,
+      "positionY": 8,
+      "baseSprite": "road_basic_a",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 3,
+      "positionY": 8,
+      "baseSprite": "road_L_a",
+      "orientation": "down"
+    },
+    {
+      "type": "Background",
+      "positionX": 4,
+      "positionY": 8,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 5,
+      "positionY": 8,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 6,
+      "positionY": 8,
+      "baseSprite": "road_basic_a",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 7,
+      "positionY": 8,
+      "baseSprite": "block",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 7,
+      "positionY": 8,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 8,
+      "positionY": 8,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 9,
+      "positionY": 8,
+      "baseSprite": "block",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 9,
+      "positionY": 8,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 10,
+      "positionY": 8,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 11,
+      "positionY": 8,
+      "baseSprite": "flower4",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 12,
+      "positionY": 8,
+      "baseSprite": "flower2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 13,
+      "positionY": 8,
+      "baseSprite": "flower",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 14,
+      "positionY": 8,
+      "baseSprite": "flower",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 15,
+      "positionY": 8,
+      "baseSprite": "flower2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 16,
+      "positionY": 8,
+      "baseSprite": "tree2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 17,
+      "positionY": 8,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 0,
+      "positionY": 9,
+      "baseSprite": "hightower",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 0,
+      "positionY": 9,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 1,
+      "positionY": 9,
+      "baseSprite": "hightower",
+      "orientation": "down"
+    },
+    {
+      "type": "Background",
+      "positionX": 1,
+      "positionY": 9,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 2,
+      "positionY": 9,
+      "baseSprite": "hightower",
+      "orientation": "right"
+    },
+    {
+      "type": "Background",
+      "positionX": 2,
+      "positionY": 9,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 3,
+      "positionY": 9,
+      "baseSprite": "road_basic_a",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 4,
+      "positionY": 9,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 5,
+      "positionY": 9,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 6,
+      "positionY": 9,
+      "baseSprite": "road_basic_a",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 7,
+      "positionY": 9,
+      "baseSprite": "block",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 7,
+      "positionY": 9,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 8,
+      "positionY": 9,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 9,
+      "positionY": 9,
+      "baseSprite": "asphalt",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 10,
+      "positionY": 9,
+      "baseSprite": "asphalt2",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 11,
+      "positionY": 9,
+      "baseSprite": "flower4",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 12,
+      "positionY": 9,
+      "baseSprite": "flower",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 13,
+      "positionY": 9,
+      "baseSprite": "flower",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 14,
+      "positionY": 9,
+      "baseSprite": "flower",
+      "orientation": "up"
+    },
+    {
+      "type": "Background",
+      "positionX": 15,
+      "positionY": 9,
+      "baseSprite": "flower2",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 16,
+      "positionY": 9,
+      "baseSprite": "tree",
+      "orientation": "up"
+    },
+    {
+      "type": "Scenery",
+      "positionX": 17,
+      "positionY": 9,
+      "baseSprite": "tree2",
+      "orientation": "up"
+    }
+  ]
+}

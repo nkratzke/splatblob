@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<space-invaders>
+    <spielFiguren>
+        <spielFigur id="1" src="images/figur/A.svg" />
+        <spielFigur id="2" src="images/figur/B.svg" />
+        <spielFigur id="3" src="images/figur/C.svg" />
+        <spielFigur id="4" src="images/figur/D.svg" />
+        <spielFigur id="5" src="images/figur/E.svg" />
+        <spielFigur id="6" src="images/figur/F.svg" />
+        <spielFigur id="7" src="images/figur/G.svg" />
+        <spielFigur id="8" src="images/figur/H.svg" />
+        <spielFigur id="9" src="images/figur/I.svg" />
+        <spielFigur id="10" src="images/figur/J.svg" />
+        <spielFigur id="11" src="images/figur/K.svg" />
+        <spielFigur id="12" src="images/figur/L.svg" />
+        <spielFigur id="13" src="images/figur/M.svg" />
+        <spielFigur id="14" src="images/figur/N.svg" />
+        <spielFigur id="15" src="images/figur/O.svg" />
+    </spielFiguren>
+    <stage>
+        <level name="1">
+            <stufen>
+                <stufe nr="1">
+                    <gegner feindFigurID="1" anzahl="5" />
+                </stufe>
+            </stufen>
+            <sonstiges/>
+        </level>
+        <level name="2">
+            <stufen>
+                <stufe nr="1">
+                    <gegner feindFigurID="1" anzahl="4" />
+                </stufe>
+                <stufe nr="2">
+                    <gegener feindFigurID="2" anzahl="2" />
+                </stufe>
+                <stufe nr="3" />
+                <stufe nr="4">
+                    <gegner feindFigurID="4" anzahl="11" />
+                </stufe>
+            </stufen>
+            <bonus itemId="1" chance="10" />
+            <sonstiges/>
+        </level>
+        <level name="3">
+            <stufen>
+                <stufe nr="1">
+                    <gegner feindFigurID="2" anzahl="5" />
+                </stufe>
+                <stufe nr="2">
+                    <gegner feindFigurID="1" anzahl="6" />
+                </stufe>
+                <stufe nr="3" />
+                <stufe nr="4">
+                    <gegner feindFigurID="5" anzahl="3" />
+                    <gegner feindFigurID="6" anzahl="3" />
+                    <gegner feindFigurID="7" anzahl="3" />
+                </stufe>
+                <stufe nr="5">
+                    <gegner feindFigurID="10" anzahl="3" />
+                </stufe>
+            </stufen>
+            <sonstiges>
+                <bonus itemId="1" chance="10" />
+                <hinder hindernissId="1" anzahl="4" />
+            </sonstiges>
+        </level>
+        <level name="4">
+            <stufen>
+                <stufe nr="1">
+                    <gegner feindFigurID="1" anzahl="4" />
+                </stufe>
+                <stufe nr="2">
+                    <gegener feindFigurID="3" anzahl="3" />
+                </stufe>
+                <stufe nr="3">
+                    <gegener feindFigurID="6" anzahl="3" />
+                </stufe>
+                <stufe nr="4">
+                    <gegner feindFigurID="1" anzahl="3" />
+                </stufe>
+                <stufe nr="5">
+                    <gegner feindFigurID="6" anzahl="11" />
+                </stufe>
+                <stufe nr="6">
+                    <gegner feindFigurID="9" anzahl="9" />
+                </stufe>
+                <stufe nr="7">
+                    <gegner feindFigurID="12" anzahl="3" />
+                </stufe>
+            </stufen>
+            <sonstiges>
+                <bonus itemId="1" chance="10" />
+                <bonus itemId="2" chance="5" />
+                <hinder hindernissId="1" anzahl="4" />
+            </sonstiges>
+        </level>
+        <level name="5">
+            <stufen>
+                <stufe nr="1">
+                    <gegner feindFigurID="1" anzahl="1" />
+                </stufe>
+                <stufe nr="2">
+                    <gegener feindFigurID="2" anzahl="3" />
+                </stufe>
+                <stufe nr="3">
+                    <gegener feindFigurID="3" anzahl="5" />
+                </stufe>
+                <stufe nr="4">
+                    <gegener feindFigurID="1" anzahl="3" />
+                </stufe>
+                <stufe nr="5" />
+                <stufe nr="6">
+                    <gegner feindFigurID="12" anzahl="1" />
+                </stufe>
+                <stufe nr="7">
+                    <gegner feindFigurID="8" anzahl="11" />
+                </stufe>
+            </stufen>
+            <sonstiges>
+                <bonus itemId="1" chance="15" />
+                <bonus itemId="2" chance="5" />
+                <hinder hindernissId="1" anzahl="2" />
+                <hinder hindernissId="2" anzahl="2" />
+            </sonstiges>
+        </level>
+        <level name="6">
+            <stufen>
+                <stufe nr="1">
+                    <gegner feindFigurID="1" anzahl="6" />
+                </stufe>
+                <stufe nr="2">
+                    <gegener feindFigurID="3" anzahl="1" />
+                </stufe>
+                <stufe nr="3">
+                    <gegener feindFigurID="3" anzahl="11" />
+                </stufe>
+                <stufe nr="4">
+                    <gegener feindFigurID="1" anzahl="6" />
+                </stufe>
+                <stufe nr="5">
+                    <gegner feindFigurID="4" anzahl="11" />
+                </stufe>
+                <stufe nr="6">
+                    <gegner feindFigurID="8" anzahl="11" />
+                </stufe>
+                <stufe nr="7">
+                    <gegner feindFigurID="9" anzahl="7" />
+                </stufe>
+                <stufe nr="8">
+                    <gegner feindFigurID="10" anzahl="7" />
+                </stufe>
+                <stufe nr="9">
+                    <gegner feindFigurID="12" anzahl="3" />
+                </stufe>
+                <stufe nr="10">
+                    <gegner feindFigurID="12" anzahl="11" />
+                </stufe>
+            </stufen>
+            <sonstiges>
+                <bonus itemId="1" chance="5" />
+                <bonus itemId="2" chance="5" />
+                <bonus itemId="3" chance="5" />
+                <hinder hindernissId="1" anzahl="1" />
+                <hinder hindernissId="2" anzahl="3" />
+            </sonstiges>
+        </level>
+        <level name="7">
+            <stufen>
+                <stufe nr="1">
+                    <gegner feindFigurID="1" anzahl="7" />
+                </stufe>
+                <stufe nr="2">
+                    <gegener feindFigurID="2" anzahl="7" />
+                </stufe>
+                <stufe nr="3">
+                    <gegener feindFigurID="12" anzahl="11" />
+                </stufe>
+                <stufe nr="4">
+                    <gegener feindFigurID="2" anzahl="9" />
+                </stufe>
+                <stufe nr="5">
+                    <gegener feindFigurID="2" anzahl="9" />
+                </stufe>
+                <stufe nr="6">
+                    <gegener feindFigurID="2" anzahl="11" />
+                </stufe>
+                <stufe nr="7">
+                    <gegener feindFigurID="3" anzahl="1" />
+                </stufe>
+                <stufe nr="8" />
+                <stufe nr="9">
+                    <gegner feindFigurID="12" anzahl="11" />
+                </stufe>
+                <stufe nr="10">
+                    <gegner feindFigurID="12" anzahl="11" />
+                </stufe>
+                <stufe nr="11">
+                    <gegner feindFigurID="12" anzahl="11" />
+                </stufe>
+                <stufe nr="12">
+                    <gegner feindFigurID="8" anzahl="11" />
+                </stufe>
+                <stufe nr="13">
+                    <gegner feindFigurID="12" anzahl="11" />
+                </stufe>
+                <stufe nr="14">
+                    <gegner feindFigurID="8" anzahl="11" />
+                </stufe>
+            </stufen>
+            <sonstiges>
+                <bonus itemId="1" chance="5" />
+                <bonus itemId="2" chance="5" />
+                <hinder hindernissId="1" anzahl="5" />
+                <hinder hindernissId="2" anzahl="5" />
+            </sonstiges>
+        </level>
+        <level name="8">
+            <stufen>
+                <stufe nr="1">
+                    <gegner feindFigurID="2" anzahl="11" />
+                </stufe>
+                <stufe nr="2">
+                    <gegener feindFigurID="3" anzahl="8" />
+                </stufe>
+                <stufe nr="3">
+                    <gegener feindFigurID="6" anzahl="5" />
+                </stufe>
+                <stufe nr="4" />
+                <stufe nr="5">
+                    <gegner feindFigurID="6" anzahl="5" />
+                </stufe>
+                <stufe nr="6">
+                    <gegner feindFigurID="5" anzahl="7" />
+                </stufe>
+                <stufe nr="7">
+                    <gegner feindFigurID="7" anzahl="1" />
+                    <gegner feindFigurID="8" anzahl="1" />
+                    <gegner feindFigurID="9" anzahl="3" />
+                    <gegner feindFigurID="10" anzahl="3" />
+                    <gegner feindFigurID="8" anzahl="1" />
+                    <gegner feindFigurID="12" anzahl="1" />
+                </stufe>
+                <stufe nr="8">
+                    <gegner feindFigurID="2" anzahl="11" />
+                </stufe>
+                <stufe nr="9">
+                    <gegner feindFigurID="2" anzahl="11" />
+                </stufe>
+            </stufen>
+            <sonstiges>
+                <bonus itemId="1" chance="5" />
+                <bonus itemId="2" chance="5" />
+                <bonus itemId="3" chance="5" />
+                <hinder hindernissId="1" anzahl="3" />
+                <hinder hindernissId="2" anzahl="2" />
+            </sonstiges>
+        </level>
+        <level name="9">
+            <stufen>
+                <stufe nr="1">
+                    <gegner feindFigurID="12" anzahl="11" />
+                </stufe>
+                <stufe nr="2">
+                    <gegener feindFigurID="5" anzahl="11" />
+                </stufe>
+                <stufe nr="3">
+                    <gegner feindFigurID="3" anzahl="9" />
+                </stufe>
+                <stufe nr="4">
+                    <gegner feindFigurID="4" anzahl="9" />
+                </stufe>
+                <stufe nr="5" />
+                <stufe nr="6">
+                    <gegner feindFigurID="4" anzahl="11" />
+                </stufe>
+                <stufe nr="7">
+                    <gegner feindFigurID="7" anzahl="11" />
+                </stufe>
+                <stufe nr="8">
+                    <gegner feindFigurID="6" anzahl="3" />
+                    <gegner feindFigurID="4" anzahl="3" />
+                </stufe>
+                <stufe nr="9">
+                    <gegner feindFigurID="12" anzahl="11" />
+                </stufe>
+                <stufe nr="10">
+                    <gegner feindFigurID="8" anzahl="7" />
+                </stufe>
+                <stufe nr="11">
+                    <gegner feindFigurID="2" anzahl="11" />
+                </stufe>
+            </stufen>
+            <sonstiges/>
+        </level>
+        <level name="10">
+            <stufen>
+                <stufe nr="1">
+                    <gegner feindFigurID="1" anzahl="1" />
+                </stufe>
+                <stufe nr="2">
+                    <gegener feindFigurID="2" anzahl="3" />
+                </stufe>
+                <stufe nr="3">
+                    <gegener feindFigurID="1" anzahl="5" />
+                </stufe>
+                <stufe nr="4">
+                    <gegener feindFigurID="2" anzahl="7" />
+                </stufe>
+                <stufe nr="5">
+                    <gegener feindFigurID="2" anzahl="5" />
+                </stufe>
+                <stufe nr="6">
+                    <gegener feindFigurID="2" anzahl="3" />
+                </stufe>
+                <stufe nr="7">
+                    <gegener feindFigurID="6" anzahl="1" />
+                </stufe>
+                <stufe nr="8" />
+                <stufe nr="9">
+                    <gegner feindFigurID="12" anzahl="11" />
+                </stufe>
+                <stufe nr="10">
+                    <gegner feindFigurID="12" anzahl="11" />
+                </stufe>
+                <stufe nr="11">
+                    <gegner feindFigurID="12" anzahl="11" />
+                </stufe>
+                <stufe nr="12">
+                    <gegner feindFigurID="12" anzahl="11" />
+                </stufe>
+                <stufe nr="13" />
+                <stufe nr="14">
+                    <gegner feindFigurID="1" anzahl="11" />
+                </stufe>
+                <stufe nr="15">
+                    <gegner feindFigurID="4" anzahl="11" />
+                </stufe>
+                <stufe nr="16">
+                    <gegner feindFigurID="3" anzahl="11" />
+                </stufe>
+                <stufe nr="17">
+                    <gegner feindFigurID="12" anzahl="11" />
+                </stufe>
+            </stufen>
+            <sonstiges>
+                <bonus itemId="1" chance="5" />
+                <bonus itemId="2" chance="5" />
+                <bonus itemId="3" chance="5" />
+                <hinder hindernissId="1" anzahl="8" />
+            </sonstiges>
+        </level>
+        <level name="11">
+            <stufen>
+                <stufe nr="1">
+                    <gegner feindFigurID="2" anzahl="6" />
+                </stufe>
+                <stufe nr="2">
+                    <gegener feindFigurID="3" anzahl="11" />
+                </stufe>
+                <stufe nr="3">
+                    <gegener feindFigurID="4" anzahl="6" />
+                </stufe>
+                <stufe nr="4" />
+                <stufe nr="5">
+                    <gegner feindFigurID="5" anzahl="4" />
+                </stufe>
+                <stufe nr="6">
+                    <gegner feindFigurID="6" anzahl="1" />
+                </stufe>
+            </stufen>
+            <sonstiges>
+                <bonus itemId="1" chance="5" />
+                <bonus itemId="2" chance="5" />
+                <bonus itemId="3" chance="5" />
+                <hinder hindernissId="1" anzahl="4" />
+            </sonstiges>
+        </level>
+        <level name="12">
+            <stufen>
+                <stufe nr="1" />
+                <stufe nr="2" />
+                <stufe nr="3" />
+                <stufe nr="4">
+                <gegner feindFigurID="11" anzahl="3" />
+                </stufe>
+                <stufe nr="5">
+                    <gegener feindFigurID="2" anzahl="5" />
+                </stufe>
+                <stufe nr="6">
+                    <gegener feindFigurID="2" anzahl="5" />
+                </stufe>
+                <stufe nr="7">
+                    <gegener feindFigurID="2" anzahl="5" />
+                </stufe>
+                <stufe nr="8">
+                    <gegener feindFigurID="2" anzahl="5" />
+                </stufe>
+                <stufe nr="9">
+                    <gegener feindFigurID="2" anzahl="11" />
+                </stufe>
+                <stufe nr="10">
+                    <gegener feindFigurID="6" anzahl="8" />
+                </stufe>
+                <stufe nr="11">
+                    <gegner feindFigurID="6" anzahl="1" />
+                    <gegner feindFigurID="7" anzahl="1" />
+                    <gegner feindFigurID="8" anzahl="1" />
+                    <gegner feindFigurID="9" anzahl="1" />
+                </stufe>
+                <stufe nr="12">
+                <gegner feindFigurID="11" anzahl="11" />
+                </stufe>
+            </stufen>
+            <sonstiges/>
+        </level>
+    </stage>
+    <feindeFiguren>
+        <feindFigur id="1" src="images/feind/A.svg" erergy="5" bewaffnet="true" schussHaeufigkeit="3">NameA</feindFigur>
+        <feindFigur id="2" src="images/feind/B.svg" erergy="10" bewaffnet="false" schussHaeufigkeit="0">NameB</feindFigur>
+        <feindFigur id="3" src="images/feind/C.svg" erergy="7" bewaffnet="false" schussHaeufigkeit="0">NameC</feindFigur>
+        <feindFigur id="4" src="images/feind/D.svg" erergy="5" bewaffnet="true" schussHaeufigkeit="4">NameD</feindFigur>
+        <feindFigur id="5" src="images/feind/E.svg" erergy="15" bewaffnet="false" schussHaeufigkeit="0">NameE</feindFigur>
+        <feindFigur id="6" src="images/feind/F.svg" erergy="12" bewaffnet="false" schussHaeufigkeit="0">NameF</feindFigur>
+        <feindFigur id="7" src="images/feind/G.svg" erergy="5" bewaffnet="true" schussHaeufigkeit="5">NameA</feindFigur>
+        <feindFigur id="8" src="images/feind/H.svg" erergy="10" bewaffnet="false" schussHaeufigkeit="0">NameB</feindFigur>
+        <feindFigur id="9" src="images/feind/I.svg" erergy="7" bewaffnet="false" schussHaeufigkeit="0">NameC</feindFigur>
+        <feindFigur id="10" src="images/feind/J.svg" erergy="5" bewaffnet="true" schussHaeufigkeit="6">NameD</feindFigur>
+        <feindFigur id="11" src="images/feind/K.svg" erergy="35" bewaffnet="true" schussHaeufigkeit="6">NameE</feindFigur>
+        <feindFigur id="12" src="images/feind/L.svg" erergy="12" bewaffnet="true" schussHaeufigkeit="0">NameF</feindFigur>
+    </feindeFiguren>
+    <schuesse>
+        <schuss id="1" src="images/schuss/A.svg" wirksamkeit="1" />
+        <schuss id="2" src="images/schuss/B.svg" wirksamkeit="1" />
+        <schuss id="3" src="images/schuss/C.svg" wirksamkeit="5" />
+        <schuss id="4" src="images/schuss/D.svg" wirksamkeit="20" />
+    </schuesse>
+    <hindernisse>
+        <hinderniss id="1" src="images/hinderniss/A.svg" erergy="5" />
+        <hinderniss id="2" src="images/hinderniss/B.svg" erergy="10" />
+        <hinderniss id="3" src="images/hinderniss/C.svg" erergy="7" />
+    </hindernisse>
+    <items>
+        <item id="1" src="images/item/A.svg" />
+        <item id="2" src="images/item/B.svg" />
+        <item id="3" src="images/item/C.svg" />
+    </items>
+</space-invaders>

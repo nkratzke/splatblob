@@ -1,0 +1,91 @@
+[
+  {
+    "id": 0,
+    "lvl": 2,
+    "name": "Eye_Patcher",
+    "hp": 40,
+    "attack": 7,
+    "speed": 10,
+    "grantedXP": 52,
+    "skin": "fire-blob",
+    "loot": {
+      "chest": 2
+    }
+  },
+  {
+    "id": 1,
+    "lvl": 3,
+    "name": "Eye_Patcher",
+    "hp": 40,
+    "attack": 7,
+    "speed": 10,
+    "grantedXP": 52,
+    "skin": "fire-blob",
+    "loot": {
+      "boots": 2
+    }
+  },
+  {
+    "id": 2,
+    "lvl": 5,
+    "name": "Eye_Patcher",
+    "hp": 40,
+    "attack": 7,
+    "speed": 10,
+    "grantedXP": 52,
+    "skin": "fire-blob",
+    "loot": {
+      "legs": 3
+    }
+  },
+  {
+    "id": 3,
+    "lvl": 6,
+    "name": "Eye_Patcher",
+    "hp": 40,
+    "attack": 7,
+    "speed": 10,
+    "grantedXP": 52,
+    "skin": "fire-blob",
+    "loot": {
+      "sword": 1
+    }
+  },
+  {
+    "id": 4,
+    "lvl": 7,
+    "name": "Red_Eye_Patcher",
+    "hp": 42,
+    "attack": 7,
+    "speed": 10,
+    "grantedXP": 56,
+    "skin": "fire-blob",
+    "loot": {
+      "gloves": 4
+    }
+  },
+  {
+    "id": 5,
+    "lvl": 8,
+    "name": "Red_Eye_Patcher",
+    "hp": 42,
+    "attack": 7,
+    "speed": 10,
+    "grantedXP": 56,
+    "skin": "fire-blob",
+    "loot": {
+      "helmet": 3
+    }
+  },
+  {
+    "id": 6,
+    "lvl": 9,
+    "name": "Red_Eye_Patcher",
+    "hp": 42,
+    "attack": 7,
+    "speed": 10,
+    "grantedXP": 56,
+    "skin": "fire-blob",
+    "endboss": true
+  }
+]

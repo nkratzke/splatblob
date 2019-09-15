@@ -1,0 +1,578 @@
+body {
+    background-color: #757575;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    color: #000000;
+}
+
+.container_start {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#title {
+    margin: auto;
+    margin-top: 15px;
+    width: 640px;
+    height: 600px;
+    background-image: url("img/tetris.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 50px;
+}
+
+#overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+}
+
+#start {
+    position: absolute;
+    border: 5px solid #000000;;
+    border-radius: 17px;
+    cursor: pointer;
+    width: 150px;
+    margin-left: -75px;
+    left: 50%;
+    bottom: 60px;
+    font-size: 30px;
+}
+
+#continue, #newGame {
+    border: 5px solid #000000;;
+    border-radius: 17px;
+    cursor: pointer;
+    width: 150px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+#copy {
+    width: 400px;
+    margin-left: -200px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    color: #000000;
+}
+
+.container_game {
+    position: relative;
+    height: 100%;
+    width: 500px;
+    margin: auto;
+    margin-top: 40px;
+    display: none;
+}
+
+#field, #nextstone, #holdstone {
+    position: absolute;
+    border-collapse: separate;
+    border: 10px solid #d5d4d4;
+}
+
+.container_sidebox {
+    float: right;
+}
+
+.container_sidebox h3, #level, #points {
+    text-align: center;
+    padding: 8px 8px 6px 8px;
+    color: #000000;
+    background-color: #d5d4d4;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.container_message {
+    align-self: center;
+    background-color: #ededed;
+    position: absolute;
+    margin-top: -150px;
+    margin-left: -140px;
+    top: 40%;
+    left: 48%;
+    height: 340px;
+    width: 280px;
+    text-align: center;
+    z-index: 1000;
+    border: 5px solid #000000;
+    border-radius: 17px;
+    display: none;
+}
+
+#portrait {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container_message img {
+    margin-top: 10px;
+}
+
+.container_message #message {
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container_message #message h1 {
+    margin: 5px;
+    padding: 0px;
+    letter-spacing: 3px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.container_goal {
+    position: absolute;
+    padding: 8px 8px 4px 8px;
+}
+
+.container_powerup {
+	padding: 2px;
+	text-align: center;
+    background-color: #d5d4d4;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+.container_powerup p{
+    margin-left: 5px;
+}
+
+/* Vordefinierten Farben der Steine */
+.cyan {
+    background-color: #00f0f0 !important;
+}
+
+.blue {
+    background-color: #0000f0 !important;
+}
+
+.yellow {
+    background-color: #f0f000 !important;
+}
+
+.orange {
+    background-color: #f0a000 !important;
+}
+
+.red {
+    background-color: #f00000 !important;
+}
+
+.green {
+    background-color: #00f000 !important;
+}
+
+.purple {
+    background-color: #a000f0 !important;
+}
+
+#field_row_0, #field_row_1, #portrait {
+    display: none;
+}
+
+@media (min-width: 950px) {
+    /* breite Browserfenster */
+    #field td, #nextstone td, #holdstone td {
+        background-color: #ededed;
+        width: 22px;
+        height: 22px;
+    }
+
+    #field {
+        border-top: 52px solid #d5d4d4;
+    }
+
+    .container_sidebox {
+        width: 126px;
+        top: 12%;
+        right: 10%;
+    }
+
+    .container_holdstone {
+        margin-top: 123px;
+    }
+
+    .container_info {
+        margin-top: 123px;
+    }
+
+    .container_control {
+        width: 315px;
+        height: 207px;
+        background-image: url("img/keyboard_control.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 15%;
+        bottom: -700px;
+        display: none;
+        clear: both;
+    }
+
+    #menu, #hard_drop, #left_rotation, #right_rotation, #hold, #left, #down, #right {
+        display: none;
+    }
+
+    .container_message {
+        left: 41.5%;
+        top: 30%;
+        height: 380px;
+        width: 360px;
+    }
+
+    #continueButton, #newGameButton {
+        margin-top: 45px;
+    }
+
+    .container_goal {
+        z-index: 100;
+        left: 0px;
+        width: 266px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 950px) {
+    /* Darstellung auf Netbooks */
+    #field td, #nextstone td, #holdstone td {
+        background-color: #ededed;
+        width: 22px;
+        height: 22px;
+    }
+
+    #field {
+        border-top: 52px solid #d5d4d4;
+    }
+
+    .container_sidebox {
+        width: 126px;
+        top: 12%;
+        right: 0%;
+    }
+
+    .container_holdstone {
+        margin-top: 123px;
+    }
+
+    .container_info {
+        margin-top: 123px;
+    }
+
+    #title {
+        background-image: url("img/tetris _netbook.png");
+        width: 460px;
+        height: 400px;
+    }
+
+    .container_control {
+        width: 252px;
+        height: 163px;
+        background-image: url("img/keyboard_control_netbook.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 20%;
+        bottom: -700px;
+        display: none;
+        clear: both;
+    }
+
+    #menu, #hard_drop, #left_rotation, #right_rotation, #hold, #left, #down, #right {
+        display: none;
+    }
+
+    .container_message {
+        left: 41.5%;
+        top: 35%;
+        height: 340px;
+        width: 340px;
+    }
+
+    #continueButton, #newGameButton {
+        margin-top: 35px;
+    }
+
+    .container_goal {
+        z-index: 100;
+        left: 0px;
+        width: 266px;
+    }
+}
+
+
+
+@media (min-height: 650px) and (max-height: 799px) {
+    /* Darstellung auf Laptops die eine kleinere Höhe haben */
+    #field td, #nextstone td, #holdstone td {
+        background-color: #ededed;
+        width: 18px;
+        height: 18px;
+    }
+
+    #field {
+        border-top: 52px solid #d5d4d4;
+    }
+	
+	.container_game {
+        margin-top: 5px;
+    }
+
+    .container_sidebox {
+		font-size: 12px;
+        width: 110px;
+        top: 12%;
+        right: 0%;
+    }
+
+	.container_sidebox h3{
+		font-size: 12px;
+    }
+	
+    .container_holdstone {
+        margin-top: 110px;
+    }
+	
+	.container_powerup {
+		font-size: 12px;
+	}
+
+    .container_info {
+        margin-top: 110px;
+    }
+
+    #title {
+        background-image: url("img/tetris _netbook.png");
+        width: 460px;
+        height: 400px;
+    }
+
+    .container_control {
+        width: 252px;
+        height: 163px;
+        background-image: url("img/keyboard_control_netbook.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 20%;
+        bottom: -600px;
+        display: none;
+        clear: both;
+    }
+
+    #menu, #hard_drop, #left_rotation, #right_rotation, #hold, #left, #down, #right {
+        display: none;
+    }
+
+    .container_message {
+        left: 41.5%;
+        top: 35%;
+        height: 340px;
+        width: 340px;
+    }
+
+    #continueButton, #newGameButton {
+        margin-top: 35px;
+    }
+
+    .container_goal {
+        z-index: 100;
+        left: 0px;
+        width: 266px;
+    }
+}
+
+
+
+
+
+@media (max-width: 450px) {
+    /* mobile Geräte */
+    #field td, #nextstone td, #holdstone td {
+        background-color: #ededed;
+        width: 14px;
+        height: 14px;
+    }
+
+    #field {
+        border-top: 42px solid #d5d4d4;
+        left: 1.5%;
+    }
+
+    .container_sidebox {
+        width: 94px;
+        top: 12%;
+        right: 1.5%;
+    }
+
+    .container_sidebox h3, #level, #points {
+        font-size: 12px;
+        padding: 8px 8px 0px 8px;
+    }
+
+    #points {
+        padding: 8px 8px 4px 8px;
+    }
+
+    .container_game {
+        width: 320px;
+        margin-top: 5px;
+    }
+
+	.container_powerup {
+		padding: 0px;
+		font-size: 10px;
+	}
+
+    .container_holdstone {
+        margin-top: 84px;
+    }
+
+    .container_info {
+        margin-top: 84px;
+    }
+
+    #title {
+        width: 273.6px;
+        height: 76.8px;
+    }
+
+    #copy {
+        width: 240px;
+        margin-left: -120px;
+    }
+
+    #title {
+        background-image: url("img/tetris_mobil.png");
+        width: 320px;
+        height: 247px;
+    }
+
+    .container_control {
+        background-image: none;
+    }
+
+    #menu {
+        position: absolute;
+        width: 43px;
+        height: 43px;
+        left: 2.5%;
+        bottom: -400px;
+        cursor: pointer;
+    }
+
+    #hard_drop {
+        position: absolute;
+        width: 43px;
+        height: 43px;
+        left: 2.5%;
+        bottom: -470px;
+        cursor: pointer;
+    }
+
+    #left_rotation {
+        position: absolute;
+        width: 43px;
+        height: 43px;
+        left: 33%;
+        bottom: -400px;
+        cursor: pointer;
+    }
+
+    #right_rotation {
+        position: absolute;
+        width: 43px;
+        height: 43px;
+        right: 33%;
+        bottom: -400px;
+        cursor: pointer;
+    }
+
+    #hold {
+        position: absolute;
+        width: 43px;
+        height: 43px;
+        right: 2.5%;
+        bottom: -400px;
+        cursor: pointer;
+    }
+
+    #left {
+        position: absolute;
+        width: 43px;
+        height: 43px;
+        left: 26%;
+        bottom: -470px;
+        cursor: pointer;
+    }
+
+    #down {
+        position: absolute;
+        width: 43px;
+        height: 43px;
+        left: 44%;
+        bottom: -470px;
+        cursor: pointer;
+    }
+
+    #right {
+        position: absolute;
+        width: 43px;
+        height: 43px;
+        right: 25%;
+        bottom: -470px;
+        cursor: pointer;
+    }
+
+    .container_goal {
+        z-index: 100;
+        font-size: 10px;
+        left: 5px;
+        width: 182px;
+        float: left;
+    }
+
+    .container_message #message {
+        font-size: 12px;
+    }
+}
+
+@media (max-height: 450px) and (orientation: landscape) {
+    #title {
+        background-image: url("img/tetris_menu_logo.png");
+        width: 260px;
+        height: 57px;
+    }
+
+    #logo {
+        margin-right: auto;
+        margin-left: auto;
+    }
+	
+    .container_message #message {
+        font-size: 12px;
+    }
+
+    .container_message {
+        margin-top: -95px;
+        height: 260px;
+        width: 400px;
+    }
+
+    #portrait {
+        display: block;
+    }
+}

@@ -1,0 +1,620 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+html {
+    background:url("img/Background.png");
+    background-size: 100%;
+    background-color: black;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/*-------------------------------Container for the Game-------------------------------*/
+.container{
+    margin: auto;
+    background: black;
+    width: 450px;
+}
+
+/*-------------------------------Menu-------------------------------*/
+.menu{
+    table-layout: fixed;
+    display: table-row;
+    width: 100%;
+    height: 20%;
+}
+#backToMenu {
+    display: table-cell;
+    background: black;
+    color: limegreen;
+    text-align: center;
+    font-size: 100%;
+    padding: 10%;
+    cursor: pointer;
+}
+#level{
+    display: table-cell;
+    width: 33%;
+    background: black;
+    color: white;
+    text-align: center;
+    table-layout: inherit;
+}
+#lifepoints{
+    display: table-cell;
+    width: 33%;
+    background: black;
+    color: white;
+    text-align: center;
+    table-layout: inherit;
+}
+#budget{
+    display: table-cell;
+    width: 33%;
+    background: black;
+    color: white;
+    text-align: center;
+    table-layout: inherit;
+}
+#play{
+    display: table-cell;
+    background: black;
+    color: limegreen;
+    text-align: center;
+    font-size: 100%;
+    padding: 10%;
+    cursor: pointer;
+}
+
+/*-------------------------------TowerMenueBar-------------------------------*/
+.tower{
+    display: table;
+    width: 100%;
+    height: 10%;
+}
+#tower0{
+    display: table-cell;
+    background-color: black;
+    background:url("img/towerSmall_icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10%;
+    padding-top: 10%;
+    cursor: pointer;
+}
+#tower1{
+    display: table-cell;
+    backgorund-color: black;
+    background:url("img/towerBig_icon.png") no-repeat;
+    background-size: 100%;
+    width: 10%;
+    padding-top: 10%;
+    cursor: pointer;
+}
+#tower2{
+    display: table-cell;
+    background:url("img/towerFreeze_icon.png") no-repeat;
+    background-size: 100%;
+    width: 10%;
+    padding-top: 10%;
+    cursor: pointer;
+}
+
+#tower3, #tower4, #tower5, #tower6, #tower7{
+    display: table-cell;
+    width: 10%;
+    background: black;
+    padding-top: 10%;
+}
+#tower8{
+    display: table-cell;
+    background:url("img/upgrade_icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10%;
+    padding-top: 10%;
+    cursor: pointer;
+}
+
+#tower9{
+    display: table-cell;
+    background:url("img/delete_icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10%;
+    padding-top: 10%;
+    cursor: pointer;
+}
+
+/*-------------------------------Gamefield-------------------------------*/
+.gamefield {
+    display: table;
+    width: 100%;
+
+}
+.gameTableRow {
+    display: table-row;
+    height: 45px;
+}
+
+/*-------------------------------Loading Screen-------------------------*/
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loader {
+    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #e74c3c;
+    -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f9c922;
+    -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg); /* IE 9 */
+        transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg); /* IE 9 */
+        transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222222;
+    z-index: 1000;
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+/*-------------------------------GameOver-------------------------------*/
+#overlayGameover {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+#textGameOver{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 50px;
+    color: darkred;
+    background-color: lightgrey;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+#menubutton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: darkgreen;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+/*-------------------------------Menu-------------------------------*/
+#overlayMenu{
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Visible by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color : white;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#overlayCredits {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Visible by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color : white;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+h1 {
+    text-align: center;
+    font-size: 500%;
+    font-weight: bold;
+    color: white;
+}
+#descriptions{
+    table-layout: fixed;
+    text-align: center;
+    font-size: 10px;
+    padding-bottom: 50px;
+}
+#creditText {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.buttons{
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+}
+#street1, #street2, #street3{
+    cursor: pointer;
+}
+.pic{
+    width: 50px;
+}
+table,th,td {
+    border: 1px solid;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+#startbutton, #credits, #back {
+    margin-bottom: 50%;
+    cursor: pointer;
+}
+
+/*-------------------------------Game Classes-------------------------------*/
+.site {
+    display: table-cell;
+    background:url("img/grass.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+.street {
+    display: table-cell;
+    background:url("img/road.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+.mobSmall{
+    display: table-cell;
+    background: url("img/monsterSmall.png"), url("img/road.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+.mobBig{
+    display: table-cell;
+    background:url("img/monsterBig.png"), url("img/road.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+.mobBoss{
+    display: table-cell;
+    background:url("img/monsterBoss.png"), url("img/road.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+.towerSmall0{
+    display: table-cell;
+    background:url("img/towerSmall_icon.png"), url("img/grass.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+
+.towerSmall1{
+    display: table-cell;
+    background:url("img/towerSmall_icon_upgrade1.png"), url("img/grass.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+
+.towerSmall2{
+    display: table-cell;
+    background:url("img/towerSmall_icon_upgrade2.png"), url("img/grass.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+
+.towerSmall3{
+    display: table-cell;
+    background:url("img/towerSmall_icon_upgrade3.png"), url("img/grass.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+
+.towerBig0{
+    display: table-cell;
+    background:url("img/towerBig_icon.png"), url("img/grass.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+
+.towerBig1{
+    display: table-cell;
+    background:url("img/towerBig_icon_upgrade1.png"), url("img/grass.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+
+.towerBig2{
+    display: table-cell;
+    background:url("img/towerBig_icon_upgrade2.png"), url("img/grass.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+
+.towerBig3{
+    display: table-cell;
+    background:url("img/towerBig_icon_upgrade3.png"), url("img/grass.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+
+.freezeTower0{
+    display: table-cell;
+    background:url("img/towerFreeze_icon.png"), url("img/ice.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+
+.freezeTower1{
+    display: table-cell;
+    background:url("img/towerFreeze_icon_upgrade1.png"), url("img/ice.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+
+.freezeTower2{
+    display: table-cell;
+    background:url("img/towerFreeze_icon_upgrade2.png"), url("img/ice.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+
+.freezeTower3{
+    display: table-cell;
+    background:url("img/towerFreeze_icon_upgrade3.png"), url("img/ice.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5%;
+}
+
+/*-------------------------------Smartphone Layouts-------------------------------*/
+@media screen and (max-width:599px){
+    h1{
+        font-size: 300%;
+    }
+    .container{
+        box-sizing: border-box;
+        width: 90%;
+    }
+    .menu{
+        table-layout: fixed;
+        display: table-row;
+        width: 100%;
+        height: 20%;
+    }
+    .gamefield {
+        display: table;
+        width: 100%;
+
+    }
+    .gameTableRow {
+        display: table-row;
+        height: auto;
+    }
+    #descriptions{
+        table-layout: fixed;
+        text-align: center;
+        font-size: 7px;
+        padding-bottom: 20px;
+    }
+    #street1, #street2, #street3{
+        font-size: 15px;
+    }
+    #startbutton, #credits{
+        margin-bottom: 50%;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    #backtoMenu, #level, #budget, #lifepoints, #play{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:1100px) and (min-width: 600px){
+    h1{
+        font-size: 300%;
+    }
+    .container{
+        box-sizing: border-box;
+        width: 75%;
+    }
+    .menu{
+        table-layout: fixed;
+        display: table-row;
+        width: 100%;
+        height: 10%;
+    }
+    .gamefield {
+        display: table;
+        width: 100%;
+
+    }
+    .gameTableRow {
+        display: table-row;
+        height: auto;
+    }
+    #descriptions{
+        table-layout: fixed;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    #street1, #street2, #street3{
+        font-size: 15px;
+    }
+    #startbutton, #credits{
+        /*display: block;*/
+        margin-bottom: 50%;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    #backtoMenu, #level, #budget, #lifepoints, #play{
+        font-size: 30px;
+    }
+}
+@media (max-width:600px) and (min-width: 600px) {
+    h1 {
+        font-size: 200%;
+    }
+
+    .container {
+        box-sizing: border-box;
+        width: 75%;
+    }
+
+    .menu {
+        table-layout: fixed;
+        display: table-row;
+        width: 100%;
+        height: 10%;
+    }
+
+    .gamefield {
+        display: table;
+        width: 100%;
+
+    }
+
+    .gameTableRow {
+        display: table-row;
+        height: auto;
+    }
+
+    #descriptions {
+        table-layout: fixed;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    #street1, #street2, #street3 {
+        font-size: 10px;
+    }
+
+    #startbutton, #credits {
+        /*display: block;*/
+        margin-bottom: 50%;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    #backtoMenu, #level, #budget, #lifepoints, #play {
+        font-size: 30px;
+    }
+}
+@media all and (max-width:1100px) and (orientation:landscape) {
+    #turnOverlay{
+        position: fixed; /* Sit on top of the page content */
+        display: block; /* Visible by default */
+        text-align: center;
+        font-size: 400%;
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color : white;
+        background-color: black; /* Black background with opacity */
+        z-index: 1000; /* Specify a stack order in case you're using a different order for other elements */
+    }
+}

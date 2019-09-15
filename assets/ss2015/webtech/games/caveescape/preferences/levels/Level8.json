@@ -1,0 +1,18 @@
+{
+  "NAME":"Little Hard hmm?",
+  "MAXFREQUENZ":2000,
+  "MAXPOINTS":90000,
+  "YellowCoin":100,
+  "PowerUp_Multiplier":10,
+  "Bat":100,
+  "BlueCoin":100,
+  "Rat":100,
+  "RedCoin":100,
+  "PurpleCoin":100,
+  "DrunkenRat":100,
+  "PowerUp_CoinGathering":5,
+  "PowerUp_OnlyCoins":15,
+  "PowerDown_Multiplier":5,
+  "PowerUp_CoinMagnet":10
+
+}

@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+    <title>Space Invaders</title>
+</head>
+
+<body>
+    <table id="highscore" style="display:none">
+        <tr>
+            <td>
+                <h1>Highscore</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table id="highscorePoins"></table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="zurueckButton">
+                    <p id="button">zur&uuml;ck</p>
+                </button>
+            </td>
+        </tr>
+    </table>
+    <table id="menu">
+        <tr/>
+        <tr>
+            <td id="text">
+                <h1>Space Invaders</h1>
+            </td>
+        </tr>
+        <tr/>
+        <tr>
+            <td id="text">
+                <p>...ist ein Shoot-'em-up-Spiel, entworfen und programmiert von Toshihiro Nishikado und vertrieben von Taito. Erschienen ist es im Jahre 1978. Neben Pac-Man war Space Invaders eines der Spiele, die die fr&uuml;he Entwicklung der Videospiele gepr&auml;gt haben.
+                    <p>
+            </td>
+        </tr>
+        <tr/>
+        <tr>
+            <td id="text">
+                <button id="game">
+                    <p id="button">Spielen</p>
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td id="text">
+                <button id="hs">
+                    <p id="button">Highscore</p>
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td id="text">
+                <button id="feindeIndex">
+                    <p id="button">Feinde Index</p>
+                </button>
+            </td>
+        </tr>
+        <tr/>
+        <tr>
+            <td id="text">
+                <div>
+                    <p id="flaticon">Icons from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>
+                    </p>
+                </div>
+
+            </td>
+        </tr>
+
+    </table>
+
+    <button id="figur">
+        <img id="menu" src="images/figur/A.svg">
+    </button>
+
+    <script type="application/dart" src="Menu.dart"></script>
+    <script data-pub-inline src="packages/browser/dart.js"></script>
+</body>
+
+</html>

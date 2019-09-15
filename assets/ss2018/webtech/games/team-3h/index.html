@@ -1,0 +1,157 @@
+<!DOCTYPE html><html><head>
+    <style type="text/css" media="print">
+        @page {
+            size: landscape;
+        }
+        body {
+            writing-mode: tb-rl;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    <title>Jumpy Man</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="icon" href="img/alien.ico">
+    <script defer="" src="main.dart.js"></script>
+    <!--suppress HtmlUnknownTarget -->
+    
+</head>
+<body>
+    <main>
+        <div id="levelSelectDiv">
+            <h1 id="header">
+                Jumpy Man
+            </h1>
+            <h2>
+                Please select a Level
+            </h2>
+            <table id="buttonTable">
+                <tbody><tr class="tableRow">
+                    <td>
+                        <button class="levelButton" id="button1"></button>
+                    </td>
+                    <td>
+                        <button class="levelButton" id="button2"></button>
+                    </td>
+                    <td>
+                        <button class="levelButton" id="button3"></button>
+                    </td>
+                    <td>
+                        <button class="levelButton" id="button4"></button>
+                    </td>
+                    <td>
+                        <button class="levelButton" id="button5"></button>
+                    </td>
+                </tr>
+                <tr class="tableRow">
+                    <td>
+                        <button class="levelButton" id="button6"></button>
+                    </td>
+                    <td>
+                        <button class="levelButton" id="button7"></button>
+                    </td>
+                    <td>
+                        <button class="levelButton" id="button8"></button>
+                    </td>
+                    <td>
+                        <button class="levelButton" id="button9"></button>
+                    </td>
+                    <td>
+                        <button class="levelButton" id="button10"></button>
+                    </td>
+                </tr>
+                <tr class="tableRow">
+                    <td>
+                        <button class="levelButton" id="button11"></button>
+                    </td>
+                    <td>
+                        <button class="levelButton" id="button12"></button>
+                    </td>
+                    <td>
+                        <button class="levelButton" id="button13"></button>
+                    </td>
+                    <td>
+                        <button class="levelButton" id="button14"></button>
+                    </td>
+                    <td>
+                        <button class="levelButton" id="button15"></button>
+                    </td>
+                </tr>
+            </tbody></table>
+            <p>Tap left to Jump</p>
+            <p>Tap right to PowerUp</p>
+            <p>Portrait to Pause</p>
+            <button id="btnCreditsScreen"></button>
+            <p>© Jannes Wolf, Florian Nickel</p>
+        </div>
+        <div id="SuccessScreen">
+            <h1 class="endScreenHeader">Level geschafft!</h1>
+            <button id="backToLevelSelect" class="menuControls"></button>
+            <button id="nextLevel" class="menuControls"></button>
+        </div>
+        <div id="FailureScreen">
+            <h1 class="endScreenHeader">Game Over!</h1>
+            <button id="backToLevelSelect_Failure" class="menuControls"></button>
+            <button id="retryLevel" class="menuControls"></button>
+        </div>
+        <div id="PauseScreen">
+            Pause<br><p id="rotateLabel">Landscape to continue</p>
+        </div>
+        <div id="powerUpLabel"></div>
+        <div id="CreditsScreen">
+            <h1>Credits</h1>
+            <p id="topCredit">Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+            <p>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+            <p>Icons made by <a href="https://www.flaticon.com/authors/fjstudio" title="fjstudio">fjstudio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+            <p>Icons made by <a href="https://www.kenney.nl" title="Kenney">Kenney</a> from <a href="https://opengameart.org/" title="OpenGameArt">OpenGameArt.org</a> is licensed by <a href="http://creativecommons.org/publicdomain/zero/1.0/" title="License (CC0)" target="_blank">License (CC0)</a></p>
+            <button id="backToLevelSelect_Credits"></button>
+        </div>
+        <div id="preloader">
+            <img src="img/Brick/Brick.png" width="1" height="1">
+            <img src="img/Buttons/backToMenuButton.png" width="1" height="1">
+            <img src="img/Buttons/nextLevelButton.png" width="1" height="1">
+            <img src="img/Buttons/retryLevelButton.png" width="1" height="1">
+            <img src="img/Enemys/Jumper/Jumper.png" width="1" height="1">
+            <img src="img/Enemys/Slime/Slime.png" width="1" height="1">
+            <img src="img/Enemys/Walker/walker.gif" width="1" height="1">
+            <img src="img/Goal/Goal.gif" width="1" height="1">
+            <img src="img/Grass/GrassCenterCenter.png" width="1" height="1">
+            <img src="img/LevelBackgrounds/castle.png" width="1" height="1">
+            <img src="img/LevelBackgrounds/desert.png" width="1" height="1">
+            <img src="img/LevelBackgrounds/forest.png" width="1" height="1">
+            <img src="img/LevelBackgrounds/grasslands.png" width="1" height="1">
+            <img src="img/LevelButtons/lvl1.png" width="1" height="1">
+            <img src="img/LevelButtons/lvl2.png" width="1" height="1">
+            <img src="img/LevelButtons/lvl3.png" width="1" height="1">
+            <img src="img/LevelButtons/lvl4.png" width="1" height="1">
+            <img src="img/LevelButtons/lvl5.png" width="1" height="1">
+            <img src="img/LevelButtons/lvl6.png" width="1" height="1">
+            <img src="img/LevelButtons/lvl7.png" width="1" height="1">
+            <img src="img/LevelButtons/lvl8.png" width="1" height="1">
+            <img src="img/LevelButtons/lvl9.png" width="1" height="1">
+            <img src="img/LevelButtons/lvl10.png" width="1" height="1">
+            <img src="img/LevelButtons/lvl11.png" width="1" height="1">
+            <img src="img/LevelButtons/lvl12.png" width="1" height="1">
+            <img src="img/LevelButtons/lvl13.png" width="1" height="1">
+            <img src="img/LevelButtons/lvl14.png" width="1" height="1">
+            <img src="img/LevelButtons/lvl15.png" width="1" height="1">
+            <img src="img/Player/Player1_walk_right.gif" width="1" height="1">
+            <img src="img/PowerUps/fireActivatedPowerUp.png" width="1" height="1">
+            <img src="img/PowerUps/higherJumpActivatedPowerUp.png" width="1" height="1">
+            <img src="img/PowerUps/higherJumpPowerUp.png" width="1" height="1">
+            <img src="img/PowerUps/noPowerUp.png" width="1" height="1">
+            <img src="img/PowerUps/powerUpBlock.png" width="1" height="1">
+            <img src="img/PowerUps/secondLifePowerUp.png" width="1" height="1">
+            <img src="img/PowerUps/speedActivatedPowerUp.png" width="1" height="1">
+            <img src="img/PowerUps/speedPowerUp.png" width="1" height="1">
+            <img src="img/Projectile/projectile.png" width="1" height="1">
+            <img src="img/credits.png" width="1" height="1">
+        </div>
+        <button id="jumpButton" class="mobileControls"></button>
+        <button id="powerUpButton" class="mobileControls"></button>
+        <table id="GameField"></table>
+    </main>
+
+
+</body></html>

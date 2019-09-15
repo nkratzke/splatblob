@@ -1,0 +1,2912 @@
+[
+  {
+    "name": "Tutorial 1",
+    "message": "Swipe to move the green block out of the way to clear a path for the laser!",
+    "height": 5,
+    "width": 3,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 1,
+            "y": 4,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 1,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "true",
+        "directions": [
+          "left",
+          "down"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tutorial 2",
+    "message": "Dark blocks are rooted in place. Move the green block around them!",
+    "height": 5,
+    "width": 3,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 1,
+            "y": 4,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 1,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      }
+    ]
+  },
+  {
+    "name": "Tutorial 3",
+    "message": "Swiping moves all movable blocks",
+    "height": 5,
+    "width": 3,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 1,
+            "y": 4,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 1,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      }
+    ]
+  },
+  {
+    "name": "Tutorial 4",
+    "message": "Use dark blocks to stop green ones from moving!",
+    "height": 5,
+    "width": 3,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 1,
+            "y": 4,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 1,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      }
+    ]
+  },
+  {
+    "name": "Basic 1",
+    "message": "Let's go bigger!",
+    "height": 7,
+    "width": 5,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 2,
+            "y": 6,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 2,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      }
+    ]
+  },
+  {
+    "name": "Basic 2",
+    "message": "Many puzzles have multiple ways to solve them!",
+    "height": 7,
+    "width": 5,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 2,
+            "y": 6,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 2,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      }
+    ]
+  },
+  {
+    "name": "Basic 3",
+    "message": "Try to solve each puzzle with the fewest moves possible!",
+    "height": 7,
+    "width": 5,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 2,
+            "y": 6,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 2,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      }
+    ]
+  },
+  {
+    "name": "Basic 4",
+    "message": "Some levels require a specific strategy!",
+    "height": 7,
+    "width": 5,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 2,
+            "y": 6,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 2,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      }
+    ]
+  },
+  {
+    "name": "Basic 5",
+    "message": "This one is doable in 6 moves!",
+    "height": 7,
+    "width": 5,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 2,
+            "y": 6,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 2,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      }
+    ]
+  },
+  {
+    "name": "Mirrors 1",
+    "message": "Mirrors change a laser's direction!",
+    "height": 5,
+    "width": 5,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 1,
+            "y": 4,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 4,
+            "y": 1,
+            "direction": "right"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 1,
+        "y": 1,
+        "type": "mirror",
+        "movable": "false",
+        "directions": [
+          "down",
+          "right"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      }
+    ]
+  },
+  {
+    "name": "Mirrors 2",
+    "message": "",
+    "height": 5,
+    "width": 5,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 0,
+            "y": 4,
+            "direction": "right"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 4,
+            "y": 0,
+            "direction": "right"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 2,
+        "y": 0,
+        "type": "mirror",
+        "movable": "false",
+        "directions": [
+          "down",
+          "right"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "type": "mirror",
+        "movable": "false",
+        "directions": [
+          "left",
+          "up"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      }
+    ]
+  },
+  {
+    "name": "Mirrors 3",
+    "message": "Splitters turn one laser into two!",
+    "height": 5,
+    "width": 5,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 2,
+            "y": 4,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 0,
+            "y": 0,
+            "direction": "left"
+          },
+          {
+            "x": 4,
+            "y": 0,
+            "direction": "right"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "type": "splitter",
+        "movable": "false",
+        "direction": "up"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      }
+    ]
+  },
+  {
+    "name": "Pistons 1",
+    "message": "Piston blocks move other blocks on their own!",
+    "height": 7,
+    "width": 5,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 4,
+            "y": 6,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 0,
+            "y": 1,
+            "direction": "left"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 4,
+        "type": "piston",
+        "movable": "false",
+        "direction": "right"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "type": "piston",
+        "movable": "false",
+        "direction": "up"
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "type": "mirror",
+        "movable": "false",
+        "directions": [
+          "down",
+          "left"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      }
+    ]
+  },
+  {
+    "name": "Pistons 2",
+    "message": "",
+    "height": 7,
+    "width": 5,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 2,
+            "y": 6,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 2,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "piston",
+        "movable": "false",
+        "direction": "right"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "type": "piston",
+        "movable": "false",
+        "direction": "right"
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      }
+    ]
+  },
+  {
+    "name": "Pistons 3",
+    "message": "",
+    "height": 7,
+    "width": 5,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 2,
+            "y": 6,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 2,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "piston",
+        "movable": "false",
+        "direction": "down"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "type": "piston",
+        "movable": "false",
+        "direction": "down"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "type": "piston",
+        "movable": "false",
+        "direction": "up"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "type": "piston",
+        "movable": "false",
+        "direction": "up"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      }
+    ]
+  },
+  {
+    "name": "Confusion 1",
+    "message": "Confused blocks move after everything else has moved and they move in the wrong direction!",
+    "height": 5,
+    "width": 3,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 1,
+            "y": 4,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 1,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "confused",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      }
+    ]
+  },
+  {
+    "name": "Confusion 2",
+    "message": "",
+    "height": 7,
+    "width": 5,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 2,
+            "y": 6,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 2,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "type": "confused",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "type": "confused",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "type": "confused",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      }
+    ]
+  },
+  {
+    "name": "Confusion 3",
+    "message": "",
+    "height": 7,
+    "width": 5,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 2,
+            "y": 6,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 2,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "type": "confused",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "type": "confused",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "type": "confused",
+        "movable": "true"
+      }
+    ]
+  },
+  {
+    "name": "Confusion 4",
+    "message": "",
+    "height": 7,
+    "width": 5,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 2,
+            "y": 6,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 2,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "type": "confused",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "type": "confused",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "type": "confused",
+        "movable": "true"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      }
+    ]
+  },
+  {
+    "name": "Massive 1",
+    "message": "Have fun!",
+    "height": 9,
+    "width": 7,
+    "winConditions": [
+      {
+        "type": "laser",
+        "emitters": [
+          {
+            "x": 3,
+            "y": 8,
+            "direction": "up"
+          }
+        ],
+        "receivers": [
+          {
+            "x": 0,
+            "y": 0,
+            "direction": "up"
+          },
+          {
+            "x": 6,
+            "y": 0,
+            "direction": "up"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "x": 1,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 8,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 8,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 8,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 5,
+        "y": 8,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 6,
+        "y": 8,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 6,
+        "y": 8,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "type": "splitter",
+        "movable": "false",
+        "direction": "up"
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "type": "mirror",
+        "movable": "false",
+        "directions": [
+          "right",
+          "up"
+        ]
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "type": "mirror",
+        "movable": "false",
+        "directions": [
+          "left",
+          "up"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "type": "simple",
+        "movable": "false"
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "type": "simple",
+        "movable": "true"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "type": "simple",
+        "movable": "true"
+      }
+    ]
+  }
+]

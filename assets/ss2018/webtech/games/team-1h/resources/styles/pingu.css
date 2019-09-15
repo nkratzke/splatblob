@@ -1,0 +1,28 @@
+.figure { /* eine Figur */
+    background-image: url("../designs/pingu/figure.png");
+}
+.sleepingFigure { /* eine schlafende Figur */
+    background-image: url("../designs/pingu/sleepingFigure.png");
+}
+.obstacle { /* ein Hindernis */
+    background-image: url("../designs/pingu/obstacle.png");
+}
+.bonus { /* ein Bonusobjekt */
+    background-image: url("../designs/pingu/bonus.png");
+}
+.consumedBonus { /* ein eingesammeltes Bonusobjekt */
+    background-image: url("../designs/pingu/consumedBonus.png");
+}
+.goal { /* Das Ziel */
+    background-image: url("../designs/pingu/goal.png");
+}
+.destructible { /* ein zerstörbares Objekt */
+    background-image: url("../designs/pingu/destructible.png");
+}
+/* Die Farbe der Tabelle */
+tr:nth-child(odd) td:nth-child(even) {
+    background-color: lightsteelblue;
+}
+tr:nth-child(even) td:nth-child(odd) {
+    background-color: lightsteelblue;
+}

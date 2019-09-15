@@ -1,0 +1,63 @@
+/*
+* Styling for tablets
+*/
+
+h3{
+    font-size: 100%;
+    margin-top: 5%;
+}
+
+p{
+    font-size: 140%;
+}
+
+#loadingOverlay{
+    font-size: xx-large;
+}
+
+#loadingImg{
+    width: 20%;
+    margin-top: 50%;
+}
+
+#tableManual {
+    width: 80%;
+    top: 15%;
+    left: 10%;
+    right: 10%;
+}
+
+#tableManual img{
+    width: 40%;
+}
+
+#menuOverlay{
+    font-size: xx-large;
+}
+
+#highscore{
+    margin-top: 30%;
+}
+
+#creditsContent{
+    margin-bottom: 20%;
+}
+
+#autopilotFeedback{
+    font-size: 3em;
+}
+
+
+#topThreeScores tr td{
+    width: 15%;
+}
+
+#gameField{
+    width: 80%;
+}
+
+#information{
+    height: 15%;
+    width: 80%;
+}
+

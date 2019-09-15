@@ -1,0 +1,10 @@
+{
+  "max_levels": 7,
+  "dropfish_ratio": 2.14,
+  "loadingScreenDuration": 2,
+  "minimizePowerUpValue": 1,
+  "minimizeFactor": 0.8,
+  "maximizePowerUpValue": 5,
+  "maximizeFactor": 1.2,
+  "speedPowerUpValue": 8
+}

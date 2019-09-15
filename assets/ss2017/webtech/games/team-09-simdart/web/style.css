@@ -1,0 +1,925 @@
+/*** the game page ***/
+#spielseite {
+  background-image: url(Images/backblau.jpg);
+  background-position: top;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/** define the font family **/
+
+@font-face{
+  font-family: 'coba';
+  rc: local('cobaltaliensuperital');
+  src: url(Images/cobaltaliensuperital.woff);
+  format('woff');
+}
+
+/************* Gameover overlay ************************/
+
+#gameover{
+  display: none;
+  width:34%;
+  height:43%;
+  z-index: 20;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 1em 1em 1em 1em;
+  position: absolute;
+  top: 24.4%;
+  left: 26%;
+  opacity: 0.8;
+}
+
+#gameover_title{
+  width: 100%;
+  text-align: center;
+  font-family: "Bauhaus 93";
+  font-size: 25px;
+  color: white;
+  float: left;
+}
+
+#gameover_points{
+  float:left;
+  width:80%;
+  height: 60%;
+  position: absolute;
+  left: 11%;
+  top: 10%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Agency FB";
+}
+
+#gameover_play{
+  width: 28%;
+  height: 13%;
+  position: absolute;
+  left: 18%;
+  top: 80%;
+  border-radius: 2em 2em 2em 2em;
+  background-image: url("Images/nextlevel.png");
+  background-size: 100%;
+  background-position: center;
+  outline:0;
+}
+
+#gameover_newgame {
+  width: 24%;
+  height: 12%;
+  position: absolute;
+  left: 60%;
+  top: 80%;
+  border-radius: 2em 2em 2em 2em;
+  background-image: url("Images/replay.png");
+  background-size: 100%;
+  background-position: center;
+  outline:0;
+}
+
+/*********** normal Container(content all div from a page) ****************/
+#container{
+  width: 100%;
+  height: 100%;
+  float:left;
+  display: block;
+  position: absolute;
+  background-color: black;
+  opacity: 0.8;
+}
+
+/*the Data of the Game like Points and Lifes*/
+#gameData{
+  display: inline-flex;
+  width: 430px;
+  height: 42px;
+  float: left;
+  position: absolute;
+  left: 25.4%;
+  top: 3%;
+  border: 5px solid gray;
+  border-radius: 1em 1em 1em 1em;
+}
+
+#level{
+  width: 100%;
+  font-size: 25px;
+  line-height: 200%;
+  text-align: center;
+  font-family: 'coba';
+  color: white;
+}
+
+#points{
+  width: 100%;
+  font-size: 25px;
+  line-height: 200%;
+  text-align: center;
+  font-family: 'coba';
+  color: white;
+}
+
+#life{
+  width: 100%;
+  font-size: 25px;
+  line-height: 200%;
+  text-align: center;
+  font-family: 'coba';
+  color: white;
+}
+
+/*the container for the information wich color is in the hand*/
+
+#nextColor-block{
+  display: block;
+  width: 90px;
+  height: 90px;
+  float:left;
+  position: absolute;
+  top: 13%;
+  left: 70%;
+  border: 10px solid gray;
+  border-radius: 1em 1em 1em 1em;
+  background-color: darkslategray;
+}
+
+#nextColor{
+  display: block;
+  width: 50%;
+  height: 50%;
+  float:left;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  border: 1px solid black;
+  border-radius: 100% 100% 100% 100%;
+}
+
+#preview{
+  display: block;
+  width:100%;
+  height:100%;
+  float:left;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 100% 100% 100% 100%;
+}
+
+/*main content (gamefield)*/
+#game{
+  width: 430px;
+  height: 430px;
+  float:left;
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 13%;
+  border: 10px solid gray;
+  border-radius: 1em 1em 1em 1em;
+  background-image: url(Images/level3.png);
+  background-size: 100%;
+}
+
+
+#field{
+  width:100%;
+  height:100%;
+  float:left;
+}
+
+
+/*Range for Buttons in the feed of the screen*/
+#controlpanel{
+  display: block;
+  width: 426px;
+  height: 17px;
+  float:left;
+  position: absolute;
+  left: 25.6%;
+  top: 88.8%;
+}
+
+/*states for the buttons*/
+.play{
+  width: 50%;
+  height:250%;
+  float:left;
+  border-radius: 2em 2em 2em 2em;
+  background-image: url("Images/play.png");
+  background-size: 100%;
+  background-position: center;
+  outline:0;
+}
+
+.break{
+  width:50%;
+  height:100%;
+  float:left;
+  outline:0;
+}
+
+.reset{
+  width: 50%;
+  height:250%;
+  float:left;
+  border-radius: 2em 2em 2em 2em;
+  background-image: url("Images/reset.png");
+  background-size: 100%;
+  background-position: center;
+  position: absolute;
+  left: 53%;
+  outline:0;
+}
+
+/******** Symbols *******/
+
+.Symbol\(\"country\"\){
+}
+
+.Symbol\(\"path\"\){
+}
+
+.Symbol\(\"pathend\"\){
+}
+
+.Symbol\(\"red\"\){
+  background-color: red;
+  background-image: url("Images/red.png");
+  background-size: 100% 100%;
+  border-radius: 100% 100% 100% 100%;
+}
+
+.Symbol\(\"ballred\"\){
+  background-color: red;
+  background-image: url("Images/borange.png");
+  background-size: 100% 100%;
+  border-radius: 100% 100% 100% 100%;
+}
+
+.Symbol\(\"coconutred\"\){
+  background-color: red;
+  background-image: url("Images/coconutrot.png");
+  background-size: 100% 100%;
+  border-radius: 100% 100% 100% 100%;
+}
+
+
+.Symbol\(\"blue\"\){
+  background-color: blue;
+  background-image: url("Images/blue.png");
+  background-size: 100% 100%;
+  border-radius: 100% 100% 100% 100%;
+}
+
+.Symbol\(\"ballblue\"\){
+  background-color: blue;
+  background-image: url("Images/bblaue.png");
+  background-size: 100% 100%;
+  border-radius: 100% 100% 100% 100%;
+}
+
+.Symbol\(\"coconutblue\"\){
+  background-color: blue;
+  background-image: url("Images/coconutblau.png");
+  background-size: 100% 100%;
+  border-radius: 100% 100% 100% 100%;
+}
+
+.Symbol\(\"green\"\){
+  background-color: green;
+  background-image: url("Images/green.png");
+  background-size: 100% 100%;
+  border-radius: 100% 100% 100% 100%;
+}
+
+.Symbol\(\"ballgreen\"\){
+  background-color: green;
+  background-image: url("Images/bgruen.png");
+  background-size: 100% 100%;
+  border-radius: 100% 100% 100% 100%;
+}
+
+.Symbol\(\"coconutgreen\"\){
+  background-color: green;
+  background-image: url("Images/coconutgrün.png");
+  background-size: 100% 100%;
+  border-radius: 100% 100% 100% 100%;
+}
+
+
+.Symbol\(\"yellow\"\){
+  background-color: yellow;
+  background-image: url("Images/yellow.png");
+  background-size: 100% 100%;
+  border-radius: 100% 100% 100% 100%;
+}
+
+.Symbol\(\"ballyellow\"\){
+  background-color: yellow;
+  background-image: url("Images/bgelb.png");
+  background-size: 100% 100%;
+  border-radius: 100% 100% 100% 100%;
+}
+
+.Symbol\(\"coconutyellow\"\){
+  background-color: yellow;
+  background-image: url("Images/coconutgelb.png");
+  background-size: 100% 100%;
+  border-radius: 100% 100% 100% 100%;
+}
+
+.Symbol\(\"inferno25\"\){
+  background-image: url("Images/bombe25.gif");
+  border-radius: 100% 100% 100% 100%;
+  background-size: 100% 100%;
+}
+
+.Symbol\(\"inferno50\"\){
+  background-image: url("Images/bombe50.gif");
+  border-radius: 100% 100% 100% 100%;
+  background-size: 100% 100%;
+}
+
+.Symbol\(\"inferno75\"\){
+  background-image: url("Images/bombe75.gif");
+  border-radius: 100% 100% 100% 100%;
+  background-size: 100% 100%;
+}
+
+.Symbol\(\"inferno100\"\){
+  background-image: url("Images/bombe100.gif");
+  border-radius: 100% 100% 100% 100%;
+  background-size: 100% 100%;
+}
+
+.Symbol\(\"bomb\"\){
+  background-color: pink;
+  border-radius: 100% 100% 100% 100%;
+  background-size: 100% 100%;
+  background-image: url("Images/bombe.gif");
+}
+
+.Symbol\(\"cutterH\"\){
+  background-color: white;
+  background-image: url("Images/horizontal.gif");
+  background-size: 100% 100%;
+  border-radius: 100% 100% 100% 100%;
+}
+
+.Symbol\(\"cutterV\"\){
+  background-color: darkgray;
+  background-image: url("Images/vertical.gif");
+  background-size: 100% 100%;
+  border-radius: 100% 100% 100% 100%;
+}
+
+.Symbol\(\"explosion\"\){
+  background-image: url(Images/explosion.gif);
+  background-size: 100% 100%;
+  border-radius: 100% 100% 100% 100%;
+}
+
+
+/************** Startseite  **************/
+
+#startseite{
+  display: block;
+  background-color: black;
+  background-image: url(Images/start.jpg);
+  background-position: top;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  color:white;
+  margin-top: 3%;
+  margin-left: 24%;
+  font-size: 300%;
+  font-family: "Lucida Calligraphy";
+}
+
+a{
+  display: inline-block;
+  height: 40px;
+  width: 120px;
+  text-decoration: none;
+  color: white;
+  border: 5px solid gray;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#start{
+    margin-top: 10%;
+    margin-left: 43%;
+}
+
+#hilfe{
+  margin-top: 2%;
+  margin-left: 43%;
+}
+
+p{
+  color: gray;
+  font-family: "Lucida Console";
+  margin-top: 5%;
+  margin-left: 30% ;
+
+}
+
+/********* Hilfeseite **********/
+
+#hilfeseite{
+  background-color: gray;
+  background-image: url(Images/hilfe.jpg);
+}
+
+#hilfe-container{
+  display: block;
+  width: 500px;
+  height: 610px;
+  font-size: 100%;
+  margin-top: 0.2%;
+  margin-left: 30%;
+  float: left;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 1em 1em 1em 1em;
+  opacity: 0.8;
+}
+
+#hilfe-container h3{
+  color:white;
+  text-align: center;
+  font-family: "Lucida Handwriting";
+  margin: 0;
+  padding: 0;
+}
+
+#hilfe-container p{
+  color:white;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-left:4%;
+  padding:0;
+}
+
+#hilfe-container a{
+  height: 30px;
+  width: 150px;
+  margin-left: 32%;
+  padding: 1.5%;
+  line-height: 120%;
+}
+
+#hilfe-container p{
+  color: white;
+  font-size: 1rem;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 4%;
+}
+
+/*********** Anpassung für Geräte unter 1150px ***************/
+
+@media only screen and (max-width: 1150px) {
+
+  /*************Gameover overlay************************/
+
+  #gameover{
+    display: none;
+    font-family: "coba";
+    width:45%;
+    height:30%;
+    z-index: 20;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 1em 1em 1em 1em;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    opacity: 0.8;
+  }
+
+  #gameover_play{
+    width: 35%;
+    height: 12%;
+    position: absolute;
+    left: 15%;
+    top: 80%;
+    border-radius: 2em 2em 2em 2em;
+    background-image: url("Images/nextlevel.png");
+    background-size: 100%;
+    background-position: center;
+  }
+
+  /**********Game Informationen***************/
+  #gameData{
+    display: inline-flex;
+    width: 400px;
+    height: 50px;
+    float: left;
+    position: absolute;
+    left: 8.3%;
+    top: 5%;
+  }
+
+  /*the container for the information wich color is in the hand*/
+
+  #nextColor-block{
+    display: block;
+    width: 70px;
+    height: 70px;
+    float:left;
+    position: absolute;
+    top: 150px;
+    left: 550px;
+    border: 10px solid gray;
+  }
+
+  /*main content (gamecontainer)*/
+  #game{
+    width: 400px;
+    height: 400px;
+    float:left;
+    display: block;
+    position: absolute;
+    left: 8%;
+    top: 150px;
+    border: 10px solid gray;
+  }
+
+  /*Range for Buttons in the feed of the screen*/
+  #controlpanel {
+    display: block;
+    width: 400px;
+    height: 15px;
+    float: left;
+    position: absolute;
+    left: 8%;
+    top: 650px;
+  }
+
+}
+
+/**************** Anpassung für unter 750px ******************/
+
+@media only screen and (max-width: 750px) {
+
+  /*************Gameover overlay************************/
+
+  #gameover{
+    display: none;
+    font-family: "coba";
+    width:45%;
+    height:65%;
+    z-index: 20;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 1em 1em 1em 1em;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    opacity: 0.8;
+  }
+
+  #gameover_play{
+    width: 30%;
+    height: 11%;
+    position: absolute;
+    left: 18%;
+    top: 80%;
+    border-radius: 2em 2em 2em 2em;
+    background-image: url("Images/nextlevel.png");
+    background-size: 100%;
+    background-position: center;
+  }
+
+  #gameover_newgame {
+    width: 25%;
+    height: 11%;
+    position: absolute;
+    left: 60%;
+    top: 80%;
+  }
+
+  /**********Game Informationen***************/
+
+  #gameData{
+    display: inline-flex;
+    width: 250px;
+    height: 30px;
+    float: left;
+    position: absolute;
+    left: 14%;
+    top: 2%;
+  }
+
+  #level{
+    font-family: "coba";
+    font-size: 13px;
+  }
+
+  #points{
+    font-family: "coba";
+    font-size: 13px;
+  }
+
+  #life{
+    font-family: "coba";
+    font-size: 13px;
+  }
+
+
+  /*the container for the information wich color is in the hand*/
+
+  #nextColor-block{
+    display: block;
+    width: 50px;
+    height: 50px;
+    float:left;
+    position: absolute;
+    top: 55px;
+    left: 400px;
+    border: 8px solid gray;
+  }
+
+  /*main content (gamecontainer)*/
+  #game{
+    width: 250px;
+    height: 250px;
+    float:left;
+    display: block;
+    position: absolute;
+    left: 14%;
+    top: 55px;
+    border: 8px solid gray;
+  }
+
+  /*Range for Buttons in the feed of the screen*/
+  #controlpanel {
+    display: block;
+    width: 250px;
+    height: 10px;
+    float: left;
+    position: absolute;
+    left: 100px;
+    top: 335px;
+  }
+
+}
+
+/************** Anpassung für mobile Geräte über 360px **************/
+
+@media screen and (max-width: 450px) {
+
+  /**** Gameover**********/
+
+  #gameover{
+    display: none;
+    width:80%;
+    height:40%;
+    z-index: 20;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 1em 1em 1em 1em;
+    position: absolute;
+    font-family: "coba";
+    top: 30%;
+    left: 10%;
+    opacity: 0.8;
+  }
+
+  #gameover_play{
+    width: 35%;
+    height: 10%;
+    position: absolute;
+    left: 18%;
+    top: 80%;
+    border-radius: 2em 2em 2em 2em;
+    background-image: url("Images/nextlevel.png");
+    background-size: 100%;
+    background-position: center;
+  }
+
+  #gameover_newgame {
+    width: 30%;
+    height: 10%;
+    position: absolute;
+    left: 60%;
+    top: 80%;
+  }
+
+  /*the Data of the Game like Points and Lifes*/
+  #gameData{
+    display: block;
+    width: 100px;
+    height: 90px;
+    float: left;
+    position: absolute;
+    left:5%;
+    top: 4%;
+    border: 5px solid gray;
+    border-radius: 1em 1em 1em 1em;
+  }
+
+  #level{
+    font-family: "coba";
+    font-size: 16px;
+  }
+
+  #points{
+    font-family: "coba";
+    font-size: 16px;
+  }
+
+  #life{
+    font-family: "coba";
+    font-size: 16px;
+  }
+
+  /*the container for the information wich color is in the hand*/
+
+  #nextColor-block{
+    display: block;
+    width: 70px;
+    height: 70px;
+    float:left;
+    position: absolute;
+    top: 6%;
+    left: 275px;
+    border: 5px solid gray;
+    background-color: darkslategray;
+  }
+
+  /*main content (gamecontainer)*/
+  #game{
+    width: 350px;
+    height: 350px;
+    float:left;
+    display: block;
+    position: absolute;
+    top: 24%;
+    left: 0%;
+    border: 5px solid gray;
+  }
+
+  /*Range for Buttons in the feed of the screen*/
+  #controlpanel {
+    display: block;
+    width: 340px;
+    height: 15px;
+    float: left;
+    position: absolute;
+    left: 5px;
+    top: 91%;
+  }
+
+  /************** Startseite  **************/
+
+  #startseite{
+    display: block;
+    background-color: black;
+    background-image: url(Images/start.jpg);
+    background-position: bottom;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1{
+    color:white;
+    margin-top: 15%;
+    margin-left: 5%;
+    font-size: 130%;
+    font-family: "Lucida Calligraphy";
+  }
+
+  a{
+    display: inline-block;
+    height: 35px;
+    width: 100px;
+    text-decoration: none;
+    color: white;
+    border: 5px solid gray;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #start{
+    margin-top: 30%;
+    margin-left: 28%;
+  }
+
+  #hilfe{
+    margin-top: 5%;
+    margin-left: 28%;
+  }
+
+  p{
+    color: gray;
+    font-family: "Lucida Console";
+    margin-top: 20%;
+    margin-left: 10% ;
+
+  }
+
+  /********* Hilfeseite **********/
+
+  #hilfe-container{
+    display: block;
+    width: 350px;
+    height: 590px;
+    font-size: 100%;
+    margin-top: 0.2%;
+    margin-left: 1%;
+    float: left;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 1em 1em 1em 1em;
+    opacity: 0.8;
+  }
+
+  #hilfe-container h2{
+    font-size: 2rem;
+  }
+
+  #hilfe-container a{
+    height: 25px;
+    width: 120px;
+    margin: 35%;
+    padding: 1.5%;
+    line-height: 120%;
+  }
+
+
+}
+
+
+/************** Anpassung für mobile Geräte unter 360px **************/
+
+@media screen and (max-width: 350px) {
+
+  /****** Game data *********************/
+
+  #gameData{
+    display: block;
+    width: 100px;
+    height: 82px;
+    float: left;
+    position: absolute;
+    left:5%;
+    top: 3%;
+    border: 5px solid gray;
+    border-radius: 1em 1em 1em 1em;
+  }
+
+  /*the container for the information wich color is in the hand*/
+
+  #nextColor-block{
+    display: block;
+    width: 50px;
+    height: 50px;
+    float:left;
+    position: absolute;
+    top: 4%;
+    left: 80%;
+    border: 5px solid gray;
+    background-color: darkslategray;
+  }
+
+  /*main content (gamecontainer)*/
+  #game{
+    width: 310px;
+    height: 310px;
+    float:left;
+    display: block;
+    position: absolute;
+    top: 22%;
+    left: 0%;
+    border: 5px solid gray;
+  }
+
+  /*Range for Buttons in the feed of the screen*/
+  #controlpanel {
+    display: block;
+    width: 300px;
+    height: 13px;
+    float: left;
+    position: absolute;
+    left: 5px;
+    top: 93%;
+  }
+
+}
+

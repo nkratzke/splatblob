@@ -1,0 +1,20 @@
+{
+  "id": 2,
+  "score": 5,
+  "stagesVelocity": [0.0, -45.0],
+  "stageWidth": 100.0,
+  "stageHeight": 5.0,
+  "leftStageOffset": 100,
+  "rightStageOffset": 75,
+  "leftStages": 5,
+  "rightStages": 5,
+  "middleStages": false,
+  "staticEnemies": 9,
+  "dynamicEnemies": 0,
+  "dynamicEnemiesVelocity": 0,
+  "dynamicEnemiesRange": 0,
+  "colorChance": 0.7,
+  "colors" : ["#0091FF","#FF9500","#00B251"],
+  "backGroundColor" : "#FFFAFA",
+  "last" : false
+}

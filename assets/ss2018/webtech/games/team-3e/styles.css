@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/css?family=Geo&subset=latin);
+
+.preLoadTimeCriticalSprites {
+    width: 0px;
+    height: 0px;
+    display: inline;
+    background-image: url("img/bullet.png");
+    background-image: url("img/bullet_shoot.png");
+}
+html {
+    background-image: url("img/background2.png");
+    background-repeat: repeat;
+    background-size: 10%;
+}
+body {
+    margin: 0 auto;
+    background-image: url("img/background2.png");
+    background-repeat: repeat;
+    background-size: 10%;
+    height: 100%;
+    overflow: hidden;
+    overscroll-behavior: contain;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0px;
+    border-color: grey;
+    width: 100%;
+    background-image: url("img/grass.png");
+}
+td {
+    padding: 0px;
+    min-width: 7px;
+    min-height: 10px;
+    background-image: url("img/grass.png");
+    width: calc(100%/18);
+    height: 10%;
+    background-size: 100% 100%;
+}
+.foreground {
+    padding-bottom: 100%;
+    height: 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+}
+.background {
+    z-index: 1;
+}
+#game {
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 180vh;
+    visibility: hidden;
+}
+#menu {
+    visibility: visible;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 276px;
+    margin: calc(-252px/2) 0px 0px calc(-276px/2);
+    font-size: 20pt;
+    font-family: Arial;
+    text-align: center;
+    z-index: 100;
+    text-shadow:    1px  1px 1px white,
+                    1px -1px 1px white,
+                    -1px  1px 1px white,
+                    -1px -1px 1px white;
+}
+button {
+    background-color: rgba(229, 229, 229, 0.8); /* #E5E5E5 */
+    color: black;
+    border: 3px solid #555555;
+    border-radius: 3px;
+    height: 40px;
+    width: 138px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'Geo', bold;
+    font-size: 15px;
+    -webkit-font-smoothing: none;
+}
+button:hover {
+    background-color: rgba(85, 85, 85, 0.8); /* #555555 */
+    color: white;
+}
+button:disabled {
+    background-color: rgba(255, 255, 255, 0.8); /* #FFFFFF */
+    color: #909090;
+    border: 3px solid #e5e5e5;
+}
+#orientationWarning {
+    font-size: 23px;
+    width: 276px;
+    color: red;
+    text-shadow:    1px  1px 1px black,
+                    1px -1px 1px black,
+                    -1px  1px 1px black,
+                    -1px -1px 1px black;
+}
+#gameover{
+    visibility: hidden;
+    position: fixed;
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    margin: calc(-166px/2) 0px 0px calc(-383px/2);
+    font-size: 20pt;
+    font-family: Arial;
+    background-color: red;
+    z-index: 100;
+}
+#gamewon{
+    visibility: hidden;
+    position: fixed;
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    margin: calc(-166px/2) 0px 0px calc(-238px/2);
+    font-size: 20pt;
+    font-family: Arial;
+    background-color: green;
+    z-index: 100;
+}
+#playerhp {
+    background-color: slategrey;
+    position: fixed;
+    border-radius: 20px;
+    padding: 5px;
+    z-index: 100;
+    left: 1%;
+    top: 1%;
+    opacity: 0.6;
+}
+#controls {
+    visibility: hidden;
+    position: fixed;
+    left: 100px;
+    bottom: 5px;
+    transform: translateX(-50%);
+    width: 192px;
+    height: 128px;
+}
+.dpad {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    opacity: 0.6;
+}
+.dpad:active {
+    opacity: 1;
+}
+#up {
+    top: 0;
+    left: 50%;
+    margin-left: -32px;
+    background: url("img/dpadup.png") center center;
+    background-size: cover;
+}
+#down {
+    bottom: 0;
+    left: 50%;
+    margin-left: -32px;
+    background: url("img/dpaddown.png") center center;
+    background-size: cover;
+}
+#left {
+    bottom: 0;
+    left: 0;
+    background: url("img/dpadleft.png") center center;
+    background-size: cover;
+}
+#right {
+    bottom: 0;
+    right: 0;
+    background: url("img/dpadright.png") center center;
+    background-size: cover;
+}
+#levelBuilderControls {
+    position: fixed;
+    visibility: hidden;
+    background-color: slategrey;
+    bottom: 10%;
+    left: 10%;
+    opacity: 0.5;
+    padding: 5px;
+}
+#backtankblue {
+    position: fixed;
+    visibility: visible;
+    width: 50vw;
+    max-width: 60vh;
+    right: 0%;
+    top: 0%;
+    z-index: -1;
+}
+#backtankred {
+    position: fixed;
+    visibility: visible;
+    width: 50vw;
+    max-width: 60vh;
+    left: 0%;
+    bottom: 0%;
+    z-index: -1;
+}

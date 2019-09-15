@@ -1,0 +1,121 @@
+{
+  "name": "Infinite - Notinfinite",
+  "nextLevel":"level7.json",
+  "speed": 5,
+  "spawn": {
+    "type": "Spawn",
+    "pos_x": 100,
+    "pos_y": 50,
+    "size_x": 1,
+    "size_y": 1
+  },
+  "blocks": [
+    {
+      "type":"Cobble",
+      "pos_x":0,
+      "pos_y":30,
+      "size_x":800,
+      "size_y":20
+    },
+    {
+      "type":"Cobble",
+      "pos_x":1000,
+      "pos_y":80,
+      "size_x":100,
+      "size_y":20
+    },
+    {
+      "type":"Cobble",
+      "pos_x":1300,
+      "pos_y":130,
+      "size_x":100,
+      "size_y":20
+    },
+    {
+      "type":"Cobble",
+      "pos_x":1600,
+      "pos_y":180,
+      "size_x":100,
+      "size_y":20
+    },
+    {
+      "type":"Cobble",
+      "pos_x":1900,
+      "pos_y":230,
+      "size_x":100,
+      "size_y":20
+    },
+    {
+      "type":"Coin",
+      "pos_x":2000,
+      "pos_y":250,
+      "size_x":20,
+      "size_y":20,
+      "isDeadly":true
+    },
+    {
+      "type":"Cobble",
+      "pos_x":2200,
+      "pos_y":230,
+      "size_x":100,
+      "size_y":20
+    },
+    {
+      "type":"Cobble",
+      "pos_x":2600,
+      "pos_y":30,
+      "size_x":200,
+      "size_y":20
+    },
+    {
+      "type":"Water",
+      "pos_x":2800,
+      "pos_y":20,
+      "size_x":250,
+      "size_y":20
+    },
+    {
+      "type":"Cobble",
+      "pos_x":3050,
+      "pos_y":30,
+      "size_x":200,
+      "size_y":20
+    },
+    {
+      "type":"Cobble",
+      "pos_x":3200,
+      "pos_y":50,
+      "size_x":75,
+      "size_y":50
+    },
+    {
+      "type":"Cobble",
+      "pos_x":3275,
+      "pos_y":100,
+      "size_x":75,
+      "size_y":50
+    },
+    {
+      "type":"Cobble",
+      "pos_x":3350,
+      "pos_y":150,
+      "size_x":75,
+      "size_y":50
+    },
+    {
+      "type":"TeleportSpeed",
+      "pos_x":3425,
+      "pos_y":150,
+      "size_x":50,
+      "size_y":50,
+      "speedIncrease": 1,
+      "target":{
+        "type":"Spawn",
+        "pos_x":100,
+        "pos_y":50,
+        "size_x":20,
+        "size_y":50
+      }
+    }
+  ]
+}

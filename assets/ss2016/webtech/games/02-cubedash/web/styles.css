@@ -1,0 +1,156 @@
+body {
+    background-color: #ffffff;
+}
+
+h1 {
+    font-family: Gill Sans, Verdana;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+h2 {
+    text-align: center;
+    font-family: Gill Sans, Verdana;
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+.empty {
+    background-color: transparent;
+}
+
+.player {
+    background-color: #01f3ff;
+}
+
+.obstacle {
+    background-color: #ffffff;
+}
+
+.powerup {
+    background-color: #ffbbbb;
+}
+
+#container{
+    width:100%;
+}
+
+#field {
+    background-image: url("https://pixabay.com/static/uploads/photo/2015/11/19/17/47/pattern-1051573_960_720.jpg");
+    border: 1px solid black;
+    margin-left:auto;
+    margin-right:auto;
+    width: 600px;
+    height: 420px;
+    border-collapse: collapse;
+}
+
+#startButton {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-transform: uppercase;
+}
+
+#startButton:focus{
+    outline-style: none;
+}
+
+#score{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 120px;
+    font-family: Gill Sans, Verdana;
+    font-size: 16px;
+    color: #54fdff;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#highscoreform{
+    position: absolute;
+    left: 50.5%;
+    transform: translate(-50%, 0);
+    top: 238px;
+}
+
+#scorelist{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 270px;
+    color: #54fdff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#gameover {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 150px;
+    font-size: 50px;
+    font-family: Gill Sans, Verdana;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #54fdff;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+    }
+
+#warningoverlay {
+    color: #990000;
+    background-color: #ff9999;
+    position: absolute;
+    left: 0%;
+    top:0%;
+}
+
+#powerupbutton {
+    width:600px;
+    height:3em;
+    margin: -0.01em auto 0 auto;
+    padding-top: 1em;
+    background-color: #ffbbbb;
+}

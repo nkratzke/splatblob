@@ -1,0 +1,13 @@
+{
+  "NAME":"Bonus Level",
+  "MAXFREQUENZ":1000,
+  "MAXPOINTS":12000,
+  "YellowCoin":150,
+  "PowerUp_Multiplier":60,
+  "BlueCoin":100,
+  "PowerUp_LifeUp":20,
+  "PowerUp_CoinGathering":5,
+  "PowerDown_Multiplier":5,
+  "PowerUp_CoinMagnet":10
+
+}

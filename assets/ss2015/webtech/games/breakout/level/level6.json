@@ -1,0 +1,9 @@
+{
+"items":["addball","small","large","split","normal"],
+"type" :{"normallife" : 1, "verystronglife" : 3,"stronglife" : 2,"strongx" : 5, "strongy" : 5,"normalx" : 5, "normaly" : 5,"verystrongx" : 5, "verystrongy" : 5, "normaldropchance" : 15, "strongdropchance" : 25, "verystrongdropchance" : 35},
+"bricks" : {"strong" : [1,151,301],
+
+"normal" : [7,157,307],
+"verystrong" : [13,153,303]
+}
+}

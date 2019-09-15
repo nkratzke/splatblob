@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick Break</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div id="warningoverlay"></div>
+
+<div id="overlay"></div>
+
+<!-- menu page -->
+<div id="menuview">
+    <h1 id="title">Brick Break</h1>
+
+    <div id="firstoption">
+        <span id="startgame">Game</span>
+    </div>
+
+    <div id="secondoption">
+        <span id="score">High Score</span>
+    </div>
+
+    <div id="thirdoption">
+        <span id="howto">How To</span>
+    </div>
+
+    <br>
+    <small>
+        made by: Sven Marquardt, Cedric Pantermehl, Heiko Pantermehl, Markus Krebs; 2016
+    </small>
+
+</div>
+
+<!-- game page -->
+<div id="gameview">
+    <h1 >Brick Break</h1>
+
+    <div id="controls">
+        <span id="level">Level: 1</span>
+        <span id="points">Points: 0</span>
+    </div>
+
+    <div id="message">
+        <div id="gameover"></div>
+    </div>
+
+    <table id="game">
+    </table>
+
+    <div id="button">
+        <span id="leftbutton">Left</span>
+        <span id="rightbutton">Right</span>
+    </div>
+
+    <div id="startHigh">
+        <div id="highscore"></div>
+        <span id="start">Start</span>
+    </div>
+
+    <div id="back">
+        <span id="backmenu">Menu</span>
+    </div>
+
+    <br>
+    <small>
+        made by: Sven Marquardt, Cedric Pantermehl, Heiko Pantermehl, Markus Krebs; 2016
+    </small>
+
+</div>
+
+<!-- help page -->
+<div id="help">
+
+    <div id="closehelp">
+        <span id="cancelbutton">X</span>
+    </div>
+
+    <h2>Controls:</h2>
+
+    Left Arrow Key - move left
+    <br>Right Arrow Key - move right
+
+    <h2>Rules:</h2>
+
+    Your goal is to destroy every brick in a level to proceed to the next one.
+    <br>The ball will bounce off of the player in three different directions (top-left / up / top-right)
+    <br>and will destroy the brick by hitting it enough times (green = 1 / yellow = 2 / red = 3 hits).
+    <br>The player has lost the game if the ball touches the bottom side of the screen.
+
+</div>
+
+<script type='application/dart' src='brickgameClient.dart'></script>
+<script src='packages/browser/dart.js'></script>
+</body>
+</html>

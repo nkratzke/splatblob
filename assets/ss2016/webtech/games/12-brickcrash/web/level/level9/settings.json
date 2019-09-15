@@ -1,0 +1,5 @@
+{
+  "powerUpProbability" : 20,
+  "additionalLives"    : 2,
+  "background"         : "../web/graphic/bg3.png"
+}

@@ -1,0 +1,50 @@
+<html>
+<head><title>Stylesheets mit jQuery Emulation</title></head>
+<meta charset="UTF-8"/>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+		$("h1, h2, h3.important").css({
+  "font-style": "italic",
+  "font-weight": "bold",
+  "color": "blue"
+});
+
+$("p.example").css({
+  "color": "darkgrey"
+});
+
+$("#content").css({
+  "background-color": "lightgray"
+});
+
+	});
+</script>
+
+
+<body>
+
+<div id="content">
+
+<h1>Stylesheets mit jQuery Emulation</h1>
+
+Dies ist ein Beispiel wie man Stylesheets sowohl mit CSS als auch mit jQuery realisieren kann.
+
+<h2>Lorem Ipsum</h2>
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+<h3>Normale H3 Überschrift</h3>
+
+<p>Normaler Lorem Ipsum Paragraph. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+<h3 class="important">Wichtige H3 Überschrift</h3>
+
+<p class="example">Example Lorem Ipsum Paragraph. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+</div>
+
+</body>
+</html>

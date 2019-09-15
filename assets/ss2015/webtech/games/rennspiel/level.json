@@ -1,0 +1,49 @@
+[
+    {
+      "Levelnumber" : 1,
+      "speed" : 250,
+      "size"  : 2,
+      "barrieren" : ["Barrier"],
+      "limit" : 1000
+    },
+    
+    {
+      "Levelnumber" : 2,
+      "speed" : 235,
+      "size"  : 3,
+      "barrieren" : ["Barrier","Falling"],
+      "limit" : 2000
+    },
+    
+    {
+      "Levelnumber" : 3,
+      "speed" : 220,
+      "size"  : 4,
+      "barrieren" : ["Barrier","Falling","Gate"],
+      "limit" : 3000
+    },
+    
+    {
+      "Levelnumber" : 4,
+      "speed" : 205,
+      "size"  : 5,
+      "barrieren" : ["Barrier","Moving","Gate","Falling"],
+      "limit" : 4000
+    },
+    
+    {
+      "Levelnumber" : 5,
+      "speed" : 190,
+      "size"  : 6,
+      "barrieren" : ["Barrier","Moving","Gate","Falling","MovingDoor"],
+      "limit" : 5000
+    },
+    {
+      "Levelnumber" : 6,
+      "speed" : 190,
+      "size"  : 7,
+      "barrieren" : ["Falling","Oil","Barrier"],
+      "limit" : 6000
+    }
+]
+

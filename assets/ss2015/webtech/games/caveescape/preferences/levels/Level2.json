@@ -1,0 +1,9 @@
+{
+  "NAME":"Anfänger",
+  "MAXFREQUENZ":100,
+  "MAXPOINTS":500,
+  "YellowCoin":20,
+  "PowerUp_Multiplier":5,
+  "Rock":10
+
+}

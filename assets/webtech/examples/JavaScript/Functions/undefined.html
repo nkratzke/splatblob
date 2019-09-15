@@ -1,0 +1,17 @@
+<html>
+<head><title>Undefined Parameters in JavaScript</title></head>
+<body>
+<script type="text/javascript">
+function conc(w1, w2, w3) {
+	return w1 + " " + w2 + " " + w3;
+}
+
+document.writeln(conc("A", " B ", "C", "D") + "<br>");
+document.writeln(conc("A", " B ", "C") + "<br>");
+document.writeln(conc("A", " B ") + "<br>");
+document.writeln(conc("A") + "<br>");
+document.writeln(conc() + "<br>");
+
+</script>
+</body>
+</html>

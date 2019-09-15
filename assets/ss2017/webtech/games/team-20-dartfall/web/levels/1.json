@@ -1,0 +1,32 @@
+{
+  "scrollSpeed": 1,
+  "moveTimerMillis": 30,
+  "checkTimerMillis": 333,
+  "beginnTop": 20,
+  "bars":
+      [
+        {
+          "whitespaces":
+          [
+            {
+              "id": "ws1",
+              "type": "static",
+              "width": 30,
+              "marginLeft": 10
+            }
+          ],
+          "powerups":
+          [
+
+          ]
+        }
+      ],
+  "fallObjects":
+  [
+    {
+      "id": "fallObj1",
+      "type": "static",
+      "width": 10
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "level": {
+    "blocks" : [
+      "P","E","B","E","E","E","B","E","E","E",
+      "E","E","B","E","B","E","B","E","B","E",
+      "E","E","B","E","B","E","B","E","B","E",
+      "E","E","D","E","B","E","B","E","B","E",
+      "E","E","B","E","B","E","B","E","B","E",
+      "D","D","B","F","B","F","B","F","B","F",
+      "R","S","B","E","E","E","E","E","B","Z"
+    ],
+    "field_width" : "10",
+    "field_height" : "7"
+  },
+  "maxDynamites": 5,
+  "exp_monster" : "15",
+  "exp_destroyable_block" : "5",
+  "speedBuffSpawnRate" : 10,
+  "speedBuffAddSpeed" : 200,
+  "dynamiteRangeSpawnRate" : 10,
+  "description" : "Care about the limited Dynamite and fast enemys",
+  "maxLevelTime" : 200
+}

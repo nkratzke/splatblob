@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Funktionales JavaScript</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<script type="text/javascript">
+
+document.writeln("<h2>First Class Object Check:</h2>");
+document.writeln("<h3>Prüfe ob es möglich ist, eine Funktion einer Variablen zu zuweisen:</h3>");
+function id(x) { return x }
+var f = id;
+document.writeln("f = " + f + " (" + typeof f + ") <br><br>");
+
+document.writeln("<h3>Prüfe ob es möglich ist anonyme Funktionen zu definieren:</h3>");
+var d = function (x) { return 2*x }
+document.writeln("d == " + d + " (" + typeof d + ") <br><br>");
+
+document.writeln("<h2>Higher Order Function Check:</h2>");
+document.writeln("Prüfe ob es möglich ist, eine Funktion einer Funktion als Parameter zu übergeben: <br>");
+var g = id(id);
+document.writeln("g = id(id) == " + g + " (" + typeof g + ") <br><br>");
+
+document.writeln("<h2>List and List Operator Check (first, rest, empty, single):</h2>");
+document.writeln("Prüfe ob es möglich ist, Listen zu definieren und auf das erste Element und den Rest der Liste zuzugreifen. <br>");
+document.writeln("Implementiere die Funktionen first(), rest(), empty() und single(): <br>");
+function first(xs) { return xs[0] }
+function rest(xs) { return xs.slice(1) }
+function notEmpty(xs) { return xs.length > 0 }
+function single(xs) { return xs.length == 1 }
+var xs = [1, 2, 3, 4, 5];
+document.writeln(first + " first([" + xs + "]) == " + first(xs) + "<br>");
+document.writeln(rest + " rest([" + xs + "]) == [" + rest(xs) + "]<br>");
+document.writeln(notEmpty + " " + notEmpty([]) + " " + notEmpty(xs) + "<br>");
+document.writeln(single + " " + single([]) + " " + single([1]) + " " + single(xs) + "<br>");
+
+document.writeln("<h2>Typical Functional Operator Check (map, reduce, filter):</h2>");
+document.writeln("Prüfe ob es möglich ist, typische funktionale Operatoren mit 'Bordmitteln' zu definieren (oder diese ggf. schon existieren): <br>");
+
+function map(f, as) {
+  return notEmpty(as) ? [f(first(as))].concat(map(f, rest(as))) : [];
+}
+
+function reduce(f, as) {
+    return single(as) ? first(as) : f(first(as), reduce(f, rest(as)));
+}
+
+function filter(c, xs) {
+  if (!notEmpty(xs)) return [];
+  return (c(first(xs)) ? [first(xs)] : []).concat(filter(c, rest(xs))); 
+}
+
+document.writeln(map + " (" + typeof map + ") <br><br>");
+document.writeln(reduce + " (" + typeof reduce + ") <br><br>");
+document.writeln(filter + " (" + typeof reduce + ") <br><br>");
+
+document.writeln("und natürlich auch anzuwenden: <br>");
+document.writeln((function (xs) { return map(function (x) { return 3*x }, xs) }));
+
+document.writeln(map(function (x) { return 3*x }, [1, 2, 3, 4, 5]) + "<br><br>");
+
+function add(x, y) { return x + y }
+function double(x) { return 2 * x }
+function even(x) { return x % 2 == 0 }
+function triple(x) { return 3 * x }
+function conc(s1, s2) { return s1 + "-" + s2 } 
+
+document.writeln(reduce(add, map(double, [1, 2, 3, 4, 5])) + "<br><br>");
+document.writeln(reduce(conc, filter(even, map(triple, [1, 2, 3, 4, 5]))) + "<br><br>");
+
+
+</script>
+</body>
+</html>

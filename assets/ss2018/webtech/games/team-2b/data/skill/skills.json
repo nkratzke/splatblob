@@ -1,0 +1,25 @@
+[
+  {
+    "id": 0,
+    "name": "Bash",
+    "mod": 1
+  },
+  {
+    "id": 1,
+    "name": "Whirlwind",
+    "mod": 1.25,
+    "useableCount": 8
+  },
+  {
+    "id": 2,
+    "name": "Furious Charge",
+    "mod": 1.45,
+    "useableCount": 5
+  },
+  {
+    "id": 3,
+    "name": "Eviscerate",
+    "mod": 1.7,
+    "useableCount": 2
+  }
+]

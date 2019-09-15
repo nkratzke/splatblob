@@ -1,0 +1,217 @@
+<!DOCTYPE html><html><head>
+    <title>NinjaSwap</title>
+    <meta name="viewport" content="width=360px, initial-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+<div id="landscapeOrientationReaction">
+    <p id="reactionFont"> PLEASE ROTATE</p>
+</div>
+
+<div id="gameWindow">
+
+
+    <div class="menuWindows" id="startFrame">
+        <div id="startTextOverlay">
+            <p>Endlich sind Sie hier, Senshi!</p>
+            <p>Wir werden überfallen, unsere Gegner greifen mit einer riesigen Armee an.</p>
+            <p>Sie sind der beste Stratege, den wir kennen. Würden Sie uns die Ehre erweisen und unsere legendären Sannin unter Ihrem Kommando in den Krieg führen?</p>
+            <p>Sie sind unsere letzte Rettung, Senshi!</p>
+            <p>Unser Dorf Yōso steht in Ihrer Schuld!</p>
+        </div>
+        <div class="menuButtons" id="startButton">
+            <p class="overlayFont">Start!</p>
+        </div>
+        <div class="menuButtons" id="howToPlayButton">
+            <p class="overlayFont">How to Play</p>
+        </div>
+    </div>
+
+    <div class="menuWindows" id="howToPlay">
+        <div id="howToPlayTextOverlay">
+
+            <p class="overlayFontHeader">ZIEL DES SPIELS</p>
+            <p class="overlayFont"> Überlebe so lange du kannst!</p>
+
+
+            <p class="overlayFontHeader">SPIELVERLAUF</p>
+            <p class="overlayFont">1. Es kommen regelmäßig Gegner von oben</p>
+            <p class="overlayFont">2. Nur der Ninja der gleichen Farbe des Gegners kann ihn besiegen</p>
+            <p class="overlayFont">3. Nutze Items, um aus brensligen Situationen zu kommen</p>
+            <p class="overlayFont">4. Am Ende jeder Runde kannst du deine Ninjas aufwerten</p>
+
+            <p class="overlayFontHeader">SPIEL MECHANIK</p>
+            <p class="overlayFont">Ein grauer gegner kann von allen Ninjas besiegt werden.</p>
+            <p class="overlayFont">Tippe auf einen Ninja und dann auf einen weiteren um ihre Positionen zu tauschen.</p>
+            <p class="overlayFont">Tippe auf ein Item um es auszuwählen, tippe dann auf das Feld wo du es einsetzen möchtest</p>
+            <p class="overlayFont">Um die Aktion abzubrechen tippe auf das zu erst makierte Feld</p>
+
+            <p class="overlayFontHeader">ENDE DES SPIELS</p>
+            <p class="overlayFont"> Wenn ein Gegner an deinem Ninjas vorbei zieht, verlierst du Energiepunkte.</p>
+            <p class="overlayFont"> Wenn du keine Energiepunkte mehr hast, hast du das Spiel verloren.</p>
+
+
+        </div>
+
+        <div class="menuButtons" id="howToPlayContinue">
+            <p class="overlayFont">continue</p>
+        </div>
+        <div class="menuButtons" id="backToMenuButton">
+            <p class="overlayFont">Mainmenue</p>
+        </div>
+
+    </div>
+
+    <div class="menuWindows" id="howToPlay2">
+        <div id="howToPlayTextOverlay2">
+            <table class="instructionTable">
+                <tbody><tr>
+                    <td><p class="overlayFontHeader">ITEMS</p></td>
+                    <td><p class="overlayFont">- grün hinterlegt: genügend Enegie gesammelt </p>
+                        <p class="overlayFont">- graues Item: Kurze Zeit warten bis Item wieder bereit ist</p></td>
+                </tr>
+                <tr>
+                    <td id="instructionFreezeItem"></td>
+                    <td><p class="overlayFont">Gegner in einer Vertikale handlungsunfähig machen</p></td>
+                </tr>
+                <tr>
+                    <td id="instructionBombItem"></td>
+                    <td><p class="overlayFont">Gegnern in einer Horizontale Schaden zufügen</p></td>
+                </tr>
+                <tr>
+                    <td id="instructionSpeedItem"></td>
+                    <td><p class="overlayFont">Alle Ninjas können schneller angreifen</p></td>
+                </tr>
+                <tr>
+                    <td id="instructionHealItem"></td>
+                    <td><p class="overlayFont">Der ausgewählte Ninja wird geheilt</p></td>
+                </tr>
+                <tr>
+                    <td id="instructionLightningItem"></td>
+                    <td><p class="overlayFont">Verusacht auf zufälligen Feldern Schaden.</p></td>
+                </tr>
+
+            </tbody></table>
+        </div>
+        <div class="menuButtons" id="howToPlay2Continue">
+            <p class="overlayFont">continue</p>
+        </div>
+
+        <div class="menuButtons" id="howToPlay2Back">
+            <p class="overlayFont">back</p>
+        </div>
+        <div class="menuButtons" id="backToMenuButton2">
+            <p class="overlayFont">Mainmenue</p>
+        </div>
+    </div>
+
+
+    <div class="menuWindows" id="howToPlay3">
+        <div id="howToPlayTextOverlay3">
+            <table class="instructionTable">
+                <tbody><tr>
+                    <td><p class="overlayFontHeader">UPGRADES</p></td>
+                    <td><p class="overlayFont">- grün hinterlegt: genügend Enegie gesammelt </p>
+                        <p class="overlayFont">- Upgrades beziehen sich auf alle Ninjas</p></td>
+                </tr>
+                <tr>
+                    <td id="instructionRevive"></td>
+                    <td><p class="overlayFont">Belebt alle Ninjas wieder</p></td>
+                </tr>
+                <tr>
+                    <td id="instructionMaxLife"></td>
+                    <td><p class="overlayFont">Erhöht das maximale Leben</p></td>
+                </tr>
+                <tr>
+                    <td id="instructionPowerUp"></td>
+                    <td><p class="overlayFont">Erhöht die Stärke der Ninjas</p></td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="menuButtons" id="howToPlay3Continue">
+            <p class="overlayFont">continue</p>
+        </div>
+
+        <div class="menuButtons" id="howToPlay3Back">
+            <p class="overlayFont">back</p>
+        </div>
+        <div class="menuButtons" id="backToMenuButton3">
+            <p class="overlayFont">Mainmenue</p>
+        </div>
+    </div>
+
+
+    <div class="menuWindows" id="howToPlay4">
+        <div id="howToPlayTextOverlay4">
+            <table class="instructionTable">
+                <tbody><tr>
+                    <td><p class="overlayFontHeader">GEGNER</p></td>
+                    <td><p class="overlayFont">- Sofern ein Ninja stirbt werden alle Gegner der gleichen Farbe grau</p>
+                </td></tr><tr>
+                    <td id="instructionEnemy"></td>
+                    <td><p class="overlayFont">Leicht zu besiegender Gegner</p></td>
+                </tr>
+                <tr>
+                    <td id="instructionStrongEnemy"></td>
+                    <td><p class="overlayFont">Schwer zu besiegender Gegner</p></td>
+                </tr>
+                <tr>
+                    <td id="instructionBoss"></td>
+                    <td><p class="overlayFont">Am Ende jedes Levels kommen Endbosse</p></td>
+                </tr>
+                <tr>
+                    <td id="instructionBossProjectil"></td>
+                    <td><p class="overlayFont"> Elementkugeln der Bosse</p>
+                        <p class="overlayFont">Achtung: Sie fügen dem Ninja, der gleichen Farbe und dir Schaden zu!</p></td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="menuButtons" id="howToPlay4Back">
+            <p class="overlayFont">back</p>
+        </div>
+        <div class="menuButtons" id="backToMenuButton4">
+            <p class="overlayFont">Mainmenue</p>
+        </div>
+    </div>
+
+
+    <div class="menuWindows" id="startNewGame">
+        <div id="startNewGameOverlay">
+            <p class="overlayFont" id="lostHeader">Lost!</p>
+            <p class="overlayFont" id="reachedLevel"></p>
+            <p class="overlayFont" id="reachedScorepoints"></p>
+        </div>
+        <div class="menuButtons" id="startNewGameButton">
+            <p class="overlayFont">retry!</p>
+        </div>
+    </div>
+
+
+    <div id="boardContainer">
+        <div class="defaultBoardElements" id="levelboard"><p id="levelpoint">200</p></div>
+        <div class="defaultBoardElements" id="scoreboard"><p id="scorepoints">200</p></div>
+    </div>
+
+    <div id="continueButton"><p id="continueFont">weiter</p></div>
+
+    <table id="gameField">
+    </table>
+
+
+        <table id="hpBoards">
+        </table>
+
+
+</div>
+
+
+
+
+
+<script src="main.dart.js"></script>
+<script src="main.js"></script>
+
+</body></html>

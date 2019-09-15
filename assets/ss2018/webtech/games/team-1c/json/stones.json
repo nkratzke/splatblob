@@ -1,0 +1,114 @@
+{
+  "1" :
+  {
+    "structure":[
+      [false,true,false,false],
+      [false,true,false,false],
+      [false,true,false,false],
+      [false,true,false,false]
+    ],
+    "transitions":[
+      [[2, 2], [1, 1], [0, 0], [-1, -1]],
+      [[-2, 1], [-1, 0], [0, -1], [1, -2]],
+      [[-1, -1], [0, 0], [1, 1], [2, 2]],
+      [[1, -2], [0, -1], [-1, 0], [-2, 1]]
+    ],
+    "color" : "#2EB2E5"
+  },
+  "2" :
+  {
+    "structure":[
+      [false,true,false,false],
+      [false,true,false,false],
+      [false,true,true,false],
+      [false,false,false,false]
+    ],
+    "transitions":[
+      [[2, 1], [1, 0], [0, -1], [-1, 0]],
+      [[-1, 1], [0, 0], [1, -1], [0, -2]],
+      [[-1, -1], [0, 0], [1, 1], [2, 0]],
+      [[0, -1], [-1, 0], [-2, 1], [-1, 2]]
+    ],
+    "color" : "#3C57A4"
+  },
+  "3" :
+  {
+    "structure":[
+      [false,true,false,false],
+      [true,true,true,false],
+      [false,false,false,false],
+      [false,false,false,false]
+    ],
+    "transitions":[
+      [[1, 1], [1, -1], [0, 0], [-1, 1]],
+      [[-1, 1], [1, 1], [0, 0], [-1, -1]],
+      [[-1, -1], [-1, 1], [0, 0], [1, -1]],
+      [[1, -1], [-1, -1], [0, 0], [1, 1]]
+    ],
+    "color" : "#A754BD"
+  },
+  "4" :
+  {
+    "structure":[
+      [false,true,true,false],
+      [false,true,true,false],
+      [false,false,false,false],
+      [false,false,false,false]
+    ],
+    "transitions":[
+      [[0, 0], [0, 0], [0, 0], [0, 0]],
+      [[0, 0], [0, 0], [0, 0], [0, 0]],
+      [[0, 0], [0, 0], [0, 0], [0, 0]],
+      [[0, 0], [0, 0], [0, 0], [0, 0]]
+    ],
+    "color" : "#F4E560"
+  },
+  "5" :
+  {
+    "structure":[
+      [false,false,true,false],
+      [false,false,true,false],
+      [false,true,true,false],
+      [false,false,false,false]
+    ],
+    "transitions":[
+      [[1, 2], [0, 1], [0, -1], [-1, 0]],
+      [[-2, 0], [-1, -1], [1, -1], [0, -2]],
+      [[0, -1], [1, 0], [1, 2], [2, 1]],
+      [[1, -1], [0, 0], [-2, 0], [-1, 1]]
+    ],
+    "color" : "#FFC04C"
+  },
+  "6" :
+  {
+    "structure":[
+      [true,true,false,false],
+      [false,true,true,false],
+      [false,false,false,false],
+      [false,false,false,false]
+    ],
+    "transitions":[
+      [[1, -1], [0, 0], [-1, -1], [-2, 0]],
+      [[-1, 1], [0, 0], [1, 1], [2, 0]],
+      [[1, -1], [0, 0], [-1, -1], [-2, 0]],
+      [[-1, 1], [0, 0], [1, 1], [2, 0]]
+    ],
+    "color" : "#C83030"
+  },
+  "7" :
+  {
+    "structure": [
+      [false,true,true,false],
+      [true,true,false,false],
+      [false,false,false,false],
+      [false,false,false,false]
+    ],
+    "transitions":[
+      [[0, 0], [-1, 1], [0, -2], [-1, -1]],
+      [[0, 0], [1, -1], [0, 2], [1, 1]],
+      [[0, 0], [-1, 1], [0, -2], [-1, -1]],
+      [[0, 0], [1, -1], [0, 2], [1, 1]]
+    ],
+    "color" : "#81D665"
+  }
+}

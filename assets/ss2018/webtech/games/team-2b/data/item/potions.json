@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "name": "Small Healing Potion",
+    "type": 1,
+    "value": 25,
+    "quality": 0,
+    "icon": "potion_small.png"
+  },
+  {
+    "id": 1,
+    "name": "Medium Healing Potion",
+    "type": 1,
+    "value": 50,
+    "quality": 1,
+    "icon": "potion_medium.png"
+  },
+  {
+    "id": 2,
+    "name": "Large Healing Potion",
+    "type": 1,
+    "value": 75,
+    "quality": 2,
+    "icon": "potion_large.png"
+  }
+]

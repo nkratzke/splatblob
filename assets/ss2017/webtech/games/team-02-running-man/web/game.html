@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!--
+  Copyright (c) 2017, Sören. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    <title>RunningMan</title>
+    <link rel="stylesheet" type="text/css" href="gamescreen.css">
+    <script type='application/dart' src='runningclient.dart'></script>
+    <script defer src="packages/browser/dart.js"></script>
+</head>
+<body>
+<div class="game">
+    <!-- Die Spielinformationen -->
+
+    <div id="informationTable">
+        <table id="infos">
+            <tbody>
+            <tr class="row">
+                <th><div id="event">EVENT: </div></th>
+                <th colspan="5"><div class="values" id="eventValue"></div></th>
+            </tr>
+            <tr class="row">
+                <th><div id="score">POINTS: </div></th>
+                <th><div class="values" id="pointsValue"></div></th>
+                <th><div id="lives">LIVES: </div></th>
+                <th><div class="values" id="livesValue"></div></th>
+                <th><div id="timer">TIMER: </div></th>
+                <th><div class="values" id="timeValue"></div></th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Das Spielfeld -->
+    <table id='gamefield' frame="box" cellspacing="0" cellpadding="0">
+    </table>
+    <div class="mobileKeys">
+        <table id="keylayout">
+            <tbody>
+            <tr id="keys">
+                <td>
+                    <a id="backGAME" href="index.html">MAIN MENU</a>
+                </td>
+                <td id = "playPauseButton" class="play-pause">
+                    <div id="play"></div>
+                    <div id="pause"></div>
+                </td>
+                <td>
+                    <a id="newGAME" href="game.html">NEW GAME</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="portrait">Please switch to portrait orientation!</div>
+</body>
+</html>

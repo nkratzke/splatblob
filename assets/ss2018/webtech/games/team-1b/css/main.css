@@ -1,0 +1,666 @@
+html, body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    overscroll-behavior: contain;
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3vh;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+
+table td {
+    width: 1.7vh;
+    height: 1.7vh;
+}
+
+#gamefield {
+    margin-top: 3vh;
+    margin-bottom: 19vh;
+}
+
+/*** Overwritten Bootstrap Classes ***/
+.card-body {
+    padding: 0.2rem 0.2rem 0.2rem 0.7rem;
+
+}
+
+.btn {
+    font-size: 1.3vh;
+}
+
+.btn-primary {
+    background-color: orange !important;
+}
+
+/*** Background-Colors ***/
+.bg-black {
+    background-color: black;
+}
+.bg-grey {
+    background-color: #5a6268;
+}
+
+/*** Fields-Classes ***/
+.bg-brick, .bg-bush,
+.bg-steel, .bg-water, .bg-goal {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-brick {
+    background-image: url("../img/fields/bg-brick-field.png");
+}
+
+.bg-water {
+    background-image: url("../img/fields/bg-water-field.png");
+}
+
+.bg-bush {
+    background-image: url("../img/fields/bg-bush-field.png");
+    opacity: 0.8;
+}
+
+.bg-steel {
+    background-image: url("../img/fields/bg-steel-field.png");
+}
+
+.bg-goal {
+    background-image: url("../img/fields/bg-goal-field.png");
+}
+
+.bg-moveable {
+    position: relative;
+}
+
+.bg-moveable:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -1.7vh;
+    bottom: -1.7vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+/* easy 1hp*/
+.bg-easyEnemy-left-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-1.png");
+}
+.bg-easyEnemy-right-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-1.png");
+}
+.bg-easyEnemy-up-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-1.png");
+}
+.bg-easyEnemy-down-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-1.png");
+}
+
+
+/*easy 2hp*/
+.bg-easyEnemy-left-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-2.png");
+}
+.bg-easyEnemy-right-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-2.png");
+}
+.bg-easyEnemy-up-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-2.png");
+}
+.bg-easyEnemy-down-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-2.png");
+}
+
+/*easy 3hp*/
+.bg-easyEnemy-left-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-3.png");
+}
+.bg-easyEnemy-right-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-3.png");
+}
+.bg-easyEnemy-up-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-3.png");
+}
+.bg-easyEnemy-down-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-3.png");
+}
+
+/*easy 4hp*/
+.bg-easyEnemy-left-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-4.png");
+}
+.bg-easyEnemy-right-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-4.png");
+}
+.bg-easyEnemy-up-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-4.png");
+}
+.bg-easyEnemy-down-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-4.png");
+}
+
+/* med 1hp*/
+.bg-medEnemy-left-1:before {
+    background-image: url("../img/moveables/bg-medEnemy-left-1.png");
+}
+.bg-medEnemy-right-1:before {
+    background-image: url("../img/moveables/bg-medEnemy-right-1.png");
+}
+.bg-medEnemy-up-1:before {
+    background-image: url("../img/moveables/bg-medEnemy-up-1.png");
+}
+.bg-medEnemy-down-1:before {
+    background-image: url("../img/moveables/bg-medEnemy-down-1.png");
+}
+
+
+/*med 2hp*/
+.bg-medEnemy-left-2:before {
+    background-image: url("../img/moveables/bg-medEnemy-left-2.png");
+}
+.bg-medEnemy-right-2:before {
+    background-image: url("../img/moveables/bg-medEnemy-right-2.png");
+}
+.bg-medEnemy-up-2:before {
+    background-image: url("../img/moveables/bg-medEnemy-up-2.png");
+}
+.bg-medEnemy-down-2:before {
+    background-image: url("../img/moveables/bg-medEnemy-down-2.png");
+}
+
+/*med 3hp*/
+.bg-medEnemy-left-3:before {
+    background-image: url("../img/moveables/bg-medEnemy-left-3.png");
+}
+.bg-medEnemy-right-3:before {
+    background-image: url("../img/moveables/bg-medEnemy-right-3.png");
+}
+.bg-medEnemy-up-3:before {
+    background-image: url("../img/moveables/bg-medEnemy-up-3.png");
+}
+.bg-medEnemy-down-3:before {
+    background-image: url("../img/moveables/bg-medEnemy-down-3.png");
+}
+
+/*med 4hp*/
+.bg-medEnemy-left-4:before {
+    background-image: url("../img/moveables/bg-medEnemy-left-4.png");
+}
+.bg-medEnemy-right-4:before {
+    background-image: url("../img/moveables/bg-medEnemy-right-4.png");
+}
+.bg-medEnemy-up-4:before {
+    background-image: url("../img/moveables/bg-medEnemy-up-4.png");
+}
+.bg-medEnemy-down-4:before {
+    background-image: url("../img/moveables/bg-medEnemy-down-4.png");
+}
+
+/* strong 1hp*/
+.bg-strongEnemy-left-1:before {
+    background-image: url("../img/moveables/bg-strongEnemy-left-1.png");
+}
+.bg-strongEnemy-right-1:before {
+    background-image: url("../img/moveables/bg-strongEnemy-right-1.png");
+}
+.bg-strongEnemy-up-1:before {
+    background-image: url("../img/moveables/bg-strongEnemy-up-1.png");
+}
+.bg-strongEnemy-down-1:before {
+    background-image: url("../img/moveables/bg-strongEnemy-down-1.png");
+}
+
+
+/*strong 2hp*/
+.bg-strongEnemy-left-2:before {
+    background-image: url("../img/moveables/bg-strongEnemy-left-2.png");
+}
+.bg-strongEnemy-right-2:before {
+    background-image: url("../img/moveables/bg-strongEnemy-right-2.png");
+}
+.bg-strongEnemy-up-2:before {
+    background-image: url("../img/moveables/bg-strongEnemy-up-2.png");
+}
+.bg-strongEnemy-down-2:before {
+    background-image: url("../img/moveables/bg-strongEnemy-down-2.png");
+}
+
+/*strong 3hp*/
+.bg-strongEnemy-left-3:before {
+    background-image: url("../img/moveables/bg-strongEnemy-left-3.png");
+}
+.bg-strongEnemy-right-3:before {
+    background-image: url("../img/moveables/bg-strongEnemy-right-3.png");
+}
+.bg-strongEnemy-up-3:before {
+    background-image: url("../img/moveables/bg-strongEnemy-up-3.png");
+}
+.bg-strongEnemy-down-3:before {
+    background-image: url("../img/moveables/bg-strongEnemy-down-3.png");
+}
+
+/*strong 4hp*/
+.bg-strongEnemy-left-4:before {
+    background-image: url("../img/moveables/bg-strongEnemy-left-4.png");
+}
+.bg-strongEnemy-right-4:before {
+    background-image: url("../img/moveables/bg-strongEnemy-right-4.png");
+}
+.bg-strongEnemy-up-4:before {
+    background-image: url("../img/moveables/bg-strongEnemy-up-4.png");
+}
+.bg-strongEnemy-down-4:before {
+    background-image: url("../img/moveables/bg-strongEnemy-down-4.png");
+}
+
+
+/* veryStrong 1hp*/
+.bg-veryStrongEnemy-left-1:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-left-1.png");
+}
+.bg-veryStrongEnemy-right-1:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-right-1.png");
+}
+.bg-veryStrongEnemy-up-1:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-up-1.png");
+}
+.bg-veryStrongEnemy-down-1:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-down-1.png");
+}
+
+
+/*veryStrong 2hp*/
+.bg-veryStrongEnemy-left-2:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-left-2.png");
+}
+.bg-veryStrongEnemy-right-2:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-right-2.png");
+}
+.bg-veryStrongEnemy-up-2:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-up-2.png");
+}
+.bg-veryStrongEnemy-down-2:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-down-2.png");
+}
+
+/*veryStrong 3hp*/
+.bg-veryStrongEnemy-left-3:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-left-3.png");
+}
+.bg-veryStrongEnemy-right-3:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-right-3.png");
+}
+.bg-veryStrongEnemy-up-3:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-up-3.png");
+}
+.bg-veryStrongEnemy-down-3:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-down-3.png");
+}
+
+/*veryStrong 4hp*/
+.bg-veryStrongEnemy-left-4:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-left-4.png");
+}
+.bg-veryStrongEnemy-right-4:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-right-4.png");
+}
+.bg-veryStrongEnemy-up-4:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-up-4.png");
+}
+.bg-veryStrongEnemy-down-4:before {
+    background-image: url("../img/moveables/bg-veryStrongEnemy-down-4.png");
+}
+
+
+/* invisible 1hp*/
+.bg-invisibleEnemy-left-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-1.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-right-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-1.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-up-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-1.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-down-1:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-1.png");
+    opacity: 0.1;
+}
+
+
+/*invisible 2hp*/
+.bg-invisibleEnemy-left-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-2.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-right-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-2.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-up-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-2.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-down-2:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-2.png");
+    opacity: 0.1;
+}
+
+/*invisible 3hp*/
+.bg-invisibleEnemy-left-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-3.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-right-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-3.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-up-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-3.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-down-3:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-3.png");
+    opacity: 0.1;
+}
+
+/*invisible 4hp*/
+.bg-invisibleEnemy-left-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-left-4.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-right-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-right-4.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-up-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-up-4.png");
+    opacity: 0.1;
+}
+.bg-invisibleEnemy-down-4:before {
+    background-image: url("../img/moveables/bg-easyEnemy-down-4.png");
+    opacity: 0.1;
+}
+
+
+/*player*/
+
+.bg-player-up-:before {
+    background-image: url("../img/moveables/bg-player-up-.png");
+}
+
+.bg-player-left-:before {
+    background-image: url("../img/moveables/bg-player-left-.png");
+}
+
+.bg-player-right-:before {
+    background-image: url("../img/moveables/bg-player-right-.png");
+}
+
+.bg-player-down-:before {
+    background-image: url("../img/moveables/bg-player-down-.png");
+}
+
+
+
+.bg-bullet-up-1:before {
+    background-image: url("../img/moveables/bg-bullet-up-1.png");
+}
+
+
+
+.bg-bullet-down-1:before {
+    background-image: url("../img/moveables/bg-bullet-down-1.png");
+}
+
+.bg-bullet-left-1:before {
+    background-image: url("../img/moveables/bg-bullet-left-1.png");
+}
+
+.bg-bullet-right-1:before {
+    background-image: url("../img/moveables/bg-bullet-right-1.png");
+}
+
+
+/* blink */
+@-webkit-keyframes invalid {
+    from { background-color: red; }
+    to { background-color: inherit; }
+}
+@-moz-keyframes invalid {
+    from { background-color: red; }
+    to { background-color: inherit; }
+}
+@-o-keyframes invalid {
+    from { background-color: red; }
+    to { background-color: inherit; }
+}
+@keyframes invalid {
+    from { background-color: red; }
+    to { background-color: inherit; }
+}
+.invalid {
+    -webkit-animation: invalid 1s infinite; /* Safari 4+ */
+    -moz-animation:    invalid 1s infinite; /* Fx 5+ */
+    -o-animation:      invalid 1s infinite; /* Opera 12+ */
+    animation:         invalid 1s infinite; /* IE 10+ */
+}
+
+
+
+/* Classes for animations */
+.swipe img {
+    width: 5rem;
+}
+
+.swipe-animation-0, .swipe-animation-1,
+.swipe-animation-2, .swipe-animation-3 {
+    position: relative;
+    width: 5rem;
+}
+
+
+.swipe-animation-0 {
+    animation: move-to-left 5s infinite;
+}
+
+.swipe-animation-1 {
+    animation: move-to-down 5s infinite;
+    left: 60%;
+}
+
+.swipe-animation-2 {
+    animation: move-to-right 5s infinite;
+}
+
+.swipe-animation-3 {
+    animation: move-to-up 5s infinite;
+}
+
+/*** Animation rules ***/
+@keyframes move-to-right {
+    from { left: 60%;}
+    to { left: 0; }
+}
+
+
+@keyframes move-to-left {
+    from { left: 0; }
+    to { left: 60%;}
+}
+
+@keyframes move-to-down {
+    from { top: 0; }
+    to { top: 3rem;}
+}
+
+@keyframes move-to-up {
+    from { top: 4rem; }
+    to { top: 0;}
+}
+
+@-webkit-keyframes animatetop {
+    from {top: 50vh; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top: 50vh; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+
+@font-face {
+    font-family: 'blade-runner'; /*a name to be used later*/
+    src: url('../fonts/bladerunner.TTF'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'top-secret'; /*a name to be used later*/
+    src: url('../fonts/topsecret.ttf'); /*URL to font*/
+}
+
+.blade-runner-font {
+    font-family: blade-runner;
+}
+
+.top-secret-font {
+    font-family: top-secret;
+}
+
+.bg-city-at-night {
+    background: url("../img/background/city-at-night.jpg");
+}
+
+.bg-img {
+    background: url("http://www.clker.com/cliparts/r/q/r/j/F/K/black-and-white-skyline-md.png") bottom;
+    background-color: orange;
+    background-repeat: repeat-x;
+}
+/*
+#warning-message { display: none; }
+@media only screen and (orientation:portrait){
+    #wrapper { display:none; }
+    #warning-message { display:block; }
+}
+@media only screen and (orientation:landscape){
+    #warning-message { display:none; }
+}
+*/
+
+/* modal */
+/* The Modal (background) */
+.modal {
+    font-size: 1.7vh;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 10.5vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: black;
+    color: white;
+    border: 5px dotted darkgoldenrod;
+    box-shadow: inset 0 -1px 0 0 #000, inset 0 1px 0 0 #000, 0 1px 0 0 #000, 0 -1px 0 0 #000;
+}
+
+.modal-header img {
+    width: 100%
+}
+
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    color: white;
+}
+
+.tutorial-img-sm {
+    width: 3vh;
+}
+
+#swipesTable tr:nth-child(even) {
+    height: 6rem;
+}
+
+.main-container table {
+    border: 5px dotted darkgoldenrod;
+    box-shadow: inset 0 -1px 0 0 #000, inset 0 1px 0 0 #000, 0 1px 0 0 #000, 0 -1px 0 0 #000;
+    margin-bottom: 1px;
+}
+
+.wrapper {
+    border-bottom: 7px dotted #000;
+    box-shadow: inset 0 -3px 0 0 #000, 0 3px 0 0 #000;
+}
+
+
+#fieldTypes td {
+    padding: 0.2rem;
+}
+
+#speech img {
+    width: 1.7vh;
+}
+
+.main-menu {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}

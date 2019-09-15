@@ -1,0 +1,23 @@
+{
+  "level": {
+    "blocks" : [
+      "D","D","D","D","D","D","D","D","D","D",
+      "D","P","E","D","E","E","E","F","E","D",
+      "D","E","B","D","E","E","E","E","E","D",
+      "D","E","D","D","D","B","D","D","D","D",
+      "D","E","M","D","B","E","E","E","E","D",
+      "D","E","B","D","E","E","E","E","E","D",
+      "D","D","D","D","D","B","D","D","E","D"
+    ],
+    "field_width" : "10",
+    "field_height" : "7"
+  },
+  "maxDynamites": 50,
+  "exp_monster" : "500",
+  "exp_destroyable_block" : "10",
+  "speedBuffSpawnRate" : 30,
+  "speedBuffAddSpeed" : 100,
+  "dynamiteRangeSpawnRate" : 5,
+  "description" : "Now you are in the first real level. Watch out, if you die, you lose a live and if you don't have any lives left, you start at this level again.<br>Kill all enemies and find the portal, before the time expired.",
+  "maxLevelTime" : 90
+}

@@ -1,0 +1,15 @@
+
+#menu .centered * {
+    margin-bottom: 15px;
+}
+.content {
+    width: 100%;
+}
+.centered {
+    width: 50%;
+    margin: auto;
+}
+.centered * {
+    text-align: center;
+    width: 100%;
+}

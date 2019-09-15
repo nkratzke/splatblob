@@ -1,0 +1,18 @@
+{
+	"name": "Level 5",
+	"config": {
+		"platformLength": 100,
+		"ballSpeed":58,
+		"bricksPerRow": 8,
+		"rowsWithBricks": 4,
+		"specialBricksEnabled": true,
+		"specialBricks": {
+			"heavy": 2,
+			"speed": 2,
+			"split": 1,
+			"teleport": 4,
+			"speed": 3,
+			"penetrate": 2
+		}
+	}
+}

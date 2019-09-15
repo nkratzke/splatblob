@@ -1,0 +1,66 @@
+{
+	"maxLevel" : 10,
+  "lives" : 10,
+  "increaseSpeedBy" : -75,
+  "decreaseSpeedBy" : 50,
+  "increasePointsBy" : 500,
+  "decreasePointsBy" : -250,
+	"ghostModeDuration" : 3,
+    "obstacles" : [
+	{"row" : 1 , "column" : 0 } , 
+	{"row" : 1 , "column" : 19 } , 
+	{"row" : 3 , "column" : 0 } , 
+	{"row" : 3 , "column" : 19 } , 
+	{"row" : 5 , "column" : 0 } , 
+	{"row" : 5 , "column" : 19 } , 
+	{"row" : 7 , "column" : 0 } , 
+	{"row" : 7 , "column" : 19 } , 
+	{"row" : 9 , "column" : 0 } , 
+	{"row" : 9 , "column" : 19 } , 
+	{"row" : 11 , "column" : 0 } , 
+	{"row" : 11 , "column" : 19 } , 
+	{"row" : 13 , "column" : 0 } , 
+	{"row" : 13 , "column" : 19 } , 
+	{"row" : 15 , "column" : 0 } , 
+	{"row" : 15 , "column" : 19 } , 
+	{"row" : 17 , "column" : 0 } , 
+	{"row" : 17 , "column" : 19 } , 
+	{"row" : 19 , "column" : 0 } , 
+	{"row" : 19 , "column" : 19 } , 
+	{"row" : 21 , "column" : 0 } , 
+	{"row" : 21 , "column" : 19 } , 
+	{"row" : 23 , "column" : 0 } , 
+	{"row" : 23 , "column" : 19 } , 
+	{"row" : 25 , "column" : 0 } , 
+	{"row" : 25 , "column" : 19 } , 
+	{"row" : 27 , "column" : 0 } , 
+	{"row" : 27 , "column" : 19 } , 
+	{"row" : 29 , "column" : 0 } , 
+	{"row" : 29 , "column" : 19 } , 
+	{"row" : 31 , "column" : 0 } , 
+	{"row" : 31 , "column" : 19 } , 
+	{"row" : 33 , "column" : 0 } , 
+	{"row" : 33 , "column" : 19 } , 
+	{"row" : 35 , "column" : 0 } , 
+	{"row" : 35 , "column" : 19 } , 
+	{"row" : 37 , "column" : 0 } , 
+	{"row" : 37 , "column" : 19 } , 
+	{"row" : 39 , "column" : 0 } , 
+	{"row" : 39 , "column" : 19 } 
+  ],
+  "sideways" : [
+  ],
+  "invisible" : [
+  ],
+  "slower" : [
+  ],
+  "faster" : [
+  ],
+  "penalty" : [
+  ],
+  "bonus" : [
+  ],
+  "ghostMode" : [
+  ]
+
+}

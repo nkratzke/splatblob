@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cave Escape</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">  
+  </head>
+ 
+  <body>
+  
+    <div class="container">
+      <h1 id="title">Dart-Ausweichspiel: Cave Escape</h1>
+      
+      <div id='message'>
+        <div id='gameover'></div>
+        <div id='info'></div>
+      </div>
+           
+      <table id='cavegame'>
+	  </table>
+      
+      <div id='panel'>
+        <span id="start" class="button">Start</span>
+        <span id="pause" class="button">Pause</span>
+        <span id="help" class="button">Help</span>
+      </div>      
+      
+      <div id='notification'>
+        <div id='controls'>
+          <span id='level'></span>
+          <span id='points'></span>
+          <span id='multiplier'></span>
+          <span id='life'></span>
+        </div>
+      </div>
+      
+      
+      
+      
+
+      <p>
+        <small>
+          &copy; Alexander Werk, Jan-Erik Johannsen, 2015<br>
+        </small>
+      </p>
+      
+      
+    </div>
+    
+    
+      
+   
+    
+    <script type='application/dart' src='caveclient.dart'></script>
+    <script src='packages/browser/dart.js'></script>   
+  </body>
+</html>

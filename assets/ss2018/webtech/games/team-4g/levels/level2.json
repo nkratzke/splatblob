@@ -1,0 +1,16 @@
+{
+	"name": "Level 2",
+	"config": {
+		"platformLength": 90,
+		"ballSpeed":55,
+		"bricksPerRow": 6,
+		"rowsWithBricks": 2,
+		"specialBricksEnabled": true,
+		"specialBricks": {
+			"heavy": 3,
+			"slow": 1,
+			"speed": 2,
+			"penetrate": 1
+		}
+	}
+}

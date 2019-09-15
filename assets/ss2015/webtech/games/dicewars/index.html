@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DartyDiceWars</title>
+<link rel="stylesheet" type="text/css" href="css/DartyDiceStyle.css">
+<link rel="stylesheet" type="text/css" href="css/DDWAnimations.css">
+</head>
+
+<body>
+	<header>
+		<h1>
+			DICE WARS (V1.0 Raging Raspberry)<a target="_blank" class="GitLink"
+				href="https://github.com/Hex-3-En/DartyDiceWars"><img
+				alt="GitHub-Link" src="src/GitHub-Mark.png"><img
+				style="size: inherit;" alt="GitHub-Link" src="src/GitHub_Logo.png"></a>
+		</h1>
+	</header>
+
+	<div id='content'>
+		<div id="titlebar" class="messagebar">
+			Proudly presented by <a
+				href="https://github.com/Hex-3-En/DartyDiceWars/graphs/contributors"
+				target="_blank">this contributors!</a>
+		</div>
+		<div id="arena" style="float: left; width: 800px;"></div>
+		<div id="sidebar" style="display: none">
+			<div class="col">
+				<div class="player human" style="display: none">
+					<div class="plName"></div>
+					<div class="plSupply"></div>
+					<div class="plPool"></div>
+					<div class="attackbar"></div>
+				</div>
+				<div class="player cpu1" style="display: none">
+					<div class="plName"></div>
+					<div class="plSupply"></div>
+					<div class="plPool"></div>
+					<div class="attackbar"></div>
+				</div>
+				<div class="player cpu2" style="display: none">
+					<div class="plName"></div>
+					<div class="plSupply"></div>
+					<div class="plPool"></div>
+					<div class="attackbar"></div>
+				</div>
+				<div class="player cpu3" style="display: none">
+					<div class="plName"></div>
+					<div class="plSupply"></div>
+					<div class="plPool"></div>
+					<div class="attackbar"></div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="player cpu4" style="display: none">
+					<div class="plName"></div>
+					<div class="plSupply"></div>
+					<div class="plPool"></div>
+					<div class="attackbar"></div>
+				</div>
+				<div class="player cpu5" style="display: none">
+					<div class="plName"></div>
+					<div class="plSupply"></div>
+					<div class="plPool"></div>
+					<div class="attackbar"></div>
+				</div>
+				<div class="player cpu6" style="display: none">
+					<div class="plName"></div>
+					<div class="plSupply"></div>
+					<div class="plPool"></div>
+					<div class="attackbar"></div>
+				</div>
+				<div class="player cpu7" style="display: none">
+					<div class="plName"></div>
+					<div class="plSupply"></div>
+					<div class="plPool"></div>
+					<div class="attackbar"></div>
+
+				</div>
+			</div>
+		</div>
+		<div id="loadinganim" style="display:">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div id="messagebar" class="messagebar" style="display:"></div>
+		<div id="buttonbar">
+			<div id="cube1" class="shape cuboid-1 cub-1">
+				<div class="face ft">
+					<div class="photon-shader"></div>
+				</div>
+				<div class="face bk">
+					<div class="photon-shader"></div>
+				</div>
+				<div class="face rt">
+					<div class="photon-shader"></div>
+				</div>
+				<div class="face lt">
+					<div class="photon-shader"></div>
+				</div>
+				<div class="face bm">
+					<div class="photon-shader"></div>
+				</div>
+				<div class="face tp">
+					<div class="photon-shader"></div>
+				</div>
+			</div>
+			<div id="start" style="display:">Start</div>
+			<div id="endTurn" style="display: none">End Turn</div>
+			<div id="cube2" class="shape cuboid-1 cub-1">
+				<div class="face ft">
+					<div class="photon-shader"></div>
+				</div>
+				<div class="face bk">
+					<div class="photon-shader"></div>
+				</div>
+				<div class="face rt">
+					<div class="photon-shader"></div>
+				</div>
+				<div class="face lt">
+					<div class="photon-shader"></div>
+				</div>
+				<div class="face bm">
+					<div class="photon-shader"></div>
+				</div>
+				<div class="face tp">
+					<div class="photon-shader"></div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<script type="application/dart" src="DartyDiceClient.dart"></script>
+	<script type="text/javascript" src="src/dart.js"></script>
+</body>
+</html>

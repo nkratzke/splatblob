@@ -1,0 +1,110 @@
+{
+  "LevelAmount": 10,
+  "Level1": {
+    "Number": 1,
+    "RequiredScore": 0,
+    "FruitsAmount": 3,
+    "BombChance": 0,
+    "SmoothieChance": 0,
+    "HeartChance": 0,
+    "FruitRange": 1,
+    "FruitMovement": 0
+  },
+  "Level2": {
+    "Number": 2,
+    "RequiredScore": 5,
+    "FruitsAmount": 3,
+    "BombChance": 0,
+    "SmoothieChance": 0,
+    "HeartChance": 30,
+    "FruitRange": 2,
+    "FruitMovement": 0
+  },
+  "Level3": {
+    "Number": 3,
+    "RequiredScore": 10,
+    "FruitsAmount": 3,
+    "BombChance": 0,
+    "SmoothieChance": 20,
+    "HeartChance": 30,
+    "FruitRange": 2,
+    "FruitMovement": 0
+  },
+  "Level4": {
+    "Number": 4,
+    "RequiredScore": 15,
+    "FruitsAmount": 3,
+    "BombChance": 10,
+    "SmoothieChance": 20,
+    "HeartChance": 30,
+    "FruitRange": 2,
+    "FruitMovement": 0
+  },
+  "Level5": {
+    "Number": 5,
+    "RequiredScore": 25,
+    "FruitsAmount": 3,
+    "BombChance": 10,
+    "SmoothieChance": 20,
+    "HeartChance": 25,
+    "FruitRange": 3,
+    "FruitMovement": 0
+  },
+  "Level6": {
+    "Number": 6,
+    "RequiredScore": 35,
+    "FruitsAmount": 3,
+    "BombChance": 20,
+    "SmoothieChance": 20,
+    "HeartChance": 20,
+    "FruitRange": 3,
+    "FruitMovement": 0
+  },
+  "Level7": {
+    "Number": 7,
+    "RequiredScore": 40,
+    "FruitsAmount": 3,
+    "BombChance": 25,
+    "SmoothieChance": 20,
+    "HeartChance": 15,
+    "FruitRange": 4,
+    "FruitMovement": 0
+  },
+  "Level8": {
+    "Number": 8,
+    "RequiredScore": 50,
+    "FruitsAmount": 4,
+    "BombChance": 25,
+    "SmoothieChance": 20,
+    "HeartChance": 10,
+    "FruitRange": 4,
+    "FruitMovement": 0
+  },
+  "Level9": {
+    "Number": 9,
+    "RequiredScore": 60,
+    "FruitsAmount": 4,
+    "BombChance": 25,
+    "SmoothieChance": 15,
+    "HeartChance": 5,
+    "FruitRange": 4,
+    "FruitMovement": 0
+  },
+  "Level10": {
+    "Number": 10,
+    "RequiredScore": 65,
+    "FruitsAmount": 5,
+    "BombChance": 25,
+    "SmoothieChance": 10,
+    "HeartChance": 5,
+    "FruitRange": 4,
+    "FruitMovement": 0
+  },
+  "Tutorial": {
+    "Movement": "Das ist der gute Frank. Frank will die Früchte die von dem Baum\nfallen in seinen Korb rechts an dem rechten Baum bringen. Dazu hat\ner seine Trommel, mit der er die Früchte auf die andere Seiten transportieren\n.kann. Bewegen kann Frank sich durch das tippen auf die linke Seite für eine\nBewegung nach links und durch das tippen auf die rechte Seite nach rechts.",
+    "Banane": "Das ist eine Frucht. In diesem Spiel gibt es verschiedene Früchte und\njede Frucht wird von links geworfen und muss in den Korb an der\nrechten Spielfeldseite mit Hilfe von Franks Trommel gebracht werden\n.Pro erfolgreich transportiere Frucht gibt es 1 Punkt. Fällt eine Frucht auf den Boden,\ndann verlierst du ein Leben. Hast du alle Leben verloren, ist das Spiel vorbei.",
+    "Bomb": "Das ist eine Bombe. Wenn Frank von dieser Bombe getroffen wird,\ndann verliert ihr ein Leben!",
+    "Heart": "Das ist ein Herz. Wenn Frank dieses Herz einsammelt, dann\nbekommt ihr ein Leben dazu. Achtung, es gibt ein Limit von 10 Leben,\ndie man gleichzeitig besitzen kann",
+    "Smoothie": "Das ist ein Super-Smoothe. Wenn Frank diesen fängt und trinkt\ndann wird Frank schneller!"
+  }
+}

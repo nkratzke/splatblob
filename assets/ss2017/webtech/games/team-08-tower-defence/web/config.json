@@ -1,0 +1,8 @@
+{
+  "fieldHeight": "15",
+  "fieldWidth": "10",
+  "lifePoints" : "10",
+  "startBudget" : "50",
+  "timeBetweenWaves": "3",
+  "lvl1" : "street1"
+}

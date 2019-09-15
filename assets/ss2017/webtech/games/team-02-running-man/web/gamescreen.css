@@ -1,0 +1,334 @@
+@font-face {
+    font-family: ownFont;
+    src: url(font/redressed/Redressed.ttf);
+}
+
+html, body {
+    font-family: ownFont;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (orientation: portrait) {
+
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .game {
+        width: 100%;
+        height: 100%;
+        background: url("img/hintergrund2.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        text-align: center;
+        z-index: -5;
+    }
+
+    #message #yesNo {
+        margin-top: 40%;
+        position: absolute;
+        text-align: center;
+        z-index: +5;
+    }
+
+    #informationTable {
+        table-layout: fixed;
+        text-align: center;
+        width: 100%;
+        height: 7.2%;
+    }
+
+    #informationTable #infos {
+        margin-right: auto;
+        margin-left: auto;
+        background-color: transparent;
+        color: black;
+        text-align: center;
+    }
+
+    #informationTable #infos tbody tr .row {
+        border-radius: 1px;
+        border: 2px solid black;
+    }
+
+    .values {
+        text-align: left !important;
+    }
+
+    #gamefield {
+        width: 100%;
+        height: 80%;
+        margin: 20px auto 7px auto;
+        border: none;
+        /*border-bottom: 1px solid black;*/
+        background-color: transparent;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #gamefield td {
+        height: 15px;
+        width: 15px;
+        border: none;
+        border-collapse: separate;
+    }
+
+    .mobileKeys .play-pause {
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 30px;
+        width: 30px;
+    }
+
+    #keylayout {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* remained from using buttons to move
+    #leftButton {
+      background: url("img/linkerPfeil_30.png") center;
+      height: 30px;
+      width: 30px;
+      display: block;
+    }*/
+    .play-pause #play {
+        background: url("img/play2_30.png") center;
+        height: 30px;
+        width: 30px;
+        display: none;
+    }
+
+    .play-pause #pause {
+        background: url("img/pause2_30.png") center;
+        height: 30px;
+        width: 30px;
+        display: block;
+    }
+
+    /* remained from using buttons to move
+    #rightButton {
+      background: url("img/rechterPfeil_30.png") center;
+      height: 30px;
+      width: 30px;
+      display: block;
+    }*/
+    #backGAME, #newGAME {
+        border: 2px solid black;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 100px;
+        font-size: 1em;
+        text-decoration: none;
+        display: none;
+    }
+
+    .runner {
+        background: url("img/runner4_15.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .obstacle, .invisible {
+        background: url("img/obstacle6_15.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .sideways {
+        background: url("img/sideways_15.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .bonus {
+        background: url("img/bonus_15.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .penalty {
+        background: url("img/penalty_15.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .faster {
+        background: url("img/faster_15.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .slower {
+        background: url("img/slower_15.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .ghostMode {
+        background: url("img/ghost_15.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .runnerCrashed00 {
+        background: url("img/runnerCrashed/runnerCrashed00.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .runnerCrashed01 {
+        background: url("img/runnerCrashed/runnerCrashed01.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .runnerCrashed02 {
+        background: url("img/runnerCrashed/runnerCrashed02.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .runnerCrashed10 {
+        background: url("img/runnerCrashed/runnerCrashed10.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .runnerCrashed11 {
+        background: url("img/runnerCrashed/runnerCrashed11.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .runnerCrashed12 {
+        background: url("img/runnerCrashed/runnerCrashed12.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .runnerCrashed20 {
+        background: url("img/runnerCrashed/runnerCrashed20.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .runnerCrashed21 {
+        background: url("img/runnerCrashed/runnerCrashed21.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    .runnerCrashed22 {
+        background: url("img/runnerCrashed/runnerCrashed22.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+
+    #portrait {
+        display: none;
+    }
+}
+
+@media (orientation: landscape) {
+    #portrait {
+        display: block;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    html, body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        background-color: transparent !important;
+        background: url("img/smartphone.png") no-repeat center, url("img/hintergrund2.png") no-repeat center;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover;
+        background-size: auto, cover;
+    }
+
+    .game {
+        display: none;
+    }
+}

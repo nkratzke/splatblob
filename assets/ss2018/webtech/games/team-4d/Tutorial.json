@@ -1,0 +1,9 @@
+{
+  "Tutorial": {
+    "Movement": "Das ist der gute Frank. Frank will die Früchte die von dem Baum\nfallen in seinen Korb rechts an dem rechten Baum bringen. Dazu hat\ner seine Trommel, mit der er die Früchte auf die andere Seiten transportieren\n.kann. Bewegen kann Frank sich durch das tippen auf die linke Seite für eine\nBewegung nach links und und auf das tippen auf die rechte Seite nach rechts.",
+    "Banane": "Das ist eine Frucht. In diesem Spiel gibt es verschiedne Früchte und\njede Frucht wird von links geworfen und muss in den Korb an der\nrechten Spielfeldseite mit Hilfe von Franks Trommel gebracht werden\n.Pro erfolgreich transportiere Frucht gibt es 1 Punkt. Fällt eine Frucht auf den Boden,\ndann verlierst du ein Leben. Hast du alle Leben verloren, ist das Spiel vorbei.",
+    "Bomb": "Das ist eine Bombe. Wenn Frank von dieser Bombe getroffen wird,\ndann verliert ihr ein Leben!",
+    "Heart": "Das ist eine Herz. Wenn Frank dieses Herz einsammelt, dann\nbekommt ihr ein Leben dazu. Achtung, es gibt ein Limit von 10 Leben,\ndie man gleichzeitig besitzen kann",
+    "Smoothie": "Das ist ein Super-Smoothe. Wenn Frank diesen fängt und trinkt\ndann wird Frank schneller!"
+  }
+}

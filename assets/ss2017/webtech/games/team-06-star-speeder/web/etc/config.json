@@ -1,0 +1,10 @@
+{
+  "rows": 10,
+  "rotationConstant": 14,
+  "maxStepsSpeed": 20,
+  "maxStepsMultiplicator": 12,
+  "maxStepsInvulnerable": 35,
+  "normalStepTrigger": 400,
+  "speedupStepTrigger": 250,
+  "speeddownStepTrigger": 650
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Space Invaders Dart</title>
+   
+   <link rel="stylesheet" href="src/css/space.css" type="text/css">
+  </head>
+  
+  <body>   
+    <h1>Space Invaders Dart</h1>
+    <div id="standardContainer">
+      
+      <table id="bars" style="display: none">
+        <tr>
+          <td><div id="levelbar"></div></td>
+          <td><div id="enemybar"></div></td>
+        </tr>
+      </table>
+      
+      <div id="notification" style="display: none"></div>
+      
+      <div id="menu">
+        <p id="start">Start</p>
+        <p id="help">Help</p>
+      </div>
+      
+      <div id="gamesection" style="display: none">
+        <table id="board">
+        </table>
+      </div>
+    
+      <table id="status" style="display: none">
+        <tr>
+          <td>
+            <table id="healthpoints">
+            </table>
+          </td>
+          <td><div id="score"></div></td>
+        </tr>
+      </table>
+      <div id="instructions" style="display: none">
+        <h2>Instructions</h2>
+        <table id="ins">
+          <tr>
+            <td><img src="/src/img/player_i.png"></td>
+            <td>This is your ship. Don't let the enemies shoot you or take over your ship!</td>
+          </tr>
+          <tr>
+            <td><img src="/src/img/enemy_i.png"></td>
+            <td>This is an example of an enemyship. Shoot them all to get to higher level!</td>
+          </tr>
+          <tr>
+            <td><img src="/src/img/health_i.png"></td>
+            <td>These are your healthpoints! Don't let them fall to 0!</td>
+          </tr>
+          <tr>
+            <td><img src="/src/img/points_i.png"></td>
+            <td>This is your score. Shoot enemies to get points and a higher score!</td>
+          </tr>
+        </table>
+        <h2>Controls</h2>
+        <table id="ins">
+          <tr>
+            <td><img src="/src/img/left_c.png"></td>
+            <td>Press [left] to move your ship left.</td>
+          </tr>
+          <tr>
+            <td><img src="/src/img/right_c.png"></td>
+            <td>Press [rigth] to move your ship right.</td>
+          </tr>
+          <tr>
+            <td><img src="/src/img/space_c.png"></td>
+            <td>Press [space] to fire. You can shoot 5 projectiles at the same time.</td>
+          </tr>
+        </table>
+        <p id="back">Back</p>
+      </div>
+    </div>
+
+    <div id="overlay" style="display: none">
+      <h3>STAGE CLEARED!</h3>
+      <p id="next">Next Stage</p>
+    </div>
+
+    
+    <footer>
+      <p id="copyright">Eine Projektarbeit von Viktor Gies, Marius Rosenbaum und Axel Wallow</p>
+    </footer>
+    <script type="application/dart" src="space.dart"></script>
+    <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>

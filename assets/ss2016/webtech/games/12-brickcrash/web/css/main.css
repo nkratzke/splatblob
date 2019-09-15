@@ -1,0 +1,122 @@
+*               { font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;}
+html, body      { margin: 0;  height: 100%; }
+h2              { margin: 0;}
+
+div#mainWrap {
+    height: 100%;
+    width:  100%;
+    display:table;
+}
+
+div#mainWrap > div {
+    border:10px solid #242454;
+    box-sizing: border-box;
+    color:#fff;
+    font-size:25px;
+    display:table-cell;
+    vertical-align: middle;
+}
+
+div#mainWrap div#mainFrame {
+    width:80%;
+    background: url("../graphic/bg2.jpg") fixed center center;
+    background-size: 100%;
+}
+
+div#mainWrap div#rightFrame {
+    width:263px;
+    border-left: 0;
+}
+
+div#blocks table {
+    margin: 0 auto;
+}
+
+#plattform, #ball, .brick, .powerUp {
+    position:absolute;
+}
+
+#gameOverFrame {
+    position:relative;
+    top:200px;
+    width:400px;
+    left:50%;
+    background:#324265;
+    margin-left: -200px;
+    border:5px solid #8c1511;
+    text-align:center;
+    padding:10px;
+    z-index: 10;
+}
+
+#rightFrame {
+    text-align:center;
+    padding:20px;
+    background: url("../graphic/carbon.png");
+}
+
+#gameKeyStatus {
+    height: 30px;
+    position:relative;
+    bottom:0;
+}
+
+#gameKeyStatus.online       { background: #15bd31; }
+#gameKeyStatus.offline      { background: #c60000; }
+#gameKeyStatus.connecting   { background: #e1ae31; }
+
+
+#informationFrame {
+    background: #fff;
+    opacity: 0.7;
+    border: 3px solid #1c93a3;
+    border-radius: 10px;
+    width:400px;
+    margin: 0 auto;
+    color: #000;
+    padding:10px;
+    text-align: center;
+}
+
+#informationFrame input, #informationFrame button           {
+    font-size: 30px;
+    width: 250px;
+    border: 1px solid #000;
+    padding:3px;
+    border-radius: 5px;
+    margin-bottom:5px;
+}
+
+#informationFrame #error {
+    color:red;
+    font-weight: bold;
+}
+
+#usernamePlaceholder    { background: #0000aa; }
+
+#highScore .yourScore   {
+    font-weight: bold;
+    color: #0000aa;
+}
+
+#header {
+    font-weight: bold;
+    margin-bottom:10px;
+}
+
+.tutorial_button {
+    background: gray;
+    padding:5px;
+    border:1px solid #000;
+    border-radius: 3px;
+}
+
+#howToPlay td {height:40px; text-align: left; }
+#levelInformation {     display: none;  }
+
+#touchButtons       { position:absolute; top:10px; left: 10px; height:100%; z-index:10; }
+#touchButtons > div { height: 100%; }
+
+#moveLeftButton     { float:left; width:200px; }
+#moveRightButton    { float:right; width:200px; }
+#startButton        {  }

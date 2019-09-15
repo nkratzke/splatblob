@@ -1,0 +1,83 @@
+[
+  {
+    "id": "1",
+    "playerShips": [2, 2, 3, 3, 4],
+    "enemyShips": [2, 2, 3, 3, 4],
+    "playerRocks": 3,
+    "enemyRocks": 3,
+    "enemyPowUps": 1,
+    "enemyStrategy": 0
+  },
+  {
+    "id": "2",
+    "playerShips": [2, 2, 2, 3, 3],
+    "enemyShips": [2, 2, 2, 3, 3],
+    "playerRocks": 4,
+    "enemyRocks": 3,
+    "enemyPowUps": 1,
+    "enemyStrategy": 1
+  },
+  {
+    "id": "3",
+    "playerShips": [3, 4, 5],
+    "enemyShips": [3, 4, 5],
+    "playerRocks": 4,
+    "enemyRocks": 3,
+    "enemyPowUps": 1,
+    "enemyStrategy": 1
+  },
+  {
+    "id": "4",
+    "playerShips": [2, 3, 4, 5, 5],
+    "enemyShips": [2, 3, 4, 5, 5],
+    "playerRocks": 5,
+    "enemyRocks": 5,
+    "enemyPowUps": 1,
+    "enemyStrategy": 2
+  },
+  {
+    "id": "5",
+    "playerShips": [2, 2, 5, 5],
+    "enemyShips": [2, 2, 5, 5],
+    "playerRocks": 5,
+    "enemyRocks": 3,
+    "enemyPowUps": 1,
+    "enemyStrategy": 2
+  },
+  {
+    "id": "6",
+    "playerShips": [3, 3, 3, 3],
+    "enemyShips": [3, 3, 3, 3],
+    "playerRocks": 7,
+    "enemyRocks": 7,
+    "enemyPowUps": 1,
+    "enemyStrategy": 2
+  },
+  {
+    "id": "7",
+    "playerShips": [2, 2],
+    "enemyShips": [2, 2],
+    "playerRocks": 5,
+    "enemyRocks": 4,
+    "enemyPowUps": 1,
+    "enemyStrategy": 3
+  },
+  {
+    "id": "8",
+    "playerShips": [2, 2],
+    "enemyShips": [2, 2, 4, 5],
+    "playerRocks": 5,
+    "enemyRocks": 3,
+    "enemyPowUps": 1,
+    "enemyStrategy": 3
+  },
+  {
+    "id": "9",
+    "playerShips": [2, 2],
+    "enemyShips": [2, 2, 2, 3, 4, 5],
+    "playerRocks": 7,
+    "enemyRocks": 2,
+    "enemyPowUps": 1,
+    "enemyStrategy": 3
+  }
+]

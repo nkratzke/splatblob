@@ -1,0 +1,251 @@
+html {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 4vw;
+  text-align: center;
+  background-color: silver;
+  background-image: linear-gradient(335deg, #b10 23px, transparent 23px),
+  linear-gradient(155deg, #d10 23px, transparent 23px),
+  linear-gradient(335deg, #b10 23px, transparent 23px),
+  linear-gradient(155deg, #d10 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+
+#warningoverlay:empty, #overlay:empty {
+  display: none;
+}
+
+#warningoverlay {
+  font-size: 2vw;
+  background-color: red;
+  padding: 15px;
+}
+
+#overlay {
+  width: 100%;
+}
+
+/*Startseite */
+#menuview {
+  width: 60%;
+  margin: auto auto auto auto;
+  background-color: #ff9933;
+  border: 3px solid black;
+  border-radius: 30px;
+  padding-bottom: 25px;
+}
+
+#help {
+  width: 50%;
+  margin: 0px auto 0px auto;
+  text-align: left;
+  font-size: 18px;
+  background-color: #ff9933;
+  border: 3px solid black;
+  border-radius: 30px;
+  padding: 0px 0px 30px 25px;
+  display: none;
+}
+
+#gameview {
+  width: 60%;
+  margin: 0px auto 0px auto;
+  background-color: #ff9933;
+  border: 3px solid black;
+  border-radius: 30px;
+  padding-bottom: 25px;
+  display: none;
+}
+
+h1 {
+  font-size: 3.5vw;
+  margin-bottom: 70px;
+}
+
+h2 {
+  font-size: 130%;
+}
+
+h3 {
+  font-size: 3.5vw;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid white;
+  border-radius: 30px;
+  background: rgba(1,1,1,0.3);
+}
+
+small {
+  font-size: 15px;
+}
+
+#closehelp {
+  text-align: right;
+  padding-right: 10px;
+}
+
+#start, #startgame, #backmenu, #score, #howto, #level,#points, #leftbutton, #rightbutton  {
+  padding: 7px 20px 7px 20px;
+  font-size: 3vw;
+  color: black;
+  background: rgba(255, 255, 255, 0.5);
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+#button {
+  display: none;
+}
+
+#leftbutton, #rightbutton {
+  font-size: 2.5vw;
+  margin: 0px 5px 0px 5px;
+}
+
+#cancelbutton {
+  font-size: 200%;
+  height: auto;
+  position: relative;
+}
+
+/* Game controls */
+#firstoption, #secondoption, #thirdoption, #startHigh, #back, #message, #controls, #button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#message #gameover {
+  font-size: 3.5vw;
+  color: black;
+  text-align: center;
+}
+
+/* highscore */
+#highscoreform {
+  margin: 40px;
+  background: rgba(1,1,1,0.3);
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#highscoreform input {
+  color: white;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.2);
+  appearance: none;
+  box-shadow: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+#highscorewarning {
+  background: red;
+  color: darkred;
+  padding: 50px;
+}
+
+#highscorewarning:empty {
+  display: none;
+}
+
+#scorelist:empty {
+  display: none;
+}
+
+#scorelist {
+  font-size: 3vw;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid white;
+  border-radius: 30px;
+  background: rgba(1,1,1,0.3);
+}
+
+#scorelist ul {
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 0px;
+}
+
+#scorelist li {
+  font-size: 3vw;
+  margin: 0px 5px 5px 5px;
+  padding: 4px;
+  color: white;
+  display: block;
+  border-radius: 30px;
+}
+
+input::-webkit-input-placeholder { color: white
+}
+
+/* Gamefield */
+
+#game {
+  margin: 50px auto 50px auto;
+  background-color: black;
+  background-size: cover;
+}
+
+#game td {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.player {
+  background: #3e5d9e !important;
+  border: none !important;
+  border-spacing: 0px;
+  position: absolute;
+}
+
+.ball {
+  background-color: red !important;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.greenBrick {
+  background: green !important;
+  border: none !important;
+  border-spacing: 0px;
+}
+
+.brownBrick {
+  background: brown !important;
+  border: none !important;
+  border-spacing: 0px;
+}
+
+.redBrick {
+  background: red !important;
+  border: none !important;
+  border-spacing: 0px;
+}
+
+.yellowBrick {
+  background: yellow !important;
+  border: none !important;
+  border-spacing: 0px;
+}
+
+.greyBrick {
+  background: gray !important;
+  border: none !important;
+  border-spacing: 0px;
+}
+
+.field {
+  background: inherit !important;
+  border: none !important;
+  border-spacing: 0px;
+}

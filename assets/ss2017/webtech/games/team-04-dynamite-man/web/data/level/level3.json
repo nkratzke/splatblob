@@ -1,0 +1,19 @@
+{
+  "level": {
+      "blocks" : [
+                 "E","E","E","D","E","E","E",
+                 "E","P","E","E","E","E","D",
+                 "E","D","E","E","D","E","E"
+      ],
+      "field_width" : "7",
+      "field_height" : "3"
+  },
+  "maxDynamites": 4,
+  "exp_monster" : "0",
+  "exp_destroyable_block" : "50",
+  "speedBuffSpawnRate" : 0,
+  "speedBuffAddSpeed" : 100,
+  "dynamiteRangeSpawnRate" : 0,
+  "description" : "Congratulations!<br>Now you have to find the portal under a box",
+  "maxLevelTime" : 30
+}

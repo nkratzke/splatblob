@@ -1,0 +1,66 @@
+[
+  {
+    "id": 0,
+    "name": "Shabby Boots",
+    "display": "Boots",
+    "type": 5,
+    "value": 1,
+    "quality": 0,
+    "icon": "boots/boots_dark_small.png"
+  },
+  {
+    "id": 1,
+    "name": "Heavy Boots",
+    "display": "Boots",
+    "type": 5,
+    "value": 2,
+    "quality": 1,
+    "mods": {
+      "health": 1,
+      "strength": 1
+    },
+    "icon": "boots/boots_leather_big.png"
+  },
+  {
+    "id": 2,
+    "name": "Sabatons",
+    "display": "Boots",
+    "type": 5,
+    "value": 3,
+    "quality": 2,
+    "mods": {
+      "health": 3,
+      "strength": 2
+    },
+    "icon": "boots/boots_light_big.png"
+  },
+  {
+    "id": 3,
+    "name": "Heavy Sabatons",
+    "display": "Boots",
+    "type": 5,
+    "value": 4,
+    "quality": 3,
+    "mods": {
+      "armor": 5,
+      "health": 3,
+      "strength": 3
+    },
+    "icon": "boots/boots_silver_big.png"
+  },
+  {
+    "id": 4,
+    "name": "Magic Walkers of Death",
+    "display": "Boots",
+    "type": 5,
+    "value": 5,
+    "quality": 4,
+    "mods": {
+      "health": 5,
+      "strength": 5,
+      "crit-chance": 2,
+      "constitution": 2
+    },
+    "icon": "boots/boots_gold_big.png"
+  }
+]

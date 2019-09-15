@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no, width=device-width" />
+        <title>'Til Death</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="blocks.css">
+    </head>
+
+    <body>
+    <!--<div id="head"><h1>'Til Death</h1></div>-->
+    <div id="game">
+        <div id="score">Score: 0</div>
+        <div id="status-message"></div>
+        <div id="menu-overlay" class="overlay">
+            <div id="menu-title">'Til Death</div>
+            <div id="menu-overlay-button-container" class="button-container">
+                <div id="menu-overlay-button-start" class="button"></div>
+                <select id="menu-overlay-level-select" class="button"></select>
+                <div id="menu-overlay-button-limiter" class="button button-pad"></div>
+                <div id="menu-overlay-button-quality" class="button button-pad"></div>
+            </div>
+        </div>
+        <div id="restart-overlay" class="overlay">
+            <div id="restart-overlay-message"></div>
+            <div id="restart-overlay-login">
+                <input id="restart-overlay-login-user" placeholder="Username">
+                <input id="restart-overlay-login-password" placeholder="Password" type="password">
+                <div id="restart-overlay-login-submit" class="button"></div>
+            </div>
+            <div id="restart-overlay-button-container" class="button-container">
+                <div id="restart-overlay-button-startnext" class="button"></div>
+                <div id="restart-overlay-button-restart" class="button button-pad"></div>
+                <div id="restart-overlay-button-highscore" class="button button-pad"></div>
+                <div id="restart-overlay-button-menu" class="button button-pad"></div>
+            </div>
+            <div id="restart-overlay-highscores">
+                <ul id="restart-overlay-highscores-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script defer src="runnerclient.dart" type="application/dart"></script>
+    <script defer src="packages/browser/dart.js"></script>
+    </body>
+</html>

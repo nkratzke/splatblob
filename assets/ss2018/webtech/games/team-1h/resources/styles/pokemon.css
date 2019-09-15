@@ -1,0 +1,35 @@
+.figure {
+    background-image: url("../designs/pokemon/figure.png");
+}
+
+.sleepingFigure {
+    background-image: url("../designs/pokemon/sleepingFigure.png");
+}
+
+.obstacle {
+    background-image: url("../designs/pokemon/obstacle.png");
+}
+
+.bonus {
+    background-image: url("../designs/pokemon/bonus.png");
+}
+
+.consumedBonus {
+    background-image: url("../designs/pokemon/consumedBonus.png");
+}
+
+.goal {
+    background-image: url("../designs/pokemon/goal.png");
+}
+
+.destructible {
+    background-image: url("../designs/pokemon/destructible.png");
+}
+
+tr:nth-child(odd) td:nth-child(even) {
+    background-color: greenyellow;
+}
+
+tr:nth-child(even) td:nth-child(odd) {
+    background-color: greenyellow;
+}

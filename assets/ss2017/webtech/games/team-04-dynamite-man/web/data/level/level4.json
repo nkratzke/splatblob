@@ -1,0 +1,23 @@
+{
+  "level": {
+      "blocks" : [
+        "E","E","E","E","E","E","E","E","E","E",
+        "E","P","E","E","E","E","E","E","M","E",
+        "E","E","E","E","E","E","E","E","E","E",
+        "E","E","E","E","E","E","E","E","E","E",
+        "E","E","E","E","E","E","E","E","E","E",
+        "E","E","E","E","E","E","E","E","Z","E",
+        "E","E","E","E","E","E","E","E","E","E"
+      ],
+      "field_width" : "10",
+      "field_height" : "7"
+  },
+  "maxDynamites": 15,
+  "exp_monster" : "100",
+  "exp_destroyable_block" : "10",
+  "speedBuffSpawnRate" : 0,
+  "speedBuffAddSpeed" : 100,
+  "dynamiteRangeSpawnRate" : 0,
+  "description" : "You found it!<br>But beware, you are not alone. There are enemies. Kill all of them to unlock the portal",
+  "maxLevelTime" : 60
+}

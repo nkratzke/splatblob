@@ -1,0 +1,484 @@
+/** Globale Angaben **/
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-color: #3c6080;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout:none;
+    -webkit-text-size-adjust:none;
+    -webkit-user-select:none;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+/** Ladeanimationen **/
+
+#loading {
+    background-color: #3c6080;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url('./icon/wasser_bg.png');
+    background-repeat: repeat;
+}
+
+#loading_pirate {
+    background-image: url('./icon/loading_pirate.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30vh;
+    height: 30vh;
+    top: 35vh;
+    position: absolute;
+    animation: loading 3s infinite cubic-bezier(0.52, 0.16, 0.49, 0.76);
+}
+
+#loading_fish {
+    background-image: url('./icon/loading_fish.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25vh;
+    height: 25vh;
+    top: 45vh;
+    position: absolute;
+    animation: loading 3s 200ms infinite cubic-bezier(0.45, 0.85, 0.75, 1.1);
+}
+
+@keyframes loading {
+    0% {
+        left: -30vw;
+    }
+    100% {
+        left: 100vw;
+    }
+}
+
+/** Infobox zum Rotieren des Geräts **/
+
+#rotatedevice {
+    width: 100%;
+    height: 100%;
+    background-color: #3c6080;
+    background-image: url("icon/rotate_fish.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: not-allowed;
+}
+
+@media (orientation: landscape) {
+    #rotatedevice {
+        display: block;
+    }
+}
+
+@media (orientation: portrait) {
+    #rotatedevice {
+        display: none;
+    }
+}
+
+/** Spielanleitung **/
+
+#howtoplaywrapper {
+    width: 100%;
+    height: 100%;
+    z-index: 600;
+}
+
+#howtoplay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 4vh;
+    font-weight: 200;
+    color: white;
+    background: url("icon/wasser_bg.png") repeat;
+}
+
+#howtoplay_close {
+    position: absolute;
+    color: white;
+    font-size: 8vh;
+    font-weight: 100;
+    top: 1vw;
+    right: 2vw;
+    cursor: pointer;
+}
+
+#howtoplay p {
+    width: 94vw;
+    text-align: center;
+    padding: 0 3vw;
+    margin: 1vh 0;
+}
+
+#howtoplay_pirate {
+    width: 7.5vh;
+    height: auto;
+}
+
+#howtoplay_bar {
+    width: 7.5vh;
+    height: auto;
+    max-width: 50px;
+}
+
+#howtoplay_dropfish {
+    width: 5vh;
+    height: auto;
+}
+
+#howtoplay_whitespace {
+    width: 7.5vh;
+    height: auto;
+    max-width: 50px;
+}
+
+#howtoplay_powerup {
+    width: 5vh;
+    height: auto;
+    max-width: 50px;
+}
+
+/** Overlay und Buttons **/
+
+#overlay {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+}
+
+#overlaycontent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    z-index: 200;
+    background-color: #3c6080;
+}
+
+#overlay_pictures {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    z-index: 201;
+    padding-top: 3vh;
+}
+
+#overlay_pirate {
+    width: 25vh;
+    height: 25vh;
+    background-image: url('icon/loading_pirate.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 3vw;
+    z-index: 201;
+}
+
+#overlay_fish {
+    width: 10vh;
+    height: 25vh;
+    background-image: url('icon/loading_fish.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    right: 3vw;
+    z-index: 201;
+}
+
+#levelSelectionArea {
+    width: 200px;
+    background-color: aquamarine;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 5px;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 500;
+}
+
+#levelSelection {
+    border: 1px solid black;
+    font-weight: 300;
+    font-family: 'helvetica neue', sans-serif;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+#overlaycontent p {
+    width: 100vw;
+}
+
+#howtoplay_button {
+    width: 200px;
+    position: relative;
+    margin: 0px auto;
+    background: aquamarine;
+    color: black;
+    font-family:'helvetica neue', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    z-index: 500;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#warningArea {
+    width: 300px;
+    position: relative;
+    margin: 0px auto;
+    background: aquamarine;
+    color: black;
+    font-family:'helvetica neue', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    z-index: 500;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#startbutton {
+    width: 200px;
+    position: relative;
+    margin: 0px auto;
+    background: aquamarine;
+    color: black;
+    font-family:'helvetica neue', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    z-index: 500;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#gameOver {
+    width: 300px;
+    position: relative;
+    margin: 0px auto;
+    background: aquamarine;
+    color: black;
+    font-family:'helvetica neue', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    z-index: 500;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/** Fallende Objekte **/
+
+#fallObjWrapper {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 5vh;
+    top: 0;
+}
+
+.fallObj {
+    background-image: url("icon/dropfish.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+    margin: 0px auto;
+    position: relative;
+    z-index: 101;
+}
+
+/** Bars, Whitespaces und PowerUps **/
+
+#gamecontent {
+    background-image: url("icon/wasser_bg.png");
+    background-repeat: repeat;
+}
+
+
+#bararea {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.bar {
+    width: 100%;
+    height: 50px;
+    background-image: url('icon/bar_bg.png');
+    background-repeat: repeat-x;
+    position: relative;
+}
+
+.whitespace {
+    height: 50px;
+    min-width: 70px;
+    cursor: move;
+    z-index: 3;
+    position: absolute;
+    background-image: url("icon/whitespace_blur_bg.png");
+    background-repeat: repeat-x;
+}
+
+.whitespace_left {
+    z-index: 2;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 50px;
+    width: 15px;
+    background-image: url("icon/whitespace_links.png");
+    background-repeat: no-repeat;
+}
+
+.whitespace_right {
+    z-index: 2;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 50px;
+    width: 15px;
+    background-image: url("icon/whitespace_rechts.png");
+    background-repeat: no-repeat;
+}
+
+.powerup {
+    background-image: url("icon/powerup.png");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 150;
+    position: absolute;
+}
+
+#bottom {
+    width: 100%;
+    height: 120vh;
+    z-index: 102;
+    position: relative;
+}
+
+/** Animation am Ende des Spiels **/
+
+#swimarea {
+    width: 150vw;
+    height: 100vh;
+    position: relative;
+    margin-left: -150vw;
+    z-index: 110;
+}
+
+#swimfish {
+    background-image: url("icon/fisch_bubble.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50vw;
+    height: 50vw;
+    position: relative;
+    float: left;
+    z-index: 110;
+}
+
+#blurarea {
+    width: 100vw;
+    height: 50vw;
+    background-image: url('icon/blubber.png');
+    background-repeat: repeat;
+    background-size: contain;
+    float: left;
+    z-index: 110;
+}
+
+.swimming {
+    animation-name: swim;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+@keyframes swim {
+    0% { margin-left: 100vw;}
+    100% { margin-left: -150vw; }
+}
+
+.fisch {
+    height: auto;
+    float: left;
+}
+
+.hideDropFish {
+    visibility: hidden;
+}
+
+/** Footer und Copyright **/
+
+#footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    z-index: 105;
+    height: 0px;
+    z-index: 202;
+}
+
+#highscore {
+    float: right;
+    background: white;
+    font-size: 3vh;
+    font-weight: 200;
+    padding: 5px;
+    bottom: 0;
+    right: 0px;
+    position: absolute;
+}
+
+#copyright {
+    color: white;
+    font-size: 2vh;
+    font-weight: 100;
+    position: absolute;
+    left: 1vw;
+    bottom: 0;
+    z-index: 201;
+}

@@ -1,0 +1,63 @@
+[
+  {"ID": "1","expToUnlock": "0" ,"time": "12","expToSolve": "100","items": {
+    "BasicColoredItem Red":"1", "BasicColoredItem Gold":"1", "BasicColoredItem Green":"1"}},
+
+  {"ID": "2","expToUnlock": "0" ,"time": "20","expToSolve": "150","items": {
+    "BasicColoredItem Red":"11", "BasicColoredItem Gold":"11", "BasicColoredItem Green":"10", "BasicColoredItem Blue":"11",
+                                                              "HourglassItem Green":"1"}},
+
+  {"ID": "3","expToUnlock": "250","time": "33","expToSolve": "160","items": {
+    "BasicColoredItem Red":"7", "BasicColoredItem Gold":"7", "BasicColoredItem Green":"7", "BasicColoredItem Blue":"7", "BombItem":"2"}},
+
+  {"ID": "4","expToUnlock": "400","time": "20","expToSolve": "250","items": {
+    "BasicColoredItem Red":"13", "BasicColoredItem Gold":"13", "BasicColoredItem Green":"13", "BasicColoredItem Blue":"13",
+    "HourglassItem Red":"1", "HourglassItem Gold":"1", "HourglassItem Green":"1", "HourglassItem Blue":"1", "BombItem":"3"}},
+
+  {"ID": "5","expToUnlock": "650","time": "20","expToSolve": "250","items": {
+    "BasicColoredItem Red":"19", "BasicColoredItem Gold":"20", "BasicColoredItem Green":"20", "BasicColoredItem Blue":"19",
+    "HourglassItem Red":"2", "HourglassItem Gold":"1", "HourglassItem Green":"1", "HourglassItem Blue":"2", "StoneWallItem":"3"}},
+
+  {"ID": "6","expToUnlock": "900","time": "35","expToSolve": "350","items": {
+    "BasicColoredItem Red":"26", "BasicColoredItem Gold":"26", "BasicColoredItem Green":"25", "BasicColoredItem Blue":"25",
+    "BasicColoredItem2 Red":"9", "BasicColoredItem2 Gold":"9",
+    "HourglassItem Red":"2", "HourglassItem Gold":"2", "HourglassItem Green":"2", "HourglassItem Blue":"2", "BombItem":"5", "StoneWallItem":"6" }},
+
+  {"ID": "7","expToUnlock": "1200","time": "25","expToSolve": "400","items": {
+    "BasicColoredItem Gold":"6", "BasicColoredItem Green":"6", "BasicColoredItem Red":"6",
+    "BasicColoredItem2 Gold":"10", "BasicColoredItem2 Green":"10","BasicColoredItem2 Red":"10",
+    "HourglassItem Gold":"2", "HourglassItem Green":"2", "HourglassItem Red":"2", "BombItem":"35", "StoneWallItem":"6"}},
+
+  {"ID": "8","expToUnlock": "1700","time": "30","expToSolve": "800","items": {
+    "BasicColoredItem2 Red":"17", "BasicColoredItem2 Gold":"17","BasicColoredItem2 Green":"18", "BasicColoredItem2 Blue":"18",
+    "HammerItem Red":"3", "HammerItem Gold":"3", "HammerItem Green":"3",
+    "HourglassItem Red":"2", "HourglassItem Gold":"2", "HourglassItem Green":"1", "HourglassItem Blue":"2",
+    "BombItem":"4", "StoneWallItem":"7"}},
+
+  {"ID": "9","expToUnlock": "2400","time": "35","expToSolve": "1000","items": {
+    "BasicColoredItem Red":"5", "BasicColoredItem Gold":"5", "BasicColoredItem Green":"5", "BasicColoredItem Blue":"5",
+    "BasicColoredItem2 Red":"9", "BasicColoredItem2 Gold":"9","BasicColoredItem2 Green":"9", "BasicColoredItem2 Blue":"9",
+                                                      "HammerItem Green":"4", "HammerItem Blue":"4",
+    "HourglassItem Red":"3", "HourglassItem Gold":"3",
+    "BombItem":"5", "MetalWallItem":"2"}},
+
+  {"ID": "10","expToUnlock": "3400","time": "40","expToSolve": "2600","items": {
+    "BasicColoredItem2 Red":"9", "BasicColoredItem2 Gold":"9","BasicColoredItem2 Green":"9", "BasicColoredItem2 Blue":"8",
+    "BasicColoredItem3 Red":"8", "BasicColoredItem3 Gold":"9","BasicColoredItem3 Green":"9",
+    "HammerItem Red":"4", "HammerItem Gold":"3", "HammerItem Green":"3",
+                                                                         "HourglassItem Blue":"2",
+    "StoneWallItem":"4"}},
+
+  {"ID": "11","expToUnlock": "6500","time": "90","expToSolve": "5000","items": {
+    "BasicColoredItem2 Red":"9", "BasicColoredItem2 Gold":"9","BasicColoredItem2 Green":"9", "BasicColoredItem2 Blue":"9",
+    "BasicColoredItem3 Red":"14", "BasicColoredItem3 Gold":"14","BasicColoredItem3 Green":"14", "BasicColoredItem3 Blue":"14",
+    "HammerItem Red":"4", "HammerItem Gold":"4", "HammerItem Green":"4", "HammerItem Blue":"4",
+    "BombItem":"4", "StoneWallItem":"4",  "MetalWallItem":"2"}},
+
+  {"ID": "12","expToUnlock": "11111","time": "80","expToSolve": "5000","items": {
+    "BasicColoredItem Red":"1", "BasicColoredItem Gold":"1", "BasicColoredItem Green":"1", "BasicColoredItem Blue":"1",
+    "BasicColoredItem2 Red":"6", "BasicColoredItem2 Gold":"6","BasicColoredItem2 Green":"6", "BasicColoredItem2 Blue":"6",
+    "BasicColoredItem3 Red":"14", "BasicColoredItem3 Gold":"14","BasicColoredItem3 Green":"14", "BasicColoredItem3 Blue":"14",
+    "HammerItem Red":"3", "HammerItem Gold":"3", "HammerItem Green":"3", "HammerItem Blue":"3",
+    "HourglassItem Red":"2", "HourglassItem Gold":"2", "HourglassItem Green":"2", "HourglassItem Blue":"2",
+    "BombItem":"4", "StoneWallItem":"4",  "MetalWallItem":"2"}}
+]

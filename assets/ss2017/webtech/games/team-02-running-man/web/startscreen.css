@@ -1,0 +1,88 @@
+@font-face {
+    font-family: ownFont;
+    src: url(font/redressed/Redressed.ttf);
+}
+
+html, body {
+    font-family: ownFont;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (orientation: portrait) {
+
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .start {
+        width: 100%;
+        height: 100%;
+        background: url("img/hintergrund2.png") no-repeat center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: auto;
+    }
+
+    .start h1 {
+        margin: 0;
+        padding-top: 10%;
+        font-weight: bold;
+        font-size: 2em;
+        text-decoration: underline;
+    }
+
+    #startlayout {
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttons {
+        border: 5px solid black;
+        color: black;
+        border-radius: 10px;
+        padding: 3px 3px 3px 3px;
+        cursor: pointer;
+        width: 200px;
+        font-size: 2em
+    }
+
+    #portrait {
+        display: none;
+    }
+}
+
+@media (orientation: landscape) {
+    #portrait {
+        display: block;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    html, body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        background-color: transparent !important;
+        background: url("img/smartphone.png") no-repeat center, url("img/hintergrund2.png") no-repeat center;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover;
+        background-size: auto, cover;
+    }
+
+    .start {
+        display: none;
+    }
+}

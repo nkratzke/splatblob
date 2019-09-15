@@ -1,0 +1,97 @@
+body {
+  background-image: url("../resc/PlayBackground.jpg");
+  margin: 0;
+  height: 100%;
+  color: white;
+}
+
+.con_start {
+  width: 100%;
+  height: 100%;
+  background-image: url("../resc/StartBackground.png");
+  background-size: cover;
+  font-weight: bold;
+  text-align: center;
+}
+.con_start.close { display: none; }
+
+#startText {
+  position:absolute;
+  width: 1000px;
+  margin-left:-500px;
+  left:50%;
+  bottom: 150px;
+  letter-spacing: 3px;
+  font-family: impact;
+  font-size: 50px;
+}
+
+#startButton {
+  position: absolute;
+  border: 5px solid gray;
+  border-radius: 17px;
+  cursor: pointer;  width: 150px;
+  margin-left: -75px;
+  left: 50%;
+  bottom: 60px;
+  font-size: 30px;
+}
+#copy {
+  width: 1000px;
+  margin-left:-500px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  color: gray;
+}
+
+.con_game.show { display: block; }
+.con_game {
+  position: relative;
+  height: 100%;
+  width: 500px;
+  margin: auto;
+  display: none;
+}
+
+#field td, #nextstone td {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 22px;
+  height: 22px;
+}
+
+#field, #nextstone {
+  position: absolute;
+  border-collapse: separate;
+  border: 10px solid gray;
+}
+#field { top: 12%; left: 0; }
+#nextstone { top: 20%; right: 0; }
+
+#info {
+  position: absolute;
+  top: 50%;
+  right: 15;
+  font-size: 22;
+}
+
+.con_msg.show { display: block; }
+.con_msg {
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.con_msg #msg {
+  font-size: 22px;
+  line-height: 8%;
+}
+
+/* Vordefinierten Farben der Steine */
+#blue { background-color: blue !important; }
+#yellow { background-color: yellow !important; }
+#red { background-color: red !important; }
+#green { background-color: green !important; }

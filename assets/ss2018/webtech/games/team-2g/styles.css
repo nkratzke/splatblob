@@ -1,0 +1,315 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+body {
+    --blockSize: 100px;
+    --fontSize: 3vh;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F0F0F0;
+}
+
+#wrapper {
+    position:relative;
+    height:100vh;
+    max-width: 70vh;
+    margin: 0em auto 0em auto;
+    background-color: rgb(251,251,255);
+    box-shadow: 1px 1px 10px rgb(211, 211, 211), -1px -1px 10px rgb(211, 211, 211);
+    background: url("./assets/graphics/background2.png");
+        background-size: 100%;
+}
+
+#mainMenu {
+    padding-top:10vh;
+    height:100%;
+    background: url("./assets/graphics/background2.png");
+    background-size: 100%;
+}
+
+#game {
+    display: none;
+}
+
+.titleImage {
+    width:100%;
+    height:20vw;
+    max-height:20vh;
+    background-image: url("./assets/graphics/title.png");
+    background-size:100%;
+    background-repeat:no-repeat;
+    margin-top:10vh;
+}
+
+#mainMenu button {
+    width:100%;
+    line-height:2;
+    font-size: 3vh;
+    margin: 5vh 0;
+}
+
+#mainMenu a {
+    font-size: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    color: black;
+    margin: 0 15%;
+}
+
+#desktopHint {
+    display:none;
+    font-size:2vh;
+    width:60%;
+    margin: 0 auto;
+}
+
+#startButton {
+    display:none;
+}
+
+#mainMenuLevelSelect {
+    display:none;
+}
+
+#field {
+  touch-action: none;
+}
+
+#field table {
+    margin: 0 auto;
+    background-color: darkgray;
+}
+
+#field table tr td {
+    min-width: 40px; // needed for browsers without css-variable support
+    height: 40px;
+    min-width: var(--blockSize);
+    height: var(--blockSize);
+    background-color: #FDFDFD;
+    background-size: 100%;
+    min-height:5vh;
+}
+
+#messages {
+    background-repeat: no-repeat;
+    //background-image: url("./assets/graphics/messageBox.png");
+    background-size: 100%;
+    padding: 1% 4.5% 0 4.5%;
+    min-height:10vh;
+}
+
+.footer {
+}
+
+#footerTable {
+    bottom: 0;
+    width: 100%;
+    height: 14vh;
+    max-height: 21vw;
+    position:absolute;
+    overflow: hidden;
+    background: url("./assets/graphics/footerButtons.png");
+    background-size: 100%;
+    border=0;
+    cellpadding=0;
+    cellspacing=0;
+}
+
+.footerGraphics {
+    bottom: 0;
+    width: 100%;
+    background-image: url("./assets/graphics/bottombar.png");
+    background-size: 100%;
+    height: 14vh;
+    max-height: 21vw;
+    position:absolute;
+    pointer-events: none;
+}
+
+
+
+#levelnr {
+    text-align:left;!important;
+    float:left;
+    width:100%;
+}
+
+#levelnr h3 {
+    text-align:left;!important;
+}
+
+#moveCount {
+    margin-top: 11%;
+    padding: 0 10% 0 10%;
+    font-size: 3vh;
+    font-size: var(--fontSize);
+}
+
+
+.footerTd {
+    width: 33%;
+}
+
+.bottomButton {
+    display: block;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    font-size: 3vh;
+    font-size: var(--fontSize);
+    line-height: 3;
+    border:none;
+    background:none;
+}
+
+#levelSelectWrapper {
+    padding: 0 2.5% 0 2.5%;
+    display:none;
+    position:relative;
+}
+
+#levelSelectWrapper p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 5vh;
+    padding: 5% 0 0 2%;
+}
+
+.levelSelectEntry {
+    font-size:2.5vh;
+    width:45%;
+    margin: 2.5% 2.5% 0 2.5%;
+}
+
+#levelSelect {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 80vh;
+}
+
+#fire {
+    display:none;
+}
+
+#levelButton {
+    margin: 9% 0 0 -6px;
+}
+
+#nextLevel {
+    font-weight: bold;
+    margin-top: 9%;
+}
+
+#reset {
+    margin: 9% 0 0 6px;
+}
+
+.empty {
+
+}
+
+.locked {
+  background-color: #323232;
+  background-image: url("./assets/graphics/solid_block.png");
+}
+
+.movable {
+  background-color: limegreen !important;
+}
+
+.confusedBlock {
+  background-image: url("./assets/graphics/confusedBlock.png");
+}
+
+.laserV {
+  background-image: url("./assets/graphics/laser/V.png");
+}
+.laserH {
+  background-image: url("./assets/graphics/laser/H.png");
+}
+.laserVH {
+  background-image: url("./assets/graphics/laser/VH.png");
+}
+
+.rotU {
+
+}
+.rotL {
+  transform:rotate(270deg);
+}
+.rotR {
+  transform:rotate(90deg);
+}
+.rotD {
+  transform:rotate(180deg);
+}
+
+.movable {
+  background-image: url("./assets/graphics/movable.png");
+}
+
+.piston {
+  background-image: url("./assets/graphics/piston.png");
+}
+
+.pistonBlock {
+  background-image: url("./assets/graphics/pistonBlock.png");
+}
+.pistonBlockAc {
+  background-image: url("./assets/graphics/Ac/pistonBlock.png");
+}
+
+.splitter {
+  background-image: url("./assets/graphics/splitter.png");
+}
+.splitterAc {
+  background-image: url("./assets/graphics/Ac/splitter.png");
+}
+
+.mirror {
+  background-image: url("./assets/graphics/mirror.png");
+}
+.mirrorAc {
+  background-image: url("./assets/graphics/Ac/mirror.png");
+}
+
+.receiver {
+  background-image: url("./assets/graphics/receiver.png");
+}
+.receiverAc {
+  background-image: url("./assets/graphics/Ac/receiver.png");
+}
+
+.emitter {
+  background-image: url("./assets/graphics/emitter.png");
+}
+.emitterAc {
+  background-image: url("./assets/graphics/Ac/emitter.png");
+}
+
+h1 {
+  text-align: center;
+  font-size: 4vh;
+}
+
+h3 {
+  text-align: center;
+  font-size: 3vh;
+  font-size: var(--fontSize);
+  font-weight: 500;
+}

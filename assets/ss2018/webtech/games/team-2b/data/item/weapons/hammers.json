@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "name":"Worn-Out Hammer",
+    "display": "Hammer",
+    "type": 0,
+    "quality": 0,
+    "value": 3,
+    "icon":"hammers/club_wood_legendary.png"
+  },
+  {
+    "id": 1,
+    "name": "Sledge Hammer",
+    "display": "Hammer",
+    "type": 0,
+    "quality": 2,
+    "value": 5,
+    "mods": {
+      "strength": 2,
+      "constitution": 1
+    },
+    "icon": "hammers/hammer_stone_common.png"
+  },
+  {
+    "id": 2,
+    "name": "Smoughs Hammer",
+    "display": "Hammer",
+    "type": 0,
+    "quality": 4,
+    "value": 7,
+    "mods": {
+      "strength": 4,
+      "damage": 1,
+      "constitution": 3
+    },
+    "icon":"hammers/hammer_smough_epic.png"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "levelCount" : 7,
+  "level1" : {
+    "maxScore" : 3
+  },
+  "level2" : {
+    "maxScore" : 3
+  },
+  "level3" : {
+    "maxScore" : 3
+  },
+  "level4" : {
+    "maxScore" : 3
+  },
+  "level5" : {
+    "maxScore" : 3
+  },
+  "level6" : {
+    "maxScore" : 3
+  },
+  "level7" : {
+    "maxScore" : 3
+  }
+}

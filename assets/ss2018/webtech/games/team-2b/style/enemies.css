@@ -1,0 +1,289 @@
+/* ##### OVERWORLD ##### */
+
+/*demon skins*/
+.demon-right {
+    background: url(../img/monsters/map/demon.png) 0 0 !important;
+}
+
+.demon-left {
+    background: url(../img/monsters/map/demon.png) 0 -32px !important;
+}
+
+.demon-down {
+    background: url(../img/monsters/map/demon.png) 0 -64px !important;
+}
+
+.demon-up {
+    background: url(../img/monsters/map/demon.png) 0 -96px !important;
+}
+
+.demon {
+    background: url(../img/monsters/map/demon.png) -64px -64px;
+    animation: demon-anim 0.5s steps(2) infinite;
+}
+
+@keyframes demon-anim {
+    100% {
+        background: url(../img/monsters/map/demon.png) -64px -64px;
+    }
+
+    50% {
+        background: url(../img/monsters/map/demon.png) -64px -64px;
+    }
+
+    0% {
+        background: url(../img/monsters/map/demon.png) 0 -64px;
+    }
+}
+
+/*ghast skins*/
+.ghast-right {
+    background: url(../img/monsters/map/ghast.png) 0 0 !important;
+}
+
+.ghast-left {
+    background: url(../img/monsters/map/ghast.png) 0 -32px !important;
+}
+
+.ghast-down {
+    background: url(../img/monsters/map/ghast.png) 0 -64px !important;
+}
+
+.ghast-up {
+    background: url(../img/monsters/map/ghast.png) 0 -96px !important;
+}
+
+.ghast {
+    animation: ghast-anim 2s steps(2) infinite;
+}
+
+@keyframes ghast-anim {
+    100% {
+        background: url(../img/monsters/map/ghast.png) 0 0;
+    }
+
+    50% {
+        background: url(../img/monsters/map/ghast.png) 0 -64px;
+    }
+
+    0% {
+        background: url(../img/monsters/map/ghast.png) 0 0;
+    }
+}
+
+/*blob-purple skins*/
+.blob-purple-right {
+    background: url(../img/monsters/map/blob_purple.png) 0 0 !important;
+}
+
+.blob-purple-left {
+    background: url(../img/monsters/map/blob_purple.png) 0 -32px !important;
+}
+
+.blob-purple-down {
+    background: url(../img/monsters/map/blob_purple.png) 0 -64px !important;
+}
+
+.blob-purple-up {
+    background: url(../img/monsters/map/blob_purple.png) 0 -96px !important;
+}
+
+.blob-purple {
+    animation: blob-purple-anim 1.5s steps(2) infinite;
+}
+
+@keyframes blob-purple-anim {
+    100% {
+        background: url(../img/monsters/map/blob_purple.png) 0 0;
+    }
+
+    50% {
+        background: url(../img/monsters/map/blob_purple.png) 0 -64px;
+    }
+
+    0% {
+        background: url(../img/monsters/map/blob_purple.png) 0 0;
+    }
+}
+
+/*bat skins*/
+.bat-right {
+    background: url(../img/monsters/map/bat.png) 0 0 !important;
+}
+
+.bat-left {
+    background: url(../img/monsters/map/bat.png) 0 -32px !important;
+}
+
+.bat-down {
+    background: url(../img/monsters/map/bat.png) 0 -64px !important;
+}
+
+.bat-up {
+    background: url(../img/monsters/map/bat.png) 0 -96px !important;
+}
+
+.bat {
+    /*background: url(../img/monsters/map/bat.png) -64px 0;*/
+    animation: bat-anim 1.5s steps(2) infinite;
+}
+
+@keyframes bat-anim {
+    100% {
+        background: url(../img/monsters/map/bat.png) 0 0;
+    }
+
+    50% {
+        background: url(../img/monsters/map/bat.png) -64px -64px;
+    }
+
+    0% {
+        background: url(../img/monsters/map/bat.png) 0 0;
+    }
+}
+
+/* fire blob skins*/
+.fire-blob-right {
+    background: url(../img/monsters/map/blob_fire.png) 0 0 !important;
+}
+
+.fire-blob-left {
+    background: url(../img/monsters/map/blob_fire.png) 0 -32px !important;
+}
+
+.fire-blob-down {
+    background: url(../img/monsters/map/blob_fire.png) 0 -64px !important;
+}
+
+.fire-blob-up {
+    background: url(../img/monsters/map/blob_fire.png) 0 -96px !important;
+}
+
+.fire-blob {
+    animation: fire-blob-anim 2s steps(2) infinite;
+}
+
+@keyframes fire-blob-anim {
+    100% {
+        background: url(../img/monsters/map/blob_fire.png) 0 0;
+    }
+
+    50% {
+        background: url(../img/monsters/map/blob_fire.png) 0 -64px;
+    }
+
+    0% {
+        background: url(../img/monsters/map/blob_fire.png) 0 0;
+    }
+}
+
+/* orc skins*/
+.orc-right {
+    background: url(../img/monsters/map/orc.png) 0 0 !important;
+}
+
+.orc-left {
+    background: url(../img/monsters/map/orc.png) 0 -32px !important;
+}
+
+.orc-down {
+    background: url(../img/monsters/map/orc.png) 0 -64px !important;
+}
+
+.orc-up {
+    background: url(../img/monsters/map/orc.png) 0 -96px !important;
+}
+
+.orc {
+    animation: orc-anim 2s steps(2) infinite;
+}
+
+@keyframes orc-anim {
+    100% {
+        background: url(../img/monsters/map/orc.png) 0 0;
+    }
+
+    50% {
+        background: url(../img/monsters/map/orc.png) 0 -64px;
+    }
+
+    0% {
+        background: url(../img/monsters/map/orc.png) 0 0;
+    }
+}
+
+/* skull skins*/
+.skull-right {
+    background: url(../img/monsters/map/skull.png) 0 0 !important;
+}
+
+.skull-left {
+    background: url(../img/monsters/map/skull.png) 0 -32px !important;
+}
+
+.skull-down {
+    background: url(../img/monsters/map/skull.png) 0 -64px !important;
+}
+
+.skull-up {
+    background: url(../img/monsters/map/skull.png) 0 -96px !important;
+}
+
+.skull {
+    animation: skull-anim 2.5s steps(2) infinite;
+}
+
+@keyframes skull-anim {
+    100% {
+        background: url(../img/monsters/map/skull.png) 0 0;
+    }
+
+    50% {
+        background: url(../img/monsters/map/skull.png) 0 -64px;
+    }
+
+    0% {
+        background: url(../img/monsters/map/skull.png) 0 0;
+    }
+}
+
+/* mimic skins*/
+.mimic {
+    animation: mimic-anim 10s steps(2) infinite;
+}
+
+@keyframes mimic-anim {
+    100% {
+        background: url(../img/monsters/map/mimic.png) 0 -64px;
+    }
+
+
+    0% {
+        background: url(../img/monsters/map/mimic.png) 0 0;
+    }
+}
+
+/* ##### FIGHT ##### */
+
+#sprite-monster {
+    animation: sprite-monster 1s steps(4) infinite;
+    left: 80%;
+}
+
+@keyframes sprite-monster {
+    100% {
+        background-position: -256px;
+    }
+}
+
+#sprite-mimic {
+    width: 96px;
+    animation: sprite-mimic 1s steps(6) infinite;
+    left: 80%
+}
+
+@keyframes sprite-mimic {
+    100% {
+        background-position: -576px;
+    }
+}

@@ -1,0 +1,17 @@
+<game>
+    <players count="2"></players>
+    <ais count="0"></ais>
+    <field width="20" height="20">
+        <cell player="0" life = "99" weight = "1" data_x = "1" data_y = "1"></cell>
+
+        <cell player="1" life = "99" weight = "1" data_x = "18" data_y = "18"></cell>
+    </field>
+    <powerups>
+        <powerup type="LIFE" life="0" weight="0" range="0"></powerup>
+        <powerup type="REPEAT" life="0" weight="0" range="0"></powerup>
+        <powerup type="AWAKE" life="1" weight="3" range="0"></powerup>
+        <powerup type="AWAKE" life="3" weight="1" range="0"></powerup>
+        <powerup type="KILL" life="1" weight="0" range="3"></powerup>
+        <powerup type="KILL" life="100" weight="0" range="0"></powerup>
+    </powerups>
+</game>

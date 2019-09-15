@@ -1,0 +1,103 @@
+{
+  "levelcount": 7,
+  "level": [
+    {
+      "lvlnr": 1,
+      "gamespeed": 0.5,
+      "spacebetweenpipes": 70,
+      "pipeimg": "images/springpipe.png",
+      "bgndimg": "images/spring.png",
+      "enemycount": 1,
+      "enemylife": 1,
+      "enemyspeed": 1.0,
+      "enemyimg": "images/ironEnemy.gif",
+      "pipecount": 10,
+      "powerupcount": 2,
+      "pipemovement": false
+    },
+    {
+      "lvlnr": 2,
+      "gamespeed": 0.75,
+      "spacebetweenpipes": 70,
+      "pipeimg": "images/fallpipe.png",
+      "bgndimg": "images/fall.png",
+      "enemycount": 2,
+      "enemylife": 1,
+      "enemyspeed": 1.0,
+      "enemyimg": "images/ghost2.gif",
+      "pipecount": 10,
+      "powerupcount": 3,
+      "pipemovement": true
+    },
+    {
+      "lvlnr": 3,
+      "gamespeed": 0.90,
+      "spacebetweenpipes": 50,
+      "pipeimg": "images/winterpipe.png",
+      "bgndimg": "images/winter.png",
+      "enemycount": 1,
+      "enemylife": 2,
+      "enemyspeed": 1.0,
+      "enemyimg": "images/ironEnemy.gif",
+      "pipecount": 15,
+      "powerupcount": 2,
+      "pipemovement": false
+    },
+    {
+      "lvlnr": 4,
+      "gamespeed": 1.0,
+      "spacebetweenpipes": 40,
+      "pipeimg": "images/springpipe.png",
+      "bgndimg": "images/spring.png",
+      "enemycount": 2,
+      "enemylife": 2,
+      "enemyspeed": 1.5,
+      "enemyimg": "images/ghost.gif",
+      "pipecount": 15,
+      "powerupcount": 2,
+      "pipemovement": true
+    },
+    {
+      "lvlnr": 5,
+      "gamespeed": 1.25,
+      "spacebetweenpipes": 40,
+      "pipeimg": "images/fallpipe.png",
+      "bgndimg": "images/fall.png",
+      "enemycount": 2,
+      "enemylife": 2,
+      "enemyspeed": 1.5,
+      "enemyimg": "images/ghost2.gif",
+      "pipecount": 15,
+      "powerupcount": 2,
+      "pipemovement": false
+    },
+    {
+      "lvlnr": 6,
+      "gamespeed": 1.5,
+      "spacebetweenpipes": 40,
+      "pipeimg": "images/winterpipe.png",
+      "bgndimg": "images/winter.png",
+      "enemycount": 3,
+      "enemylife": 2,
+      "enemyspeed": 1.5,
+      "enemyimg": "images/ironEnemy.gif",
+      "pipecount": 20,
+      "powerupcount": 1,
+      "pipemovement": false
+    },
+    {
+      "lvlnr": 7,
+      "gamespeed": 2.0,
+      "spacebetweenpipes": 35,
+      "pipeimg": "images/springpipe.png",
+      "bgndimg": "images/spring.png",
+      "enemycount": 4,
+      "enemylife": 3,
+      "enemyspeed": 2.0,
+      "enemyimg": "images/ghost.gif",
+      "pipecount": 25,
+      "powerupcount": 1,
+      "pipemovement": true
+    }
+  ]
+}

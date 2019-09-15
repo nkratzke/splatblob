@@ -1,0 +1,226 @@
+{
+  "name":"Level 1 Plus",
+  "speed":5,
+  "nextLevel":"level4plus.json",
+  "spawn":{
+    "type":"Spawn",
+    "pos_x":100,
+    "pos_y":50,
+    "size_x":1,
+    "size_y":1
+  },
+  "blocks":[
+    {
+      "type":"Ground",
+      "pos_x":0,
+      "pos_y":30,
+      "size_x":560,
+      "size_y":20
+    },
+
+    {
+      "type":"Cobble",
+      "pos_x":600,
+      "pos_y":-10,
+      "size_x":240,
+      "size_y":60
+    },
+
+    {
+      "type":"SpikesBottom",
+      "pos_x":600,
+      "pos_y":140,
+      "size_x":240,
+      "size_y":20
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":640,
+      "pos_y":80,
+      "size_x":20,
+      "size_y":20,
+      "value":1000
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":680,
+      "pos_y":80,
+      "size_x":20,
+      "size_y":20,
+      "value":1000
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":900,
+      "pos_y":30,
+      "size_x":240,
+      "size_y":20
+    },
+
+    {
+      "type":"Cobble",
+      "pos_x":1160,
+      "pos_y":0,
+      "size_x":60,
+      "size_y":150
+    },
+
+    {
+      "type":"SpikesTop",
+      "pos_x":1230,
+      "pos_y":30,
+      "size_x":210,
+      "size_y":20
+    },
+
+    {
+      "type":"Trigger",
+      "pos_x":1500,
+      "pos_y":30,
+      "size_x":5,
+      "size_y":300,
+      "triggerables": [
+        {
+        "type":"Bullet",
+        "pos_x":1900,
+        "pos_y":60,
+        "size_x":32,
+        "size_y":16
+        },
+        {
+          "type":"Bullet",
+          "pos_x":1940,
+          "pos_y":60,
+          "size_x":32,
+          "size_y":16
+        },
+        {
+          "type":"Bullet",
+          "pos_x":1980,
+          "pos_y":70,
+          "size_x":32,
+          "size_y":16
+        }
+      ]
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":1540,
+      "pos_y":80,
+      "size_x":20,
+      "size_y":20,
+      "value":1000
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":1500,
+      "pos_y":30,
+      "size_x":120,
+      "size_y":20
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":1800,
+      "pos_y":30,
+      "size_x":120,
+      "size_y":20
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":1860,
+      "pos_y":80,
+      "size_x":20,
+      "size_y":20,
+      "value":1000
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":2100,
+      "pos_y":30,
+      "size_x":280,
+      "size_y":20
+    },
+
+    {
+      "type":"Cobble",
+      "pos_x":2100,
+      "pos_y":120,
+      "size_x":280,
+      "size_y":80
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":2200,
+      "pos_y":80,
+      "size_x":20,
+      "size_y":20,
+      "value":1000
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":2400,
+      "pos_y":30,
+      "size_x":280,
+      "size_y":20
+    },
+
+    {
+      "type":"SpikesBottom",
+      "pos_x":2420,
+      "pos_y":120,
+      "size_x":208,
+      "size_y":20
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":2720,
+      "pos_y":100,
+      "size_x":40,
+      "size_y":20
+    },
+
+    {
+      "type":"Water",
+      "pos_x":2680,
+      "pos_y":0,
+      "size_x":120,
+      "size_y":45
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":2800,
+      "pos_y":30,
+      "size_x":280,
+      "size_y":20
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":3100,
+      "pos_y":30,
+      "size_x":280,
+      "size_y":20
+    },
+
+    {
+      "type":"Finish",
+      "pos_x":3375,
+      "pos_y":50,
+      "size_x":40,
+      "size_y":250
+    }
+
+  ]
+}

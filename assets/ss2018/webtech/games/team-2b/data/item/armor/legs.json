@@ -1,0 +1,65 @@
+[
+  {
+    "id": 0,
+    "name": "Shabby Pants",
+    "display": "Pants",
+    "type": 4,
+    "value": 1,
+    "quality": 0,
+    "icon": "legs/leg_leather.png"
+  },
+  {
+    "id": 1,
+    "name": "Heavy Pants",
+    "display": "Pants",
+    "type": 4,
+    "value": 2,
+    "quality": 1,
+    "mods": {
+      "health": 1,
+      "constitution": 1
+    },
+    "icon": "legs/leg_leather_reinforced.png"
+  },
+  {
+    "id": 2,
+    "name": "Chain Leggings",
+    "display": "Pants",
+    "type": 4,
+    "value": 3,
+    "quality": 2,
+    "mods": {
+      "strength": 1,
+      "constitution": 2
+    },
+    "icon": "legs/leg_iron.png"
+  },
+  {
+    "id": 3,
+    "name": "Heavy Legwraps",
+    "display": "Pants",
+    "type": 4,
+    "value": 4,
+    "quality": 3,
+    "mods": {
+      "health": 2,
+      "strength": 2,
+      "constitution": 2
+    },
+    "icon": "legs/leg_iron_reinforced.png"
+  },
+  {
+    "id": 4,
+    "name": "Black Knight Leg Plates",
+    "display": "Hose",
+    "type": 4,
+    "value": 5,
+    "quality": 4,
+    "mods": {
+      "health": 3,
+      "strength": 4,
+      "constitution": 2
+    },
+    "icon": "legs/leg_dark_reinforced.png"
+  }
+]

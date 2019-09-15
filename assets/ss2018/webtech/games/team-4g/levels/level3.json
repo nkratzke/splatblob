@@ -1,0 +1,15 @@
+{
+	"name": "Level 3",
+	"config": {
+		"platformLength": 100,
+		"ballSpeed":56,
+		"bricksPerRow": 8,
+		"rowsWithBricks": 3,
+		"specialBricksEnabled": true,
+		"specialBricks": {
+			"heavy": 3,
+			"explosion": 6,
+			"penetrate": 1
+		}
+	}
+}

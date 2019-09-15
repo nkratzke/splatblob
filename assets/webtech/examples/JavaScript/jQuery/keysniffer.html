@@ -1,0 +1,31 @@
+<html>
+<head><title>Ein sehr simpler Keysniffer mittels jQuery</title></head>
+<meta charset="UTF-8"/>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+ 		$(window).keydown(function (event) {
+ 			$("#keydowns").text(function (i, old) { 
+ 				return old + String.fromCharCode(event.keyCode);
+ 			});
+ 		});
+	});
+</script>
+
+<body>
+
+<h1>Keyboard Sniffer</h1>
+
+Dies ist ein sehr einfacher (und harmloser) Keyboard Sniffer.
+Hätten Sie gedacht, dass hierzu nur vier Zeilen Code erforderlich sind?
+<br>
+<br>
+Dieser Keyboard Sniffer macht das Prinzip von Events deutlich.
+
+<div id="keydowns"/>
+
+<div id="JSON"/>
+
+</body>
+</html>

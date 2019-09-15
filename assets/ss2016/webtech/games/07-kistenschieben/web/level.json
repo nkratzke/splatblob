@@ -1,0 +1,751 @@
+{
+	"levels": [
+		{
+			"level" : 1,
+			"row" : 6,
+			"column" : 6,
+			"code": "Q2vR2CEs",
+			"format" : [{"r" : "wwwwwg"},
+				{"r" : "wgggww"},
+				{"r" : "wggcpw"},
+				{"r" : "wwcgtw"},
+				{"r" : "gwggtw"},
+				{"r" : "gwwwww"}
+			]
+		},
+		{
+			"level" : 2,
+			"row" : 6,
+			"column" : 6,
+			"code": "EXvmTZS5",
+			"format" : [{"r" : "gwwwww"},
+				{"r" : "wwpttw"},
+				{"r" : "wgccww"},
+				{"r" : "wggggw"},
+				{"r" : "wwgggw"},
+				{"r" : "gwwwww"}
+			]
+		},
+		{
+			"level" : 3,
+			"row" : 6,
+			"column" : 8,
+			"code": "p5yDXpR3",
+			"format" : [{"r" : "wwwwwwww"},
+				{"r" : "wgpwgggw"},
+				{"r" : "wgscgggw"},
+				{"r" : "wggwggww"},
+				{"r" : "wtgwggwg"},
+				{"r" : "wwwwwwwg"}
+			]
+		},
+		{
+			"level" : 4,
+			"row" : 8,
+			"column" : 10,
+			"code": "8658DFdj",
+			"format" : [{"r" : "ggggggwwww"},
+				{"r" : "gwwwwwwggw"},
+				{"r" : "gwpcgggcgw"},
+				{"r" : "gwtwgggggw"},
+				{"r" : "wwggggwwww"},
+				{"r" : "wgtggwwggg"},
+				{"r" : "wgggwwgggg"},
+				{"r" : "wwwwwggggg"}
+			]
+		},
+		{
+			"level" : 5,
+			"row" : 6,
+			"column" : 8,
+			"code": "yzZq3wGx",
+			"format" : [{"r" : "wwwwwggg"},
+				{"r" : "wgtgwwww"},
+				{"r" : "wggcpggw"},
+				{"r" : "wwsggggw"},
+				{"r" : "gwggwwww"},
+				{"r" : "gwwwwggg"}
+			]
+		},
+		{
+			"level" : 6,
+			"row" : 6,
+			"column" : 8,
+			"code": "k2J5SsZ6",
+			"format" : [{"r" : "gwwwwwwg"},
+				{"r" : "gwgtggww"},
+				{"r" : "wwcggcpw"},
+				{"r" : "wggtwggw"},
+				{"r" : "wgggwggw"},
+				{"r" : "wwwwwwww"}
+			]
+		},
+		{
+			"level" : 7,
+			"row" : 9,
+			"column" : 7,
+			"code": "npzbCg4A",
+			"format" : [{"r" : "wwwwwww"},
+				{"r" : "wgggggw"},
+				{"r" : "wgpgggw"},
+				{"r" : "wwcwggw"},
+				{"r" : "wwgtsgw"},
+				{"r" : "wggwwww"},
+				{"r" : "wggggwg"},
+				{"r" : "wggggwg"},
+				{"r" : "wwwwwwg"}
+			]
+		},
+		{
+			"level" : 8,
+			"row" : 7,
+			"column" : 7,
+			"code": "dXzGvDQS",
+			"format" : [{"r" : "gggwwww"},
+				{"r" : "wwwwttw"},
+				{"r" : "wgggggw"},
+				{"r" : "wgccgpw"},
+				{"r" : "wwggwww"},
+				{"r" : "gwggwgg"},
+				{"r" : "gwwwwgg"}
+			]
+		},
+		{
+			"level" : 9,
+			"row" : 9,
+			"column" : 7,
+			"code": "3G8U4Fhd",
+			"format" : [{"r" : "gwwwwwg"},
+				{"r" : "gwgggwg"},
+				{"r" : "gwgcgwg"},
+				{"r" : "wwgwwww"},
+				{"r" : "wtpgggw"},
+				{"r" : "wwgwggw"},
+				{"r" : "gwgctgw"},
+				{"r" : "gwwwggw"},
+				{"r" : "gggwwww"}
+			]
+		},
+		{
+			"level" : 10,
+			"row" : 9,
+			"column" : 7,
+			"code": "xS8f9Xcn",
+			"format" : [{"r" : "wwwwwgg"},
+				{"r" : "wgggwwg"},
+				{"r" : "wggggwg"},
+				{"r" : "wwgtpwg"},
+				{"r" : "wwgtcww"},
+				{"r" : "wggwggw"},
+				{"r" : "wggcggw"},
+				{"r" : "wggwggw"},
+				{"r" : "wwwwwww"}
+			]
+		},
+		{
+			"level" : 11,
+			"row" : 8,
+			"column" : 6,
+			"code": "cBqEHh6M",
+			"format" : [{"r" : "wwwwww"},
+				{"r" : "wggwtw"},
+				{"r" : "wggggw"},
+				{"r" : "wtgwgw"},
+				{"r" : "wwgcgw"},
+				{"r" : "wgcgww"},
+				{"r" : "wgpgwg"},
+				{"r" : "wwwwwg"}
+			]
+		},
+		{
+			"level" : 12,
+			"row" : 7,
+			"column" : 8,
+			"code": "7vjtYYaR",
+			"format" : [{"r" : "wwwwwwww"},
+				{"r" : "wgggwggw"},
+				{"r" : "wggggggw"},
+				{"r" : "wwwwgggw"},
+				{"r" : "gwgccwww"},
+				{
+					"r": "gwgptwg"
+				},
+				{"r" : "gwwwwwwg"}
+			]
+		},
+		{
+			"level" : 13,
+			"row" : 9,
+			"column" : 7,
+			"code": "x9CrELu3",
+			"format" : [{"r" : "gwwwwww"},
+				{"r" : "gwggggw"},
+				{"r" : "gwcgggw"},
+				{"r" : "gwptgww"},
+				{"r" : "wwctgww"},
+				{"r" : "wgggggw"},
+				{"r" : "wggwggw"},
+				{"r" : "wggwggw"},
+				{"r" : "wwwwwww"}
+			]
+		},
+		{
+			"level" : 14,
+			"row" : 7,
+			"column" : 7,
+			"code": "us8ufaFh",
+			"format" : [{"r" : "gwwwwww"},
+				{"r" : "gwgtgtw"},
+				{"r" : "wwcwggw"},
+				{"r" : "wgggggw"},
+				{"r" : "wgcwggw"},
+				{"r" : "wgpwggw"},
+				{"r" : "wwwwwww"}
+			]
+		},
+		{
+			"level" : 15,
+			"row" : 13,
+			"column" : 13,
+			"code": "CVMb4HN2",
+			"format" : [{"r" : "ggwwwwwwwwwgg"},
+				{"r" : "ggwgggwwggwgg"},
+				{"r" : "ggwgggggggwwg"},
+				{"r" : "gwwwgwwwgggww"},
+				{"r" : "gwpcgggwwgggw"},
+				{"r" : "gwwwggcgwgwgw"},
+				{"r" : "wwwwwgttwgggw"},
+				{"r" : "wgggggwwwgwww"},
+				{"r" : "wgggggggwgwgg"},
+				{"r" : "wggwwwggwgwww"},
+				{"r" : "wwwwgwggggggw"},
+				{"r" : "gggggwggwgggw"},
+				{"r" : "gggggwwwwwwww"}
+			]
+		},
+		{
+			"level" : 16,
+			"row" : 5,
+			"column" : 5,
+			"code": "4WjSMkA9",
+			"format" : [{"r" : "wwwwg"},
+				{"r" : "wttwg"},
+				{"r" : "wccww"},
+				{"r" : "wpctw"},
+				{"r" : "wwwww"}
+			]
+		},
+		{
+			"level" : 17,
+			"row" : 6,
+			"column" : 10,
+			"code": "j4qNEHGX",
+			"format" : [{"r" : "gwwwgggggg"},
+				{
+					"r": "wwwwwwwwww"
+				},
+				{"r" : "wggttggggw"},
+				{
+					"r": "wgcgpccggw"
+				},
+				{"r" : "wwwwwwgggw"},
+				{"r" : "gggggwwwww"}
+			]
+		},
+		{
+			"level" : 18,
+			"row" : 5,
+			"column" : 8,
+			"code": "ZEg6FNe9",
+			"format" : [{"r" : "wwwwwwww"},
+				{"r" : "wgggtspw"},
+				{"r" : "wggctcgw"},
+				{"r" : "wgggwwww"},
+				{"r" : "wwwwwggg"}
+			]
+		},
+		{
+			"level" : 19,
+			"row" : 9,
+			"column" : 7,
+			"code": "zRaurPmk",
+			"format" : [{"r" : "gwwwwww"},
+				{
+					"r": "wwwggww"
+				},
+				{
+					"r": "wgcpggw"
+				},
+				{"r" : "wgggcgw"},
+				{"r" : "wwwwgww"},
+				{"r" : "wgggggw"},
+				{"r" : "wggsgtw"},
+				{"r" : "wggwggw"},
+				{"r" : "wwwwwww"}
+			]
+		},
+		{
+			"level" : 20,
+			"row" : 9,
+			"column" : 7,
+			"code": "Cv4eFueP",
+			"format" : [{"r" : "wwwwwwg"},
+				{"r" : "wtwggwg"},
+				{"r" : "wtwggwg"},
+				{"r" : "wtggcwg"},
+				{"r" : "wggwpwg"},
+				{"r" : "wgggcww"},
+				{"r" : "wwgcggw"},
+				{"r" : "gwwgggw"},
+				{"r" : "ggwwwww"}
+			]
+		},
+		{
+			"level" : 21,
+			"row" : 9,
+			"column" : 7,
+			"code": "qB8TERjf",
+			"format" : [{"r" : "wwwwwgg"},
+				{"r" : "wtttwwg"},
+				{"r" : "wggggwg"},
+				{"r" : "wggwgwg"},
+				{"r" : "wwggcww"},
+				{"r" : "wpcgggw"},
+				{"r" : "wwwcggw"},
+				{"r" : "ggwgggw"},
+				{"r" : "ggwwwww"}
+			]
+		},
+		{
+			"level" : 22,
+			"row" : 6,
+			"column" : 8,
+			"code": "3QxVbZWE",
+			"format" : [{"r" : "wwwwwwgg"},
+				{"r" : "wggggwww"},
+				{"r" : "wggcgcgw"},
+				{"r" : "wgwgcgw"},
+				{"r" : "wgggwttw"},
+				{"r" : "wwwwwwww"}
+			]
+		},
+		{
+			"level" : 23,
+			"row" : 7,
+			"column" : 8,
+			"code": "zGncmFkc",
+			"format" : [{"r" : "wwwwwwwg"},
+				{"r" : "wtttggwg"},
+				{"r" : "wgcpcgww"},
+				{"r" : "wwgwwggw"},
+				{"r" : "gwggcggw"},
+				{"r" : "gwggwggw"},
+				{"r" : "gwwwwwww"}
+			]
+		},
+		{
+			"level" : 24,
+			"row" : 6,
+			"column" : 10,
+			"code": "4Zf6rvHF",
+			"format" : [{"r" : "wwwwwgwwww"},
+				{"r" : "wgggwwwggw"},
+				{"r" : "wgggggcpgw"},
+				{"r" : "wwgcwcgggw"},
+				{"r" : "wtttwgggww"},
+				{"r" : "wwwwwwwwwg"}
+			]
+		},
+		{
+			"level" : 25,
+			"row" : 9,
+			"column" : 7,
+			"code": "VGrspzxg",
+			"format" : [{"r" : "wwwwwgg"},
+				{"r" : "wtggwww"},
+				{"r" : "wtwgggw"},
+				{"r" : "wtggggw"},
+				{"r" : "wgwgwww"},
+				{"r" : "wgcgcpw"},
+				{"r" : "wwggcgw"},
+				{"r" : "gwwwggw"},
+				{"r" : "gggwwww"}
+			]
+		},
+		{
+			"level" : 26,
+			"row" : 7,
+			"column" : 11,
+			"code": "fT4gKQM9",
+			"format" : [{"r" : "ggggggwwwwg"},
+				{"r" : "ggggggwggwg"},
+				{"r" : "wwwwwwwgtww"},
+				{"r" : "wggwwgggttw"},
+				{"r" : "wpcgggccggw"},
+				{"r" : "wwwwgggwwww"},
+				{"r" : "gggwwwwwggg"}
+			]
+		},
+		{
+			"level" : 27,
+			"row" : 6,
+			"column" : 10,
+			"code": "pYczwnCr",
+			"format" : [{"r" : "gwwwwwwwgg"},
+				{"r" : "wwggwggwww"},
+				{"r" : "wggggcgcgw"},
+				{"r" : "wggwgttspw"},
+				{"r" : "wggwggwggw"},
+				{"r" : "wwwwwwwwww"}
+			]
+		},
+		{
+			"level" : 28,
+			"row" : 7,
+			"column" : 8,
+			"code": "dHmv3U2P",
+			"format" : [{"r" : "ggwwwwwg"},
+				{"r" : "ggwgggwg"},
+				{"r" : "wwwgwgww"},
+				{"r" : "wggtttgw"},
+				{"r" : "wgccgcgw"},
+				{"r" : "wgpwwwww"},
+				{"r" : "wwwwgggg"}
+			]
+		},
+		{
+			"level" : 29,
+			"row" : 8,
+			"column" : 6,
+			"code": "sg7FFuMM",
+			"format" : [{"r" : "gwwwwg"},
+				{"r" : "wwggwg"},
+				{"r" : "wgcww"},
+				{"r" : "wggctw"},
+				{"r" : "wgcggw"},
+				{"r" : "wtgwww"},
+				{"r" : "wggwgg"},
+				{"r" : "wwwwgg"}
+			]
+		},
+		{
+			"level" : 30,
+			"row" : 7,
+			"column" : 10,
+			"code": "dGUNnxNA",
+			"format" : [{"r" : "wwwwwggwww"},
+				{"r" : "wgggwwwwtw"},
+				{"r" : "wgcgwggwtw"},
+				{"r" : "wggcwcggtw"},
+				{"r" : "wgggggcptw"},
+				{"r" : "wwwwwggwww"},
+				{"r" : "ggggwwwwgg"}
+			]
+		},
+		{
+			"level" : 31,
+			"row" : 7,
+			"column" : 7,
+			"code": "mQZH4tX8",
+			"format" : [{"r" : "wwwwwwg"},
+				{"r" : "wgttpwg"},
+				{"r" : "wgtscww"},
+				{"r" : "wggcggw"},
+				{"r" : "wwgcggw"},
+				{"r" : "gwwwggw"},
+				{"r" : "gggwwww"}
+			]
+		},
+		{
+			"level" : 32,
+			"row" : 6,
+			"column" : 7,
+			"code": "2auUUkAb",
+			"format" : [{"r" : "wwwwwwg"},
+				{"r" : "wttgww"},
+				{"r" : "wgwccgw"},
+				{"r" : "wggcggw"},
+				{"r" : "wgggsgw"},
+				{"r" : "wwwwwww"}
+			]
+		},
+		{
+			"level" : 33,
+			"row" : 6,
+			"column" : 7,
+			"code": "txGYRkBV",
+			"format" : [{"r" : "wwwwwww"},
+				{"r" : "wtgtgtw"},
+				{"r" : "wgcwgww"},
+				{"r" : "wggccgw"},
+				{"r" : "wtggcpw"},
+				{"r" : "wwwwwww"}
+			]
+		},
+		{
+			"level" : 34,
+			"row" : 7,
+			"column" : 7,
+			"code": "Rmz5HdvU",
+			"format" : [{"r" : "wwwwwwg"},
+				{"r" : "wtttgwg"},
+				{"r" : "wgwtgww"},
+				{"r" : "wgggcgw"},
+				{"r" : "wcccggw"},
+				{"r" : "wpgwggw"},
+				{"r" : "wwwwwww"}
+			]
+		},
+		{
+			"level" : 35,
+			"row" : 7,
+			"column" : 10,
+			"code": "UmtPEgMw",
+			"format" : [{"r" : "wwwwwwwwww"},
+				{"r" : "wgggwwgggw"},
+				{"r" : "wggcwggtgw"},
+				{"r" : "wgggwgctww"},
+				{"r" : "wwgggcgspw"},
+				{"r" : "gwggwwgtww"},
+				{"r" : "gwwwwwwwwg"}
+			]
+		},
+		{
+			"level" : 36,
+			"row" : 7,
+			"column" : 8,
+			"code": "g7g3hH4A",
+			"format" : [{"r" : "gwwwwwwg"},
+				{"r" : "gwtgggww"},
+				{"r" : "wwwwgctw"},
+				{"r" : "wpcggwtw"},
+				{"r" : "wgccgggw"},
+				{"r" : "wtgwgggw"},
+				{"r" : "wwwwwwww"}
+			]
+		},
+		{
+			"level" : 37,
+			"row" : 8,
+			"column" : 9,
+			"code": "5BqMMRyu",
+			"format" : [{"r" : "wwwwwwwww"},
+				{"r" : "wggttwggw"},
+				{"r" : "wgwttcggw"},
+				{"r" : "wggcgwggw"},
+				{"r" : "wwggwwgww"},
+				{"r" : "gwgcpcggw"},
+				{"r" : "gwwwwgggw"},
+				{"r" : "ggggwwwww"}
+			]
+		},
+		{
+			"level" : 38,
+			"row" : 9,
+			"column" : 10,
+			"code": "3XpB2JmM",
+			"format" : [{"r" : "wwwwwwwwgg"},
+				{"r" : "wgttttgwgg"},
+				{"r" : "wggcpcgwgg"},
+				{"r" : "wwwwwgwwww"},
+				{"r" : "gwwwgggggw"},
+				{"r" : "gwgggggcgw"},
+				{"r" : "gwgggwwcgw"},
+				{"r" : "gwwwwwwggw"},
+				{"r" : "ggggggwwww"}
+			]
+		},
+		{
+			"level" : 39,
+			"row" : 9,
+			"column" : 6,
+			"code": "VEsrM5MT",
+			"format" : [{"r" : "wwwwgg"},
+				{"r" : "wggwgg"},
+				{"r" : "wpgwww"},
+				{"r" : "wsgcgw"},
+				{"r" : "wtsggw"},
+				{"r" : "wgsgww"},
+				{"r" : "wgggwg"},
+				{"r" : "wggwwg"},
+				{"r" : "wwwwgg"}
+			]
+		},
+		{
+			"level" : 40,
+			"row" : 9,
+			"column" : 6,
+			"code": "2ULatFAp",
+			"format" : [{"r" : "wwwwww"},
+				{"r" : "wpwggw"},
+				{"r" : "wcwggw"},
+				{"r" : "wgcggw"},
+				{"r" : "wtsggw"},
+				{"r" : "wgsgww"},
+				{"r" : "wgtggw"},
+				{"r" : "wwgggw"},
+				{"r" : "gwwwww"}
+			]
+		},
+		{
+			"level" : 41,
+			"row" : 6,
+			"column" : 10,
+			"code": "ZQLjWzex",
+			"format" : [{"r" : "wwwwwwwwgg"},
+				{"r" : "wggwwggwww"},
+				{"r" : "wgggttgggw"},
+				{"r" : "wggcwtccgw"},
+				{"r" : "wwwggtcpww"},
+				{"r" : "ggwwwwwwwg"}
+			]
+		},
+		{
+			"level" : 42,
+			"row" : 6,
+			"column" : 9,
+			"code": "munN4bPh",
+			"format" : [{"r" : "gwwwwwwwg"},
+				{"r" : "gwgtgggww"},
+				{"r" : "gwggcgggw"},
+				{"r" : "wwwwcgstw"},
+				{"r" : "wpcgtgggw"},
+				{"r" : "wwwwwwwww"}
+			]
+		},
+		{
+			"level" : 43,
+			"row" : 6,
+			"column" : 6,
+			"code": "FtxEYPqd",
+			"format" : [{"r" : "wwwwww"},
+				{"r" : "wttcpw"},
+				{"r" : "wgtssw"},
+				{"r" : "wccggw"},
+				{"r" : "wggggw"},
+				{"r" : "wwwwww"}
+			]
+		},
+		{
+			"level" : 44,
+			"row" : 6,
+			"column" : 9,
+			"code": "7sH3SwYJ",
+			"format" : [{"r" : "ggggwwwww"},
+				{"r" : "wwwwwpggw"},
+				{"r" : "wgggcccgw"},
+				{"r" : "wttsstgww"},
+				{"r" : "wggggggwg"},
+				{"r" : "wwwwwwwwg"}
+			]
+		},
+		{
+			"level" : 45,
+			"row" : 8,
+			"column" : 8,
+			"code": "cBSYZXnb",
+			"format" : [{"r" : "wwwwwwww"},
+				{"r" : "wggwgggw"},
+				{"r" : "wggccwgw"},
+				{"r" : "wpcggggw"},
+				{"r" : "wwwcggww"},
+				{"r" : "wgcgwggw"},
+				{"r" : "wtttttgw"},
+				{"r" : "wwwwwwww"}
+			]
+		},
+		{
+			"level" : 46,
+			"row" : 6,
+			"column" : 11,
+			"code": "gzQaBvj7",
+			"format" : [{"r" : "wwwwwwwwwww"},
+				{"r" : "wttgpwggggw"},
+				{"r" : "wwggccggcgw"},
+				{"r" : "wwwggccgwgw"},
+				{"r" : "wtttggwgggw"},
+				{"r" : "wwwwwwwwwww"}
+			]
+		},
+		{
+			"level" : 47,
+			"row" : 10,
+			"column" : 7,
+			"code": "NFCDkRGh",
+			"format" : [{"r" : "wwwwwww"},
+				{"r" : "wtgctgw"},
+				{"r" : "wwggggw"},
+				{"r" : "wtggwww"},
+				{"r" : "wwwgsgw"},
+				{"r" : "wpcgcgw"},
+				{"r" : "wgcgtgw"},
+				{"r" : "wggwwww"},
+				{"r" : "wggwggg"},
+				{"r" : "wwwwggg"}
+			]
+		},
+		{
+			"level" : 48,
+			"row" : 7,
+			"column" : 11,
+			"code": "8faQCZqE",
+			"format" : [{"r" : "ggwwwwwwwgg"},
+				{"r" : "ggwggtspwgg"},
+				{"r" : "wwwggccgwgg"},
+				{"r" : "wggcgwgwwww"},
+				{"r" : "wggggwgcgtw"},
+				{"r" : "wwwwttggwww"},
+				{"r" : "gggwwwwwwgg"}
+			]
+		},
+		{
+			"level" : 49,
+			"row" : 10,
+			"column" : 7,
+			"code": "t8uhVFk4",
+			"format" : [{"r" : "wwwwwww"},
+				{"r" : "wgtcggw"},
+				{"r" : "wtggggw"},
+				{"r" : "wtggwww"},
+				{"r" : "wtwgwww"},
+				{"r" : "wtwgcpw"},
+				{"r" : "wggccgw"},
+				{"r" : "wwcwggw"},
+				{"r" : "gwggggw"},
+				{"r" : "gwwwwww"}
+			]
+		},
+		{
+			"level" : 50,
+			"row" : 9,
+			"column" : 10,
+			"code": "6Z5ymdwZ",
+			"format" : [{"r" : "ggggwwwwww"},
+				{"r" : "ggggwpwggw"},
+				{"r" : "ggwwwcgggw"},
+				{"r" : "wwwgggccgw"},
+				{"r" : "wtgggcggww"},
+				{"r" : "wttgcwggwg"},
+				{"r" : "wtwggwwwwg"},
+				{"r" : "wtwwwwgggg"},
+				{"r" : "wwwggggggg"}
+			]
+		},
+		{
+			"level" : 51,
+			"row" : 9,
+			"column" : 10,
+			"code": "23421337",
+			"format" : [{"r" : "gggwwwwggg"},
+				{"r" : "wwwwggwggg"},
+				{"r" : "wgctstwggg"},
+				{"r" : "wgwwgtwggg"},
+				{"r" : "wggggtwwww"},
+				{"r" : "wwwgccgggw"},
+				{"r" : "ggwcgggggw"},
+				{"r" : "ggwpwwwggw"},
+				{"r" : "ggwwwgwwww"}
+			]
+		}
+	]
+}

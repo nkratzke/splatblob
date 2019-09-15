@@ -1,0 +1,1369 @@
+\documentclass[a4paper,10pt]{report}
+% --Imports ---------------------------------------------- %
+\usepackage{graphicx} 									% Grafikpackages
+\usepackage[ngerman]{babel}								% Deutsche Sprachanpassung
+\usepackage{lmodern}									% moderne Schrift
+\usepackage{blindtext}									% Dummy Texte
+\usepackage[utf8]{inputenc}								% Umlaute
+\usepackage{caption}									% Überschriften
+\usepackage{titlesec}									% 
+\usepackage{float}										% Fix Table Position
+\usepackage{longtable}									% Tabellen über mehrere Seiten
+\usepackage{hyperref}									% Anzeigen von Links
+\usepackage{csquotes}									% quotes
+\usepackage{rotating}									% rotate pictures
+\usepackage{color}										% Textfarbe
+\usepackage{verbatim}									% Kommentarblöcke
+\usepackage{listings}									% Code Listen
+% -- Variablen ------------------------------------------- %
+\newcommand{\Sven}{Sven Moeller }
+\newcommand{\Josh}{Joshua Krieger }
+\newcommand{\Prof}{Prof. Dr. Nane Kratzke }
+\newcommand{\Topic}{Webtechnologie Projekt \\ SoSe 2017 }
+% -- Einstellungen --------------------------------------- %
+\AtBeginDocument{\renewcommand{\chaptername}{}}% muss nach babel stehen!
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+\titleformat{\chapter}{\bfseries\Large}{\thechapter.\quad}{0em}{}
+\titleformat{\section}{\bfseries\large}{\thesection \quad}{0em}{}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+
+\begin{document}
+
+% -- Deckblatt  ------------------------------------------ %
+
+  \begin{titlepage}
+    \centering
+    \includegraphics[width=0.50\textwidth]{logo.png}					% Titelbild
+    \par 																% Absatz
+    \vspace{1cm}														% Vertikaler Abstand 
+    \LARGE \textbf{Frogger \\ Dokumentation \\}  						% Titeltext
+    \vspace{2cm}									% 
+    \Huge \Topic \\				 				 	% 
+    \vspace{1cm}									% 
+    \Large \Prof \\									%
+    \vspace{1cm}									% 
+    \small von \\ 
+    \Josh \\ 
+    \Sven \\
+    \vfill
+    {\small \today \par}
+  \end{titlepage}
+  
+% -- Inhaltsverzeichnis  -------------------------------- %
+  
+  	\newpage
+  	\setcounter{page}{0}
+  	\tableofcontents
+
+
+% -- Abbildungsverzeichnis  ---------------------------------------- % 
+
+	\newpage 
+	\listoffigures
+	
+	% How to use %
+		%\begin{figure}
+		%	\caption{Unser neues Logo}
+		%	\includegraphics[scale=0.5]{logo}
+		%\end{figure}
+
+% -- Tabellenverzeichnis  ---------------------------------------- %  
+
+  	\listoftables
+  	% How to use %
+  	
+% -- Quellcodeverzeichnis  ---------------------------------------- %  	
+	
+	\lstlistoflistings	
+	
+% -- Einleitung  ---------------------------------------- %  
+
+    \newpage
+    \chapter{Einleitung}
+    {
+    	Im Rahmen des Webtechnologie Projektes haben wir uns für den Klassiker Frogger entschieden.
+    	Frogger wurde von Konami entwickelt und später von Sega im Jahre 1981 in Japan veröffentlicht.
+    	Es ist ein übliches Arcade Game welches man früher vorgefunden hat. Bis heute gibt es auch immer wieder Portierungen
+    	des Klassikers in unterschiedlichsten Variationen.  
+    }
+
+% -- Anforderung und Spielekonzept  --------------------- %  
+  
+    \newpage
+    \chapter{Anforderung und Spielkonzept}
+    \section{Anforderung}
+	{
+		\label{sec:requirements}
+		\noindent \hspace{2mm}
+		\textbf{Spielanforderung}
+		\begin{longtable}{|c|c|p{0.45\textwidth}|}
+		\hline
+		\textbf{ID} & \textbf{Kurztitel} & \textbf{Anforderung} \\
+		\hline
+		AF-1 & Einplayer Game & Das Spiel soll ein Einzelspieler Spiel sein. \\
+		\hline
+		AF-2 & 2D Game & Das Spiel soll ein Einzelspieler Spiel sein. \\
+		\hline
+		AF-3 & Levelkonzept & Das Spiel sollte ein Levelkonzept vorsehen. \\
+		\hline
+		AF-4 & Parametrisierungskonzept & Das Spiel sollte ein Parameterisierungskonzept für relevante Spielparameter vorsehen. \\
+		\hline
+		AF-5 & N/A & Nicht verlangt dieses Jahr. \\
+		\hline
+		AF-6 & Desktop Browser & Das Spiel muss in Desktop Browsern spielbar sein. \\
+		\hline
+		AF-7 & Mobile Browser & Das Spiel muss auf SmartPhone Browsern spielbar sein. \\
+		\hline
+		\caption{Tabelle mit den Spielanforderungen}
+		\end{longtable}
+		
+		\noindent \hspace{2mm}
+		\textbf{Dokumentationanforderung}
+		
+		\begin{longtable}{|c|c|p{0.49\textwidth}|}
+		\hline
+		\textbf{ID} & \textbf{Kurztitel} & \textbf{Anforderung} \\
+		\hline
+		D-1 & Dokumentationsvorlage & Die Dokumentation soll sich an vorliegender Vorlage orientieren. \\
+		\hline
+		D-2 & Projektdokumentation & Das Spiel muss geeignet dokumentiert sein, so dass es von projektfremden Personen fortgeführt werden könnte. \\
+		\hline
+		D-3 & Quelltextdokumentation & Der Quelltext des Spiels muss geeignet dokumentiert sein und mittels schriftlicher Dokumentation erschließbar und verständlich sein. \\
+		\hline
+		D-4 & Libraries & Alle verwendeten Libraries sind aufzuführen und deren Notwendigkeit zu begründen. \\
+		\hline
+		\caption{Tabelle mit den Dokumentationanforderung}
+		\end{longtable}
+		
+		\newpage
+		\noindent \hspace{4mm}
+		\textbf{Technische Randbedingungen}
+		
+		\begin{longtable}{|c|c|p{0.49\textwidth}|}
+		\hline
+		\textbf{ID} & \textbf{Kurztitel} & \textbf{Anforderung} \\
+		\hline
+		TF-01 & No Canvas 		& 	Die Darstellung des Spielfeldes sollte ausschließlich mittels DOM-Tree Techniken erfolgen. 
+									Die Nutzung von Canvas-basierten Darstellungstechniken ist explizit untersagt. \\
+		\hline
+		TF-02 & Levelformat 	& 	Level sollten sich mittels deskriptiver Textdateien definieren lassen (z.B. mittels CSV, JSON, XML, etc.), 
+									so dass Level-Änderungen ohne Sourcecode-Änderungen des Spiels realisierbar sind. \\
+		\hline
+		TF-03 & Parameterformat & 	Spielparameter sollten sich mittels deskriptiver Textdateien definieren lassen (z.B. mittels CSV, JSON, XML, etc.), 
+									so dass Parameter-Änderungen ohne Sourcecode-Änderungen des Spiels realisierbar sind. \\
+		\hline
+		TF-04 & HTML + CSS 		& 	Der View des Spiels darf ausschließlich mittels HTML und CSS realisiert werden. \\
+		\hline
+		TF-05 & Gamelogic in Dart & Die Logik des Spiels muss mittels der Programmiersprache Dart realisiert werden. \\
+		\hline
+		TF-09 & Browser Support & 	Das Spiel muss im Browser Chromium/Dartium (native Dart Engine) funktionieren. 
+									Das Spiel muss ferner in allen anderen Browserrn (JavaScript Engines) ebenfalls in 
+									der JavaScript kompilierten Form funktionieren (geprüft wird ggf. mit Safari, Chrome und Firefox). \\
+		\hline
+		TF-10 & MVC Architektur & 	Das Spiel sollte einer MVC-Architektur folgen. \\
+		\hline
+		TF-11 & Erlaubte Pakete & 	Erlaubt sind alle dart:* packages, sowie das Webframework start. \\
+		\hline
+		TF-12 & Verbotene Pakete & 	Verboten sind Libraries wie Polymer oder Angular. (Sollten Sie Pakete verwenden wollen, die außerhalb der erlaubten
+									Pakete liegen, holen Sie sich das Go ab, begründen sie bitte, wieso sie das Paket benötigen). \\
+		\hline
+		TF-13 & No Sound & Das Spiel muss keine Sounds unterstützen. \\
+		\hline
+		\caption{Tabelle mit den Technische Randbedingungen}
+		\end{longtable}
+	}    
+    
+    \section{Spielkonzept}
+    {
+    	\label{sec:gameconcept}
+      	Grundlegend basiert das Spiel auf einem n x m Spielfeld, welches rasterartig aufgebaut ist. 
+      	Der Spieler übernimmt die Rolle der Spielfigur Frogger und muss versuchen auf die andere
+      	Seite des Spielfeldes zu kommen. Dieses wird ihm erschwert durch unterschiedlichste Dinge wie 
+      	eine befahrene Straße oder einem Fluss, bevor er den Geburtsteich erreicht, welches sein Ziel ist.
+      	Dieses muss er so oft wiederholen bis alle Geburtsteiche belegt sind. Dabei muss er alle vor ihm
+      	liegenden Gefahren ausweichen oder überwinden. Wie zum Beispiel unterschiedlichster Fahrzeuge, Objekte 
+     	und Tieren. Er gewinnt Punkte für verschiedene Dinge auf dem Weg zum Geburtsteich. Die Objekte bewegen 
+     	sich nur Horizontal auf ihrer eigenen Reihe und dies mit gleich bleibender Geschwindigkeit.
+     	Die Geschwindigkeit zwischen den Reihen kann allerdings unterschiedlich sein. 
+      
+      	\vspace{1cm}
+      
+      	Die Schwierigkeit lässt sich variieren durch:
+      
+      	\begin{itemize}
+       		\item Frequenz der Objekte die erstellt werden pro Reihe
+       		\item Abstand zwischen den beweglichen Objekten
+       		\item Länge der beweglichen Objekte
+       		\item Anzahl der Geburtsteiche im Level
+       		\item Anzahl der verschiedenen Objekte die in einer Reihe vorkommen können
+      	\end{itemize}
+      
+      	\vspace{1cm}
+      
+      	Frogger könnte z.B. wie folgt variiert oder erweitert werden:
+      
+      	\begin{itemize}
+       		\item Statische Hindernisse wie Büsche, Bäume oder parkende Autos
+       		\item Wegfallen von Grünstreifen durch Überflutung des Flusses
+       		\item Hinzufügen oder erweitern von neuen Objekten mit besonderen Eigenschaften
+       		\item Froscheigenschaften
+      	\end{itemize}
+      	
+    }
+  
+% --  Architektur und Implementierung  --------------------- %    
+
+    \chapter{Architektur und Implementierung}
+     
+	Da wir nach dem MVC Konzept unsere Architektur entwickeln sollten, haben wir unsere Spiellogik dementsprechend gegliedert. 
+	\newline \newline	
+	Die Klasse FroggerView kapselt die Schnittstelle zum DOM-Tree und dient zur Visualisierung des Models und stellt dem Controller 
+	entsprechende Methoden bereit, um die Spieloberfläche zu aktualisieren. Näheres wird im Abschnitt \ref{sec:view} erläutert.
+    \newline \newline	
+	Die Klasse FroggerController ist die Schnittstelle zwischen dem Model und der View. Der Controller kontrolliert das Model und fordert 
+	die View auf sich zu aktualisieren. Näheres wird im Abschnitt \ref{sec:controller} erläutert.
+	\newline \newline 
+	Das Model selbst ist komplex und kann nicht in einer einzelnen Klasse erfasst werden, viel mehr besteht das Model aus einem Zusammenspiel vieler einzelner Entitäten,
+	die Komplexität überschaubar machen. Näheres wird im Abschnitt \ref{sec:view} erläutert.
+
+     \begin{figure}			
+		\includegraphics[scale=0.5]{Architektur}
+		\caption{Architektur}
+		\label{fig:architektur}
+	\end{figure}    
+    
+    \newpage
+    \noindent
+	Auf Grund der Größe, des gesamten UML, verweise ich hier auf einzelne Abschnitte des UML Diagramms. Trotzdem wird eine Gesamtübersicht mit beigelegt unter dem Dateinamen "UMLComplete.png".
+	
+	\begin{itemize}
+		\item UML Ausschnitt für die Entitäten ist in der Abbildung \ref{fig:umlentities} zu sehen.
+		\item UML Ausschnitt für das Spielfeld ist in der Abbildung \ref{fig:umlfield} zu sehen.
+		\item UML Ausschnitt für die Hilfsklassen, die verwendet werden, ist in der Abbildung \ref{fig:umlhelper} zu sehen.
+	\end{itemize}	    
+    
+    
+    \section{Model}
+    {
+    	\label{sec:model}
+    	Aus dem grundlegenden Spielkonzept, wie in Abschnitt \ref{sec:gameconcept} dargelegt haben wir folgende Entitäten abgeleitet.
+    	
+    	\begin{itemize}
+    		\item Frosch (Frogger)
+    		\item Weiblicher Frosch (LadyFrog)
+    		\item Schildkröte (Turtle)
+    		\item Schlange (Snake)
+    		\item Baumstamm (Log)
+    		\item Fahrzeug (Vehicle)
+    		\item Krokodil (Crocodile)
+    		\item Spielfeld (Field)
+    		\item Spielkachel (Tile)
+    	\end{itemize}
+    	
+    	\noindent
+		Im weiteren Verlauf der Entwicklung sind weitere Entitäten und Klassen dazu gekommen, die etwa der Unterstützung oder der Strukturierung des Model zu Gute kommen.
+		
+		\newpage
+		\subsection{Schnittstelle zum Controller}
+		{
+			\subsubsection{GameInstance}
+			{
+				\label{sssec:gameinstance}
+				Die GameInstance ist die Schnittstelle zum Controller. Der Controller ruft periodisch Methoden der GameInstance auf und 
+				die GameInstance sendet Events (Abschnitt \ref{sssec:eventtype}) zum Controller. Im Controller (Abschnitt \ref{sec:controller}) werden die Timer näher erläutert.
+				\newline \newline		
+				Der Zustand der GameInstance bildet sich aus 
+				
+				\begin{itemize}
+					\item einem StreamController, der die Aufgabe des EventController's übernimmt. (eventController)
+					\item einer Warteschlange, in der die Spieler Bewegungen gespeichert werden bis sie vom Model übernommen wurden. (commandQueue)
+					\item einem Spielfeld (Abschnitt \ref{sssec:fieldclass}) (field)
+					\item einem Frogger als Spielfigur. (frogger)
+					\item einem Integer für die Punktzahl. (score)
+					\item einem Integer für die Leben des Spielers. (lives)
+					\item einem Integer für die erreichten Ziele. (goalreached)
+					\item einem Integer für die höchste Reihe, die zum Ziel erreicht wurde. \\ (highestRowToGoal)
+					\item einem Integer für die eingesammelten LadyFrog's. (collectedLadyFrogs)			
+				\end{itemize}								
+				\noindent
+				Die Timer des Controllers rufen folgende Methoden auf:
+				
+				\begin{itemize}
+					\item void update(). Sie bringt das Model in einen neuen Zustand.
+					\item void dispatchCommandFromQueue(). Sie führt die nächste Aktion des Spielers aus, welche in der Warteschlange liegt.
+				\end{itemize}																
+			}
+			\newpage
+			\subsubsection{EventType}
+			{
+				\label{sssec:eventtype}
+				Dies ist ein Enum welches, Event Typen definiert, welche benutzt werden um zwischen GameInstance und Controller zu kommunizieren.
+				Die Events, die die Bewegungen des Frogger's betreffen werden nur benötigt, damit die Camera (Abschnitt \ref{ssec:camera}) sich parallel zum Frogger bewegt.				
+				
+				\begin{longtable}{|c|p{0.45\textwidth}|}
+				\hline
+				\textbf{Event} & \textbf{Beschreibung} \\
+				\hline
+				Win 				& Wenn ein Level erfolgreich beendet wurde. 		\\
+				\hline				
+				GameOver 			& Wenn der Spieler alle Leben verloren hat. 		\\
+				\hline
+				Loaded 				& Wenn das Spielfeld erfolgreich geladen wurde.		\\
+				\hline	
+				FroggerMovedLeft 	& Wenn Frogger sich nach Links bewegt hat.			\\
+				\hline	
+				FroggerMovedRight 	& Wenn Frogger sich nach Rechts bewegt hat.			\\
+				\hline	
+				FroggerMovedUp 		& Wenn Frogger sich nach Oben bewegt hat.			\\
+				\hline	
+				FroggerMovedDown 	& Wenn Frogger sich nach Unten bewegt hat.			\\
+				\hline	
+				ViewReset 			& Wenn Frogger ein Leben verliert und die Camera zurückgesetzt werden muss. \\
+				\hline	
+				\caption{Tabelle der Event Typen}
+				\end{longtable}												 
+			}			
+			
+		}		
+		
+		\subsection{Spiel- und Levelparameter}
+		{
+			\label{ssec:parameters}
+			
+			Alle wichtigen Spielparameter werden in der Klasse Config gehalten; Diese ist überall verfügbar.
+			Sie hält neben wichtigen Parametern wie der Spielfeldgröße auch Festlegungen bezüglich eindeutiger 
+			Kennzeichnungen der einzelnen Entitäten und Pfade zu Ressourcen.
+			Genaueres wird in der exakten Beschreibung der Config Klasse erläutert (Abschnitt \ref{sssec:configclass}).
+			\newline \newline
+			Die Parameter, zu den einzelnen Leveln, werden in der Klasse Level gehalten. 
+			Näheres dazu wird in der exakten Beschreibung der Level Klasse erläutert (Abschnitt \ref{sssec:levelclass}).		
+			\newpage
+			\subsubsection{Config}
+			{
+				\label{sssec:configclass}
+				
+				Die Config dient als zentraler Punkt für Globale Variablen und ist eine statische Klasse.
+				Sie wird aus einer Json Datei heraus erstellt. Dies wird im Thema Parameterisierungskonzept (im Abschnitt \ref{sec:parameterconcept}) veranschaulicht. 
+				\newline \newline
+				\noindent				
+				Über ihr können folgende Einstellungen angegeben werden.
+				
+				\begin{itemize}
+					\item Spielfeld Höhe (FieldRow)
+					\item Spielfeld Breite (FieldCol)
+					\item Kamera Höhe (ViewRow)
+					\item Kamera Breite (ViewCol)
+					\item Punkte für den Sprung in die richtige Richtung (Score\_JumpInDirection)
+					\item Punkte für erreichtes Ziel (Score\_ Goal)
+					\item Punkte für abgegebenen LadyFrog (Score\_LadyFrog)
+					\item Punkte für geschafftes Level (Score\_CompletedLevel)
+					\item Punkte für verbleibende Level Zeit (wird momentan nicht genutzt)\\(Score\_TimeLeftPerUnit)
+					\item Dateinamen Format in welchem die Level Jsons vorliegen\\(JsonLevelNamePattern)
+					\item Das maximale Level, sprich wie viele Level Jsons es gibt (maxLevel)
+					\item Timer Interval für das Model (updateInterval)
+					\item Timer Interval für das aktualisieren der View (fieldPrintInterval)
+					\item Timer Interval für das ausführen der Spieler Bewegungen\\(froggerDispatchMoveInterval)
+				\end{itemize}	
+											
+				\newpage
+				\noindent
+				Desweiteren sind alle IDs der Entitäten und Tiles hartcodiert.
+				\newline \newline	
+				\noindent
+				\textbf{Spielfelder}				
+				
+				\begin{longtable}{|c|c|c|}
+				\hline
+				\textbf{Name}	& \textbf{Bezeichnung}	& \textbf{ID} \\
+				\hline				
+				Straße 			& Street 				& 1 \\
+				\hline
+				Gras 			& Grass 				& 2 \\
+				\hline
+				Wasser 			& Water 				& 3 \\
+				\hline
+				Ziel 			& Goal 					& 4 \\
+				\hline
+				Hohes Gras		& HighGrass 			& 5 \\
+				\hline			
+				\caption{Tabelle mit den Übersicht der Spielfelder}
+				\end{longtable}		
+				\noindent
+				\textbf{Entitäten}				
+				
+				\begin{longtable}{|c|c|c|}
+				\hline
+				\textbf{Name}	& \textbf{Bezeichnung}	& \textbf{ID} \\
+				\hline				
+				Nichts 			& noEntity 				& 0 \\
+				\hline
+				Baumstamm 		& Log 					& 1 \\
+				\hline
+				Krokodile 		& Crocodile 			& 3 \\
+				\hline
+				Schildkröte		& Turtle 				& 4 \\
+				\hline		
+				Schlange		& Snake 				& 5 \\
+				\hline	
+				Laster			& Truck 				& 6 \\
+				\hline	
+				Frosch			& Frogger 				& 7 \\
+				\hline
+				Auto			& Car 					& 8 \\
+				\hline	
+				Weib. Frosch	& LadyFrog 				& 9 \\
+				\hline			
+				\caption{Tabelle mit den Übersicht der Entitäten}
+				\end{longtable}
+			}		
+			\subsubsection{Level}
+			{
+				\label{sssec:levelclass}
+				
+				Die Level Klasse hält alle Level Parameter und wird aus einer Json Datei geladen. Jedes mal wenn ein neues Level angefordert wird,
+				wird die zugehörige Json Datei geladen. Mit Hilfe der Level Klasse werden die Parameter des Levels durch das Model gereicht. 
+				Das Einlesen aus der Json übernimmt die Klasse selbst. Die Level Parameter sind im Thema Levelkonzept (Abschnitt \ref{sec:levelconcept}) aufgelistet und näher erläutert. 
+			}		
+		}		
+		
+		\subsection{Entitäten}
+		{
+			\label{ssec:entities}
+			
+			\subsubsection{Hierarchie}
+			{
+				\label{ssec:hierachy}
+				
+				Die Hierarchie der Entitäten ist wie in Abbildung \ref{fig:umlentities} aufgebaut.
+				Das abstrakteste Objekt ist das GameObject (Abschnitt \ref{sssec:gameobjectclass}), von ihr leiten sich 2 verschiedene Arten von Klassen ab.
+				Zum einem die Tiles, (Abschnitt \ref{sssec:tileclass}) die die Spielfelder auf dem Spielfeld repräsentieren und zum anderen die Entities (Abschnitt \ref{sssec:entityclass}).
+				Sie wiederum ist die Basisklasse von alle Spielfiguren auf dem Spielfeld. Alle Spielfiguren im Spiel müssen diese Basisklasse erweitern.				
+				
+				\begin{figure}			
+					\includegraphics[scale=0.8]{Entities}
+					\caption{Entitäten Hierarchie}
+					\label{fig:umlentities}
+				\end{figure}							
+			}
+			
+			\subsubsection{Entitäten System}
+			{
+				Das Entity-System ist aufgebaut wie eine Linked List. Das Vererbungssystem gibt vor, dass jede Entity von GameObject abgeleitet ist. Dadurch wird es möglich dem sog. EntityStack zu bauen.
+				Da das GameObject eine CarryEntity definiert, hat jedes davon abgeleitete Objekt ebenfalls dieses Feld und kann somit eine Entität auf seinem „Rücken“ tragen.
+				\newline \newline				
+				\noindent
+				Dabei kann zur Laufzeit ein Stack zum Beispiel wie in Abbildung \ref{fig:entitystack} aussehen.
+				\newline \newline
+				\noindent
+				In Abbildung \ref{fig:entitystack} kann man sehr gut die Linked List erkennen, die beim Benutzen diese Ansatzes entsteht. 
+				Jedes der in der Abbildung dargestellte Objekt leitet von GameObject ab. 
+				\begin{figure}[h]			
+					\includegraphics[scale=0.4]{EntityStack}
+					\caption{Entity Stack}
+					\label{fig:entitystack}
+				\end{figure}
+				\newline
+				\noindent
+				Die Row (Abschnitt \ref{sssec:rowclass}) Klasse hält ein Array der Tile Objekte. Die sind dann, im Level entsprechend angegeben, vom Typ Gras/Wasser/Straße oder Ziel. 
+				Jedes dieser Felder kann dann Entitäten tragen, die dann wieder Entitäten tragen können und so weiter. 
+				Man kann auf diese Weise beliebig große Entität-Stacks bauen, die dann ihre Kollisionen mit anderen Entitäten darüber handhaben, 
+				indem man eine Entität mit dem auf dem Feld liegenden Tile kollidieren lässt. 
+				Das Tile entscheidet dann entsprechend seiner Implementierung ob es die Kollision selber handhabt oder an die, auf ihm liegenden Entität, weitergibt.
+
+				\begin{figure}[h]			
+					\includegraphics[scale=0.4]{StacksBeforeStart}
+					\caption{Ausgangssituation einer Kollision}
+					\label{fig:collisionStart}
+				\end{figure}
+				\noindent
+				Es wird folgende Ausgangssituation nach Abbildung \ref{fig:collisionStart} betrachtet.
+				\newline \newline
+				Wenn man nun über die Eingabeoberfläche den Befehl gibt, dass sich Frogger auf das andere Feld begeben soll, dann läuft folgender Ablauf ab.
+
+				\begin{figure}[h]			
+					\includegraphics[scale=0.3]{CollideWithTile}
+					\caption{Kollision mit Tile}
+					\label{fig:collisionTile}
+				\end{figure}
+				\noindent
+				Frogger wird als erstes die Collide Methode des Tile's aufrufen von dem Feld, auf das er sich bewegen möchte.
+				In Abbildung \ref{fig:collisionTile} gekennzeichnet durch die rote Markierung. 
+				\newpage \noindent
+				Da das Tile (mit seiner derzeitigen Implementierung) die Kollision nicht handeln wird, da er eine Carry-Entität besitzt,
+				nimmt er das Argument des Collide-Aufrufs (in diesem Fall Frogger) und ruft die Collide Methode mit dem Argument auf, die es selbst erhalten hat. 
+
+				\begin{figure}[h]			
+					\includegraphics[scale=0.3]{CollideWithLog}
+					\caption{Kollision mit Log}
+					\label{fig:collisionLog}
+				\end{figure}
+				\noindent
+				Der in diesem Beispiel verwendete Log würde dann die Kollision handeln und Frogger als neue Carry-Entität setzen.
+				Hätte der Log ebenfalls eine Carry-Entity, dann würde der Log an diese Entität die Kollision weitergeben.
+				Da Frogger einen Verweis auf den auf ihm sitzenden Ladyfrog besitzt, werden dann durch Frogger die Koordinaten des Ladyfrogs ebenfalls upgedatet, 
+				nachdem Frogger seine eigenen Koordinaten geändert hat.
+				\newline \newline
+				\noindent
+				Nachdem die Kollision und damit auch der Move Befehl abgeschlossen ist. 
+				Hat man den Stackaufbau nach Abbildung \ref{fig:collisionDone} erreicht.
+
+				\begin{figure}			
+					\includegraphics[scale=0.4]{collisionDone}
+					\caption{Ausgeführter Move Befehl}
+					\label{fig:collisionDone}
+				\end{figure}
+			}			
+			\newpage  
+			\subsubsection{GameObject}
+			{
+				\label{sssec:gameobjectclass}			
+				
+				Das GameObject ist das grundlegende Element, von dem sich alle Entitäten ableiten. Die beiden direkten Ableitungen von GameObject 
+				sind die Entity (Abschnitt \ref{sssec:entityclass}) und das Tile (Abschnitt \ref{sssec:tileclass}) und auf Ihnen baut sich alles weitere auf. 
+				Dies ist ersichtlich aus der Architektur sowie genauer in der Hierarchie im Abschnitt \ref{ssec:hierachy}.
+				\newline \newline \newpage \noindent
+				Der Zustand des GameObject bildet sich aus:
+				
+				\begin{itemize}
+					\item einer Entity die getragen werden kann. (carryEntity)
+					\item einem Sprite welches genutzt wird vom SpriteManager (Abschhnitt \ref{ssec:sprite}) um die Grafiken zu verwalten, mit denen dieses GameObject auf dem Spielfeld angezeigt wird. (sprite)
+					\item einem Boolean das Aussage darüber macht, ob eine Entität als tödlich zu betrachten ist. Das bedeutet, dass bei Kontakt mit Frogger diese Entität Frogger „töten“ wird 
+						  und das alle Schritte abgearbeitet werden müssen um auf dieses Ereignis zu reagieren. (isLethal)
+				\end{itemize}
+				\noindent
+				Zuzüglich zu den Instanz abhängigen Variablen hat das GameObject noch eine statische Referenz auf die GameInstance. 				
+				Wir brauchen diesen Verweis, da alle GameObjects, also auch Entitäten, ihre Positionen selbständig auf dem Spielfeld verwalten können sollen. 
+				Mithilfe dieses Verweises, können die GameObjects auch untereinander kommunizieren.
+			}
+			
+			\subsubsection{Tile}
+			{
+				\label{sssec:tileclass}
+				
+				Die Tile Klasse ist die Superklasse für alle konkreten Tiles. Sie hat grundlegendes Verhalten zum setzen von Entitäten und gibt Kollisionen an anderen Entitäten weiter, die auf ihr sitzen.
+				Sie legt außerdem fest, wie weit Frogger springt, wenn er auf dieser Tile sitzt. 
+				Auf diese Weise kann jede konkrete Tile eine „Powered up“ Version von sich selbst werden ohne für jede konkrete Tile eine neue Version erstellen zu müssen.
+				\newline \newline
+				Der Zustand des Tile bildet sich aus:
+				
+				\begin{itemize}
+					\item einem Boolean, der angibt ob Frogger sich auf diese Tile bewegen kann oder die Bewegung abgeblockt wird. (isAccessible)
+					\item einem Integer, der bestimmt wie weit Frogger springen wird, wenn er sich von dieser Tile wegbewegen möchte. (jumpPower)
+				\end{itemize}				
+				\noindent
+				\textbf{Konkrete Tiles} \\
+				Die konkreten Implementierungen der Tiles. Haben grundlegend das selbe Verhalten. Sie unterscheiden sich nur in dem Typ des CollideResult (Abschnitt \ref{ssec:collideresult}), welches sie zurückgeben. 
+				Die Water-Tile zum Beispiel würde auf Kontakt mit Frogger wasLethal zurückgeben.	
+			}			
+			\newpage 		
+			\subsubsection{Entity}
+			{
+				\label{sssec:entityclass}
+				
+				Die Entity Klasse ist die Superklasse für alle Typen von Entitäten. 
+				Direkt unter ihr liegen die statischen (Abschnitt \ref{sssec:staticentityclass}) sowie die dynamischen Entitäten (Abschnitt \ref{sssec:dynamicentityclass}).
+				\newline \newline
+				Der Zustand der Entity bildet sich aus:
+							
+				\begin{itemize}
+					\item einem Integer, der die logische x Koordinate dieser Entität auf dem Spielfeld darstellt. (coordX)
+					\item einem Integer, der die logische y Koordinate dieser Entität auf dem Spielfeld darstellt. (coordY)
+				\end{itemize}
+				\noindent
+				Die Entity besitzt eine wichtige Methode: 
+
+				\begin{itemize}
+					\item updateCoordsAfterStackedMove(int newX, int newY)
+				\end{itemize}								
+				\noindent
+				Diese Methode erlaubt es von einer Entität aus alle auf ihr sitzenden Entitäten neue Koordinaten zu geben. 
+				Zusätzlich werden auch damit die Koordinaten der Entität umgesetzt, auf welcher diese Methode aufgerufen wurde.
+			}			
+			
+			\subsubsection{StaticEntity}
+			{
+				\label{sssec:staticentityclass}
+				
+				Eine StaticEntity hält nur eine Liste von Body Elementen die wiederum auch StaticEntity Elemente sind. Diese werden bei einem Update der Entität, alle upgedatet. 
+				Auf diese Weise werden zusammenhängende StaticEntities wie Trucks oder Logs realisiert.
+				
+				\paragraph{Vehicle}
+				{
+					Die Vehicle Klasse war wegen Punkten der Erweiterbarkeit als Überklasse für die beiden Fahrzeug basierten Klassen gedacht.
+				}	
+				
+				\paragraph{Car}
+				{
+					Die Car Klasse repräsentiert ein einfaches singuläres Objekt, welches sich linear über das Spielfeld bewegt und bei Kollision mit Frogger diesen tötet.
+				}					
+				
+				\paragraph{Truck}
+				{
+					Die Truck Klasse verhält sich genau so wie eine Kette aus Auto Objekten. 
+					Die Body Elemente werde dann nur in der Body Liste gehalten, wie in der Beschreibung der StaticEntity angegeben.
+				}				
+					
+				\paragraph{Log}
+				{
+					Der Log ist eine Kette von begehbaren Holzelementen, die sich in der Regel über Wasser bewegen.
+					Diese Kette ist an allen Stellen frei begehbar. Es besteht eine gewisse Chance, das ein LadyFrog auf so einem Log Element mit spawnt.
+				}	
+				
+				\paragraph{Crocodile}
+				{
+					Die Crocodile Klasse ist ähnlich wie der Log, mit dem einzigen Unterschied, dass nur das vorderste Kopfelement für Frogger tödlich ist. 
+					Die anderen Elemente sind frei begehbar.
+				}									
+
+				\paragraph{Snake}
+				{
+					Die Snake Klasse verhält sich ganz genau so, wie ein Auto Objekt, nur das es dafür gedacht war sich über den Grasstreifen zu bewegen.
+				}
+
+				\paragraph{Turtle}
+				{
+					Die Turtle ist die komplexeste der Entitäten. Da sie die Funktionalität implementiert unterzutauchen, mit vorherigem anzeigen das abgetaucht werden wird, und Auftauchen nach einer gewissen Tauchdauer. 
+					Das Untertauchen in mehreren Schritten ist mittels einer kleinen Statemachine gelöst.
+					\newline \newline
+					Der Zustand der Turtle bildet sich aus:
+							
+					\begin{itemize}
+						\item einem Integer, die als Zählvariable dient und angibt wie lange eine Turtle schon unter Wasser ist. (diveCounter)
+						\item einem Integer, die das Limit angibt wie lange die Turtle insgesamt braucht um wieder den normalen „Über Wasser“ Zustand zu erreichen, nachdem sie angefangen hat unterzutauchen. (diveDuration)
+						\item einem Boolean, der gibt an ob die Turtle grade unter Wasser ist. Ist als ein Zustand der oben erwähnten Statemachine zu verstehen. (diving)
+						\item einem Boolean, der gibt an ob die Turtle grade in dem „halb unter Wasser“ Zustand ist. Ist als ein Zustand der oben erwähnten Statemachine zu verstehen. 
+						      In diesem Zustand ist die Turtle noch nicht tödlich für Frogger. (startDive)
+						\item einem Boolean, der gesetzt wird nachdem die Turtle einen kompletten Tauchvorgang abgeschlossen hat. Wird benutzt um in der Statemachine Werte wieder zurückzusetzen. (endDive)
+					\end{itemize}
+					\noindent
+					Zuzüglich zu den Instanz abhängigen Variablen hat die Turtle noch folgende statische Werte:
+					\begin{itemize}
+						\item Konstanter Integer, der angibt wie lange die Turtles in dem Zustand des „halb unter Wasser sein“ verbleiben, bevor sie komplett abtauchen und dadurch auch tödlich für Frogger werden. (diveInit)
+						\item Ein Zufallsgenerator, der genutzt wird um zu entscheiden, ob eine Turtle abtauchen wird. (RanDive)
+					\end{itemize}
+				}							
+			}	
+			
+			
+			\subsubsection{DynamicEntity}
+			{
+				\label{sssec:dynamicentityclass}
+				
+				Die DynamicEntity war aus Gründen der Erweiterbarkeit als Überklasse für alle Entities gedacht, die sich, zu nicht festgelegten Zeitpunkten, frei in 4 Richtungen bewegen können.
+				\newpage 
+				\paragraph{Frogger}
+				{
+					Die Frogger Klasse ist die Spielfigur die der Spieler steuert.
+					\newline \newline
+					Der Zustand des Froggers bildet sich aus:
+					\begin{itemize}
+						\item einem Boolean, der an gibt ob Frogger bereits ein LadyFrog eingesammelt hat. Dieses Flag nimmt ebenfalls Einfluss auf die visuelle Repräsentation von Frogger. 
+							  Die Logik dazu ist im SpriteManager (Abschnitt \ref{ssec:sprite}) geregelt mit Hilfe des Flags. (collectedLadyFrog) 
+					\end{itemize}
+					\noindent 
+					Es sind 2 wichtige Methoden am Frogger implementiert:
+					
+					\begin{itemize}
+						\item updateFroggerCam(Direction movedInDirection) Die Kamera Klasse (Abschnitt \ref{ssec:camera}), die genutzt wird um Frogger auf dem Feld darzustellen, 
+						      braucht diese Events um sinnvolle Bewegungen auf dem Feld durchzuführen und so das „fensterartige“ Verhalten zu realisieren.
+
+						\item collide(Entity collideWith) Frogger hat die besondere Eigenschaft, die meisten Kollisionen mit anderen Entitäten an die
+							  Entitäten zu geben, die mit ihm kollidieren. Auf diese Weise können wir das Kollisionsverhalten aus der Frogger Klasse herausziehen und sie an den Klassen implementieren, 
+							  die dann die Entscheidung sowieso treffen sollen. Die einzige Kollision, die gehandelt wird ist die Kollision mit dem LadyFrog.
+					\end{itemize}																						
+				}
+				
+				\paragraph{LadyFrog}
+				{
+					Der LadyFrog hat eine gewisse Chance auf einem Log zu spawnen und kann von Frogger aufgesammelt werden um beim Erreichen des Ziels extra Punkte zu generieren.
+					Wenn Frogger bereits einen LadyFrog aufgesammelt hat, dann kann er kein Feld mehr betreten, welches von einem weiteren LadyFrog belegt wird.	
+				}						
+			}				
+						
+		}
+		\newpage 
+		\subsection{CollideResult}			
+		{
+			\label{ssec:collideresult}
+			Dies ist ein Enum welches Kollisionstypen definiert, die als Rückgabewert der Kollisionsfunktionen der Entitäten zurückgegeben werden können.
+					
+			\begin{longtable}{|c|p{0.45\textwidth}|}
+				\hline
+				\textbf{Collide} & \textbf{Beschreibung} \\
+				\hline
+				noValidMoveCoordinates 		& Falls man sich versucht auf eine Koordinate zu bewegen, welche aus Sicht des Felds als nicht gültig angesehen wird.  		\\
+				\hline				
+				wasLethal 					& Wenn Frogger eine Kollision mit einer Entität hatte, die „tödlich verlief, wird dieses CollideResult zurückgegeben.		\\
+				\hline
+				couldNotMoveTo 				& Dieses Result wird zurückgegeben, wenn Frogger sich auf ein Feld bewegen will, welches nicht begehbar ist, 
+											  weil zum Beispiel hohes Gras den Weg blockiert. Auf diese Weise könnte man auch feste Hindernisse wie Wände realisieren.	\\
+				\hline	
+				wasNotHandled 				& Dieses Result ist mehr als eine Art Exception zu verstehen. Es wird nur dann als Ergebnis zurückgegeben, 
+											  wenn eine Kollision von keiner Entität gehandelt wird. Dies sollte mit der derzeitigen Implementierung niemals auftreten.	\\
+				\hline	
+				goalReached 				& Wird beim Erreichen eines GoalTile durch Frogger zurückgegeben.	\\
+				\hline	
+				wasSet 						& Das Result wird zurückgegeben, wenn Frogger sich auf eine Tile bewegen möchte und die Kollision darin endet, 
+											  dass Frogger von einem anderen GameObject als neue CarryEntität akzeptiert wurde. \\
+				\hline	
+				ladyFrogPickedUp 			& Wenn Frogger sich auf ein Feld bewegt, auf dem ein LadyFrog sitzt, dann wird dies das Ergebnis der Kollision sein. \\
+				\hline	
+				\caption{Tabelle der Kollisionstypen}
+			\end{longtable}	
+			\noindent
+			Diese Werte werden zurückgegeben als Ergebnis einer Kollision zweier Entitäten. In der Regel umfasst dies Frogger und eine andere Entität. 
+			Der Rückgabewert ermöglicht der aufrufenden Umgebung einfach auf das Ergebnis einer Kollision zu reagieren. 
+			Zum Beispiel das Result wasLethal wird zurückgegeben, wenn Frogger bei einer Kollision „stirbt“. 
+			Als Reaktion daraufhin kann dann in diesem Fall die GameInstance zum Beispiel ein Leben abziehen und Frogger auf eine bestimmte Position zurücksetzen.										 
+		}							
+		
+		\subsection{Direction}
+		{
+			\label{ssec:direction}
+			Dies ist ein Enum welches einfach die Bewegungsrichtung für Objekte definiert.
+			
+			\begin{itemize}
+				\item UP
+				\item DOWN
+				\item RIGHT
+				\item LEFT
+			\end{itemize}
+		}		
+		
+		
+		\subsection{Sprite und SpriteManager}
+		{
+			\label{ssec:sprite}
+			
+			Um sämtliche Grafiken zu den einzelnen Entitäten und Tiles zu verwalten, wurde eine Sprite Klasse sowie auch ein SpriteManager erstellt.
+			Die Sprite Klasse ist ein einfach nur ein Container mit einer ID und einen Pfad zur Bild Datei. Der Pfad wird später in die CSS Datei eingefügt für 
+			die jeweilige Entität oder Tile auf dem Spielfeld.
+			\newline \newline
+			Der SpriteManager hingegen legt eine interne Struktur an um Sprites zu verwalten und diese zu setzen in Abhängigkeit ihres Verhaltens. Das Verhalten 
+			der Entitäten ist etwa über ihre Richtung oder Flags innerhalb der einzelnen Entitäten gegeben. 
+			\newline \newline
+			Der SpriteManager gibt auch die Möglichkeit für jedes Verhalten unterschiedliche Sprites zu haben. 
+			Zum Beispiel existieren unterschiedliche Sprites für das Spielfeld Gras. Wenn nun ein Grasfeld erstellt wird, wird ein zufälliges 
+			Sprite aus der Grasfeld Kategorie ausgewählt.
+			\newline \newline
+			Um ein Sprite für ein GameObject zu setzen, wird einfach die setSprite Methode vom SpriteManager aufgerufen und das GameObject übergeben.	
+		}	
+		
+		\subsection{Spielfeld und Spielreihen}
+		{
+			\label{ssec:field}
+			
+			Der Zugriff auf das Spielfeld selbst wird durch die Klasse Field gekapselt.
+			Genaueres zum Spielfeld wird im Abschnitt \ref{sssec:fieldclass} selbst erläutert.
+			Die Aufgaben des Spielfeld wurden nochmals in eigene Klassen unterteilt.
+			\newline \newline
+			Da nach dem Spielkonzept jede Reihe von sich getrennt agiert und bewegt, so wie es im Abschnitt \ref{sec:gameconcept} erklärt wurde,
+			haben wir eine Klasse Row (Abschnitt \ref{sssec:rowclass}) eingeführt, die die Verantwortung einer einzelnen Reihe auf dem Spielfeld übernimmt.
+			\newline \newline
+			Jede Row enthält einen RowSpawner, (Abschnitt \ref{sssec:rowspawnerclass}) der wiederum die Verantwortung übernimmt Entitäten in einer Reihe zu spawnen.
+			\newline \newline  
+			Der RowSpawner entscheidet nicht selbst was und welche Entität gespawnt wird, dies übernimmt die Klasse BrainSpawn worauf im Abschnitt \ref{sssec:brainspawnclass} eingegangen wird.
+			\newline \newline
+			Der BrainSpawner erstellt mit Hilfe der Levelparameter (Abschnitt \ref{sssec:levelclass}) SpawnObjekte die mit der Klasse SpawnObject (Abschnitt \ref{sssec:spawnobjectclass}) modelliert werden.			
+			\newline \newline
+			Die Klassen BrainSpawner sowie SpawnObject sollten eigentlich als 'Nested Classes' implementiert werden, allerdings unterstützt Dart dieses Konzept nicht. Auf Grund dessen wurden sie als eigenständige Klassen
+			implementiert, aber logisch gesehen sind sie ein Teil des RowSpawner's um Funktionalität strukturiert zu kapseln.
+			\newline \newline
+			Veranschaulichen kann man sich dies an der Abbildung \ref{fig:umlfield}.
+						
+			\begin{figure}			
+				\includegraphics[scale=0.8]{Field}
+				\caption{UML - Spielfeld}
+				\label{fig:umlfield}
+			\end{figure}				
+			
+								
+			\subsubsection{Field}
+			{
+				\label{sssec:fieldclass}
+				
+				Die Klasse Field besteht aus 
+				\begin{itemize}
+					\item einer Liste von Reihen (Row)
+					\item dem aktuellen Level (Level)
+				\end{itemize}	
+											
+				\noindent
+				Das Spielfeld stellt neben den üblichen CRUD Methoden auf dem Spielfeld selbst zwei wichtige Methoden bereit.
+				\newline \newline
+				Die Aktionen auf dem Spielfeld werden über die Update Methode in Bewegung gesetzt, indem das Spielfeld jeder Reihe mitteilt das sie sich updaten soll, wie in Listing 3.1 zu sehen.
+				
+				\lstinputlisting[language=Java, caption=Field - Update Method]{fieldupdate.java}	
+							
+				\newpage  \noindent 
+				Das Level wird über eine Methode in das Spielfeld geladen, mit dessen Hilfe das Spielfeld erstellt wird.
+				Im Listing 3.2 ist ein Ausschnitt dessen zu sehen.
+				\newline 
+				
+				\lstinputlisting[language=Java, caption=Field - Load Method]{fieldload.java}					
+			}
+				
+			\subsubsection{Row}
+			{
+				\label{sssec:rowclass}
+				Der Zustand der Klasse Row wird wie folgt dargestellt:
+				
+				\begin{itemize}
+					\item einem Index, der die Reihe identifiziert auf dem Spielfeld (rowIndex)
+					\item einem Limit, bis wohin gezählt wird bis ein Update geschehen soll (limit)
+					\item ein Zustand, der hoch zählt bis zum Limit (state)
+					\item eine Richtung. Diese sagt aus in welche Richtung sich die Entities auf der Reihe bewegen (direction)
+					\item eine Liste von Spielfeldkacheln (Tiles) (tiles)
+					\item einem Spawner, der neue Entitäten in die Reihe spawnt (spawner)  
+				\end{itemize}
+				
+				\noindent
+				Bei jedem Update, welches auf der Reihe ausgeführt wird, wird die 'state' Variable inkrementiert, bis sie das Limit der Reihe erreicht hat.
+				Wenn sie das Limit erreicht, wird 'state' wieder auf 0 gesetzt und alle Entitäten in der Reihe bewegen sich in Richtung "direction".
+				Die "limit" Variable ist einer der Levelparameter die in der Json festgehalten ist. Je kleiner das 'limit', desto schneller werden
+				die Entitäten in der Reihe sich bewegen.			
+				\newline \newline  
+				Neben dem eigentlichen Bewegen der Entitäten wird hier auch die Auswertungen von Kollisionen behandelt. 
+				Diese treten ein wenn eine Entität mit Frogger kollidiert. Hier einmal an dem Beispiel für die Behandlung wenn sich
+				die Reihe nach Links bewegt.
+								
+				\lstinputlisting[language=Java, caption=Row - Snippet Update Method]{rowupdate.java}
+				
+			}		
+			\newpage 
+			\subsubsection{RowSpawner}
+			{
+				\label{sssec:rowspawnerclass}
+				Der RowSpawner selber beinhaltet nicht viel, da er hier nur dafür verantwortlich ist ein Teil einer Entität in der Reihe zu spawnen.
+				Daher besteht der RowSpawner nur aus einer Referenz der Reihe (row) auf der er agiert, sowie ein BrainSpawn (brain) der ihm das nächste Teil einer Entität gibt, die er spawnen soll.					
+				
+				\begin{lstlisting}[language=Java, caption=RowSpawner - Snippet Update Method]
+					/*check if there are something to spawn*/
+					if((entity = _brain.nextEntity()) != null)
+					
+					/*set entity part into row (example for direction left)*/
+					_row.getTile(_row.getRowLength() - 1)
+						.setCarryEntity(entity);
+				\end{lstlisting}							
+								
+				\begin{figure}			
+					\includegraphics[scale=0.4]{SpawnSequenz}
+					\caption{Sequenzdiagramm für das erstellen eines Elementes in der Reihe}
+					\label{fig:brainspawn}
+				\end{figure}								
+			}	
+			\newpage 
+			\subsubsection{BrainSpawn}
+			{
+				\label{sssec:brainspawnclass}
+				
+				Das BrainSpawn extrahiert alle Parameter aus der Level Klasse, (Abschnitt \ref{sssec:levelclass}) die etwas mit Entitäten zu tun haben.
+				Diese benötigt es um jeweils ein SpawnObject zu erstellen.
+				\newline \newline
+				\noindent					
+				Daraus bildet sich folgender Zustand der Klasse.
+				
+				\begin{itemize}
+					\item Liste aus Entität Arten die in der Reihe vorkommen können. (entityID)
+					\item Liste aus minimal Längen der jeweiligen Entität Art. (entityLengthMin)
+					\item Liste aus maximal Längen der jeweiligen Entität Art. (entityLengthMax)
+					\item Liste aus minimal Abstand zwischen zwei Entitäten in der Reihe. \\(entitySpacingMin)
+					\item Liste aus maximal Abstand zwischen zwei Entitäten in der Reihe. \\(entitySpacingMax)
+					\item Liste aus aufsammelbaren Objekt Arten die in der Reihe vorkommen können. (collectibleObjects)
+					\item Liste aus den jeweiligen Chancen das so ein aufsammelbares Objekt spawnen kann. (collectiableChances)
+					\item Referenz der Reihe auf der er agiert. (row)
+					\item Einem Boolean der Aussagt ob als nächstes eine Entität oder ein Freiraum gespawned wird. (spacing)
+					\item Einem Integer der noch ein wenig die Schwierigkeit des Levels beeinflussen kann, dieser fließt mit in die Standard Spawnchance der Entitäten und Objekte ein. (levelDifficulty)
+					\item Ein SpawnObject welches, jeweils immer eine komplette Entität dargestellt, die gespawned werden soll. 
+						  Diese ist solange gültig bis sie komplett im Spielfeld ist, danach wird es neu erstellt für das nächste Objekt. 
+				\end{itemize}								
+				
+				\noindent
+				\textbf{Welche Entität wird als nächstes gespawned ?}
+				\newline \newline
+				In der Initialen Erzeugung besteht eine 60\% Chance das als erstes eine Entität gespawned wird. 
+				\newline \newline
+				Wenn es dazu kommt das eine Entität gespawned werden soll, dann wird als ersten geschaut ob in der Reihe mehr als eine Entität vorkommen kann.
+				Sollte es der Fall sein, dass mindestens 2 Entitäten pro Reihe vorkommen können, dann gibt es eine weitere 20\% Chance um \textbf{\underline{nicht}} die Standard Entität der Reihe zu spawnen.
+				Die Standard Entität der Reihe ist immer die, die im Level als erstes in der Liste für die jeweilige Reihe steht. Auf der festen 20\% Spawnchance wird noch die Level Schwierigkeit (levelDifficulty) 
+				addiert, damit man noch weiter an der Schwierigkeit des Levels drehen kann.
+				\newpage \noindent
+				Nachdem entschieden ist was für eine Entität gespawned werden soll, wird die Länge ermittelt. Dafür wird die minimal Länge der jeweiligen Entität herangezogen sowie eine 50\% Chance für ein weiteres
+				Körperelement bis hin zu dem maximal Wert der jeweiligen Entität. Sollte einmal die 50\% Chance versagen, dann wird auch nicht mehr weiter versucht neue Körperelemente zu generieren.
+				\newline \newline
+				Mit all den jetzt vorhandenen Informationen wird ein SpawnObject erstellt. Dieses übernimmt die Verantwortung die richtige Instanz der Entität zu erstellen und zu sagen welches Körperelement als nächstes
+				gespawned werden muss. 				
+													
+			}
+			
+			\subsubsection{SpawnObject}
+			{
+				\label{sssec:spawnobjectclass}
+				Das SpawnObject ist eine Hilfsklasse, um die Entscheidung welches Körperelement von einer Entität gespawned werden soll zu kapseln.
+				Sie besteht immer nur solange bis alle Körperelemente der Entität auf dem Spielfeld sind. Danach wird das Objekt verworfen und das 
+				jeweilige BrainSpawn erstellt eine neue Instanz für die nächste Entität oder Freiraum.
+				\newline \newline		
+				\noindent
+				Das SpawnObject selber besteht nur aus
+				
+				\begin{itemize}
+					\item einer Referenz der Reihe. Diese wird benötigt um die Startkoordinaten zu setzen. (row)
+					\item der ID der Entität. (id)
+					\item der Länge der Entität, die durch das BrainSpawn entschieden wurde. (length)
+					\item einem Index, der angibt welches Körperelement als nächstes ist.\\ (currentIndex)
+					\item einer StaticEntität um die jeweilige Entität zu halten welche erstellt wird. Näheres zu der Hierarchie der Entitäten gibt es im Abschnitt \ref{ssec:entities}. (entity)				
+				\end{itemize}								
+				
+				\noindent				
+				Das SpawnObject stellt 2 Methoden dem BrainSpawn zur Verfügung.
+				\newline \newline \noindent
+				Die "hasNext()" Methode gibt eine Boolean zurück der aussagt ob es noch etwas zu spawnen gibt.				
+				
+				\begin{lstlisting}[language=Java, caption=SpawnObject - hasNext Method]
+					bool hasNext()
+					{
+						return (this._currentIndex < (this._length));
+					}
+				\end{lstlisting}	
+						
+				\newpage \noindent
+				Die "nextPart()" Methode gibt etwa ein StaticEntity Element der Entität zurück oder wenn es sich um einen Freiraum handelt null.
+				
+				\begin{lstlisting}[language=Java, caption=SpawnObject - nextPart Method]
+					StaticEntity nextPart()
+					{
+						if(_entity != null)
+						{
+							StaticEntity result = 
+									_entity.getBodyPartList()[_currentIndex++];
+							return result;
+						}
+						else
+    					{
+      						_currentIndex++;
+      						return null;
+    					}
+					}
+				\end{lstlisting}							
+			}			
+			
+		}		
+		
+		\begin{figure}[h]			
+			\includegraphics[scale=0.8]{Helper}
+			\caption{UML von den Hilfsklassen}
+			\label{fig:umlhelper}
+		\end{figure} 	
+    	
+    }
+
+    \section{View}
+    {
+    	\label{sec:view}
+    	Die Darstellung wird durch das HTML Dokument erreicht welches, den Kern der View darstellt und mit Hilfe der FroggerView manipuliert.
+    	Das Aussehen der einzelnen Elemente der Oberfläche wird durch CSS geregelt und ebenfalls durch die FroggerView manipuliert.
+    	
+		\subsection{HTML-Dokument}
+		{
+			\label{ssec:htmldoc}
+			Im folgenden ist die Basis Darstellung des HTML Dokuments zu sehen, bevor es durch die FroggerView manipuliert wurde.
+			Während der Spielzeit wird dauerhaft der DOM Tree manipuliert und die Tabelle zu erstellen und zu aktualisieren.
+			Dafür ist die Tabelle mit der ID 'gameplayField' vorgesehen, hierin wird das Spielfeld erstellt.
+			Ebenfalls wird die Tablle mit der ID 'infoTable' immer wieder aktualisiert, da diese die Spielübersicht darstellt.
+			Hier sind Informationen zu Level, Punkte, Leben und wie viele LadyFrog's man eingesammelt hat ersichtlich.	
+			\newline \newline
+			\noindent
+			Die DIVs mit den IDs 'menuArea' und 'flashMessageContainer' haben besondere Bedeutung in dem Sinne, dass hier während der Laufzeit
+			Buttons und Nachrichten erzeugt werden und ggf. ein- oder ausgeblendet werden.		
+			\newpage
+			\lstinputlisting[language=HTML, caption=Index - Basisdokument]{index.html}	
+		}
+		\newpage
+		\subsection{FroggerView}
+		{
+			Die FroggerView dient als Schnittstelle zum HTML und CSS Dokument und ist nur vom Controller (siehe Abschnitt \ref{sec:controller}) benutzbar.		
+			Es werden neben Manipulationen auf dem DOM Tree weitere wichtige Methoden für den Controller bereit gestellt.
+			
+			 \begin{itemize}
+			 	\item Die render(GameInstance instance) Methode aktualisiert die Oberfläche anhand der übergebenen GameInstance.
+			 	\item Die updateHud(GameInstance instance) Methode aktualisiert die Spielinformationen auf der Oberfläche.
+			 	\item Die generateField(int fieldX, int fieldY) Methode erstellt die Tabelle für das Spielfeld selbst, wie im Abschnitt \ref{ssec:htmldoc} erwähnt.
+			 \end{itemize}
+			
+			\noindent 
+			Weitere Besonderheit die dem Controller zu Verfügung gestellt wird ist, dass für die Methoden 
+			
+			\begin{itemize}
+				\item showMenu(Function func())
+				\item setFlashMessage(String message, Function func())
+			\end{itemize}		
+				 			  
+			\noindent
+			eine Funktion übergeben werden kann, die die Funktionalität des Buttons, welcher durch die Methoden selbst erstellt wurden, zu belegen.
+			Dies musste so geregelt werden, damit man der Erstellung der Buttons dem Controller noch die Möglichkeit geben kann auf das OnClick Event
+			der Buttons zu reagieren.
+			\newline \newline
+			Eine Besonderheit des FroggerView ist, dass sie eine Hilfsklasse Camera (Abschnitt \ref{ssec:camera}) verwendet, mit der man nur einen Teilausschnitt des gesamten Spielfeldes,
+			welches durch das Model geben ist anzeigen kann. Für die Camera Klasse werden 2 Funktionen bereit gestellt.
+			
+			\begin{itemize}
+				\item Function printFieldCell([...])
+				\item Function printEntitiesStackInTile([...])
+			\end{itemize}
+						
+			\noindent
+			Die beiden Methoden dienen dazu nur den sichtbaren Bereich der Camera zu aktualisieren, so werden z.B. Spielfelder die außerhalb der Camera sind
+			nicht aktualisiert in der View sondern nur intern im Model. 			  
+			  
+		}		
+		\newpage 		 
+		\subsection{Camera}
+		{
+			\label{ssec:camera}
+			
+			Die Camera Klasse zeigt einen Teilausschnitt der View um einen übergebenen Fixpunkt auf dem Spielfeld an.
+			\newline \newline
+			\noindent
+			Dafür wird bei der Erstellung der Camera folgendes benötigt:
+			
+			\begin{itemize}
+				\item Die Breite des Ausschnittes (viewSizeX)
+				\item Die Höhe des Ausschnittes (viewSizeY)
+				\item Ein Fixpunkt in der Reihe, an dem sich die Camera ausrichtet. (originX)
+				\item Ein Fixpunkt in der Spalte, an dem sich die Camera ausrichtet. (originY)
+				\item Referenz auf das Model, welches er von der FroggerView bekommt. (instance)
+				\item Referenz auf den DOM Tree, welcher er von der FroggerView bekommt. (viewSection)
+			\end{itemize}			 
+			
+			\noindent			
+			Die Camera bietet 3 Methoden der FroggerView sowie dem Controller an.
+			
+			\begin{itemize}
+				\item void moveInDirection(Direction dir) verschiebt die Camera in die übergebene Richtung.
+				\item void resetOrigin() setzt den Fixpunkt der Camera wieder auf dem Frogger zurück.
+				\item void applyCamera(Function func(int row, int col, Tile currentTile, HtmlElement element)) übernimmt eine Funktion, die auf dem Camera Bereich ausgeführt wird.
+			\end{itemize}							
+		}   	
+    }
+    
+    \section{Controller}
+    {
+    	\label{sec:controller}
+    	
+    	Der Controller ist die Schnittstelle zwischen dem Model und der View. Der Controller beinhaltet 3 periodische Timer, mit zwei von Ihnen wird das Model 
+    	in einen neuen Zustand überführt und der letzte aktualisiert die View periodisch.
+    	\newline \newline
+    	\noindent
+		Anfänglich wurden 2 separate Controller für Eingaben erstellt die wiederum ein eigenes Interface implementieren sollten. Allerdings unterstützt Dart das Konzept 
+		von Interfaces nicht, da man es genau so gut mit einer abstrakten Klasse umsetzen kann. Im Verlauf der Entwicklung wurde die Erkenntnis erlangt, dass keine Separierung
+		notwendig ist. Als Resultat dessen ist die Klasse IControlManager überflüssig geworden und der damalig noch bestehende KeyBoardController ist in den TouchController mit integriert wurden.
+		Da wir auf die Umarbeitung des FroggerController's verzichten wollten, besteht der IControlManager weiterhin.
+		    	
+    	
+		\subsection{TouchController}
+		{
+			\label{ssec:touchcontroller}
+			
+			Das Steuerungsschema ist nach folgenden Gesichtspunkten umgesetzt:
+			\begin{itemize}
+				\item es wird von einer statischen Pixel basierten Größe des Spielfelds ausgegangen.
+				\item anhand der Pixel basierten Höhe und Breite des Spielfelds werden die Touch Bereiche ermittelt.
+			\end{itemize}					
+					
+			\noindent	
+			Das “Steuerkreuz” ist im Spiel transparent und erstreckt sich über das gesamte Spielfeld.
+			Es wird Abbildung \ref{fig:touchcontrolschema} im weiteren zur Anschauung verwendet.
+			\newline \newline
+			Die Variable \_upDownFieldWidthRatio gibt das Verhältnis der Gesamtbreite "width2" genannten Strecke an. 
+			Die Breite der Variable “width1” wird den restlichen vorhandenen Platz einnehmen.
+
+			\begin{figure}			
+				\includegraphics[scale=0.5]{ControlSchema}
+				\caption{Touchcontrol on Mobile Devices}
+				\label{fig:touchcontrolschema}
+			\end{figure}
+			
+			\noindent
+			Um eine Berührung einem der 4 Felder und damit auch direkt einer der 4 möglichen Richtungen zuzuordnen gehen wir folgendermaßen vor:
+			\newpage
+			\begin{enumerate}
+				\item Wir berechnen die beiden, left- und rightIntersection Punkte mithilfe der \_upDownFieldWidthRatio neu, für den Fall dass die Oberfläche vom Nutzer geresized wurde.
+				\item Prüfen ob die berührten Koordinaten links von dem Punkt "leftIntersection" liegt. Ist dies der Fall dann wird die Eingabe als "nach links gehen" umgesetzt.
+				\item Prüfen ob die berührten Koordinaten rechts von dem Punkt "rightIntersection" liegt. Ist dies der Fall dann wird die Eingabe als "nach rechts gehen" umgesetzt.
+				\item Prüfen ob die berührten Koordinaten rechts der "leftIntersection" und links der "rightIntersection", sowie über den beiden genannten Punkten liegt. 
+					  Ist dies der Fall dann wird die Eingabe als "nach oben gehen" umgesetzt.
+				\item Trifft keine der in Punkt 2-4 genannten Punkte zu, dann muss der Spieler den unteren-mittleren Teil des Steuerkreuzes berührt haben und wir interpretieren die Eingabe als "nach unten gehen"
+			\end{enumerate}
+			\noindent
+			Es gibt im Touchcontroller zwei Hilfsfunktionen isStartPointOverEndPoint und isStartPointLeftOfEndPoint, diese sind dafür da um boolesche Auswertungen zu abstrahieren, 
+			damit oben genannten Überprüfungen einfacher zu lesen sind. Da die Funktionen als private markiert sind, wurde auf weitere Erläuterung verzichtet. Aufgrund ihrer simplen Form wäre dies sowieso nicht nötig.
+		}    	
+    	
+    	
+    }
+  
+% --  Level- und Parametrisierungskonzept  --------------------- %     
+
+    \newpage
+    \chapter{Level- und Parametrisierungskonzept}
+    
+    \section{Levelkonzept}
+    {
+    	\label{sec:levelconcept}
+    	Das Levelkonzept ist über Json Files realisiert, wobei jedes einzelnes Level eine eigene Json Datei besitzt. So kann man einfach neue Level erstellen in dem man 
+    	eine neue Json Datei anlegt und in der Config Json das maximal Level erhöht. Im Model finden sich die Parameter in der Level Klasse (Abschnitt \ref{sssec:levelclass}) 
+    	wieder.
+    	\newline \newline 	
+    	\noindent
+		Die Parameter sind größtenteils selbsterklärend, und eine nähere Erklärung lässt sich zur Klasse BrainSpawn im Abschnitt \ref{sssec:brainspawnclass} herauslesen, 
+		da dort das meiste heraus extrahiert wird. Was noch zu erwähnen ist, ist dass alle Arrays die in der Json vorkommen mindestens so viele Einträge haben müssen, wie es 
+		Reihen auf dem Spielfeld gibt. Die Codierung der Abstände, (entitiesSpacing) sowie der Längen (entititesLength) sind als String in folgender Form codiert "X-Y".
+		Hierbei ist X der minimal Wert und Y der maximal Wert für die jeweilige Entität (entities) an selbiger Stelle im Array.
+		\newpage  	
+    	\lstinputlisting[caption=Level - Level Json]{level.json}	
+    }
+    
+	\newpage
+    \section{Parameterisierungskonzept}
+    {
+    	\label{sec:parameterconcept}
+    	Hier soll noch einmal gezeigt werden, dass man das Spiel über eine Json neu einstellen kann.
+    	Näheres zu den einzelnen Einstellungsmöglichkeiten kann man im Abschnitt \ref{sssec:configclass} nachlesen.
+    	
+		\lstinputlisting[caption=Config - Config Json]{config.json}	    	
+    }
+  
+% --  Nachweis der Anforderungen  --------------------- % 
+
+    \newpage
+    \chapter{Nachweis der Anforderungen}
+    
+    \section{Nachweis der funktionalen Anforderungen}
+    {
+        \begin{longtable}{|c|c|c|c|c|p{0.45\textwidth}|}
+    	\hline
+		%---- Table Header ----%    	
+    	\textbf{ID} 								&
+    	\textbf{Kurztitel}							&
+    	{\rotatebox{90}{\textbf{Erfüllt 		}}} &
+    	{\rotatebox{90}{\textbf{Teilw. erfüllt 	}}} &
+    	{\rotatebox{90}{\textbf{Nicht erfüllt 	}}} &
+		\textbf{Erläuterung} \\
+    	\hline
+		%---- Table Content ----%     	
+     	AF-1 	& 	Einplayer Game				& 	X	& 		& 		& Das Spiel ist nur mit einer Person spielbar zur Zeit.  										\\
+    	\hline
+    	AF-2 	& 	2D Game						& 	X	& 		& 		& Es spielt nur auf einen 2D Raster und besitzt keine 3te Dimension. 							\\
+    	\hline
+    	AF-3 	& 	Levelkonzept				& 	X	& 		& 		& Level Jsons können beliebig bearbeitet werden ohne das das Spiel neu kompiliert werden muss.	\\
+    	\hline
+    	AF-4 	& 	Parametrisierungskonzept	& 	X	& 		& 		& Config Json kann beliebig bearbeitet werden ohne das das Spiel neu kompiliert werden muss.	\\
+    	\hline
+    	AF-6 	& 	Desktop Browser				& 	X	& 		& 		& Ist in Desktop Browser Spielbar. Wurde in Chrome, Firefox, Opera sowie Safari getestet.					\\
+    	\hline
+    	AF-7 	& 	Mobile Browser				& 		& 	X	& 		& Ist nur teilweise in Mobile Browser Spielbar, angesichts bei der Menge auch nicht 100\% möglich. 
+    																	  Wurde unter Android 4.4 und 7.0 mit den nativen Browsern getestet. Ebenfalls mit Chrome auf einem Android. \\
+    	\hline
+    	\caption{Tabelle mit den Nachweis der funktionalen Anforderungen}   	 	
+    	\end{longtable}
+    }
+    
+	\newpage
+    \section{Nachweis der Dokumentationsanforderungen}
+    {
+		\begin{longtable}{|c|c|c|c|c|p{0.45\textwidth}|}
+    	\hline
+		%---- Table Header ----%    	
+    	\textbf{ID} 								&
+    	\textbf{Kurztitel}							&
+    	{\rotatebox{90}{\textbf{Erfüllt 		}}} &
+    	{\rotatebox{90}{\textbf{Teilw. erfüllt 	}}} &
+    	{\rotatebox{90}{\textbf{Nicht erfüllt 	}}} &
+		\textbf{Erläuterung} \\
+    	\hline
+		%---- Table Content ----%     	
+    	D-1 	& 	Dokumentationsvorlage		& 	X		& 		& 		& Dokumentation richtet sich nach Referenzdokumentation des Snake Spieles. \\
+    	\hline
+    	D-2 	& 	Projektdokumentation		& 	X		& 		& 		& Diese Dokumentation deckt alles vorhandene im Projekt ab. 
+    																		  Diese werden mindestens in ihren Prinzipien erläutert und ggf. durch Grafiken und/oder Quelltexte unterstützt. \\
+    	\hline
+    	D-3 	& 	Quelltextdokumentation		& 	X		& 		& 		& Fast ausschließlich alles wurde durch Inline - Kommentare oder JSDoc erläutert. \\
+    	\hline
+    	D-4 	& 	Libraries					& 	X		& 		& 		& Wir haben keine externen Libraries benutzt. \\
+    	\hline
+    	\caption{Tabelle mit den Nachweis Dokumentationsanforderungen}
+    	\end{longtable}
+    }
+    
+	\newpage
+    \section{Nachweis der Einhaltung technischer Randbedingungen}
+    {
+        \begin{longtable}{|c|c|c|c|c|p{0.45\textwidth}|}
+    	\hline
+		%---- Table Header ----%    	
+    	\textbf{ID} 								&
+    	\textbf{Kurztitel}							&
+    	{\rotatebox{90}{\textbf{Erfüllt 		}}} &
+    	{\rotatebox{90}{\textbf{Teilw. erfüllt 	}}} &
+    	{\rotatebox{90}{\textbf{Nicht erfüllt 	}}} &
+		\textbf{Erläuterung} \\
+    	\hline
+		%---- Table Content ----%     	
+    	TF-01 	& 	No Canvas					& 	X	& 		& 		& Das Spiel funktioniert allein durch klassische HTML Tags und DOM-Tree Manipulation. \\
+    	\hline
+    	TF-02 	& 	Levelformat					& 	X	& 		& 		& Es sind ladbare Level Jsons vorhanden. Die Level besitzen ein einheitliches Format. \\
+    	\hline
+    	TF-03 	& 	Parameterformat				& 	X	& 		& 		& Es ist eine ladbare Config Json vorhanden, die durch das Format der Config Klasse definiert ist. \\
+    	\hline
+    	TF-04 	& 	HTML + CSS					& 	X	& 		& 		& Die Visualisierung basiert allein auf HTML und CSS bzw. deren Manipulation. \\
+    	\hline
+    	TF-05 	& 	Gamelogic in Dart			& 	X	& 		& 		& Die komplette Spiellogik wurde durch Dart realisiert. \\
+    	\hline
+    	TF-09 	& 	Browser Support				& 	X	& 		& 		& Das Projekt ist sowohl in Dartium als auch in Javascript Form auf einen Webserver ausführbar und funktionsfähig. \\
+    	\hline
+    	TF-10 	& 	MVC Architektur				& 	X	& 		& 		& Das Spiel ist durch die Vorlagen im MVC Konzept entworfen und implementiert worden. \\
+    	\hline
+    	TF-11 	& 	Erlaubte Pakete				& 	X	& 		& 		& Wir haben ausschließlich die durch die Vorgabe erlaubten Dart Libraries verwendet. \\
+    	\hline
+    	TF-12 	& 	Verbotene Pakete			& 	X	& 		& 		& Es sind keine Pakete, außer den erlaubten genutzt worden. Siehe pubspec.yaml der Implementierung \\
+    	\hline
+    	TF-13 	& 	No Sound					& 	X	& 		& 		& Das Spiel besitzt keinen Sound. \\
+    	\hline
+    	\caption{Tabelle mit den Nachweis Technische Randbedingungen}   	
+    	\end{longtable}
+    }
+
+	\newpage
+    \section{Verantwortlichkeiten im Projekt}
+    {
+        \begin{longtable}{|c|c|p{0.55\textwidth}|c|c|}
+    	\hline
+		%---- Table Header ----%    	
+    	\textbf{Komponente} 						&
+    	\textbf{Detail}								&
+    	\textbf{Asset}								&
+    	{\rotatebox{90}{\textbf{Sven Möller}}} 		&
+    	{\rotatebox{90}{\textbf{Joshua Krieger}}} 	\\
+    	\hline
+		%---- Table Content ----%  
+		Model 			& 	Config					& 	Config.dart									& 	V	& 	U	 		\\
+		\hline
+						&	Level					&	model\textbackslash Level.dart				&		&	V			\\
+		\hline
+						&	Sprite					&	model\textbackslash Sprite.dart				&	V	&				\\
+		\hline
+						&	SpriteManager			&	model\textbackslash SpriteManager.dart		&	V	&				\\
+		\hline
+						&	GameInstance			&	model\textbackslash GameInstance.dart		&	V	&	U			\\
+		\hline
+						&	EventType				&	model\textbackslash EventType.dart			&	V	&				\\
+		\hline
+						&	Row						&	model\textbackslash Row.dart				&	V	&				\\
+		\hline
+						&	RowSpawner				&	model\textbackslash RowSpawnerFusion.dart	&	V	&				\\
+		\hline
+						&	BrainSpawn				&	model\textbackslash RowSpawnerFusion.dart	&	V	&				\\
+		\hline
+						&	SpawnObject				&	model\textbackslash RowSpawnerFusion.dart	&	V	&				\\
+		\hline
+						&	Field					&	model\textbackslash	Field.dart				&	V	&				\\
+		\hline
+						&	Direction				&	model\textbackslash	gameObjects\textbackslash Direction.dart		&		&	V			\\
+		\hline
+						&	CollideResult			&	model\textbackslash	gameObjects\textbackslash GameObject.dart		&		&	V			\\
+		\hline
+						&	GameObject				&	model\textbackslash	gameObjects\textbackslash GameObject.dart		&		&	V			\\
+		\hline
+						&	Entity					&	model\textbackslash	gameObjects\textbackslash Entity.dart			&		&	V			\\
+		\hline
+						&	Tile					&	model\textbackslash	gameObjects\textbackslash Tile.dart				&		&	V			\\
+		\hline
+						&	StaticEntity			&	model\textbackslash	gameObjects\textbackslash StaticEntity.dart		&		&	V			\\
+		\hline
+						&	DynamicEntity			&	model\textbackslash	gameObjects\textbackslash DynamicEntity.dart	&		&	V			\\
+		\hline
+						&	Frogger					&	... \textbackslash dynamicEntities\textbackslash Frogger.dart		&		&	V			\\
+		\hline
+						&	LadyFrog				&	... \textbackslash dynamicEntities\textbackslash LadyFrog.dart		&		&	V			\\
+		\hline
+						&	Car						&	... \textbackslash staticEntities\textbackslash Car.dart			&		&	V			\\
+		\hline
+						&	Crocodile				&	... \textbackslash staticEntities\textbackslash Crocodile.dart		&		&	V			\\
+		\hline
+						&	Log						&	... \textbackslash staticEntities\textbackslash Log.dart			&		&	V			\\
+		\hline
+						&	Snake					&	... \textbackslash staticEntities\textbackslash Snake.dart			&		&	V			\\
+		\hline
+						&	Truck					&	... \textbackslash staticEntities\textbackslash Truck.dart			&		&	V			\\
+		\hline
+						&	Turtle					&	... \textbackslash staticEntities\textbackslash Turtle.dart			&	U	&	V			\\
+		\hline
+						&	Vehicle					&	... \textbackslash staticEntities\textbackslash Vehilce.dart		&		&	V			\\
+		\hline
+						&	GoalTile				&	... \textbackslash Tiles\textbackslash GoalTile.dart				&		&	V			\\
+		\hline
+						&	GrassTile				&	... \textbackslash Tiles\textbackslash GrassTile.dart				&		&	V			\\
+		\hline
+						&	HighGrassTile			&	... \textbackslash Tiles\textbackslash HighGrassTile.dart			&		&	V			\\
+		\hline
+						&	StreetTile				&	... \textbackslash Tiles\textbackslash StreetTile.dart				&		&	V			\\
+		\hline
+						&	WaterTile				&	... \textbackslash Tiles\textbackslash WaterTile.dart				&		&	V			\\
+		\hline
+		View 			& 	FroggerView				& 	view\textbackslash FroggerView.dart									& 	U	& 	V	  		\\
+		\hline
+			 			& 	Camera					& 	view\textbackslash Camera.dart										& 	U	& 	V	  		\\
+		\hline
+						& 	Index					& 	view\textbackslash index.html										& 	V	& 		  		\\
+		\hline
+						& 	Style					& 	view\textbackslash style.css										& 	V	& 	U	  		\\
+		\hline
+		Controller 		& 	FroggerController		& 	controller\textbackslash FroggerController.dart						& 	V	& 	U	 		\\
+		\hline
+				 		& 	TouchControler			& 	controller\textbackslash touchControler.dart						& 		& 	V	 		\\
+		\hline
+				 		& 	IControlManager			& 	controller\textbackslash IControlOutput.dart						& 		& 	V	 		\\
+		\hline
+		Dokumentation 	& 	Dokumentation			& 	doc\textbackslash FroggerDokumentation.pdf							& 	V	& 	U			\\
+		\hline
+					 	& 	Dokumentation			& 	doc\textbackslash FroggerDokumentation.tex							& 	V	& 				\\
+		\hline				
+		\caption{Tabelle mit der Projektverantwortlichkeiten}   	
+    	\end{longtable} 
+    }
+
+  
+\end{document}

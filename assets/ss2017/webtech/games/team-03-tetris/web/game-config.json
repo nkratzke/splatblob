@@ -1,0 +1,274 @@
+{
+  "gameConfiguration": {
+    "id":"modelDefault",
+    "fieldWidth": 10,
+    "fieldHeight": 18
+  },
+  "tetrominoes": [
+    {
+      "id": "ITetromino",
+      "stones":[
+        { "row" : 0, "col" : -2 },
+        { "row" : 0, "col" : -1 },
+        { "row" : 0, "col" : 0},
+        { "row" : 0, "col" : 1}
+      ],
+      "preview":[
+        { "row" : 2, "col" : 0},
+        { "row" : 2, "col" : 1},
+        { "row" : 2, "col" : 2},
+        { "row" : 2, "col" : 3}
+      ],
+      "transitions":[
+        [[-3, 1], [-2, 0], [-1, -1], [0, -2]],
+        [[3, -1], [2, 0], [1, 1], [0, 2]],
+        [[-3, 1], [-2, 0], [-1, -1], [0, -2]],
+        [[3, -1], [2, 0], [1, 1], [0, 2]]
+      ],
+      "powerUps":[],
+      "color": "cyan"
+    },
+    {
+      "id": "JTetromino",
+      "stones":[
+        { "row" : 0, "col" : -1},
+        { "row" : 0, "col" : 0},
+        { "row" : 0, "col" : 1},
+        { "row" : 1, "col" : 1}
+      ],
+      "preview":[
+        { "row" : 1, "col" : 1},
+        { "row" : 1, "col" : 2},
+        { "row" : 1, "col" : 3},
+        { "row" : 2, "col" : 3}
+      ],
+      "transitions":[
+        [[0, 1], [1, 0], [2, -1], [1, -2]],
+        [[1, 1], [0, 0], [-1, -1], [-2, 0]],
+        [[1, -2], [0, -1], [-1, 0], [0, 1]],
+        [[-2, 0], [-1, 1], [0, 2], [1, 1]]
+      ],
+      "powerUps":[],
+      "color": "blue"
+    },
+    {
+      "id": "LTetromino",
+      "stones":[
+        { "row" : 1, "col" : -1},
+        { "row" : 0, "col" : -1},
+        { "row" : 0, "col" : 0},
+        { "row" : 0, "col" : 1}
+      ],
+      "preview":[
+        { "row" : 2, "col" : 1},
+        { "row" : 1, "col" : 1},
+        { "row" : 1, "col" : 2},
+        { "row" : 1, "col" : 3}
+      ],
+      "transitions":[
+        [[-1, 0], [0, 1], [1, 0], [2, -1]],
+        [[0, 2], [1, 1], [0, 0], [-1, -1]],
+        [[2, -1], [1, -2], [0, -1], [-1, 0]],
+        [[-1, -1], [-2, 0], [-1, 1], [0, 2]]
+      ],
+      "powerUps":[],
+      "color": "orange"
+    },
+    {
+      "id": "OTetromino",
+      "stones":[
+        { "row" : 0, "col" : -1},
+        { "row" : 1, "col" : -1},
+        { "row" : 0, "col" : 0},
+        { "row" : 1, "col" : 0}
+      ],
+      "preview":[
+        { "row" : 1, "col" : 1},
+        { "row" : 1, "col" : 2},
+        { "row" : 2, "col" : 1},
+        { "row" : 2, "col" : 2}
+      ],
+      "transitions":[
+      ],
+      "powerUps":[],
+      "color": "yellow"
+    },
+    {
+      "id": "STetromino",
+      "stones":[
+        { "row" : 1, "col" : -1},
+        { "row" : 1, "col" : 0},
+        { "row" : 0, "col" : 0},
+        { "row" : 0, "col" : 1}
+      ],
+      "preview":[
+        { "row" : 1, "col" : 2},
+        { "row" : 1, "col" : 1},
+        { "row" : 2, "col" : 1},
+        { "row" : 2, "col" : 0}
+      ],
+      "transitions":[
+        [[-1, 0], [0, -1], [1, 0], [2, -1]],
+        [[1, 0], [0, 1], [-1, 0], [-2, 1]],
+        [[-1, 0], [0, -1], [1, 0], [2, -1]],
+        [[1, 0], [0, 1], [-1, 0], [-2, 1]]
+      ],
+      "powerUps":[],
+      "color": "green"
+    },
+    {
+      "id": "ZTetromino",
+      "stones":[
+        { "row" : 0, "col" : -1},
+        { "row" : 0, "col" : 0},
+        { "row" : 1, "col" : 0},
+        { "row" : 1, "col" : 1}
+      ],
+      "preview":[
+        { "row" : 1, "col" : 1},
+        { "row" : 1, "col" : 2},
+        { "row" : 2, "col" : 2},
+        { "row" : 2, "col" : 3}
+      ],
+      "transitions":[
+        [[1, 0], [0, 0], [0, 0], [1, -2]],
+        [[-1, 0], [0, 0], [0, 0], [-1, 2]],
+        [[1, 0], [0, 0], [0, 0], [1, -2]],
+        [[-1, 0], [0, 0], [0, 0], [-1, 2]]
+      ],
+      "powerUps":[],
+      "color": "red"
+    },
+    {
+      "id": "TTetromino",
+      "stones":[
+        { "row" : 0, "col" : -1},
+        { "row" : 0, "col" : 0},
+        { "row" : 0, "col" : 1},
+        { "row" : 1, "col" : 0}
+      ],
+      "preview":[
+        { "row" : 1, "col" : 1},
+        { "row" : 1, "col" : 2},
+        { "row" : 1, "col" : 3},
+        { "row" : 2, "col" : 2}
+      ],
+      "transitions":[
+        [[0, 1], [1, 0], [2, -1], [0, -1]],
+        [[1, 1], [0, 0], [-1, -1], [-1, 1]],
+        [[1, -1], [0, 0], [-1, 1], [1, 1]],
+        [[-2, -1], [-1, 0], [0, 1], [0, -1]]
+        ],
+      "powerUps":[
+        "RemoveAllRowsOfTetromino"
+      ],
+      "color": "purple"
+    },
+    {
+      "id": "BombTetromino",
+      "stones":[
+        { "row" : 0, "col" : 0}
+      ],
+      "preview":[
+        { "row" : 1, "col" : 1}
+      ],
+      "transitions":[],
+      "powerUps":[
+        "TetrominoBomb"
+      ],
+      "color": "green"
+    }
+  ],
+  "levels":[
+    {
+      "id": "level1",
+      "availibleTetrominoes":[
+        "ITetromino",
+        "TTetromino",
+        "JTetromino",
+        "LTetromino",
+        "OTetromino",
+        "STetromino",
+        "ZTetromino"
+      ],
+      "scoreMultiplier": 1.0,
+      "tetrominoSpeedInMs": 1000,
+      "goal":{
+        "numberOfRowsCleared": 3.0
+      },
+      "bounsPoints": 1000,
+      "priority": 99
+    },
+    {
+      "id": "level2",
+      "availibleTetrominoes": [
+        "BombTetromino",
+        "ITetromino",
+        "TTetromino",
+        "JTetromino",
+        "LTetromino",
+        "OTetromino",
+        "STetromino",
+        "ZTetromino"
+      ],
+      "scoreMultiplier": 2.0,
+      "tetrominoSpeedInMs": 800,
+      "goal": {
+        "numberOfRowsCleared": 4.0
+      },
+      "bounsPoints": 1250,
+      "priority": 80
+    },
+    {
+      "id": "level3",
+      "availibleTetrominoes": [
+        "ITetromino",
+        "JTetromino",
+        "LTetromino",
+        "STetromino",
+        "ZTetromino"
+      ],
+      "scoreMultiplier": 3.0,
+      "tetrominoSpeedInMs": 600,
+      "goal": {
+        "numberOfTetrominoesFallen": 10.0
+      },
+      "bounsPoints": 1500,
+      "priority": 70
+    },
+    {
+      "id": "level4",
+      "availibleTetrominoes": [
+        "JTetromino",
+        "LTetromino",
+        "OTetromino",
+        "STetromino",
+        "ZTetromino",
+        "BombTetromino"
+      ],
+      "scoreMultiplier": 4.0,
+      "tetrominoSpeedInMs": 400,
+      "goal": {
+        "numberOfRowsCleared": 6.0
+      },
+      "bounsPoints": 1750,
+      "priority": 60
+    },
+    {
+      "id": "level5",
+      "availibleTetrominoes": [
+        "JTetromino",
+        "LTetromino",
+        "STetromino",
+        "ZTetromino"
+      ],
+      "scoreMultiplier": 5.0,
+      "tetrominoSpeedInMs": 200,
+      "goal": {
+        "numberOfRowsCleared": 7.0
+      },
+      "bounsPoints": 2000,
+      "priority": 50
+    }
+  ]
+}

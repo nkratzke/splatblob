@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<!--
+  Copyright (c) 2015, <your name>. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    <title>PacMan</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 id="title">Pacman Dart</h1>
+    
+    <div id="welcome">
+      <span id="start">Start</span>
+      <span id="nextlevel">Next Level</span>
+    </div>
+    
+    <div id="message">
+      <div id="gameover"></div>
+      <div id="reasons"></div>
+      <div id="next">
+        <!--span id="nextlevel">Next Level</span-->
+      </div>
+    </div>
+    
+    <table id="pacmangame">
+    </table>
+    
+    <div id="legende">
+      <div id=ltext>Legende</div>
+      <div class="pacman">Pacman</div>
+      <div class="enemyA">EnemyA</div>
+      <div class="enemyB">EnemyB</div>
+      <div class="enemyC">EnemyC</div>
+      <div class="ball">Ball</div>
+      <div class="wall">Wall</div>
+      <div class="empty">Empty</div>
+      <div class="item">Item</div>
+      <div class="ghost">Ghost</div>
+    </div>
+    
+    <div id="controls">
+      <span id="level"></span>
+      <span id="points"></span>
+      <span id="life"></span>
+    </div>
+    
+    <p>
+      <small>
+        &copy; Sükran Sari and Erik Svenonius, 2015<br> 
+      </small>
+    </p>
+    
+  </div>
+
+<script type="application/dart" src="pacmanclient.dart"></script>
+<script data-pub-inline src="packages/browser/dart.js"></script>
+</body>
+</html>

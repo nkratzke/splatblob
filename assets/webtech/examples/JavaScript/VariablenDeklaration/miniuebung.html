@@ -1,0 +1,31 @@
+<html>
+<head><title>Teuflische Typen</title></head>
+<body>
+<script type="text/javascript">
+var a = 1;
+b = "Hello World";
+
+function foo(x, y) {
+  c = ""; 
+  a = x;
+  b = y;
+  var d = c; 
+}
+
+function func(i) {
+  b = i;
+  j = i;
+  var h = j;
+  return h;
+}
+
+foo(func(true), func(47.11));
+
+document.writeln("a: " + a + " (" + typeof a + ")<br/>");
+document.writeln("b: " + b + " (" + typeof b + ")<br/>");
+document.writeln("c: " + c + " (" + typeof c + ")<br/>");
+document.writeln("j: " + j + " (" + typeof j + ")<br/>");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "level": [
+    {
+      "zeit" : 30,
+      "n" : 2,
+      "m" : 3,
+      "paare": 3
+    }
+  ],
+  "path": "all",
+  "allowedPowerUps": [],
+  "required" : 2
+}

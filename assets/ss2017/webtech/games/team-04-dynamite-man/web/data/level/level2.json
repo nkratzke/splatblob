@@ -1,0 +1,19 @@
+{
+  "level": {
+      "blocks" : [
+                 "E","E","E","D","E","E","E",
+                 "E","P","E","D","E","Z","E",
+                 "E","E","E","D","E","E","E"
+      ],
+      "field_width" : "7",
+      "field_height" : "3"
+  },
+  "maxDynamites": 3,
+"exp_monster" : "0",
+"exp_destroyable_block" : "50",
+  "speedBuffSpawnRate" : 0,
+  "speedBuffAddSpeed" : 100,
+  "dynamiteRangeSpawnRate" : 0,
+  "description" : "Great! You got it.<br>Now the way to the portal <img src=\"data/images/small/PORTAL.png\"> is blocked by boxes. <img src=\"data/images/small/DESTROYABLE_BLOCK.png\"> <br>You can destroy them with Dynamite (Press Space) but take care of the explosion",
+  "maxLevelTime" : 20
+}

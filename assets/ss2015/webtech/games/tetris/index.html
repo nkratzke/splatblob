@@ -1,0 +1,38 @@
+<html>
+	<head>
+  	  <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tetris</title>
+      <link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body>
+  	    <!-- Container für die Startseite -->
+        <div class="con_start">
+          <p id="startText"></p>
+          <p id="startButton">START</p>
+          <p id="copy">© Antonia Berg, Berengar Doege & Max Golubew</p>
+        </div>
+
+          <!-- Container für die Nachrichten -->
+        <div class="con_msg">
+          <p id="msg"></p>
+        </div>
+
+        <div class="con_game">
+          <!-- Container für das Spielfeld -->
+          <div id="field"></div>
+
+          <!-- Container für den nächsten Stein -->
+          <div id="nextstone"></div>
+
+          <!-- Container für die Spielinformationen -->
+          <div id="info">
+            <p id="level">Level: 12</p>
+            <p id="points">Punkte: 500</p>
+          </div>
+        </div>
+
+        <script type="application/dart" src="tetrisClient.dart"></script>
+        <script data-pub-inline src="packages/browser/dart.js"></script>
+	</body>
+</html>

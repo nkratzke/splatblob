@@ -1,0 +1,333 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  background-image: url("images/start.png");
+}
+
+#output {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+
+::selection {
+  background-color: transparent;
+}
+
+@media (orientation: portrait) {
+  #portraitwarning {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background: darkgrey;
+    position: absolute;
+  }
+  #rotatephone{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    z-index: 10000;
+  }
+}
+
+@media (orientation: landscape) {
+  #portraitwarning {
+    display: none;
+  }
+}
+
+#loadingscreen{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 15000;
+  background: darkgrey;
+}
+
+#loadingimg{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  z-index: 15000;
+}
+
+#overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 30;
+}
+
+#left{
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#right{
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right:0;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#screentext{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  z-index: 30;
+  background: darkgrey;
+}
+
+#howtobutton {
+  width: 100vw;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-image: url("images/howtobutton.gif");
+  background-position: center;
+  position: relative;
+  z-index: 30;
+  margin-top: 5vh;
+}
+
+#startbutton {
+  width: 100vw;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-image: url("images/startbutton.png");
+  background-position: center;
+  position: relative;
+  z-index: 30;
+}
+
+#howtoscreen{
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: darkgrey;
+  position: absolute;
+  z-index: 35;
+  background-image: url("images/howtoscreen.png");
+}
+
+#gameoverwrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 40;
+  background: darkgrey;;
+}
+
+#gameoverscreen{
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-image: url("images/GameOver.gif");
+  position: relative;
+  z-index: 9500;
+}
+
+#scorewrapper{
+  width: 100%;
+  height: 5vh;
+  position: absolute;
+}
+
+#score{
+  margin: 0 auto;
+  width: 100px;
+  height: 5vh;
+  font-size: 3vh;
+  color: yellow;
+  text-align : center;
+  z-index: 6;
+  position: relative;
+  background-color: cornflowerblue;
+}
+
+#flappytoken{
+  width: 10vh;
+  height: 6vh;
+  top: 45vh;
+  left: 3vh;
+  background-image: url("images/flappytoken.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 25;
+}
+
+#pipeareawrapper{
+  height: 100%;
+}
+
+#pipearea{
+  height: 100%;
+  width: 3000px;
+  margin-top: 0;
+  margin-left: 20vh;
+  background-size: contain;
+  background-image: url("images/spring.png");
+  z-index: 1;
+  background-repeat: repeat-x;
+}
+
+.pipe{
+  width: 5vw;
+  height: 100%;
+  position: relative;
+  float: left;
+  margin-left: 400px;
+  background-image: url("images/springpipe.png");
+}
+
+.spacebetweenpipes{
+  width: 100%;
+  height: 30vh;
+  background-image: url("images/Whitespace_blau.png");
+}
+
+#lvlend{
+  width:2000px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.enemy{
+  background-image : url('images/ghost.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height : 7.5vh;
+  width : 4.2vw;
+  position : absolute;
+  left: 10vw;
+}
+
+.enemywrapper{
+  height : 100%;
+  width : 0;
+  position: relative;
+  float : left;
+}
+.ammunition{
+  background-image : url("images/flappyshoot.png");
+  height : 3vh;
+  width : 6vh;
+  position : absolute;
+  background-size: contain;
+  background-repeat : no-repeat;
+  z-index: 25;
+}
+
+.ammunitionwrapper{
+
+}
+
+.powerup{
+  background-image : url("images/coin.png");
+  background-size : contain;
+  background-repeat: no-repeat;
+  height : 4vh;
+  width : 4vh;
+  position : absolute;
+  left: 10vw;
+}
+
+.powerupwrapper{
+  height : 100%;
+  width : 0;
+  position: relative;
+  float : left;
+}
+
+.show {
+  display: flex !important;
+}
+
+.hide{
+  display: none !important;
+}
+
+.coin{
+  background-image : url("images/coin.png");
+  background-size : contain;
+  background-repeat: no-repeat;
+  height : 4vh;
+  width : 4vh;
+  position : absolute;
+  left: 10vw;
+}
+
+.shield{
+  background-image : url("images/Shield.png");
+  background-size : contain;
+  background-repeat: no-repeat;
+  height : 4vh;
+  width : 4vh;
+  position : absolute;
+  left: 10vw;
+}
+
+.star{
+  background-image : url("images/Star.png");
+  background-size : contain;
+  background-repeat: no-repeat;
+  height : 4vh;
+  width : 4vh;
+  position : absolute;
+  left: 10vw;
+}
+
+.spacebetweenpipes_moveable{
+  position: absolute;
+  animation: moving 20s infinite cubic-bezier(0.45, 0.85, 0.75, 1.1);
+  width: 5vw;
+  z-index: 5;
+  background-image: url('images/Whitespace_blau.png');
+}
+
+@keyframes moving {
+  0% {
+    top: -20vh;
+  }
+  50% {
+    top: 50vh;
+  }
+  100% {
+    top: -20vh;
+  }
+}
+
+
+

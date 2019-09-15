@@ -1,0 +1,759 @@
+[
+  {
+    "stage": 0,
+    "id": 0,
+    "lvl": 2,
+    "name": "Crazy_Pig",
+    "hp": 15,
+    "attack": 1,
+    "speed": 10,
+    "grantedXP": 10,
+    "skin": "blob-purple"
+  },
+  {
+    "stage": 0,
+    "id": 1,
+    "lvl": 2,
+    "name": "Dark_Pig",
+    "hp": 17,
+    "attack": 2,
+    "speed": 10,
+    "grantedXP": 14,
+    "skin": "blob-purple",
+    "loot": {
+      "potions": [3, 0, 0]
+    }
+  },
+  {
+    "stage": 0,
+    "id": 2,
+    "lvl": 2,
+    "name": "Green_Demon",
+    "hp": 16,
+    "attack": 1,
+    "speed": 10,
+    "grantedXP": 12,
+    "skin": "skull"
+  },
+  {
+    "stage": 0,
+    "id": 3,
+    "lvl": 2,
+    "name": "Red_Demon",
+    "hp": 18,
+    "attack": 2,
+    "speed": 10,
+    "grantedXP": 16,
+    "skin": "skull",
+    "loot": {
+      "potions": [2, 0, 0]
+    }
+  },
+  {
+    "stage": 0,
+    "id": 4,
+    "lvl": 2,
+    "name": "Blue_Magician",
+    "hp": 18,
+    "attack": 2,
+    "speed": 10,
+    "grantedXP": 16,
+    "skin": "skull",
+    "loot": {
+      "boots": 1,
+      "potions": [0, 0, 0]
+    }
+  },
+  {
+    "stage": 0,
+    "id": 5,
+    "lvl": 2,
+    "name": "Old_Magician",
+    "hp": 20,
+    "attack": 3,
+    "speed": 10,
+    "grantedXP": 20,
+    "skin": "skull",
+    "loot": {
+      "legs": 1,
+      "potions": [0, 0, 0]
+    }
+  },
+  {
+    "stage": 1,
+    "id": 0,
+    "lvl": 3,
+    "name": "Green_Demon",
+    "hp": 16,
+    "attack": 1,
+    "speed": 10,
+    "grantedXP": 12,
+    "skin": "skull"
+  },
+  {
+    "stage": 1,
+    "id": 1,
+    "lvl": 3,
+    "name": "Red_Demon",
+    "hp": 18,
+    "attack": 2,
+    "speed": 10,
+    "grantedXP": 16,
+    "skin": "skull"
+  },
+  {
+    "stage": 1,
+    "id": 2,
+    "lvl": 3,
+    "name": "Blue_Magician",
+    "hp": 18,
+    "attack": 2,
+    "speed": 10,
+    "grantedXP": 16,
+    "skin": "skull",
+    "loot": {
+      "potions": [3, 0, 0]
+    }
+  },
+  {
+    "stage": 1,
+    "id": 3,
+    "lvl": 3,
+    "name": "Old_Magician",
+    "hp": 20,
+    "attack": 3,
+    "speed": 10,
+    "grantedXP": 20,
+    "skin": "skull"
+  },
+  {
+    "stage": 1,
+    "id": 4,
+    "lvl": 3,
+    "name": "Kobold",
+    "hp": 20,
+    "attack": 3,
+    "speed": 10,
+    "grantedXP": 22,
+    "skin": "orc"
+  },
+  {
+    "stage": 1,
+    "id": 5,
+    "lvl": 3,
+    "name": "Red_Kobold",
+    "hp": 24,
+    "attack": 4,
+    "speed": 10,
+    "grantedXP": 26,
+    "skin": "orc",
+    "loot": {
+      "dagger": 1,
+      "potions": [0, 0, 0]
+    }
+  },
+  {
+    "stage": 2,
+    "id": 0,
+    "lvl": 4,
+    "name": "Blue_Magician",
+    "hp": 18,
+    "attack": 2,
+    "speed": 10,
+    "grantedXP": 16,
+    "skin": "skull"
+  },
+  {
+    "stage": 2,
+    "id": 1,
+    "lvl": 4,
+    "name": "Old_Magician",
+    "hp": 20,
+    "attack": 3,
+    "speed": 10,
+    "grantedXP": 20,
+    "skin": "skull"
+  },
+  {
+    "stage": 2,
+    "id": 2,
+    "lvl": 4,
+    "name": "Kobold",
+    "hp": 20,
+    "attack": 3,
+    "speed": 10,
+    "grantedXP": 22,
+    "skin": "orc",
+    "loot": {
+      "sword": 0,
+      "potions": [0, 0, 0]
+    }
+  },
+  {
+    "stage": 2,
+    "id": 3,
+    "lvl": 4,
+    "name": "Red_Kobold",
+    "hp": 24,
+    "attack": 4,
+    "speed": 10,
+    "grantedXP": 26,
+    "skin": "orc"
+  },
+  {
+    "stage": 2,
+    "id": 4,
+    "lvl": 4,
+    "name": "Green_Orc",
+    "hp": 22,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 28,
+    "skin": "demon",
+    "loot": {
+      "potions": [1, 0, 0]
+    }
+  },
+  {
+    "stage": 2,
+    "id": 5,
+    "lvl": 4,
+    "name": "Red_Orc",
+    "hp": 26,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 32,
+    "skin": "demon"
+  },
+  {
+    "stage": 3,
+    "id": 0,
+    "lvl": 5,
+    "name": "Mimic",
+    "hp": 28,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 36,
+    "skin": "mimic",
+    "static": true,
+    "loot": {
+      "axe": 2,
+      "potions": [0, 0, 0]
+    }
+  },
+  {
+    "stage": 3,
+    "id": 1,
+    "lvl": 5,
+    "name": "Kobold",
+    "hp": 20,
+    "attack": 3,
+    "speed": 10,
+    "grantedXP": 22,
+    "skin": "orc"
+  },
+  {
+    "stage": 3,
+    "id": 2,
+    "lvl": 5,
+    "name": "Red_Kobold",
+    "hp": 24,
+    "attack": 4,
+    "speed": 10,
+    "grantedXP": 26,
+    "skin": "orc",
+    "loot": {
+      "potions": [2, 0, 0]
+    }
+  },
+  {
+    "stage": 3,
+    "id": 3,
+    "lvl": 5,
+    "name": "Green_Orc",
+    "hp": 22,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 28,
+    "skin": "demon"
+  },
+  {
+    "stage": 3,
+    "id": 4,
+    "lvl": 5,
+    "name": "Red_Orc",
+    "hp": 26,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 32,
+    "skin": "demon",
+    "loot": {
+      "gloves": 2,
+      "potions": [1, 0, 0]
+    }
+  },
+  {
+    "stage": 3,
+    "id": 5,
+    "lvl": 5,
+    "name": "Ghoul",
+    "hp": 26,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 32,
+    "skin": "demon"
+  },
+  {
+    "stage": 3,
+    "id": 6,
+    "lvl": 5,
+    "name": "Dark_Ghoul",
+    "hp": 28,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 36,
+    "skin": "demon"
+  },
+  {
+    "stage": 4,
+    "id": 0,
+    "lvl": 5,
+    "name": "Green_Orc",
+    "hp": 22,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 28,
+    "skin": "demon",
+    "loot": {
+      "potions": [1, 0, 0]
+    }
+  },
+  {
+    "stage": 4,
+    "id": 1,
+    "lvl": 6,
+    "name": "Green_Orc",
+    "hp": 22,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 28,
+    "skin": "demon",
+    "loot": {
+      "dagger": 2,
+      "potions": [1, 0, 0]
+    }
+  },
+  {
+    "stage": 4,
+    "id": 2,
+    "lvl": 6,
+    "name": "Red_Orc",
+    "hp": 26,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 32,
+    "skin": "demon"
+  },
+  {
+    "stage": 4,
+    "id": 3,
+    "lvl": 6,
+    "name": "Red_Orc",
+    "hp": 26,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 32,
+    "skin": "demon",
+    "loot": {
+      "potions": [3, 0, 0]
+    }
+  },
+  {
+    "stage": 4,
+    "id": 4,
+    "lvl": 6,
+    "name": "Ghoul",
+    "hp": 26,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 32,
+    "skin": "demon"
+  },
+  {
+    "stage": 4,
+    "id": 5,
+    "lvl": 6,
+    "name": "Ghoul",
+    "hp": 26,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 32,
+    "skin": "demon"
+  },
+  {
+    "stage": 4,
+    "id": 6,
+    "lvl": 6,
+    "name": "Dark_Ghoul",
+    "hp": 28,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 36,
+    "skin": "demon"
+  },
+  {
+    "stage": 4,
+    "id": 7,
+    "lvl": 6,
+    "name": "Dark_Ghoul",
+    "hp": 28,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 36,
+    "skin": "demon"
+  },
+  {
+    "stage": 4,
+    "id": 8,
+    "lvl": 6,
+    "name": "Zombie",
+    "hp": 28,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 34,
+    "skin": "ghast",
+    "loot": {
+      "potions": [0, 2, 0]
+    }
+  },
+  {
+    "stage": 4,
+    "id": 9,
+    "lvl": 6,
+    "name": "Zombie",
+    "hp": 28,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 34,
+    "skin": "ghast"
+  },
+  {
+    "stage": 4,
+    "id": 10,
+    "lvl": 6,
+    "name": "Crazy_Zombie",
+    "hp": 30,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 38,
+    "skin": "ghast",
+    "loot": {
+      "potions": [3, 0, 0]
+    }
+  },
+  {
+    "stage": 4,
+    "id": 11,
+    "lvl": 6,
+    "name": "Crazy_Zombie",
+    "hp": 30,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 38,
+    "skin": "ghast"
+  },
+  {
+    "stage": 5,
+    "id": 0,
+    "lvl": 7,
+    "name": "Ghoul",
+    "hp": 26,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 32,
+    "skin": "demon"
+  },
+  {
+    "stage": 5,
+    "id": 1,
+    "lvl": 7,
+    "name": "Ghoul",
+    "hp": 26,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 32,
+    "skin": "demon",
+    "loot": {
+      "potions": [0, 0, 1]
+    }
+  },
+  {
+    "stage": 5,
+    "id": 2,
+    "lvl": 7,
+    "name": "Dark_Ghoul",
+    "hp": 28,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 36,
+    "skin": "demon"
+  },
+  {
+    "stage": 5,
+    "id": 3,
+    "lvl": 7,
+    "name": "Dark_Ghoul",
+    "hp": 28,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 36,
+    "skin": "demon"
+  },
+  {
+    "stage": 5,
+    "id": 4,
+    "lvl": 7,
+    "name": "Zombie",
+    "hp": 28,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 34,
+    "skin": "ghast",
+    "loot": {
+      "potions": [3, 0, 0]
+    }
+  },
+  {
+    "stage": 5,
+    "id": 5,
+    "lvl": 7,
+    "name": "Zombie",
+    "hp": 28,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 34,
+    "skin": "ghast"
+  },
+  {
+    "stage": 5,
+    "id": 6,
+    "lvl": 7,
+    "name": "Crazy_Zombie",
+    "hp": 30,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 38,
+    "skin": "ghast"
+  },
+  {
+    "stage": 5,
+    "id": 7,
+    "lvl": 7,
+    "name": "Crazy_Zombie",
+    "hp": 30,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 38,
+    "skin": "ghast",
+    "loot": {
+      "helmet": 4,
+      "potions": [2, 0, 0]
+    }
+  },
+  {
+    "stage": 5,
+    "id": 8,
+    "lvl": 7,
+    "name": "Troll",
+    "hp": 32,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 42,
+    "skin": "orc"
+  },
+  {
+    "stage": 5,
+    "id": 9,
+    "lvl": 7,
+    "name": "Troll",
+    "hp": 32,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 42,
+    "skin": "orc"
+  },
+  {
+    "stage": 5,
+    "id": 10,
+    "lvl": 7,
+    "name": "Dark_Troll",
+    "hp": 36,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 44,
+    "skin": "orc",
+    "loot": {
+      "potions": [2, 0, 0]
+    }
+  },
+  {
+    "stage": 5,
+    "id": 11,
+    "lvl": 7,
+    "name": "Dark_Troll",
+    "hp": 36,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 44,
+    "skin": "orc",
+    "loot": {
+      "sword": 2,
+      "potions": [1, 0, 0]
+    }
+  },
+  {
+    "stage": 6,
+    "id": 0,
+    "lvl": 8,
+    "name": "Zombie",
+    "hp": 28,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 34,
+    "skin": "ghast"
+  },
+  {
+    "stage": 6,
+    "id": 1,
+    "lvl": 8,
+    "name": "Zombie",
+    "hp": 28,
+    "attack": 5,
+    "speed": 10,
+    "grantedXP": 34,
+    "skin": "ghast"
+  },
+  {
+    "stage": 6,
+    "id": 2,
+    "lvl": 8,
+    "name": "Crazy_Zombie",
+    "hp": 30,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 38,
+    "skin": "ghast"
+  },
+  {
+    "stage": 6,
+    "id": 3,
+    "lvl": 8,
+    "name": "Crazy_Zombie",
+    "hp": 30,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 38,
+    "skin": "ghast"
+  },
+  {
+    "stage": 6,
+    "id": 4,
+    "lvl": 8,
+    "name": "Troll",
+    "hp": 32,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 42,
+    "skin": "orc",
+    "loot": {
+      "potions": [3, 0, 0]
+    }
+  },
+  {
+    "stage": 6,
+    "id": 5,
+    "lvl": 8,
+    "name": "Troll",
+    "hp": 32,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 42,
+    "skin": "orc",
+    "loot": {
+      "potions": [3, 0, 0]
+    }
+  },
+  {
+    "stage": 6,
+    "id": 6,
+    "lvl": 8,
+    "name": "Dark_Troll",
+    "hp": 36,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 44,
+    "skin": "orc"
+  },
+  {
+    "stage": 6,
+    "id": 7,
+    "lvl": 8,
+    "name": "Dark_Troll",
+    "hp": 36,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 44,
+    "skin": "orc"
+  },
+  {
+    "stage": 6,
+    "id": 8,
+    "lvl": 8,
+    "name": "Ogre",
+    "hp": 36,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 46,
+    "skin": "orc",
+    "loot": {
+      "legs": 4,
+      "potions": [2, 0, 0]
+    }
+  },
+  {
+    "stage": 6,
+    "id": 9,
+    "lvl": 8,
+    "name": "Ogre",
+    "hp": 36,
+    "attack": 6,
+    "speed": 10,
+    "grantedXP": 46,
+    "skin": "demon",
+    "loot": {
+      "potions": [0, 2, 0]
+    }
+  },
+  {
+    "stage": 6,
+    "id": 10,
+    "lvl": 8,
+    "name": "Red_Ogre",
+    "hp": 40,
+    "attack": 7,
+    "speed": 10,
+    "grantedXP": 50,
+    "skin": "demon"
+  },
+  {
+    "stage": 6,
+    "id": 11,
+    "lvl": 8,
+    "name": "Red_Ogre",
+    "hp": 40,
+    "attack": 7,
+    "speed": 10,
+    "grantedXP": 50,
+    "skin": "demon"
+  }
+]

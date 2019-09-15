@@ -1,0 +1,23 @@
+{
+  "level": {
+      "blocks" : [
+                 "E","D","B","D","D","D","D","D","D","D",
+                 "E","P","E","D","E","E","E","E","E","D",
+                 "E","E","E","D","E","E","E","F","E","D",
+                 "D","E","D","B","D","B","E","E","E","D",
+                 "D","E","M","D","E","E","E","E","E","D",
+                 "B","E","E","E","E","B","E","E","E","D",
+                 "B","D","D","D","D","B","D","D","D","D"
+      ],
+      "field_width" : "10",
+      "field_height" : "7"
+  },
+  "maxDynamites": 60,
+  "exp_monster" : "90",
+  "exp_destroyable_block" : "10",
+  "speedBuffSpawnRate" : 10,
+  "speedBuffAddSpeed" : 100,
+  "dynamiteRangeSpawnRate" : 10,
+  "description" : "Really good!<br>Now care about the special monster, if it sees you, it moves in your direction really fast.",
+  "maxLevelTime" : 60
+}

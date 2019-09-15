@@ -1,0 +1,113 @@
+<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tomb Runner</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="TombRunnerStart.dart.js"></script>
+        
+    </head>
+
+    <body id="bodyGame">
+        <div id="warning">
+            <div id="output"></div>
+            <div id="warningoverlay"></div>
+        </div>
+
+        <div id="overlayWrapper" style="display: none">
+            <!-- Wrapper container is per default not visible, so that the user can touch
+              the control buttons-->
+            <div id="overlayDead" class="overlayMessage" style="display: none">
+                <p>YOU'RE DEAD!</p>
+                Click to return to Menu...
+            </div>
+            <div id="overlayFinishLevel" class="overlayMessage" style="display: none">
+                <p>Level Finished</p>
+                Click to go to next Level...
+            </div>
+            <div id="overlayFinishGame" class="overlayMessage" style="display: none">
+                <p>You won the game!</p>
+                Click to return to Menu...
+            </div>
+        </div>
+        <div id="mainGame" style="display: none">
+            <div id="gameField">
+                <div id="overlayBloodSplash" style="display: none"></div>
+                <table id="gametable"></table>
+            </div>
+            <div id="playerField">
+                <div id="playerInfo">
+                    <table id="playerInfoTable">
+                        <tbody><tr>
+                            <td id="healthPic"></td>
+                            <td id="health"></td>
+                            <td rowspan="4" id="infoMap"><table id="mapTable"></table></td>
+                        </tr>
+                        <tr>
+                            <td id="lifeGif"></td>
+                            <td id="life"></td>
+                        </tr>
+                        <tr>
+                            <td id="scoreGif"></td>
+                            <td id="score"></td>
+                        </tr>
+                        <tr>
+                            <td id="levelPic"></td>
+                            <td id="level"></td>
+                        </tr>
+                    </tbody></table>
+                </div>
+                <div id="controlField">
+                    <table>
+                        <tbody><tr>
+                            <td></td>
+                            <td class="controlButton" id="buttonUp">▲</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="controlButton" id="buttonLeft">◀</td>
+                            <td class="controlButton" id="buttonShoot" style="visibility: hidden">⊕</td>
+                            <td class="controlButton" id="buttonRight">▶</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="controlButton" id="buttonDown">▼</td>
+                            <td></td>
+                        </tr>
+                    </tbody></table>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainMenu" style="display: none">
+            <div id="start">
+                <div id="welcome">toMbRunnEr</div>
+                <div id="startButtonField">
+                    <div class="buttonClicked" id="buttonFemale">Female Hero</div>
+                    <div class="button" id="buttonMale">Male Hero</div>
+                    <div class="button" id="buttonPlay">Play</div>
+                    <hr>
+                    <div class="button" id="buttonControl">Control</div>
+                    <div class="button" id="buttonCredits">Credits</div>
+                </div>
+            </div>
+        </div>
+        <div id="controlHelp" style="display: none">
+            <img id="controlHelpImage" src="graphics/controlHelp.png" alt="Explanation of the Game Interface">
+            <div class="button" id="buttonControlBack">Menu</div>
+        </div>
+        <div id="credits" style="display: none">
+            <h1>Credits</h1>
+            <h3>Concept - Idea - Game Design</h3>
+            <p>Christoph Boeye, Michel Duwe, Daniel Rentzsch</p>
+            <h3>Level Design</h3>
+            <p>Daniel Rentzsch, Celina Henke</p>
+            <h3>Graphics</h3>
+            <p>Daniel Rentzsch</p>
+            <p>With Thanks to:</p>
+            <p>Kazzador, Enterbrain, Zeffir@dreamstime</p>
+            <h3>Developed with Dart</h3>
+            <div class="button" id="buttonCreditsBack">Menu</div>
+        </div>
+    
+</body></html>

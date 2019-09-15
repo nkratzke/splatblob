@@ -1,0 +1,184 @@
+.body {
+    overflow: hidden;
+}
+
+.btn-group.special {
+    display: flex;
+}
+
+.special .btn {
+    flex: 1
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.levelDiv {
+    cursor: pointer;
+}
+
+.lockedDiv {
+    background-image: url("../lock.png");
+    background-size: contain;
+}
+
+.containBackground {
+    background-size: contain;
+}
+
+.monochrome {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#table {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+tr:nth-child(odd) td:nth-child(even) {
+    background-color: lightsteelblue;
+}
+
+tr:nth-child(even) td:nth-child(odd) {
+    background-color: lightsteelblue;
+}
+
+.btn-group-vertical {
+    width: 100%;
+}
+
+.btn-group-horizontal {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    margin: 5px;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: inline-flex;
+}
+
+.btn-vertical {
+    background-color: #DDDDDD;
+    min-width: 200px;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 12px;
+}
+
+td {
+    background-color: seashell;
+    margin: 0;
+    padding: 0 !important;
+    border: 0 !important;
+    border-spacing: 0;
+}
+
+.gameObject {
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+}
+
+.movableGameObject {
+    position: absolute;
+    -webkit-user-select: auto;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+.finger {
+    background-size: contain;
+    background-image: url("../finger.png");
+}
+
+.fingerPressed {
+    background-size: contain;
+    background-image: url("../finger_push.png");
+}
+
+.overlay {
+    text-align: center;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.65); /* Black background with opacity */
+    z-index: 2;
+}
+
+.overlay-container {
+    margin-top: 15vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 15vh;
+    font-size: 18px;
+    color: white;
+}
+
+.overlay-rotate {
+    margin-top: 0px !important;
+    width: 30vw;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../screen_rotation.png");
+    background-size: contain;
+}
+
+.cookieButton {
+    max-width: 300px;
+    border-style: solid;
+    width: 80%;
+    margin: 5px;
+    border-radius: 12px;
+    border-color: darkgrey;
+}
+
+.overlay-scrollable {
+    position: absolute;!important;
+    display: block;
+    bottom: initial!important;
+    background-color: rgba(0, 0, 0, 0.75); /* Black background with opacity */
+}
+
+.anchor{
+    cursor:pointer;
+    color:blue;
+    text-decoration:underline;
+}
+
+.anchor:hover {
+    text-decoration:none;
+    text-shadow: 1px 1px 1px #555;
+}
+
+.cookieDiv {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: rgb(221, 221, 221);
+}
+
+
+
+

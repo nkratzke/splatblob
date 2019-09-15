@@ -1,0 +1,131 @@
+[
+	{
+		"level": 1,
+		"columns": 3,
+		"gamespeedMultiplicator": 1.0,
+		"itemDistribution": {
+			"coin": 20,
+			"wall": 16,
+			"premium": 2,
+			"pointreduce": 16,
+			"speedup": 3,
+			"speeddown": 0,
+			"multiplicator": 2,
+			"invulnerable": 0
+		}
+	},
+
+	{
+		"level": 2,
+		"columns": 4,
+		"gamespeedMultiplicator": 0.8,
+		"itemDistribution": {
+			"coin": 20,
+			"wall": 15,
+			"premium": 4,
+			"pointreduce": 10,
+			"speedup": 4,
+			"speeddown": 1,
+			"multiplicator": 2,
+			"invulnerable": 1
+		}
+	},
+
+	{
+		"level": 3,
+		"columns": 5,
+		"gamespeedMultiplicator": 0.8,
+		"itemDistribution": {
+			"coin": 30,
+			"wall": 20,
+			"premium": 2,
+			"pointreduce": 10,
+			"speedup": 5,
+			"speeddown": 3,
+			"multiplicator": 3,
+			"invulnerable": 0
+		}
+	},
+
+	{
+		"level": 4,
+		"columns": 5,
+		"gamespeedMultiplicator": 0.7,
+		"itemDistribution": {
+			"coin": 30,
+			"wall": 20,
+			"premium": 4,
+			"pointreduce": 15,
+			"speedup": 3,
+			"speeddown": 3,
+			"multiplicator": 3,
+			"invulnerable": 1
+		}
+	},
+
+	{
+		"level": 5,
+		"columns": 5,
+		"gamespeedMultiplicator": 0.6,
+		"itemDistribution": {
+			"coin": 30,
+			"wall": 25,
+			"premium": 4,
+			"pointreduce": 20,
+			"speedup": 5,
+			"speeddown": 3,
+			"multiplicator": 1,
+			"invulnerable": 0
+		}
+	},
+
+	{
+		"level": 6,
+		"columns": 6,
+		"gamespeedMultiplicator": 0.6,
+		"itemDistribution": {
+			"coin": 30,
+			"wall": 20,
+			"premium": 5,
+			"pointreduce": 20,
+			"speedup": 2,
+			"speeddown": 2,
+			"multiplicator": 3,
+			"invulnerable": 1
+		}
+	},
+
+	{
+		"level": 7,
+		"columns": 6,
+		"gamespeedMultiplicator": 0.5,
+		"itemDistribution": {
+			"coin": 30,
+			"wall": 25,
+			"premium": 5,
+			"pointreduce": 20,
+			"speedup": 3,
+			"speeddown": 3,
+			"multiplicator": 1,
+			"invulnerable": 0
+		}
+	},
+
+	{
+		"level": 8,
+		"columns": 6,
+		"gamespeedMultiplicator": 0.5,
+		"itemDistribution": {
+			"coin": 40,
+			"wall": 40,
+			"premium": 10,
+			"pointreduce": 30,
+			"speedup": 3,
+			"speeddown": 3,
+			"multiplicator": 2,
+			"invulnerable": 1
+		}
+	}
+]
+
+

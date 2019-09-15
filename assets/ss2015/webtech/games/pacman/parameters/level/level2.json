@@ -1,0 +1,14 @@
+{
+  "length": 7,
+  "width": 7,
+  "field": {
+    "f0_0":"#wall","f0_1":"#wall","f0_2":"#wall","f0_3":"#wall","f0_4":"#wall","f0_5":"#wall","f0_6":"#wall",
+    "f1_0":"#wall","f1_1":"#ball","f1_2":"#ball","f1_3":"#enemyB","f1_4":"#ball","f1_5":"#enemyC","f1_6":"#wall",
+    "f1_0":"#wall","f1_1":"#enemyA","f1_2":"#ball","f1_3":"#ball","f1_4":"#ball","f1_5":"#ball","f1_6":"#wall",
+    "f2_0":"#wall","f2_1":"#ball","f2_2":"#wall","f2_3":"#ball","f2_4":"#wall","f2_5":"#ball","f2_6":"#wall",
+    "f3_0":"#ball","f3_1":"#ball","f3_2":"#wall","f3_3":"#pacman","f3_4":"#wall","f3_5":"#ball","f3_6":"#ball",
+    "f4_0":"#wall","f4_1":"#ball","f4_2":"#wall","f4_3":"#item","f4_4":"#wall","f4_5":"#ball","f4_6":"#wall",
+    "f5_0":"#wall","f5_1":"#ball","f5_2":"#item","f5_3":"#item","f5_4":"#ball","f5_5":"#ball","f5_6":"#wall",
+    "f6_0":"#wall","f6_1":"#wall","f6_2":"#wall","f6_3":"#wall","f6_4":"#wall","f6_5":"#wall","f6_6":"#wall"
+  }
+}

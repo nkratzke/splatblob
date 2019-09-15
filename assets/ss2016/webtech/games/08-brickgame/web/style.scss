@@ -1,0 +1,230 @@
+@mixin base-game-object(){
+  border: none !important;
+  border-spacing: 0px;
+}
+
+@mixin base-field($color){
+  background: $color !important;
+  @include base-game-object;
+
+}
+
+html{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+#warningoverlay:empty, #overlay:empty {
+  display: none;
+}
+
+#warningoverlay {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  background-color: firebrick;
+  padding: 20px;
+}
+
+#overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.50);
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto 0px auto;
+  text-align: center;
+  padding: 0px 0px 100px 0px;
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 25px;
+  background-color: olive;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+  font-weight: normal;
+}
+
+/* Game controls */
+
+#welcome, #message, #controls, #button {
+  margin: 50px 0px 60px 0px;
+}
+
+#message #gameover:empty { visibilty: hidden; }
+
+#message #gameover {
+  font-size: 5rem;
+  color: black;
+  text-align: center; }
+
+
+/* highscore */
+
+#highscoreform {
+  margin: 40px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#highscoreform input {
+  color: white;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.5);
+  appearance: none;
+  box-shadow: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+#highscorewarning {
+  background: lightpink;
+  color: darkred;
+  padding: 50px;
+}
+
+#highscorewarning:empty {
+  display: none;
+}
+
+#scorelist:empty {
+  display: none;
+}
+
+#scorelist {
+  padding: 20px;
+  color: white;
+  margin: 20px;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: rgba(1,1,1,0.1);
+}
+
+#scorelist ul {
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 0px;
+}
+
+#scorelist li {
+  font-size: 1.1em;
+  margin: 0px 5px 5px 5px;
+  padding: 5px;
+  color: white;
+  display: block;
+  border-radius: 20px;
+}
+
+
+input::-webkit-input-placeholder { color: lightgray; font-style: italic; }
+input::-moz-placeholder { color: lightgray; font-style: italic; }
+
+
+/* --- */
+
+#level,#points, #welcome #start {
+  padding: 7px 20px 7px 20px;
+  font-style: normal;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  background: rgba(255, 255, 255, 0.5);
+  border: 3px solid black;
+  border-radius: 10px;
+  cursor: hand;
+}
+
+#leftbutton, #rightbutton {
+  padding: 7px 20px 7px 20px;
+  font-style: normal;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  background: rgba(255, 255, 255, 0.5);
+  border: 3px solid black;
+  border-radius: 10px;
+  cursor: hand;
+  :hover{
+    cursor: hand;
+  }
+}
+
+
+/* Gamefield */
+body {
+  background-color: olive;
+}
+
+#game {
+  margin: 50px auto 50px auto;
+  background-color: black;
+  //background-image: url('img/brickwall.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#game td {
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255, 0.3);
+}
+
+.player {
+  @include base-field(#3e5d9e);
+  position: absolute;
+}
+
+
+
+.ball {
+  background-color: red !important;
+  border-radius: 50%;
+  position: absolute;
+
+
+}
+
+.greenBrick{
+  @include base-field(green);
+
+}
+
+.brownBrick{
+  @include base-field(brown);
+
+}
+.redBrick{
+  @include base-field(red);
+
+}
+.yellowBrick{
+  @include base-field(yellow);
+
+}
+.greyBrick{
+  @include base-field(gray);
+
+}
+
+.field{
+  @include base-field(inherit);
+}

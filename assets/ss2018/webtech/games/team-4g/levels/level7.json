@@ -1,0 +1,19 @@
+{
+	"name": "Level 6",
+	"config": {
+		"platformLength": 100,
+		"ballSpeed":60,
+		"bricksPerRow": 7,
+		"rowsWithBricks": 6,
+		"specialBricksEnabled": true,
+		"specialBricks": {
+			"speed": 3,
+			"heavy": 4,
+			"teleport": 4,
+			"invert": 1,
+			"split": 2,
+			"explosion": 4,
+			"slow": 2
+		}
+	}
+}

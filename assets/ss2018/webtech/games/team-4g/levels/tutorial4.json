@@ -1,0 +1,15 @@
+{
+	"name": "Tutorial 2",
+	"config": {
+		"platformLength": 100,
+		"ballSpeed":50,
+		"bricksPerRow": 4,
+		"rowsWithBricks": 1,
+		"specialBricksEnabled": true,
+		"specialBricks": {
+			"split": 1,
+			"penetrate": 1,
+			"invert": 1
+		}
+	}
+}

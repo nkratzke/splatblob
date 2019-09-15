@@ -1,0 +1,15 @@
+{
+  "BLOCK_SIZE":30,    
+  "BLOCKS_PER_ROW":15,
+  "BLOCK_ROWS":10,    
+  "LEVEL_PATH":"/level",
+  "LEVEL_COUNT":9,    
+  "COLORS": ["red", "blue", "green", "yellow", "white" ],
+  "SOLID_COLORS":[ "black" ],
+  "POWERUPS": [ "powerup_heart", "powerup_bomb", "powerup_coin", "powerup_lightning" ],
+  "NO_COLOR":"none",  
+  "POINTS_PER_ROW":10,
+  "POINTS_PER_GROUPELEMENT":5,
+  "START_LIFE":1, 
+  "MAX_LIFE":5 
+}

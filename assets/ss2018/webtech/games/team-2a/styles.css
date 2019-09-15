@@ -1,0 +1,404 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', regular;
+  background: radial-gradient(rgb(143, 84, 17),rgb(180, 39, 29));
+  overflow: hidden;
+}
+
+main {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: background-color ease 0.5s; 
+  background-color: #000000;
+}
+
+main.active {
+  background-color: transparent;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.layer                                                                                                                                                                                                                                                                                                                                                                                                               {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity ease-in 1s;
+}
+.layer.active {
+  opacity: 1;
+}
+
+#inputLayer{
+  pointer-events: none;
+  z-index: 100;
+}
+#inputLayer.active {
+  pointer-events: all;
+}
+
+#inputKnob {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 100%;
+  transition: opacity 0.2s;
+  opacity: 0;
+  background: radial-gradient( rgba(255, 255, 255, 0.2), rgba(100, 100, 100, 0.35) );
+  border: solid 0.5px rgba(255, 255, 255, 0.3);
+}
+#inputKnob.active {
+  opacity: 0.8;
+}
+
+header {
+  position: absolute;
+  display: block;
+  top: calc(25vh);
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  text-transform: capitalize;
+  color: #cccccc;
+  font-size: 40px;
+  line-height: 40px;
+  padding: 10px 0;
+  transform: translate(0%, -100%);
+}
+
+nav {
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  padding-top: 26vh;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: top;
+  overflow-y: auto;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.loaded nav {
+  opacity: 1;
+}
+
+#credits {
+    color: #cccccc;
+}
+
+#credits .text {
+    box-sizing: border-box;
+    font-family: 'Helvetica', regular;
+    background-color: #000000;
+    padding: 20px;
+    width: 800px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+#credits .text a {
+    color: #cccccc;
+}
+
+nav > button {
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', regular;
+  font-size: 30px;
+  line-height: 30px;
+  color: #cccccc;
+  text-decoration: underline;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 25px;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  transition: background-color 0.2s;
+  width: 100%;
+  min-height: min-content;
+}
+
+nav > button:hover, nav > button:focus {
+  background-color: rgb(50,50,50);
+  cursor: pointer;
+}
+
+nav > button > .checkbox {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  border: solid 0.5px rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.5);
+  font-size: 30px;
+  line-height: 30px;
+  vertical-align: center;
+}
+
+nav > button > .checkbox > i {
+  display: none;
+}
+
+nav > button.active > .checkbox > i {
+  display: inline-block;
+}
+
+#bigLabel {
+  position: absolute;
+  z-index: 100;
+  display: block;
+  left: 50%;
+  top: 25%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #cccccc;
+  font-size: 40px;
+  line-height: 40px;
+  opacity: 0;
+  transition: opacity ease 0.3s;
+  pointer-events: none;
+  text-shadow: 2px 2px 4px #333333;
+}
+
+#bigLabel.active {
+  opacity: 1;
+}
+
+
+
+#world {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  background: url('./assets/img/lpc_house_insides/woodtile_32x32.png');
+  /*background-color: rgba(0,0,0,0.55);*/
+  width: 500px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+}
+
+#world::before {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  top: -20%;
+  width: 100%;
+  height: 20%;
+  background-image: url('./assets/img/lpc_house_insides/wall1_128x105.png');
+  background-size: 20% 100%;
+}
+
+
+#world.changing {
+  will-change: transform;
+}
+
+#stats {
+  position: fixed;
+  display: flex;
+  left: 5px;
+  top: 5px;
+  pointer-events: none;
+  flex-direction: column-reverse;
+}
+
+#stats > #lives {
+  color: #ff3333;
+  font-size: 40px;
+  line-height: 40px;
+  text-shadow: 1px 1px 5px #333333;
+}
+#stats > #lives > i {
+  margin: 5px;
+}
+#stats > #enemyCount {
+  font-size: 17px;
+  line-height: 17px;
+  color: #cccccc;
+  text-shadow: 1px 1px 3px #333333;
+}
+
+.actor {
+  background-color: #000;
+  z-index: 1;
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  padding: 0;
+  overflow: visible;
+}
+.actor.circle {
+  border-radius: 100%;
+}
+
+.actor.prop {
+  background-color: transparent;
+  background-size: 100% 100%
+}
+
+.actor.tree {
+  background: url('./assets/img/plants/plant_repack.png') -5px -10px;
+  background-size: 700% 280%
+}
+.actor.tree.shrub {
+  background-position: -30px -372px;
+  background-size: 700% 460%
+}
+
+.actor.door {
+  background-color: transparent;
+}
+.actor.door::before {
+    position: absolute;
+    content: "";
+    text-align: center;
+    box-align: border-box;
+    padding-top: 2px;
+    display: block;
+    top: -500%;
+    width: 100%;
+    height: 550%;
+    background-color: rgba(255,255,100, 1.0);
+    background-size: 100% 100%;
+    transition: transform ease-out 0.25s, background-color 0.25s;
+}
+.actor.door::after {
+    position: absolute;
+    content: "";
+    text-align: center;
+    box-align: border-box;
+    padding-top: 2px;
+    display: block;
+    top: -500%;
+    width: 100%;
+    height: 550%;
+    background-image: url('./assets/img/lpc_house_insides/door1_32x48.png');
+    background-size: 100% 100%;
+    transition: transform ease-out 0.25s, background-color 0.25s;
+    transform-origin: left;
+}
+.actor.door.active::after {
+    transform: rotateY(45deg);
+    background-color: rgba(255,255,180, 1);
+}
+
+.actor.pawn {
+  background-color: #fff;
+  left: -25px;
+  top: -25px;
+}
+
+.actor.pawn.enemy {
+  background-color: rgba(255,0,0, 1.0);
+}
+
+.actor.pawn.enemy > .cozyness {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  background-color: rgba(0,0,0, 0.6);
+  border: 1px solid rgba(0,0,0,0.6);
+}
+.actor.pawn.enemy > .cozyness > div {
+  display: block;
+  background-color: rgb(207, 95, 51);
+}
+
+@keyframes spiderrun {
+  0%   { background-position: -261px -133px;}
+  100% { background-position: -645px -133px; } 
+}
+.actor.pawn.enemy.spider {
+  border-radius: 0;
+  background: url('./assets/img/spider01.png') left top;
+  animation: spiderrun 0.7s steps(6) infinite;
+}
+.actor.pawn.enemy.spider.big {
+  background: url('./assets/img/spider06.png') left top;
+}
+.actor.pawn.enemy.spider.big.red {
+  background: url('./assets/img/spider04.png') left top;
+}
+
+
+@keyframes char-run {
+  0%   { background-position-x: -7px;}
+  100% { background-position-x: -583px; } 
+}
+@keyframes char-finish {
+  0%   { background-position: -7px -141px; }
+  100% { background-position: -393px -141px; } 
+}
+@keyframes char-dead {
+  0%   { background-position: -7px -1293px; }
+  100% { background-position: -393px -1293px; } 
+}
+.actor.pawn.character {
+  z-index: 2;
+  border-radius: 0;
+  background: url('./assets/img/char1.png') 0px 0px;
+  left: 50%;
+  top: 50%;
+  background-position: -7px -653px;
+}
+.actor.pawn.character::before {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  border-radius: 100%;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.2s;
+}
+.actor.pawn.character.active {
+  animation: char-run 0.7s steps(9) infinite;
+}
+.actor.pawn.character.active::before {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.actor.pawn.character.finish-anim {
+  animation: char-finish 0.8s steps(6);
+}
+.actor.pawn.character.finish {
+  background-position: -327px -138px !important;
+}
+.actor.pawn.character.dead-anim {
+  animation: char-dead 0.8s steps(6);
+}
+.actor.pawn.character.dead {
+  background-position: -327px -1290px !important;
+}

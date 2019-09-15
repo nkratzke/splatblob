@@ -1,0 +1,260 @@
+{
+  "name":"Level 2",
+  "nextLevel":"level3infinite.json",
+  "speed":5,
+  "spawn":{
+    "type":"Spawn",
+    "pos_x":0,
+    "pos_y":50,
+    "size_x":1,
+    "size_y":1
+  },
+  "blocks":[
+    {
+      "type":"Ground",
+      "pos_x":0,
+      "pos_y":30,
+      "size_x":300,
+      "size_y":20
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":310,
+      "pos_y":100,
+      "size_x":200,
+      "size_y":20
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":510,
+      "pos_y":200,
+      "size_x":200,
+      "size_y":20
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":710,
+      "pos_y":30,
+      "size_x":300,
+      "size_y":20
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":740,
+      "pos_y":230,
+      "size_x":20,
+      "size_y":20,
+      "value":300
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":780,
+      "pos_y":180,
+      "size_x":20,
+      "size_y":20,
+      "value":300
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":820,
+      "pos_y":130,
+      "size_x":20,
+      "size_y":20,
+      "value":300
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":860,
+      "pos_y":80,
+      "size_x":20,
+      "size_y":20,
+      "value":300
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":1140,
+      "pos_y":250,
+      "size_x":300,
+      "size_y":20
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":1160,
+      "pos_y":290,
+      "size_x":20,
+      "size_y":20,
+      "value":300
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":1200,
+      "pos_y":290,
+      "size_x":20,
+      "size_y":20,
+      "value":300
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":1240,
+      "pos_y":290,
+      "size_x":20,
+      "size_y":20,
+      "value":300
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":1280,
+      "pos_y":290,
+      "size_x":20,
+      "size_y":20,
+      "value":300
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":1320,
+      "pos_y":290,
+      "size_x":20,
+      "size_y":20,
+      "value":300
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":1360,
+      "pos_y":290,
+      "size_x":20,
+      "size_y":20,
+      "value":300
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":1400,
+      "pos_y":290,
+      "size_x":20,
+      "size_y":20,
+      "value":300
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":1140,
+      "pos_y":80,
+      "size_x":400,
+      "size_y":20
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":1700,
+      "pos_y":80,
+      "size_x":140,
+      "size_y":20
+    },
+
+    {
+      "type":"Water",
+      "pos_x":1900,
+      "pos_y":70,
+      "size_x":900,
+      "size_y":20
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":2030,
+      "pos_y":80,
+      "size_x":40,
+      "size_y":20
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":2180,
+      "pos_y":140,
+      "size_x":20,
+      "size_y":20,
+      "value":300
+    },
+
+
+    {
+      "type":"Ground",
+      "pos_x":2330,
+      "pos_y":80,
+      "size_x":40,
+      "size_y":20
+    },
+
+    {
+      "type":"Coin",
+      "pos_x":2480,
+      "pos_y":140,
+      "size_x":20,
+      "size_y":20,
+      "value":300
+    },
+
+
+    {
+      "type":"Ground",
+      "pos_x":2630,
+      "pos_y":80,
+      "size_x":40,
+      "size_y":20
+    },
+
+    {
+      "type":"Ground",
+      "pos_x":2850,
+      "pos_y":60,
+      "size_x":200,
+      "size_y":20
+    },
+
+    {
+      "type":"TeleportSpeed",
+      "pos_x":3030,
+      "pos_y":80,
+      "size_x":20,
+      "size_y":260,
+      "speedIncrease": 1,
+      "target": {
+        "type":"Spawn",
+        "pos_x":0,
+        "pos_y":60,
+        "size_x":1,
+        "size_y":1
+      }
+    },
+
+    {
+      "type":"Teleport",
+      "pos_x":950,
+      "pos_y":280,
+      "size_x":20,
+      "size_y":20,
+      "target":{
+        "type":"Spawn",
+        "pos_x":1040,
+        "pos_y":301,
+        "size_x":20,
+        "size_y":50
+      }
+    }
+
+  ]
+}

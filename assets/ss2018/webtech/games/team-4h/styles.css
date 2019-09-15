@@ -1,0 +1,269 @@
+
+html, body{
+  width: 100vw;
+  height: 177.778vw;/*177.778*/
+  margin: auto;
+  position:absolute;
+  background-color: black;
+  background-size: 100%;
+}
+
+body.noScroll { /* ...or body.dialogShowing */
+  overflow: hidden;
+}
+
+.miss {
+  background: url("ship1miss.png");
+  background-repeat: no-repeat;
+  background-size: 11.111vw 6.25vh;
+}
+.hit {
+  background: url("ship1hit.png");
+  background-repeat: no-repeat;
+  background-size: 11.111vw 6.25vh;
+}
+.destroid {
+  background: url("ship1des.png");
+  background-repeat: no-repeat;
+  background-size: 11.111vw 6.25vh;
+}
+.oil {
+  background: url("oil.png");
+  background-repeat: no-repeat;
+  background-size: 11.111vw 6.25vh;
+}
+
+.ship {
+  background: url("ship1.png");
+  background-repeat: no-repeat;
+  background-size: 11.111vw 6.25vh;
+}
+
+#gameMenu, #endScreen {
+  width:100vw;
+  height:177.778vw;
+  position:absolute;
+  margin:auto;
+  background: url("block.png");
+  background-size: 100%;
+}
+#screen {
+  width:100vw;
+  height:177.778vw;
+  position:absolute;
+  margin:auto;
+  background-size: 100%;
+}
+
+#singlePlayerMenu, #creditsMenu {
+  width:100vw;
+  height:177.778vw;
+  position:absolute;
+  margin:auto;
+  background: url("block2.png");
+  background-size: 100%;
+}
+
+#single,#highscore,#options,#credits, #level_1, #level_2, #level_3, #level_4, #level_5, #level_6, #level_7, #jan, #julian, #endText{
+  position:fixed;
+  text-align:center;
+  background-size: cover;
+  font-size:10vw;
+  font-family: "Georgia";
+  color:black;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 0vh;
+}
+
+#itemMenu {
+  top: 50vh;
+  width: 100vw;
+  height: 88.89vw;
+  border-collapse: collapse;
+  background: url("field.png");
+  background-size: 100%;
+}
+
+#itemMenuText {
+  font-size: 5vh;
+  text-align: center;
+  font-family: "Times New Roman";
+  padding: -4vh;
+}
+
+.item {
+  width: 31.333vw;
+  height: 31.333vw;
+  border-radius: 50%;
+  background-color: #cd6133;
+  border: 1vw solid #0d2980;
+}
+#item1{
+  position: relative;
+  left: 11.111vw;
+  top: 6.25%;
+  float: left;
+  background: url("item1.png");
+  background-size: 100%;
+}
+#item2 {
+  position: relative;
+  left: 55.555vw;
+  top: 6.25%;
+  background: url("item2.png");
+  background-size: 100%;
+}
+#item3 {
+  position: relative;
+  left: 11.111vw;
+  top: 18.75%;
+  float: left;
+  background: url("item3.png");
+  background-size: 100%;
+}
+#item4 {
+  position: relative;
+  left: 55.555vw;
+  top: 18.75%;
+  background: url("itemMiss.png");
+  background-size: 100%;
+}
+
+.item1Miss{
+  background: url("itemMiss.png") !important;
+  background-size: 100%!important;
+}
+
+.item2Miss{
+  background: url("itemMiss.png")!important;
+  background-size: 100%!important;
+}
+.item3Miss {
+  background: url("itemMiss.png")!important;
+  background-size: 100%!important;
+}
+
+#single, #jan, #endText{
+  position: relative;
+  text-align: center;
+  background-color: black;
+  top: 12.5%;
+  left: 0vw;
+}
+
+#credits, #julian{
+  position: relative;
+  top: 38.5%;
+  left: 20vw;
+  float: left;
+}
+
+#level_1 {
+  position: relative;
+  top: 7%;
+  float: top;
+}
+#level_2 {
+  position: relative;
+  top: 14%;
+  float: top;
+}
+#level_3 {
+  position: relative;
+  top: 21%;
+  float: top;
+}
+#level_4 {
+  position: relative;
+  top: 28%;
+  float: top;
+}
+#level_5 {
+  position: relative;
+  top: 35%;
+  float: top;
+}
+#level_6 {
+  position: relative;
+  top: 42%;
+  float: top;
+}
+#level_7 {
+  position: relative;
+  top: 49%;
+  float: top;
+}
+
+table, th, td {
+  background-color: papayawhip;
+  border: 1px solid #808080;
+}
+
+
+table {
+  width: 100vw;
+  height: 88.89vw;
+  border-collapse: collapse;
+}
+
+#infoscreen {
+  font-size: 9vw;
+  font-family: "Bradley Hand ITC";
+  color: #0d2980;
+  text-align: center;
+  width: 100vw;
+  height: 88.89vw;
+  background: url("field.png");
+  background-size: 100%;
+}
+
+#turnPhone {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media all and (orientation:portrait) {
+  #turnPhone {
+    display: none;
+  }
+}
+@media all and (orientation:landscape) {
+  #screen {
+    display: none;
+  }
+}
+
+#enemyField {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+#returnSPM{
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  top: 115vw;
+  left: 90vw;
+  background: url("return.png");
+  background-size: 100%;
+}
+
+#returnEndScreen{
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  top: 165vw;
+  left: 90vw;
+  background: url("return.png");
+  background-size: 100%;
+}
+#returnCredits {
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  top: 145vw;
+  left: 90vw;
+  background: url("return.png");
+  background-size: 100%;
+}

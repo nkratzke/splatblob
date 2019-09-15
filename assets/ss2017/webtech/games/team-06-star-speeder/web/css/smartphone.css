@@ -1,0 +1,69 @@
+/*
+* Styling for mobile phones
+*/
+
+h2{
+    font-size: smaller;
+}
+
+h3{
+    font-size: 100%;
+    margin-top: 10%;
+}
+
+h5{
+    font-size: xx-small;
+}
+
+p{
+    font-size: xx-small;
+}
+
+#loadingOverlay{
+    font-size: xx-large;
+}
+
+#loadingImg{
+    width: 20%;
+    margin-top: 50%;
+}
+
+#menuContent{
+    margin-top: 50%;
+    width: 100%;
+}
+
+#tableManual {
+    width: 85%;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tableManual img{
+    width: 30%;
+}
+
+#highscore{
+    margin-top: 50%;
+}
+
+#topThreeScores tr td{
+    width: 15%;
+}
+
+#creditsContent{
+    margin-bottom: 20%;
+}
+
+#autopilotFeedback{
+    font-size: 2em;
+}
+
+#gameField{
+    width: 95%;
+}
+
+#information{
+    width: 95%;
+}

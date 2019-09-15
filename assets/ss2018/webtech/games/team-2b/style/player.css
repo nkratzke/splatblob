@@ -1,0 +1,139 @@
+/* ##### OVERWORLD ##### */
+
+.player-right {
+    background: url(../img/icon/player_idle.png) 0 0 !important;
+    animation: player-right-idle 1.5s steps(1) infinite;
+}
+
+@keyframes player-right-idle {
+    100% {
+        background: url(../img/icon/player_idle.png) 0 0;
+    }
+
+    75% {
+        background: url(../img/icon/player_idle.png) -128px 0;
+    }
+
+    50% {
+        background: url(../img/icon/player_idle.png) -96px 0;
+    }
+
+    25% {
+        background: url(../img/icon/player_idle.png) -64px 0;
+    }
+
+    0% {
+        background: url(../img/icon/player_idle.png) -32px 0;
+    }
+}
+
+.player-left {
+    background: url(../img/icon/player_idle.png) 0 -32px !important;
+    animation: player-left-idle 1.5s steps(1) infinite;
+}
+
+@keyframes player-left-idle {
+    100% {
+        background: url(../img/icon/player_idle.png) 0 -32px;
+    }
+
+    75% {
+        background: url(../img/icon/player_idle.png) -128px -32px;
+    }
+
+    50% {
+        background: url(../img/icon/player_idle.png) -96px -32px;
+    }
+
+    25% {
+        background: url(../img/icon/player_idle.png) -64px -32px;
+    }
+
+    0% {
+        background: url(../img/icon/player_idle.png) -32px -32px;
+    }
+}
+
+.player-down {
+    background: url(../img/icon/player_idle.png) 0 -64px !important;
+    animation: player-bottom-idle 1.5s steps(1) infinite;
+}
+
+@keyframes player-bottom-idle {
+    100% {
+        background: url(../img/icon/player_idle.png) 0 -64px;
+    }
+
+    75% {
+        background: url(../img/icon/player_idle.png) -128px -64px;
+    }
+
+    50% {
+        background: url(../img/icon/player_idle.png) -96px -64px;
+    }
+
+    25% {
+        background: url(../img/icon/player_idle.png) -64px -64px;
+    }
+
+    0% {
+        background: url(../img/icon/player_idle.png) -32px -64px;
+    }
+}
+
+.player-up {
+    background: url(../img/icon/player_idle.png) 0 -96px !important;
+    animation: player-up-idle 1.5s steps(1) infinite;
+}
+
+@keyframes player-up-idle {
+    100% {
+        background: url(../img/icon/player_idle.png) 0 -96px;
+    }
+
+    75% {
+        background: url(../img/icon/player_idle.png) -128px -96px;
+    }
+
+    50% {
+        background: url(../img/icon/player_idle.png) -96px -96px;
+    }
+
+    25% {
+        background: url(../img/icon/player_idle.png) -64px -96px;
+    }
+
+    0% {
+        background: url(../img/icon/player_idle.png) -32px -96px;
+    }
+}
+
+
+/* ##### FIGHT ##### */
+#sprite-player {
+    animation: sprite-player 1s steps(1) infinite;
+    left: 20%;
+
+}
+
+@keyframes sprite-player {
+    100% {
+        background: url(../img/icon/player.png) -256px;
+    }
+
+    75% {
+        background: url(../img/icon/player.png) -192px;
+    }
+
+    50% {
+        background: url(../img/icon/player.png) -128px;
+    }
+
+    25% {
+        background: url(../img/icon/player.png) -64px;
+    }
+
+    0% {
+        background: url(../img/icon/player.png) 0;
+    }
+}

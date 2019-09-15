@@ -1,0 +1,10 @@
+
+
+
+  ZZZ         ZZZ   YYY YYY YYY   RRR RRR       GGG      
+  ZZZ         ZZZ   YYY           RRR    RRR    GGG      
+  ZZZ         ZZZ   YYY           RRR     RRR   GGG      
+  ZZZ         ZZZ   YYY YYY YYY   RRR  RRR      GGG      
+   ZZZ  ZZZ  ZZZ    YYY           RRR     RRR   GGG      
+    ZZZ ZZZ ZZZ     YYY           RRR    RRR             
+     ZZZ   ZZZ      YYY YYY YYY   RRR RRR       ZZZ      

@@ -1,0 +1,36 @@
+[
+  {
+    "id": 0,
+    "name": "Wooden Axe",
+    "display": "Axe",
+    "type": 0,
+    "quality": 0,
+    "value": 3,
+    "icon": "axes/axe_wooden_common.png"
+  },
+  {
+    "id": 1,
+    "name": "Marauder Axe",
+    "display": "Axe",
+    "type": 0,
+    "quality": 1,
+    "value": 4,
+    "mods": {
+      "strength": 2
+    },
+    "icon": "axes/axe_silver_rare.png"
+  },
+  {
+    "id": 2,
+    "name": "Gargoyle Axe",
+    "display": "Axt",
+    "type": 0,
+    "quality": 3,
+    "value": 6,
+    "mods": {
+      "strength": 3,
+      "constitution": 3
+    },
+    "icon": "axes/axe_gargoyle_legendary.png"
+  }
+]

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simdart</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+</head>
+<body id = "spielseite">
+  <div id="gameover">
+      <span id="gameover_title">Gameover</span>
+      <table id="gameover_points"></table>
+      <button id="gameover_play" value="Play" class="play"></button>
+      <button id="gameover_newgame" value="Reset" class="reset"></button>
+  </div>
+  <div id ="container">
+      <div id="gameData">
+          <span id="level"></span>
+          <span id="life"></span>
+          <span id="points"></span>
+      </div>
+      <div id = "nextColor-block">
+        <div id="nextColor">
+            <span id="preview"></span>
+        </div>
+      </div>
+      <div id="game">
+        <table id='field'>
+        </table>
+      </div>
+      <div id='controlpanel'>
+       <button id="play" value="Play" class="play"><img id="img_button_play"/></button>
+       <button id="reset" value="Reset" class="reset"/><img id="img_button_reset"/></button>
+      </div>
+  </div>
+<script type='application/dart' src='../web/Main.dart'></script>
+<script type="text/javascript" src='packages/browser/dart.js'></script>
+</body>
+</html>

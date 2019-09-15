@@ -1,0 +1,189 @@
+html, body{
+    width: 100%;
+    height:  100%;
+    margin: 0;
+    pedding: 0;
+    background-image: url("grafics/Background_universe.png");
+    background-size: cover;
+}
+td{
+    width: 0.3125%;
+    height: 0.208333333333%;
+    background-color: lightgray;
+}
+
+
+table{
+    border-collapse: collapse;
+    max-width:  480px;
+    max-height: 720px;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("grafics/Background_universe.png");
+    background-size: cover;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+/*Id's*/
+#wrapper{
+    max-width:  480px;
+    max-height: 720px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url("grafics/index_effekt.gif");
+    background-size: cover;
+}
+
+#win{
+    max-width:  480px;
+    max-height: 720px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url("grafics/feuerwerk.gif");
+    background-size: cover;
+}
+
+
+#gameover{
+    max-width:  480px;
+    max-height: 720px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url("grafics/gameover.gif");
+    background-size: cover;
+}
+
+.lvl1{
+    max-width:  480px;
+    max-height: 720px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url("grafics/lvl1.png");
+    background-size: cover;
+}
+
+.lvl2{
+    max-width:  480px;
+    max-height: 720px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url("grafics/lvl2.png");
+    background-size: cover;
+}
+
+.lvl3{
+    max-width:  480px;
+    max-height: 720px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url("grafics/lvl3.png");
+    background-size: cover;
+}
+.lvl4{
+    max-width:  480px;
+    max-height: 720px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url("grafics/lvl4.png");
+    background-size: cover;
+}
+
+.lvl5{
+    max-width:  480px;
+    max-height: 720px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url("grafics/lvl5.png");
+    background-size: cover;
+}
+
+
+#title{
+    width: 100%;
+    height: 25%;
+    max-width:  480px;
+    max-height: 180px;
+    margin: auto;
+}
+
+.button{
+    width: 100%;
+    height: 100%;
+    size: cover;
+}
+.l{
+    background-image: url("grafics/l.png");
+    background-size: cover;
+}
+.i{
+    background-image: url("grafics/i.png");
+    background-size: cover;
+}
+.f{
+    background-image: url("grafics/f.png");
+    background-size: cover;
+}
+.e{
+    background-image: url("grafics/e.png");
+    background-size: cover;
+}
+
+.life{
+    background-image: url("grafics/life.png");
+    background-size: cover;
+}
+
+.menue{
+    max-width:  480px;
+    max-height: 180px;
+    width: 100%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Klassen*/
+td.controlBar{
+    background-color: red;
+}
+.lava{
+    background-image: url("grafics/lava.gif");
+}
+.ball{
+    background-color: lightgoldenrodyellow;
+    border-radius: 100px;
+}
+.field{
+    background-color: transparent;
+}
+.bar{
+    background-image: url("grafics/bar.png");
+}
+.bar_2{
+    background-image: url("grafics/bar_2.png");
+}
+.bar_3{
+    background-image: url("grafics/bar_3.png");
+}
+.edge{
+    background-image: url("grafics/Background_solid.png");
+    background-size: cover;
+    background-repeat: round;
+} 
+ 
+ 

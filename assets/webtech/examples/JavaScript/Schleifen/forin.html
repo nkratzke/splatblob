@@ -1,0 +1,27 @@
+<html>
+<head><title>Foreach auf JavaScript</title></head>
+<body>
+<script type="text/javascript">
+
+// foreach Variante der for Schleife zum Durchlaufen eines Arrays
+// Die Laufvariable nimmt den Index an
+var as = [7, 5, 3, 1];
+for (var i in as) { document.writeln(as[i] + "<br>"); }
+
+// foreach Variante der for Schleife zum Durchlaufen eines Objekts
+// Die Laufvariable nimmt die Attribut-/Methodenbezeichner an
+// Achtung: Es wird kein Unterschied zwischen Attributen und Funktionen beim Durchlauf
+// gemacht, da in JavaScript beides gleichwertige Objekte sind.
+var obj = new Object();
+obj.attr1 = "Wert 1";
+obj.attr2 = "Wert 2";
+obj.meth = function (x) { return x } ;
+
+for (var x in obj) {
+  document.writeln(x + ": " + obj[x] + "<br>");
+}
+
+
+</script>
+</body>
+</html>

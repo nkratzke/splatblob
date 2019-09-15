@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>RabbitRinth | A-maze-ing</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <script defer="" src="mazegameclient.dart.js"></script>
+    
+</head>
+
+<body>
+    <div class="invisible" id="landscape_warning">
+        <h3 class="subtitle">Please rotate your device back into portrait mode!</h3>
+    </div>
+    <div class="container has-text-centered">
+        <h1 class="title" id="title">
+            RabbitRinth
+        </h1>
+        <h3 class="subtitle" id="subtitle">
+            Guide the rabbit
+            <span><img src="assets/img/rabbit.png" alt="Rabbit"></span>
+            through the maze
+            <span><img src="assets/img/hedge.png" alt="Hedge"></span>
+            to find its hole
+            <span><img src="assets/img/goal.png" alt="Hole"></span>
+            .
+        </h3>
+        <div class="loading">
+            Loading game...
+        </div>
+        <div class="button-group invisible">
+            <div class="button-wrapper">
+                <button class="button invisible" type="button" id="btn_continue">Continue »</button>
+            </div>
+            <div class="button-wrapper">
+                <button class="button" type="button" id="btn_start">Start ›</button>
+            </div>
+            <div class="button-wrapper">
+                <button class="button" type="button" id="btn_tutorial">Tutorial ?</button>
+            </div>
+            <div class="button-wrapper">
+                <button class="button" type="button" id="btn_about">About @</button>
+            </div>
+        </div>
+    </div>
+    <div class="has-text-centered invisible" id="progress">
+        <span class="label">? sec</span>
+        <div id="progressbar">
+            <div></div>
+        </div>
+    </div>
+    <div class="modal invisible" id="overlay">
+        <div class="modal-content has-text-centered">
+            <h2></h2>
+            <p></p>
+            <button class="button invisible" type="button" id="btn_next_level">Next Level</button>
+            <button class="button is-small invisible" type="button" id="btn_previous_page">&lt;</button>
+            <button class="button is-small invisible" type="button" id="btn_next_page">&gt;</button>
+            <button class="button invisible" type="button" id="btn_main_menu">Main Menu</button>
+        </div>
+    </div>
+    <div class="container invisible" id="game_wrapper">
+        <div class="table" id="game">
+        </div>
+    </div>
+    <div class="footer has-text-centered">
+        <p id="mini_info"></p>
+        <!--<p>Copyright &copy; 2018 Marc-Niclas H. &amp; Claas R.</p>-->
+    </div>
+
+
+</body></html>

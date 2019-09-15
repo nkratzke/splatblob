@@ -1,0 +1,13 @@
+{
+  "length": 11,
+  "width": 7,
+  "field": {
+    "f0_0":"#wall","f0_1":"#wall","f0_2":"#wall","f0_3":"#wall","f0_4":"#wall","f0_5":"#wall","f0_6":"#wall","f0_7":"#wall","f0_8":"#wall","f0_9":"#wall","f0_10":"#wall",
+    "f1_0":"#wall","f1_1":"#ball","f1_2":"#ball","f1_3":"#ball","f1_4":"#ball","f1_5":"#wall","f1_6":"#ball","f1_7":"#ball","f1_8":"#ball","f1_9":"#ball","f1_10":"#wall",
+    "f2_0":"#wall","f2_1":"#ball","f2_2":"#ball","f2_3":"#ball","f2_4":"#ball","f2_5":"#wall","f2_6":"#ball","f2_7":"#ghost","f2_8":"#ball","f2_9":"#ball","f2_10":"#item",
+    "f3_0":"#pacman","f3_1":"#ball","f3_2":"#ball","f3_3":"#ball","f3_4":"#ball","f3_5":"#item","f3_6":"#ball","f3_7":"#ball","f3_8":"#ball","f3_9":"#ball","f3_10":"#wall",
+    "f4_0":"#wall","f4_1":"#ball","f4_2":"#ball","f4_3":"#ball","f4_4":"#ball","f4_5":"#wall","f4_6":"#ball","f4_7":"#ball","f4_8":"#ball","f4_9":"#ball","f4_10":"#wall",
+    "f5_0":"#wall","f5_1":"#ball","f5_2":"#ball","f5_3":"#ball","f5_4":"#ball","f5_5":"#wall","f5_6":"#ball","f5_7":"#ball","f5_8":"#ball","f5_9":"#ball","f5_10":"#wall",
+    "f6_0":"#wall","f6_1":"#wall","f6_2":"#wall","f6_3":"#wall","f6_4":"#wall","f6_5":"#wall","f6_6":"#wall","f6_7":"#wall","f6_8":"#wall","f6_9":"#wall","f6_10":"#wall"
+  }
+}

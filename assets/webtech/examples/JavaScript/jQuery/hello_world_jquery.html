@@ -1,0 +1,22 @@
+<html>
+<head><title>Hello World mittels jQuery</title></head>
+<meta charset="UTF-8"/>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+ 		$("#msgid").hide().html("This is Hello World by JQuery");
+ 		$("#msgid").css("color", "red");
+ 		$("#msgid").fadeIn(1000).fadeOut(1000).fadeIn(2000);
+	});
+</script>
+
+<body>
+
+This is Hello World by HTML
+
+<div id="msgid"/>
+
+</body>
+</html>

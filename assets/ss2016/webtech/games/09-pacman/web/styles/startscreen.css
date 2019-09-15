@@ -1,0 +1,73 @@
+@font-face {
+    font-family: PacMan; /*a name to be used later*/
+    src: url("../PAC-FONT.TTF"); /*URL to font*/
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    color: yellow;
+    background-color: black;
+    font-family: PacMan, serif;
+    text-align: center;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: none;
+    cursor: auto;
+}
+.start {
+    width: 100%;
+    height: 100%;
+    background-image: url("../resc/backgrounds/newpacback.png");
+    background-color: black;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    font-weight: bold;
+    text-align: center;
+}
+
+#startlayout{
+    margin-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#startText {
+    width: auto;
+    letter-spacing: 3px;
+    font-family: PacMan, serif;
+    font-size: 2rem;
+}
+
+#startButton {
+    border: 5px solid yellow;
+    color:yellow;
+    border-radius: 20px;
+    padding: 3px 3px 3px 3px;
+    cursor: pointer;  width: 200px;
+    font-size: 2rem;
+}
+
+#about {
+    border: 5px solid yellow;
+    color:yellow;
+    border-radius: 20px;
+    padding: 3px 3px 3px 3px;
+    cursor: pointer;  width: 200px;
+    font-size: 2rem;
+}
+
+#highscore {
+    border: 5px solid yellow;
+    color:yellow;
+    border-radius: 20px;
+    padding: 3px 3px 3px 3px;
+    cursor: pointer;  width: 200px;
+    font-size: 2rem;
+}

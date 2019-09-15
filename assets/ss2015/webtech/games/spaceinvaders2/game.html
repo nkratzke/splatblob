@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+    <title>Space Invaders</title>
+</head>
+
+<body>
+    <table id="highscore" style="display:none">
+        <tr>
+            <td>
+                <h1>Highscore</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table id="highscorePoins"></table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="zurueckButton">
+                    <p id="button">zur&uuml;ck</p>
+                </button>
+            </td>
+        </tr>
+    </table>
+    <table id="gameOver" style="display:none">
+        <tr>
+            <td>
+                <h1>Game over</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Deine Punkte: </p>
+                <p id="HSpoints"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Deine Level: </p>
+                <p id="HSlevel"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="neuesSpiel">
+                    <p id="button">Neues Spiel</p>
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="hs">
+                    <p id="button">Highscore</p>
+                </button>
+            </td>
+        </tr>
+        </tr>
+    </table>
+    <table id="ergebniss">
+        <tr>
+            <td>
+                <p>Punkte:</p>
+            </td>
+            <td>
+                <p id="points"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Level:</p>
+            </td>
+            <td>
+                <p id="level"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Energie:</p>
+            </td>
+            <td>
+                <p id="energie"></p>
+            </td>
+        </tr>
+    </table>
+    <table id="field"></table>
+    <script type="application/dart" src="SpaceClient.dart"></script>
+    <script data-pub-inline src="packages/browser/dart.js"></script>
+</body>
+
+</html>

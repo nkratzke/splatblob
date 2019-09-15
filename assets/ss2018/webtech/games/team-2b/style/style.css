@@ -1,0 +1,991 @@
+@media (orientation: portrait) {
+    html {
+        overflow: hidden;
+    }
+
+    #portrait-message {
+        display: block !important;
+        position: absolute;
+    }
+
+    #home {
+        display: none !important;
+    }
+
+    #game {
+        display: none !important;
+    }
+}
+
+html {
+    font-family: 'Press Start 2P', cursive;
+    height: 100vh;
+    width: 100vw;
+    background: url(../img/main/background.png);
+    image-rendering: pixelated;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    font-family: 'Press Start 2P', cursive;
+    height: 30px;
+    background: transparent;
+    border-style: none;
+    color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    width: 100%;
+    font-size: 7vw;
+    text-align: center;
+    color: whitesmoke;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+/* HOME IDs */
+#portrait-message {
+    display: none;
+    height: 100vh;
+    text-align: center;
+    color: floralwhite;
+    font-size: xx-large;
+    background-color: #1c1117;
+    left: 0;
+    width: 100vw;
+}
+
+#level-name-overlay {
+    padding: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+#level-name {
+    font-size: 3vw;
+    text-align: center;
+    color: whitesmoke;
+}
+
+@keyframes level-name-fadeout {
+    0% {
+        z-index: 500;
+        opacity: 100;
+    }
+
+    100% {
+        z-index: 1;
+        opacity: 0;
+    }
+}
+
+#wrapper {
+    min-width: 568px;
+    min-height: 320px;
+    margin: 0 auto;
+}
+
+#home {
+    display: grid;
+    text-align: center;
+    color: white;
+    height: 100%;
+    text-shadow: 2px 2px black !important;
+}
+
+#home div, #game-over div {
+    margin: auto;
+    width: 80vw;
+}
+
+#home ul input, #game-over ul input {
+    width: 50vw;
+    color: white;
+}
+
+#home li, #highscore li, #game-over li, #name-input-menu li {
+    height: 48px;
+    vertical-align: middle;
+    line-height: 42px;
+    margin: 5px 0 5px 0;
+    background: url(../img/main/button.png) no-repeat center;
+}
+
+/* ########## GRID DEFINITION ########## */
+#game {
+    display: grid;
+    height: 100%;
+    grid-template-areas: "upper-bar upper-bar buttons" "play-field play-field side-bar";
+    grid-template-columns: 100vw;
+    grid-template-rows: 64px auto;
+    padding: 0;
+}
+
+#upper-bar {
+    display: grid;
+    grid-area: upper-bar;
+    grid-template-areas: "health stage buttons";
+    grid-template-columns: 256px auto 128px;
+    background: #1c1117;
+    background: url(../img/main/marble.png) repeat-x;
+    background-size: contain;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 1);
+    z-index: 10;
+}
+
+#stage-name-container {
+    display: grid;
+    color: whitesmoke;
+    text-align: center;
+    align-content: center;
+}
+
+#stage-name {
+    font-size: 11px;
+}
+
+#dungeon {
+    grid-area: play-field;
+    overflow: scroll;
+    background: #1c1117;
+}
+
+#side-bar {
+    grid-area: side-bar;
+    display: grid;
+    background-image: url(../img/main/sideBarBack.png);
+    grid-template-rows: repeat(3, 64px);
+}
+
+#side-bar input {
+    width: 64px;
+    height: 64px;
+    /*background-image: url(../img/icon/side-bar-frame.png);*/
+}
+
+#command-buttons {
+    display: grid;
+    grid-area: buttons;
+    grid-template-areas: "usePots pots hero";
+    text-align: right;
+}
+
+#command-buttons input {
+    width: 64px;
+    height: 64px;
+}
+
+#tiles, #movables {
+    zoom: 150%;
+    display: grid;
+    grid-template-columns: repeat(40, 32px);
+    grid-template-rows: repeat(40, 32px);
+    z-index: 5;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* ########## END SCREEN ########## */
+#game-over {
+    padding-top: 15px;
+}
+
+/* ########## PLAYER HEALTH ########## */
+#health-container {
+    display: grid;
+    align-content: center;
+    padding-left: 5px;
+    height: 64px;
+    color: whitesmoke;
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 17px 20px;
+    grid-template-areas: "health-bar health-bar health-bar" "ep-bar ep-bar ep-bar";
+}
+
+#health-container #level-key {
+    grid-area: l-title;
+    text-align: left;
+}
+
+#health-container #level-value {
+    grid-area: l-value;
+    text-align: center;
+}
+
+#health-container #health-bar-outer,
+#health-container #ep-bar-outer {
+    color: white;
+    font-size: 10px;
+    background-color: dimgray;
+    padding: 3px;
+    text-align: right;
+    line-height: 14px;
+}
+
+#health-container #health-bar-inner,
+#health-container #ep-bar-inner {
+    height: 14px;
+}
+
+#health-container #health-bar-inner {
+    background-color: indianred;
+}
+
+#health-container #health-bar-outer span,
+#health-container #ep-bar-outer span {
+    float: left;
+}
+
+#health-container #ep-bar-inner {
+    background-color: cornflowerblue;
+}
+
+#health-container #health-bar-outer {
+    grid-area: health-bar;
+}
+
+#health-container #ep-bar-outer {
+    grid-area: ep-bar;
+}
+
+#player-health-text {
+    grid-area: health-bar;
+    text-align: right;
+}
+
+#player-ep-text {
+    grid-area: ep-bar;
+}
+
+#player-health {
+    font-size: small;
+    padding: 2px;
+    width: 30%;
+    height: 16px;
+    text-align: center;
+    color: white;
+    z-index: 25;
+    background: black;
+}
+
+.text-input {
+    text-align: center;
+    /*border-bottom: 5px solid black;*/
+    color: grey !important;
+}
+
+/* ########## OVERLAYS ########## */
+.overlay {
+    display: grid;
+    padding: 0;
+    position: absolute;
+    width: 100vw;
+    height: calc(100% - 64px);
+}
+
+#debug-screen,
+#hero-screen,
+#fighting-screen {
+    grid-area: play-field;
+    overflow: hidden;
+}
+
+#fighting-screen {
+    animation: enter-fight 1.3s;
+    z-index: 70;
+}
+
+@keyframes enter-fight {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+#hero-screen-button {
+    width: 64px;
+    height: 64px;
+    background: url(../img/main/hero_button.png) no-repeat center !important;
+    background-size: 48px 48px !important;
+}
+
+#potion-screen-button {
+    width: 64px;
+    height: 64px;
+    background: url(../img/main/potion_select.png) no-repeat center !important;
+    background-size: 48px 48px !important;
+}
+
+/* ########## HERO-SCREEN ########## */
+#hero-screen {
+    display: grid;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    grid-template-rows: 48px auto;
+    grid-template-columns: auto;
+    grid-template-areas: "top-bar" "screen";
+
+    font-size: 12px;
+    height: calc(100vh - 64px);
+    width: 100%;
+    max-height: 100%;
+    padding: 0;
+    grid-area: play-field;
+    overflow: scroll;
+    color: whitesmoke;
+    background: url(../img/main/background.png);
+}
+
+#hero-screen #top-bar {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    align-items: center;
+    grid-area: top-bar;
+    background: #1c1117;
+    color: whitesmoke;
+}
+
+#hero-screen #hero-inventory-screen {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-column-gap: 5px;
+    grid-template-areas: "inv-grid preview";
+    padding: 5px;
+}
+
+#hero-screen #inventory-grid {
+    display: grid;
+    grid-area: inv-grid;
+    grid-template-columns: repeat(4, 64px);
+    grid-template-rows: repeat(3, 64px);
+    grid-row-gap: 3px;
+    grid-column-gap: 3px;
+    place-self: center;
+    align-self: start;
+}
+
+.inventory-background {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 6;
+    grid-row-end: 4;
+    background: url(../img/items/inventory-frame.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 10;
+    padding: 3px;
+}
+
+.inventory-item {
+    background-size: 64px 64px;
+}
+
+#inventory-preview {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "preview buttons";
+    grid-column-gap: 5px;
+}
+
+#preview-item-wrapper {
+    grid-column-start: 1 !important;
+    grid-area: preview;
+}
+
+#equip-wrapper {
+    text-align: left;
+    color: whitesmoke;
+    grid-area: buttons;
+}
+
+#equip-wrapper input {
+    width: 100%;
+    height: 100px;
+}
+
+#hero-screen #top-bar .item-active {
+    text-decoration: underline;
+}
+
+#hero-screen #hero-equipment-screen {
+    display: grid;
+    grid-area: screen;
+    grid-template-columns: 32px 64px auto 64px 32px;
+    grid-template-rows: 64px 64px 64px;
+    grid-row-gap: 5px;
+    grid-template-areas: "lte helmet-slot content-top weapon-slot rte" "lme chest-slot content-middle gloves-slot rme" "lbe boots-slot content-bottom legs-slot rbe" "inv-p inv-p inv-p inv-p inv-p";
+}
+
+#hero-screen #hero-inventory-switch {
+    display: grid;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-screen .item-slot, #hero-screen .item-slot-framed {
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    vertical-align: center;
+    background-image: url("../img/items/item-frame.png");
+    background-size: 64px 64px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated
+}
+
+#hero-screen .item-slot-framed {
+    background-image: url("../img/items/frame.png");
+}
+
+#hero-screen .item {
+    width: 64px;
+    height: 64px;
+    background-size: 48px 48px;
+    background: no-repeat center;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
+}
+
+#hero-screen #helmet-slot {
+    grid-area: helmet-slot;
+}
+
+#hero-screen #chest-slot {
+    grid-area: chest-slot;
+}
+
+#hero-screen #boots-slot {
+    grid-area: boots-slot;
+}
+
+#hero-screen #weapon-slot {
+    grid-area: weapon-slot;
+}
+
+#hero-screen #gloves-slot {
+    grid-area: gloves-slot;
+}
+
+#hero-screen #legs-slot {
+    grid-area: legs-slot;
+}
+
+#hero-screen #selected-item-wrapper,
+#preview-item-wrapper {
+    display: grid;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    justify-content: center;
+}
+
+#hero-screen #selected-item,
+#preview-item {
+    display: grid;
+    grid-template-columns: 64px 64px 64px;
+    grid-template-rows: 48px 64px 64px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    grid-template-areas: "item-name item-name item-name" "item-icon item-details item-details" "item-mods item-mods item-mods";
+
+    justify-content: center;
+    background: url(../img/items/item-select-frame.png) no-repeat;
+    background-size: 218px 202px;
+    image-rendering: pixelated;
+    padding: 8px;
+}
+
+#selected-item #item-name,
+#preview-item-name {
+    display: flex;
+    grid-area: item-name;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+#selected-item #item-icon,
+#preview-item-icon {
+    grid-area: item-icon;
+}
+
+#selected-item #item-mods,
+#preview-item-mods {
+    grid-area: item-mods;
+    font-size: 8px;
+}
+
+#item-mods ul,
+#preview-item-mods ul {
+    margin: 0;
+}
+
+#item-mods li,
+#preview-item-mods li {
+    margin: 5px 0
+}
+
+#selected-item #item-details,
+#preview-item-details {
+    grid-area: item-details;
+    display: grid;
+    grid-template-areas: "item-quality item-type" "item-value item-value" "item-key item-key";
+}
+
+#item-details #item-quality,
+#preview-item-quality {
+    grid-area: item-quality;
+    font-size: 8px;
+}
+
+#item-details #item-type,
+#preview-item-type {
+    grid-area: item-type;
+    text-align: right;
+    color: grey;
+    font-size: 8px;
+}
+
+#item-details #item-value,
+#preview-item-value {
+    grid-area: item-value;
+    font-size: 24px;
+    color: white;
+    align-self: center;
+}
+
+#item-details #item-key,
+#preview-item-key {
+    grid-area: item-key;
+    font-size: 6px;
+    color: grey;
+}
+
+#hero-screen #hero-attributes-screen {
+    display: grid;
+    padding: 0 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "offense defense" "life adventure";
+}
+
+#hero-attributes-screen #offense-col {
+    grid-area: offense;
+}
+
+#hero-attributes-screen #defense-col {
+    grid-area: defense;
+}
+
+#hero-attributes-screen #life-col {
+    grid-area: life;
+}
+
+#hero-attributes-screen #adventure-col {
+    grid-area: adventure;
+}
+
+#hero-attributes-screen .attribute-col {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 32px auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "title" "values";
+
+    font-size: 4vh;
+}
+
+.attribute-col div {
+    text-decoration: underline;
+}
+
+.attribute-col ul {
+    grid-area: values;
+    justify-content: left;
+    align-items: stretch;
+    align-self: start;
+    font-size: 3vh;
+}
+
+.attribute-col li {
+    margin: 5px 0;
+}
+
+/* ########## ITEM QUALITY COLORS ########## */
+.legendary {
+    background-color: #FF5733;
+}
+
+.legendary-color {
+    color: #FF5733;
+}
+
+.epic {
+    background-color: #6812EC;
+}
+
+.epic-color {
+    color: #6812EC;
+}
+
+.magic {
+    background-color: #1261EC;
+}
+
+.magic-color {
+    color: #1261EC;
+}
+
+.rare {
+    background-color: #6BEC12;
+}
+
+.rare-color {
+    color: #6BEC12;
+}
+
+.common {
+    background-color: floralwhite;
+}
+
+.common-color {
+    color: floralwhite;
+}
+
+.inv-item:hover .inv-item-tooltip {
+    visibility: hidden;
+}
+
+.inv-item-tooltip {
+    position: absolute;
+    background: white;
+    visibility: hidden;
+}
+
+/* ########## HERO/ FIGHT-SCREEN ########## */
+
+#hero-screen-title {
+    grid-area: hero-title;
+    text-align: center;
+}
+
+#hero-screen-item-stats {
+    grid-area: stats;
+    font-size: 11px;
+    display: grid;
+    grid-template-rows: repeat(6, 32px);
+    grid-template-columns: auto;
+    grid-row-gap: 5px;
+}
+
+#hero-screen-selected-item {
+    display: grid;
+    font-size: 8px;
+    color: whitesmoke;
+    text-align: left;
+    vertical-align: middle;
+    grid-template-columns: repeat(1, 202px);
+    grid-template-rows: repeat(5, 32px);
+    grid-template-areas: "item-name" "item-quality";
+"item-value";
+
+    opacity: 1;
+    background: black;
+    grid-area: 1 / gloves / boots / 4;
+    z-index: 10;
+}
+
+#hero-screen-selected-item-value,
+#hero-screen-selected-item-mods,
+#hero-screen-selected-item-mods-title {
+    height: 16px;
+    line-height: 16px;
+    padding: 0 15px 0 15px;
+}
+
+#hero-screen-selected-item-mods-title {
+    text-align: center;
+}
+
+#hero-screen-selected-item-quality {
+    grid-area: item-quality;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 15px 0 15px;
+}
+
+#hero-screen-selected-item-name {
+    grid-area: item-name;
+    background: grey;
+    margin: auto;
+    width: calc(100% - 15px);
+    height: 32px;
+    line-height: 32px;
+    padding: 0 0 0 15px;
+}
+
+#hero-screen-hero {
+    grid-area: hero;
+    display: grid;
+    text-align: center;
+    grid-template-rows: repeat(5, 64px);
+    grid-template-columns: repeat(3, 64px);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    grid-template-areas: "emptys head empty" "gloves chest-top emptya" "weapon-top chest-bottom second-top" "weapon-bottom legs second-bottom" "emptyh boots emptyz"
+}
+
+#hero-screen-item-stats {
+    grid-area: item-stats;
+}
+
+#hero-screen-head {
+    grid-area: head;
+}
+
+#hero-screen-chest {
+    grid-area: 2 / chest-top / chest-bottom;
+}
+
+#hero-screen-gloves {
+    grid-area: gloves;
+}
+
+#hero-screen-legs {
+    grid-area: legs;
+}
+
+#hero-screen-boots {
+    grid-area: boots;
+}
+
+#hero-screen-weapon {
+    grid-area: 3 / weapon-top / weapon-bottom;
+}
+
+#hero-screen-second {
+    grid-area: 3 / second-top / second-bottom;
+}
+
+#fighting-screen {
+    color: white;
+    background: url(../img/main/fight_background.png);
+    background-size: contain;
+    position: absolute;
+    height: calc(100vh - 64px);
+    max-height: 100vh;
+    width: 100%;
+}
+
+#potions-menu {
+    position: fixed;
+    height: 33vw;
+    width: 17vw;
+    right: 5vw;
+    border: 5px solid black;
+    background: indianred;
+    z-index: 100;
+    padding: 3px;
+}
+
+#fighting-options, #skills, #fight-end {
+    color: white;
+    width: 100%;
+    height: 40%;
+    border-top: 1px solid black;
+    background: url("../img/main/background.png");
+    z-index: 60;
+    position: absolute;
+    bottom: 0;
+}
+
+#event-window {
+    color: white;
+    width: 100%;
+    height: 35%;
+    border-top: 1px solid black;
+    background: url("../img/main/background.png");
+    z-index: 60;
+    position: absolute;
+    bottom: 0;
+}
+
+/* CLASSES */
+.level-name-fadeout {
+    animation: level-name-fadeout 2s;
+}
+
+.tile {
+    background: grey;
+    background-size: 16px 16px;
+    image-rendering: pixelated;
+}
+
+.invisible {
+    display: none !important;
+}
+
+.visible {
+    display: block;
+}
+
+.top-bar {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#fight-top-bar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.top-right-bar {
+    float: right;
+    padding: 8px;
+}
+
+.top-left-bar {
+    float: left;
+    padding: 8px;
+}
+
+.button-list {
+    padding-top: 3px;
+}
+
+.bar-button {
+    color: white;
+    height: 32px;
+    width: 49vw;
+    background: url(../img/main/button.png) no-repeat center;
+    background-size: contain;
+    margin: 2px;
+    white-space: pre-wrap;
+}
+
+.potion-button {
+    color: black;
+    font-weight: bold;
+    height: 11vw;
+    width: 17vw;
+    text-align: right;
+    background-size: contain;
+}
+
+.potion-button-1 {
+    background: url(../img/items/potions/potion_s.png) no-repeat;
+}
+
+.potion-button-2 {
+    background: url(../img/items/potions/potion_m.png) no-repeat;
+}
+
+.potion-button-3 {
+    background: url(../img/items/potions/potion_l.png) no-repeat;
+}
+
+.text-window {
+    height: 80px;
+    background: url(../img/main/plainText2.png) no-repeat center;
+    background-size: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.plain {
+    width: 100vw;
+    margin: auto;
+}
+
+.plain p {
+    padding-top: 3px;
+}
+
+.top-bar {
+    text-align: center;
+    padding-top: 0;
+    border-bottom: 1px solid black;
+}
+
+.progress-bar {
+    font-size: small;
+    padding: 1px;
+    width: 20vw;
+    height: 3vh;
+    text-align: center;
+    color: white;
+    z-index: 25;
+    background: black;
+}
+
+.progress-bar-outer {
+    background: grey;
+    width: 100%;
+    height: 100%;
+}
+
+.health-bar-inner {
+    width: 50%;
+    height: 100%;
+    background: indianred;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.sprite-container {
+    width: 64px;
+    height: 96px;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.centered {
+    text-align: center;
+    width: 97%;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.line {
+    margin-bottom: 5px;
+}
+
+.plain span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.plain h4 {
+    text-decoration: underline;
+}

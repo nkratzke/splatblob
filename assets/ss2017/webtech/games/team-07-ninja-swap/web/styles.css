@@ -1,0 +1,682 @@
+
+
+/*******************desktop sizing********************************/
+@media (min-width: 992px) {
+  html, body {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    font-family: "Segoe Script";
+  }
+
+  #landscapeOrientationReaction {
+    background-image: url("./resources/Menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    display: none;
+    position: absolute;
+  }
+
+  /*menu-elements*/
+  .menuWindows {
+    background-image: url("./resources/Menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    display: none;
+  }
+
+  .menuButtons {
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    width: 40%;
+    height: 5%;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 1%;
+    border-radius: 10%;
+  }
+
+  #instructionFreezeItem {
+    background-image: url("./resources/freezeReady.png");
+  }
+
+  #instructionBombItem {
+    background-image: url("./resources/bombReady.png");
+  }
+
+  #instructionSpeedItem {
+    background-image: url("./resources/speedReady.png");
+  }
+
+  #instructionHealItem {
+    background-image: url("./resources/healReady.png");
+  }
+
+  #instructionEnemy {
+    background-image: url("./resources/enemyGrey.png");
+  }
+
+  #instructionStrongEnemy {
+    background-image: url("./resources/strongEnemyGrey.png");
+  }
+
+  #instructionBoss {
+    background-image: url("./resources/bossGrey.png");
+  }
+
+  #instructionBossProjectil {
+    background-image: url("./resources/bossGreyAttack.png");
+  }
+
+  #instructionRevive {
+    background-image: url("./resources/revive.png");
+    background-size: contain;
+  }
+
+  #instructionMaxLife {
+    background-image: url("./resources/maxLife.png ");
+    background-size: contain;
+  }
+
+  #instructionPowerUp {
+    background-image: url("./resources/powerUp.png");
+    background-size: contain;
+  }
+
+  #instructionGreyStrongEnemy {
+    background-image: url("./resources/strongEnemyGrey.png");
+    background-size: contain;
+  }
+
+  #instructionLightningItem {
+    background-image: url("./resources/lightningReady.png");
+    background-size: contain;
+  }
+
+  .instructionTable {
+    margin-top: 10%;
+    width: 100%;
+    height: 90%;
+    table-layout: fixed;
+  }
+
+  p.overlayFont {
+    color: black;
+    text-align: center;
+    font-size: 0.7vw;
+    margin-left: 5%;
+  }
+
+  p.overlayFontHeader {
+    text-align: center;
+    font-size: 0.7vw;
+    color: brown;
+  }
+
+  #startTextOverlay {
+    text-align: center;
+    margin-top: 50%;
+    margin-left: 5%;
+    font-size: 0.9vw;
+  }
+
+  #lostHeader {
+    margin-top: 20%;
+    font-size: 300%;
+    color: red;
+  }
+
+  #reachedLevel {
+    font-size: 200%;
+    color: black;
+  }
+
+  #reachedScorepoints {
+    font-size: 200%;
+    color: black;
+  }
+
+  #reactionFont {
+    font-size: 200%;
+  }
+
+  /*gamefield-elements*/
+  #gameWindow {
+    background-image: url("./resources/NinjaswapBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-color: grey;
+    margin-left: 40%;
+    margin-right: 45%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 15%;
+    height: 100%;
+    background-color: white;
+  }
+
+  #gameField {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    height: 70%;
+
+  }
+
+  tr {
+    width: 100%;
+  }
+
+  td {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height:10%;
+  }
+
+  #continueButton {
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    width: 30%;
+    height: 8%;
+    text-align: center;
+    display: none;
+    border-radius: 5%;
+  }
+
+  #continueFont:hover {
+    color: gold;
+  }
+
+  div.defaultBoardElements {
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    text-align: center;
+  }
+
+  #hpBoards {
+    height: 5%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+}
+
+
+/**********************default mobile device size************************/
+@media (max-width: 450px) {
+
+  html, body {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    font-family: "Segoe Script";
+  }
+  #landscapeOrientationReaction {
+    background-image: url("./resources/Menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    display: none;
+    position: absolute;
+  }
+
+  /*menu-elements*/
+  .menuWindows {
+    background-image: url("./resources/Menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    display: none;
+  }
+
+  .menuButtons {
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    width: 40%;
+    height: 5%;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 1%;
+    border-radius: 10%;
+  }
+
+  #instructionFreezeItem {
+    background-image: url("./resources/freezeReady.png");
+  }
+
+  #instructionBombItem {
+    background-image: url("./resources/bombReady.png");
+  }
+
+  #instructionSpeedItem {
+    background-image: url("./resources/speedReady.png");
+  }
+
+  #instructionHealItem {
+    background-image: url("./resources/healReady.png");
+  }
+
+  #instructionEnemy {
+    background-image: url("./resources/enemyGrey.png");
+  }
+
+  #instructionStrongEnemy {
+    background-image: url("./resources/strongEnemyGrey.png");
+  }
+
+  #instructionBoss {
+    background-image: url("./resources/bossGrey.png");
+  }
+
+  #instructionBossProjectil {
+    background-image: url("./resources/bossGreyAttack.png");
+  }
+
+  #instructionRevive {
+    background-image: url("./resources/revive.png");
+    background-size: contain;
+  }
+
+  #instructionMaxLife {
+    background-image: url("./resources/maxLife.png ");
+    background-size: contain;
+  }
+
+  #instructionPowerUp {
+    background-image: url("./resources/powerUp.png");
+    background-size: contain;
+  }
+
+  #instructionGreyStrongEnemy {
+    background-image: url("./resources/strongEnemyGrey.png");
+    background-size: contain;
+  }
+
+  #instructionLightningItem {
+    background-image: url("./resources/lightningReady.png");
+    background-size: contain;
+  }
+
+  .instructionTable {
+    margin-top: 10%;
+    width: 100%;
+    height: 90%;
+    table-layout: fixed;
+  }
+
+  p.overlayFont {
+    color: black;
+    text-align: center;
+    font-size: 2.8vw;
+    margin-left: 5%;
+  }
+
+  p.overlayFontHeader {
+    text-align: center;
+    font-size: 3vw;
+    color: brown;
+  }
+
+  #startTextOverlay {
+    text-align: center;
+    margin-top: 50%;
+    margin-left: 5%;
+    font-size: 4vw;
+  }
+
+  #lostHeader {
+    margin-top: 20%;
+    font-size: 300%;
+    color: red;
+  }
+
+  #reachedLevel {
+    font-size: 200%;
+    color: black;
+  }
+
+  #reachedScorepoints {
+    font-size: 200%;
+    color: black;
+  }
+
+  #reactionFont {
+    font-size: 200%;
+  }
+
+  /*gamefield-elements*/
+  #gameWindow {
+    background-image: url("./resources/NinjaswapBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-color: grey;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+
+  #gameField {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    height: 70%;
+
+  }
+
+  tr {
+    width: 100%;
+  }
+
+  td {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height:10%;
+  }
+
+  #continueButton {
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    width: 30%;
+    height: 3%;
+    text-align: center;
+    display: none;
+    border-radius: 5%;
+  }
+
+  #continueFont:hover {
+    font-size: 2.5vw;
+    text-align: center;
+  }
+
+  div.defaultBoardElements {
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    text-align: center;
+  }
+
+  #hpBoards {
+    height: 5%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+}
+
+/**********************tablet size************************/
+@media (min-width: 600px) and (max-width: 900px) {
+
+  html, body {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    font-family: "Segoe Script";
+  }
+  #landscapeOrientationReaction {
+    background-image: url("./resources/Menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    display: none;
+    position: absolute;
+  }
+
+  /*menu-elements*/
+  .menuWindows {
+    background-image: url("./resources/Menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 0%;
+    margin-right: 20%;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    display: none;
+  }
+
+  .menuButtons {
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    width: 40%;
+    height: 3%;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 1%;
+    border-radius: 10%;
+  }
+
+  #instructionFreezeItem {
+    background-image: url("./resources/freezeReady.png");
+  }
+
+  #instructionBombItem {
+    background-image: url("./resources/bombReady.png");
+  }
+
+  #instructionSpeedItem {
+    background-image: url("./resources/speedReady.png");
+  }
+
+  #instructionHealItem {
+    background-image: url("./resources/healReady.png");
+  }
+
+  #instructionEnemy {
+    background-image: url("./resources/enemyGrey.png");
+  }
+
+  #instructionStrongEnemy {
+    background-image: url("./resources/strongEnemyGrey.png");
+  }
+
+  #instructionBoss {
+    background-image: url("./resources/bossGrey.png");
+  }
+
+  #instructionBossProjectil {
+    background-image: url("./resources/bossGreyAttack.png");
+  }
+
+  #instructionRevive {
+    background-image: url("./resources/revive.png");
+    background-size: contain;
+  }
+
+  #instructionMaxLife {
+    background-image: url("./resources/maxLife.png ");
+    background-size: contain;
+  }
+
+  #instructionPowerUp {
+    background-image: url("./resources/powerUp.png");
+    background-size: contain;
+  }
+
+  #instructionGreyStrongEnemy {
+    background-image: url("./resources/strongEnemyGrey.png");
+    background-size: contain;
+  }
+
+  #instructionLightningItem {
+    background-image: url("./resources/lightningReady.png");
+    background-size: contain;
+  }
+
+  .instructionTable {
+    margin-top: 10%;
+    width: 100%;
+    height: 90%;
+    table-layout: fixed;
+  }
+
+  p.overlayFont {
+    color: black;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-left: 5%;
+  }
+
+  p.overlayFontHeader {
+    text-align: center;
+    font-size: 2vw;
+    color: brown;
+  }
+
+  #startTextOverlay {
+    text-align: center;
+    margin-top: 50%;
+    margin-left: 5%;
+    font-size: 2vw;
+  }
+
+  #lostHeader {
+    margin-top: 20%;
+    font-size: 300%;
+    color: red;
+  }
+
+  #reachedLevel {
+    font-size: 200%;
+    color: black;
+  }
+
+  #reachedScorepoints {
+    font-size: 200%;
+    color: black;
+  }
+
+  #reactionFont {
+    font-size: 200%;
+  }
+
+  /*gamefield-elements*/
+  #gameWindow {
+    background-image: url("./resources/NinjaswapBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-color: grey;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 60%;
+    height: 100%;
+    background-color: white;
+  }
+
+  #gameField {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    height: 50%;
+  }
+
+  tr {
+    width: 100%;
+  }
+
+  td {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height:10%;
+  }
+
+  #continueButton {
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    width: 30%;
+    height: 2.5%;
+    text-align: center;
+    display: none;
+    border-radius: 5%;
+  }
+
+  #continueFont {
+    font-size: 1.6vw;
+    text-align: center;
+  }
+
+  div.defaultBoardElements {
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    text-align: center;
+  }
+
+  #hpBoards {
+    height: 5%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+}
+
+
+
+
+/*forbid landscape device-orientation*/
+@media screen and (orientation: landscape) and (max-device-width: 800px) {
+  #landscapeOrientationReaction{
+    background-image: url("./resources/Menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 0%;
+    margin-right:0%;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    display: block;
+    position: absolute;
+  }
+  #reactionFont{
+    font-size: 200%;
+    text-align: center;
+  }
+
+}
+

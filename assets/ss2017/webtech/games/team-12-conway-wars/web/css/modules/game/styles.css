@@ -1,0 +1,187 @@
+/*cells*/
+
+.cell {
+    z-index: 1;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    border-right-width: 0px;
+    border-left-width: 2px;
+    border-top-width: 0px;
+    border-bottom-width: 2px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    display: table-cell;
+    position: relative;
+}
+
+.cell:last-child {
+    border-right-width: 2px;
+}
+
+.row {
+    display: table-row;
+}
+
+.firstrow {
+    border-top-width: 2px;
+}
+
+.cell_overlay {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 3;
+}
+
+.innercell {
+    top: 37.5%;
+    left: 37.5%;
+    width: 25%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+}
+
+#controls {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    margin: 1vw;
+    background: rgba(70, 70, 70, 0.6);
+    color: #FFF;
+    display: inline-block;
+}
+
+#controls p {
+    margin-left: 10px;
+}
+
+.active {
+    background-color: rgba(100, 100, 100, 0.9);
+}
+
+.dead {
+    background-color: rgba(200, 200, 200, 0.6);
+    color: rgba(150, 150, 150, 0.9);
+}
+
+.powerups {
+    position: relative;
+    display: inline-flex;
+}
+
+.colorpicker {
+    width: 60px;
+    height: 40px;
+}
+
+.used {
+    background-color: rgba(200, 200, 200, 0.6);
+    color: rgba(150, 150, 150, 1);
+}
+
+.playerDisplay {
+    min-height: 117px;
+    margin-bottom: 15%;
+}
+
+.powerupicon {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+}
+
+.pupActive {
+    background-color: rgba(255, 30, 30, 0.9);
+}
+
+.centered {
+    width: 50%;
+    margin: auto;
+}
+
+.centered * {
+    text-align: center;
+    width: 100%;
+}
+
+#next {
+    width: 100%;
+    height: 100%;
+}
+
+#hint {
+    height: 50px;
+}
+
+#won, #busy {
+    color: #000;
+    width: 100vw;
+    height: 150vh;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+    display: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#busy {
+    background: rgba(0, 0, 0, 0.2);
+
+}
+
+#woncontent, #busycontent {
+    width: 25vw;
+    height: 25vh;
+    margin-top: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#busycontent p {
+
+    text-align: center;
+    font-size: 2em;
+    text-shadow: #000 0px 0px 5px, #000 0px 0px 5px, #000 0px 0px 5px,
+    #000 0px 0px 5px, #000 0px 0px 5px, #000 0px 0px 5px;
+    color: #FFFFFF;
+}
+
+#busytiny {
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#woncontent > button {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#game {
+    margin-top: 80px;
+}
+
+#fieldwrapper {
+    display: table-cell;
+    float: left;
+}
+
+@media (max-width: 1083px) {
+    #fieldwrapper {
+        display: inline-block;
+    }
+}

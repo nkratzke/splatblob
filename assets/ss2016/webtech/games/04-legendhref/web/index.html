@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta
+	content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'
+	name='viewport'>
+<title>The Legend of Sir H'Ref</title>
+<link rel="stylesheet" type="text/css" href="./style.css">
+<script type="application/dart" src="./legendofhref_client.dart"></script>
+<script type="text/javascript" src="./packages/browser/dart.js"></script>
+</head>
+<body>
+	<div id="content">
+		<div id="overlay" hidden="true">
+			<div id="gameover">
+				<h1 id="gameovertext">Thou hath been defeated!</h1>
+				<span id="scoretext">Thy score hath reached <span id="score">0</span>
+					of points and thine killings are <span id="killcount">0</span>
+					souls!
+				</span>
+				<input id="take_revenge" type="button">
+			</div>
+		</div>
+		<input type="checkbox" id="menuToggle"> <label
+			for="menuToggle" class="menu-icon"><img
+			src="imgs/hamburger_button.png" width="32px" height="32px" alt="Icon"></label>
+		<h1 id="title">The Legend of Sir H'Ref</h1>
+		<nav class="menu">
+			<ul>
+				<li>
+					<div id="loginmenu">
+						<span id="username_display"></span> <input id="username"
+							type="text" placeholder="Nutzername"> <input
+							id="password" type="password" placeholder="Passwort"> <input
+							id="login" type="button" value="Einloggen"> <input
+							id="register" type="button" value="Registrieren"> <input
+							id="logout" type="button" value="Ausloggen">
+					</div>
+				</li>
+
+			</ul>
+		</nav>
+		<div id="mainmenu">
+			<input id="start" type="button">
+			<!--- Ein Abenteuer beginnen... --->
+			<input id="continue" type="button">
+			<!-- Ein Abenteuer fortsetzen... -->
+			<input id="save" type="button">
+			<!-- Das aktuelle Spiel abspeichern -->
+			<input id="load" type="button">
+
+		</div>
+		<div id="game">
+			<div id="map"></div>
+			<span id="heart_container"><span id="pc_health"></span></span>
+			<div id="dialog">
+				<div id="dialog_log"></div>
+				<div id="dialog_options"></div>
+			</div>
+			<div id="controls">
+				<div id="movement">
+					<input id="move_north" type="button">
+					<!--  -->
+					<input id="move_east" type="button">
+					<!--  -->
+					<input id="move_south" type="button">
+					<!--  -->
+					<input id="move_west" type="button">
+				</div>
+				<div id="actions">
+					<input id="use_action" type="button" value="0">
+					<!--  -->
+					<input id="attack_action" type="button">
+				</div>
+			</div>
+		</div>
+		<div id="hallofheroes">The Hall of Heroes is being constructed</div>
+		<input type="checkbox" id="debug" disabled hidden="true"> <span
+			id="credits">The Legend of Sir H'Ref (c)2016<br> by Torge
+			Tönnies, Daniel Dzimitrowicz, Erik Krage und Alexandra Scheben
+		</span>
+	</div>
+</body>
+</html>

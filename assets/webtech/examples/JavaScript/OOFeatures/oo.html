@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Objektorientiertes JavaScript</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<script type="text/javascript">
+
+// Konstruktor der Auto-"Klasse"
+function Auto(v, g, s) {
+  // public Attribute (Datenfelder) der Auto-"Klasse"
+  this.v = v;
+  this.gear = g;
+  this.steer = s;
+}
+
+// public Methoden der Auto-"Klasse"
+Auto.prototype.gearShift = function(d) { this.gear = d };
+Auto.prototype.accelerate = function(d) { this.v = Math.min(150, this.v + d); };
+Auto.prototype.decelrate = function(d) { this.v = Math.max(0, this.v - d) };
+Auto.prototype.head = function(d) { this.steer += d };
+Auto.prototype.toString = function() {
+  return "Geschwindigkeit: " + this.v + " km/h; " +
+  		 this.gear + ". Gang; " + "Lenkradeinschlag: " + this.steer + "°; ";
+}
+
+// Ableiten einer PIN geschützten Auto-"Klasse" namens KeyCar
+KeyCar.prototype = new Auto();
+KeyCar.prototype.constructor = KeyCar;
+
+// Konstruktor
+function KeyCar(v, g, s, p) {
+  Auto.prototype.constructor.call(this, v, g, s);
+  
+  // privates Attribut (Datenfeld)
+  var pin = p;
+  
+  this.toString = function() {
+  	return Auto.prototype.toString.call(this) + "PIN: " + pin + "; ";
+  }
+  
+}
+
+
+// Ableiten einer Cabrio-"Klasse" aus der Auto-"Klasse"
+Cabrio.prototype = new Auto();
+Cabrio.prototype.constructor = Cabrio;
+
+// Konstruktor
+function Cabrio(v, g, s, o) {
+  Auto.prototype.constructor.call(this, v, g, s);
+  
+  // public Attribute (Datenfelder) der Auto-"Klasse"
+  this.open = o; 
+}
+
+// public Methoden der Cabrio-"Klasse"
+Cabrio.prototype.openRoof = function() { this.open = true }
+Cabrio.prototype.closeRoof = function() { this.open = false }
+Cabrio.prototype.toString = function() {
+  return Auto.prototype.toString.call(this) + 
+  	(this.open ? "Dach offen" : "Dach geschlossen") + "; ";
+}
+
+// Anlegen eines Cabrio Objekts
+var mycab = new Cabrio(13, 3, -12, false);
+document.writeln("Cabrio erzeugt => " + mycab + "<br>");
+mycab.openRoof();
+document.writeln("Dach geöffnet => " + mycab + "<br>");
+mycab.accelerate(120);
+mycab.gearShift(5);
+document.writeln("120 km/h schneller werden, in den fünften Gang schalten => " + mycab + "<br>");
+mycab.head(13);
+document.writeln("Lenkrad 13° nach rechts eingeschlagen => " + mycab + "<br><br>");
+
+// Anlegen eines KeyCar Objekts
+var keycar = new KeyCar(50, 3, 0, 123);
+document.writeln("KeyCar erzeugt: " + keycar + "<br>");
+document.writeln("PIN des KeyCars von außen abfragen ergibt: " + keycar.pin + "<br><br>");
+
+// Polymorphie Check
+document.writeln("Ist mycab vom Typ Cabrio?: " + (mycab instanceof Cabrio) + "<br>");
+document.writeln("Ist mycab vom Typ Auto?: " + (mycab instanceof Auto) + "<br>");
+document.writeln("Ist mycab vom Typ Object?: " + (mycab instanceof Object) + "<br>");
+document.writeln("Ist mycab vom Typ KeyCar?: " + (mycab instanceof KeyCar) + "<br>");
+document.writeln("Damit ist mycab polymorph (entsprechend des gängigen OO Verständnisses).<br>");
+
+</script>
+</body>
+</html>

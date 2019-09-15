@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="de"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link href="favicon.ico" rel="shortcut icon" type="images/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<!-- Container für die Startseite -->
+<div class="container_start">
+    <div id="title"></div>
+    <p id="start">START</p>
+    <p id="copy">© Florian Jeger, Christoph Jeger &amp; Matthias Steffen</p>
+</div>
+
+<div id="overlay">
+</div>
+
+<!-- Container für die Nachrichten -->
+<div class="container_message">
+    <img id="logo" src="img/tetris_menu_logo.png">
+    <img id="portrait" src="img/portrait.png">
+    <p id="message"></p>
+    <p id="continue">FORTSETZEN</p>
+    <p id="newGame">NEUES SPIEL</p>
+</div>
+
+<div class="container_powerup">
+    <p><b>PowerUp</b>: Dieser Tetromino löscht alle Reihen um sich herum!</p>
+</div>
+
+<div class="container_game">
+    <!-- Container für die Level Ziele -->
+    <div class="container_goal">
+        <b>Ziel:</b> <span id="goalDescription"></span> <span id="goalProgress">0</span>/<span id="goal">0</span>
+        <br>
+        <b>Belonung: </b> <span id="bonusPoints">0</span> Punkte
+    </div>
+
+    <!-- Tabelle für das Spielfeld -->
+    <table id="field">
+    </table>
+
+    <div class="container_sidebox">
+        <!-- Container für die Seitenbox -->
+        <div class="container_nextstone">
+            <h3>Nächster Stein</h3>
+            <!-- Tabelle für den nächsten Stein -->
+            <table id="nextstone">
+            </table>
+        </div>
+
+        <div class="container_holdstone">
+            <h3>Stein halten</h3>
+            <!-- Tabelle für den nächsten Stein -->
+            <table id="holdstone">
+            </table>
+        </div>
+
+        <!-- Container für die Spielinformationen -->
+        <div class="container_info">
+            <h3>Level</h3>
+            <p id="level">0</p>
+            <h3>Punkte</h3>
+            <p id="points">0</p>
+        </div>
+    </div>
+
+
+    <!-- Container für die Steuerung -->
+    <div class="container_control">
+        <div id="menu"><img src="img/menu.png"></div>
+        <div id="hard_drop"><img src="img/hard_drop.png"></div>
+        <div id="left_rotation"><img src="img/left_rotation.png"></div>
+        <div id="right_rotation"><img src="img/right_rotation.png"></div>
+        <div id="hold"><img src="img/hold.png"></div>
+        <div id="left"><img src="img/left.png"></div>
+        <div id="down"><img src="img/down.png"></div>
+        <div id="right"><img src="img/right.png"></div>
+    </div>
+
+    <script src="tetrisclient.dart.js"></script>
+    
+</div>
+
+</body></html>

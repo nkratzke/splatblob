@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Dart Memory</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Indie+Flower|Vast+Shadow" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="game.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1><p class="h1">BESCHREIBUNG</p></h1>
+        <div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><h3>Spielauswahl</h3></div>
+        </div>
+        <table class="table table-striped">
+        <tr class="warning">
+            <td>Classic</td>
+            <td>Finde alle Paare auf dem Spielfeld. Jedes Level muss in einer gewissen Zeit absolviert werden. Je weiter du im Level fortschreitest, desto größer wird das Spielfeld.</td>
+        </tr>
+        <tr class="success">
+            <td>TimeAttack</td>
+            <td>Finde alle Paare auf dem Spielfeld. Schaffst du ein weiteres Level, spielst du mit der letzten Zeit weiter.</td>
+        </tr>
+        <tr class="warning">
+            <td>Treasure Hunt</td>
+            <td>Finde alle Schatztruhen auf dem Spielfeld. Sei jedoch vorsichtig bei der Kartenauswahl, es könnte auch eine Fallen sein, sie nehmen dir Lebenspunkte. </td>
+        </tr >
+        <tr class="success">
+            <td>Expert</td>
+            <td>Finde in einer bestimmten Anzahl von Zügen alle Paare auf dem Spielfeld.</td>
+        </tr>
+        <tr class="warning">
+            <td>Triple</td>
+            <td>Variation von Classic in der 3 zusammengeh&ouml;rige Karten gefunden werden m&uuml;ssen.</td>
+        </tr>
+        </table>
+        <div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><h3>Spielicons</h3></div>
+        </div>
+
+        <table class="table table-striped">
+            <tr class="success">
+                <td><img src="imgs/hourTimer.png" height="35px"></td>
+                <td>Zeigt deine noch vorhandene Zeit an</td>
+            </tr>
+            <tr class="warning">
+                <td><img src="imgs/star.png" height="35px"></td>
+                <td>Das aktuelle Level in diesem Spielmodus</td>
+            </tr>
+            <tr class="success">
+                <td><img src="imgs/joker.png" height="35px"></td>
+                <td>Eine zugehörige Karte wird aufgedeckt</td>
+            </tr>
+            <tr class="warning">
+                <td><img src="imgs/timerstop.png" height="35px"></td>
+                <td>Die Zeit stoppt für 5 Sekunden</td>
+            </tr>
+            <tr class="success">
+                <td><img src="imgs/life.png" height="35px"></td>
+                <td>Deine Lebenspunkte</td>
+            </tr >
+            <tr class="warning">
+                <td><img src="imgs/lifeUp.png" height="35px"></td>
+                <td>Sammle dieses PowerUp um einen Lebenspunkt zu erhalten</td>
+            </tr>
+            <tr class="success">
+                <td><img src="imgs/flare.png" height="35px"></td>
+                <td>Zeigt die Position einer Falle</td>
+            </tr >
+            <tr class="warning">
+                <td><img src="imgs/schatz/schatzRoute.png" height="35px"></td>
+                <td>Zeigt die Position eines Schatzes</td>
+            </tr>
+            <tr class="success">
+                <td><img src="imgs/timerforward.png" height="35px"></td>
+                <td>Es werden dir 5 Sekunden deiner Zeit genommen</td>
+            </tr>
+            <tr class="warning">
+                <td><img src="imgs/cardBackround/cardBackround7.jpg" height="35px"></td>
+                <td>Eine verdeckte Karte</td>
+            </tr>
+            <tr class="success">
+                <td><img src="imgs/cardBackround/cardBackround2.jpg" height="35px" width="35px"></td>
+                <td>Ein verdeckter Schatz</td>
+            </tr>
+            <tr class="warning">
+                <td><img src="imgs/cardBackround/cardBackround5.jpg" height="35px"></td>
+                <td>Eine verdeckte Falle</td>
+            </tr>
+            <tr class="success">
+                <td><img src="imgs/minus.png" height="35px"></td>
+                <td>Verringert die Anzahl der verbrauchten Spielzüge</td>
+            </tr>
+        </table>
+
+        <a href="index.html" class="label"><h3>>> back <<</h3></a>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+</body>
+</html>

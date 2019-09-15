@@ -1,0 +1,13 @@
+{
+	"name": "Test Level",
+	"config": {
+		"platformLength": 100,
+		"ballSpeed":50,
+		"bricksPerRow": 1,
+		"rowsWithBricks": 1,
+		"specialBricksEnabled": true,
+		"specialBricks": {
+			"invert": 1
+		}
+	}
+}

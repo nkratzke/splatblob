@@ -1,0 +1,69 @@
+{
+	"objects": 
+	[
+		{
+			"t": "rock",
+			"mhp": 0,
+			"hp": 0,
+			"oft": false,
+			"ft": null,
+			"pa": false,
+			"ipa": false,
+			"pu": true
+		},
+		{
+			"t": "evilrock",
+			"mhp": 0,
+			"hp": 0,
+			"oft": false,
+			"ft": null,
+			"pa": false,
+			"ipa": false,
+			"pu": false
+		},
+		{
+			"t": "tree",
+			"mhp": 0,
+			"hp": 0,
+			"oft": false,
+			"ft": null,
+			"pa": false,
+			"ipa": false,
+			"pu": false
+		},
+		{
+			"t": "sandrock",
+			"mhp": 10,
+			"hp": 10,
+			"oft": false,
+			"ft": null,
+			"pa": false,
+			"ipa": false,
+			"pu": false,
+			"im": {
+				"0": true,
+				"1": true
+			}
+		},
+		{
+			"t": "bomb",
+			"mhp": 0,
+			"hp": 0,
+			"oft": false,
+			"ft": null,
+			"pa": true,
+			"ipa": true,
+			"pu": false
+		},
+		{
+			"t": "flying_flask",
+			"mhp": 1,
+			"hp": 1,
+			"oft": false,
+			"ft": null,
+			"pa": true,
+			"ipa": false,
+			"pu": false
+		}
+	]
+}

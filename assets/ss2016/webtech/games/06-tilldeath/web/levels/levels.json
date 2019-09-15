@@ -1,0 +1,75 @@
+[
+  {
+    "name":"Level 1 - Beginnings",
+    "filename":"level1.json"
+  },
+  {
+    "name":"Level 2 - Ascension",
+    "filename":"level2.json"
+  },
+  {
+    "name":"Level 3 - Betrayal",
+    "filename":"level3.json"
+  },
+  {
+    "name":"Level 4 - Death Rattle",
+    "filename":"level4.json"
+  },
+  {
+    "name":"Level 5 - Descent",
+    "filename":"level5.json"
+  },
+  {
+    "name":"Level 6 - NOT Infinite",
+    "filename":"level6.json"
+  },
+  {
+    "name":"Level 7 - Run for it",
+    "filename":"level7.json"
+  },
+  {
+    "name":"Level 8 - Last straw",
+    "filename":"level8.json"
+  },
+  {
+    "name":"Level 1+ - Struggles",
+    "filename":"level1plus.json"
+  },
+  {
+    "name":"Level 4+ - Dark Angel",
+    "filename":"level4plus.json"
+  },
+  {
+    "name":"Level 8+ - Last stand",
+    "filename":"level8plus.json"
+  },
+  {
+    "name":"Level 1∞ - Insanity",
+    "filename":"level1infinite.json"
+  },
+  {
+    "name":"Level 2∞ - Insanity",
+    "filename":"level2infinite.json"
+  },
+  {
+    "name":"Level 3∞ - Insanity",
+    "filename":"level3infinite.json"
+  },
+  {
+    "name":"Level 4∞ - Insanity",
+    "filename":"level4infinite.json"
+  },
+  {
+    "name":"Level 8∞ - Insanity",
+    "filename":"level8infinite.json"
+  },
+  {
+    "name":"Level ∞ - 'Til Death",
+    "filename":"levelinfinite1.json"
+  },
+  {
+    "name":"Bonus: Flappy Death",
+    "filename":"levelbooster.json"
+  }
+
+]

@@ -1,0 +1,18 @@
+{
+  "NAME":"Dont Fall",
+  "MAXFREQUENZ":2000,
+  "MAXPOINTS":130000,
+  "YellowCoin":50,
+  "PowerUp_Multiplier":10,
+  "Bat":100,
+  "BlueCoin":100,
+  "Rat":80,
+  "RedCoin":150,
+  "PurpleCoin":100,
+  "DrunkenRat":100,
+  "Hole":40,
+  "PowerUp_CoinGathering":5,
+  "PowerUp_OnlyCoins":15,
+  "PowerDown_Multiplier":5
+
+}

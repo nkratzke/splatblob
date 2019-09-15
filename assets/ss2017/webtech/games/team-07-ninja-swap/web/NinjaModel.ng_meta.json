@@ -1,0 +1,139 @@
+{
+  "ngDeps": null,
+  "type": {
+    "Bomb": {
+      "class": "Identifier",
+      "name": "Bomb",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Boss": {
+      "class": "Identifier",
+      "name": "Boss",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "BossProjectile": {
+      "class": "Identifier",
+      "name": "BossProjectile",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Enemy": {
+      "class": "Identifier",
+      "name": "Enemy",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Figure": {
+      "class": "Identifier",
+      "name": "Figure",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Frost": {
+      "class": "Identifier",
+      "name": "Frost",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Gameobject": {
+      "class": "Identifier",
+      "name": "Gameobject",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Healing": {
+      "class": "Identifier",
+      "name": "Healing",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Item": {
+      "class": "Identifier",
+      "name": "Item",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Lightning": {
+      "class": "Identifier",
+      "name": "Lightning",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Ninja": {
+      "class": "Identifier",
+      "name": "Ninja",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "NinjaModel": {
+      "class": "Identifier",
+      "name": "NinjaModel",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Projectile": {
+      "class": "Identifier",
+      "name": "Projectile",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "ReviveNinjas": {
+      "class": "Identifier",
+      "name": "ReviveNinjas",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "SpeedUp": {
+      "class": "Identifier",
+      "name": "SpeedUp",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "StrongEnemy": {
+      "class": "Identifier",
+      "name": "StrongEnemy",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "Upgrade": {
+      "class": "Identifier",
+      "name": "Upgrade",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "UpgradeDamage": {
+      "class": "Identifier",
+      "name": "UpgradeDamage",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    },
+    "UpgradeLifepoints": {
+      "class": "Identifier",
+      "name": "UpgradeLifepoints",
+      "moduleUrl": "asset:AgentenProjekt/web/NinjaModel.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}

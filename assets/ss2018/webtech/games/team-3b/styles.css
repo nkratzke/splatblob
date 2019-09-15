@@ -1,0 +1,182 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+* {
+    overflow: hidden;
+    text-align: center;
+    font:  25px/1.3 'Oleo Script', Helvetica, sans-serif;
+    color: #2b2b2b;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 100%;
+}
+
+/* oleo-script-regular - latin */
+@font-face {
+    font-family: 'Oleo Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('ressources/fonts/oleo-script-v6-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Oleo Script'), local('OleoScript-Regular'),
+    url('ressources/fonts/oleo-script-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('ressources/fonts/oleo-script-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('ressources/fonts/oleo-script-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('ressources/fonts/oleo-script-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('ressources/fonts/oleo-script-v6-latin-regular.svg#OleoScript') format('svg'); /* Legacy iOS */
+}
+
+
+#game div {
+    position: absolute;
+}
+
+#score {
+    text-align: right;
+}
+
+#level {
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}
+
+#tries {
+    text-align: left;
+}
+
+#player, #enemy {
+    border-radius: 50%;
+}
+
+#startScreen{
+    background-image: url("ressources/animations/startScreenDesktop.gif");
+    background-color: white;
+    background-size: cover;
+}
+
+#highScore{
+    top: 75%;
+    color: coral;
+
+}
+
+#lastTry{
+    top: 80%;
+    color: darkviolet;
+}
+#tutorialBtn {
+    background-image: url("ressources/graphics/tutorial.png");
+    background-size: 13%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    top: 52%;
+    left: 47%;
+    width: 60%;
+    z-index: 6;
+}
+#startBtn {
+     background-image: url("ressources/graphics/startButton.png");
+     background-size: 13%;
+     background-repeat: no-repeat;
+     margin-left: auto;
+     top: 44%;
+     left: 47%;
+     width: 60%;
+    z-index: 5;
+ }
+
+#tutorial{
+    background-image: url("ressources/graphics/tutorialbackgrounddesktop.png");
+    background-size: cover;
+
+}
+#endTutorialBtn{
+    background-image: url("ressources/graphics/TutorialstartBtn.png");
+    background-size: 15%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    top: 70%;
+    left: 47%;
+    width: 60%;
+}
+
+
+@media screen  and (orientation: portrait) and (max-device-width: 800px) {
+    #tutorial {
+        background-image: url("ressources/graphics/tutorialbackground.png");
+        background-color: white;
+        display: block ;
+        z-index: 30  ;
+    }
+    #endTutorialBtn{
+        background-image: url("ressources/graphics/TutorialstartBtn.png");
+        background-size: 40%;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        top: 32%;
+        left: 41%;
+        width: 60%;
+    }
+
+}
+
+@media screen  and (orientation: portrait) and (max-device-width: 800px) {
+    #startScreen {
+        background-image: url("ressources/animations/startbackgroundmobile.gif");
+        background-color: white;
+        display: block ;
+        z-index: 30  ;
+    }
+    #lastTry{
+        top: 80%;
+        color: darkviolet;
+        font-size: large;
+    }
+    #highScore{
+        top: 75%;
+        color: coral;
+        font-size: large;
+
+    }
+    #level {
+        width: 100%;
+    }
+    #tutorialBtn {
+          background-image: url("ressources/graphics/tutorial.png");
+          background-size: 30%;
+          background-repeat: no-repeat;
+          margin-left: auto;
+          top: 45%;
+          left: 41%;
+          width: 60%;
+        z-index: 6;
+      }
+    #startBtn {
+        background-image: url("ressources/graphics/startButton.png");
+        background-size: 25%;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        top: 40%;
+        left: 43%;
+        width: 60%;
+        z-index: 5;
+    }
+
+}
+
+@media screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px){
+    #landscapeError {
+        background-image: url("ressources/animations/startScreenDesktop.gif");
+        background-color: white;
+        background-size: cover;
+        z-index: 15;
+        left: 0%;
+    }
+}

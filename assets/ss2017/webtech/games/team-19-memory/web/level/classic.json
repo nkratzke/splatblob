@@ -1,0 +1,87 @@
+{
+  "level": [
+    {
+      "zeit": 10,
+      "n": 2,
+      "m": 2,
+      "par": 5
+    },
+    {
+      "zeit": 10,
+      "n": 2,
+      "m": 2,
+      "par": 6
+    },
+      {
+        "zeit": 20,
+        "n": 2,
+        "m": 3,
+        "par": 6
+      },
+      {
+        "zeit": 25,
+        "n": 2,
+        "m": 3,
+        "par": 6
+      },
+      {
+        "zeit": 30,
+        "n": 2,
+        "m": 4,
+        "par": 6
+      },
+      {
+        "zeit": 30,
+        "n": 2,
+        "m": 4,
+        "par": 6
+      },
+    {
+      "zeit": 35,
+      "n": 3,
+      "m": 4,
+      "par": 6
+    },
+    {
+      "zeit": 37,
+      "n": 3,
+      "m": 4,
+      "par": 6
+    },
+    {
+      "zeit": 40,
+      "n": 4,
+      "m": 4,
+      "par": 6
+    },
+      {
+        "zeit": 50,
+        "n": 5,
+        "m": 4,
+        "par": 6
+      },
+      {
+        "zeit": 60,
+        "n": 4,
+        "m": 6,
+        "par": 6
+      },
+      {
+        "zeit": 60,
+        "n": 4,
+        "m": 6,
+        "par": 6
+      },
+      {
+        "zeit": 50,
+        "n": 4,
+        "m": 6,
+        "par": 6
+      }
+  ],
+  "path": "all",
+  "allowedPowerUps": ["TIMESTOP", "JOKER", "TIMEFORWARD"],
+  "expertPowerUps":["FREETURNS", "TIMESTOP"],
+  "cards":["delfin", "eule", "katze","otten", "allfarblori", "ente", "hund", "igel", "schaf", "tiger", "waschbaer", "tukan"],
+  "required" : 2
+}

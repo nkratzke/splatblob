@@ -1,0 +1,184 @@
+{
+  "stone": [
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "powerup": "ballExploder",
+      "powerupVal": 6,
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 1,
+      "score": 10,
+      "cell":
+      [
+        {
+          "posX": 20,
+          "posY": 22
+        },
+        {
+          "posX": 21,
+          "posY": 22
+        },
+        {
+          "posX": 20,
+          "posY": 23
+        },
+        {
+          "posX": 21,
+          "posY": 23
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 4,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 29,
+          "posY": 20
+        },
+        {
+          "posX": 30,
+          "posY": 20
+        },
+        {
+          "posX": 31,
+          "posY": 20
+        },
+        {
+          "posX": 32,
+          "posY": 20
+        },
+        {
+          "posX": 29,
+          "posY": 21
+        },
+        {
+          "posX": 30,
+          "posY": 21
+        },
+        {
+          "posX": 31,
+          "posY": 21
+        },
+        {
+          "posX": 32,
+          "posY": 21
+        },
+        {
+          "posX": 29,
+          "posY": 22
+        },
+        {
+          "posX": 30,
+          "posY": 22
+        },
+        {
+          "posX": 31,
+          "posY": 22
+        },
+        {
+          "posX": 32,
+          "posY": 22
+        },
+        {
+          "posX": 29,
+          "posY": 23
+        },
+        {
+          "posX": 30,
+          "posY": 23
+        },
+        {
+          "posX": 31,
+          "posY": 23
+        },
+        {
+          "posX": 32,
+          "posY": 23
+        }
+      ]
+    },
+    {
+      "dirX": 0,
+      "dirY": 0,
+      "type": "desS",
+      "changeX": -1,
+      "changeY": -1,
+      "destructionInfo": 6,
+      "score": 10,
+      "cell": [
+        {
+          "posX": 10,
+          "posY": 10
+        },
+        {
+          "posX": 11,
+          "posY": 10
+        },
+        {
+          "posX": 12,
+          "posY": 10
+        },
+        {
+          "posX": 13,
+          "posY": 10
+        },
+        {
+          "posX": 10,
+          "posY": 11
+        },
+        {
+          "posX": 11,
+          "posY": 11
+        },
+        {
+          "posX": 12,
+          "posY": 11
+        },
+        {
+          "posX": 13,
+          "posY": 11
+        },
+        {
+          "posX": 10,
+          "posY": 12
+        },
+        {
+          "posX": 11,
+          "posY": 12
+        },
+        {
+          "posX": 12,
+          "posY": 12
+        },
+        {
+          "posX": 13,
+          "posY": 12
+        },
+        {
+          "posX": 10,
+          "posY": 13
+        },
+        {
+          "posX": 11,
+          "posY": 13
+        },
+        {
+          "posX": 12,
+          "posY": 13
+        },
+        {
+          "posX": 13,
+          "posY": 13
+        }
+      ]
+    }
+  ]
+}

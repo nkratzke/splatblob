@@ -1,0 +1,35 @@
+{
+  "name": "web",
+  "version": "0.0.1",
+  "playerShipsCount": 8,
+  "playerShips": [
+    [true, 1, true, false],
+    [true, 2, true, false],
+    [true, 1, true, false],
+    [true, 2, true, false],
+    [true, 1, true, false],
+    [true, 2, true, false],
+    [true, 1, true, false],
+    [true, 2, true, false]
+  ],
+  "enemyShipsCount": 5,
+  "enemyShips": [
+    [false, 1, true, false],
+    [false, 2, true, false],
+    [false, 2, true, false],
+    [false, 1, true, false],
+    [false, 2, true, false]
+  ],
+  "playerItemsCount" : 3,
+  "playerItems": [
+    [1,1],
+    [1,2],
+    [2,3]
+  ],
+  "enemyItemsCount" : 3,
+  "enemyItems": [
+    [1,1],
+    [1,2],
+    [2,3]
+  ]
+}

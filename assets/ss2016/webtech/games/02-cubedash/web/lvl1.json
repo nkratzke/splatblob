@@ -1,0 +1,18 @@
+{
+	"neededPoints": 250,
+	"nextObstacleDistance": 40,
+	"possibleObstacles": [
+        [{
+          "posX": 0,
+          "posY": 0,
+          "width": 4,
+          "height": 4
+        }],
+        [ {
+          "posX": 0,
+          "posY": 0,
+          "width": 2,
+          "height": 2
+        }]
+	]
+}

@@ -1,0 +1,201 @@
+{
+  "name":"Level 8 infinite - The Curse",
+  "nextLevel":"levelinfinite1.json",
+  "speed":5,
+  "spawn":{
+    "type":"Spawn",
+    "pos_x":60,
+    "pos_y":60,
+    "size_x":1,
+    "size_y":1
+  },
+  "blocks": [
+    {
+      "type": "Ground",
+      "pos_x": 0,
+      "pos_y": 20,
+      "size_x": 500,
+      "size_y": 20
+    },
+    {
+      "type": "Wall",
+      "pos_x": 500,
+      "pos_y": 20,
+      "size_x": 20,
+      "size_y": 100
+    },
+    {
+      "type": "Wall",
+      "pos_x": 500,
+      "pos_y": 120,
+      "size_x": 200,
+      "size_y": 20
+    },
+    {
+      "type": "Cobble",
+      "pos_x": 850,
+      "pos_y": 120,
+      "size_x": 150,
+      "size_y": 20
+    },
+    {
+      "type":"Coin",
+      "pos_x":895,
+      "pos_y":150,
+      "size_x":20,
+      "size_y":20,
+      "value":150
+    },
+    {
+      "type":"Trigger",
+      "pos_x":1000,
+      "pos_y":20,
+      "size_x":5,
+      "size_y":300,
+      "triggerables": [
+        {
+          "type":"Bullet",
+          "pos_x":1500,
+          "pos_y":80,
+          "size_x":32,
+          "size_y":16
+        }
+      ]
+    },
+    {
+      "type": "Water",
+      "pos_x": 520,
+      "pos_y": 15,
+      "size_x": 275,
+      "size_y": 20
+    },
+    {
+      "type": "Ground",
+      "pos_x": 800,
+      "pos_y": 20,
+      "size_x": 300,
+      "size_y": 20
+    },
+    {
+      "type": "Water",
+      "pos_x": 1105,
+      "pos_y": 15,
+      "size_x": 275,
+      "size_y": 20
+    },
+    {
+      "type": "Ground",
+      "pos_x": 1250,
+      "pos_y": 50,
+      "size_x": 250,
+      "size_y": 20
+    },
+    {
+      "type": "Ground",
+      "pos_x": 1510,
+      "pos_y": 75,
+      "size_x": 40,
+      "size_y": 20
+    },
+    {
+      "type":"Coin",
+      "pos_x":1520,
+      "pos_y":100,
+      "size_x":10,
+      "size_y":10,
+      "value":250
+    },
+    {
+      "type": "Ground",
+      "pos_x": 1560,
+      "pos_y": 95,
+      "size_x": 90,
+      "size_y": 30
+    },
+    {
+      "type": "Ground",
+      "pos_x": 1700,
+      "pos_y": 140,
+      "size_x": 200,
+      "size_y": 20
+    },
+    {
+      "type": "Cobble",
+      "pos_x": 1700,
+      "pos_y": 0,
+      "size_x": 20,
+      "size_y": 140
+    },
+    {
+      "type": "Ground",
+      "pos_x": 2150,
+      "pos_y": 140,
+      "size_x": 40,
+      "size_y": 20
+    },
+    {
+      "type": "Water",
+      "pos_x": 1700,
+      "pos_y": 15,
+      "size_x": 1500,
+      "size_y": 20
+    },
+    {
+      "type": "Ground",
+      "pos_x": 2450,
+      "pos_y": 50,
+      "size_x": 300,
+      "size_y": 20
+    },
+    {
+      "type": "Cobble",
+      "pos_x": 2750,
+      "pos_y": 50,
+      "size_x": 20,
+      "size_y": 100
+    },
+    {
+      "type": "Ground",
+      "pos_x": 3100,
+      "pos_y": 50,
+      "size_x": 100,
+      "size_y": 20
+    },
+    {
+      "type": "Ground",
+      "pos_x": 3200,
+      "pos_y": 20,
+      "size_x": 500,
+      "size_y": 20
+    },
+    {
+      "type": "Cobble",
+      "pos_x": 3300,
+      "pos_y": 40,
+      "size_x": 20,
+      "size_y": 50
+    },
+    {
+      "type": "Cobble",
+      "pos_x": 3500,
+      "pos_y": 40,
+      "size_x": 20,
+      "size_y": 80
+    },
+    {
+      "type": "TeleportSpeed",
+      "pos_x": 3700,
+      "pos_y": 40,
+      "size_x": 20,
+      "size_y": 500,
+      "speedIncrease": 1,
+      "target": {
+        "type": "Spawn",
+        "pos_x": 60,
+        "pos_y": 60,
+        "size_x": 20,
+        "size_y": 50
+      }
+    }
+  ]
+}

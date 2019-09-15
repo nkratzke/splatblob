@@ -1,0 +1,65 @@
+[
+  {
+    "id": 0,
+    "name": "Shabby Gloves",
+    "display": "Gloves",
+    "type": 3,
+    "value": 1,
+    "quality": 0,
+    "icon": "gloves/glove_leather.png"
+  },
+  {
+    "id": 1,
+    "name": "Reinforced Gloves",
+    "display": "Gloves",
+    "type": 3,
+    "value": 2,
+    "quality": 1,
+    "mods": {
+      "strength": 2,
+      "damage": 1
+    },
+    "icon": "gloves/glove_dark.png"
+  },
+  {
+    "id": 2,
+    "name": "Chain Gauntlets",
+    "display": "Gloves",
+    "type": 3,
+    "value": 3,
+    "quality": 2,
+    "mods": {
+      "strength": 2,
+      "damage": 3
+    },
+    "icon": "gloves/glove_moon.png"
+  },
+  {
+    "id": 3,
+    "name": "Plated Gauntlets",
+    "display": "Gloves",
+    "type": 3,
+    "value": 4,
+    "quality": 3,
+    "mods": {
+      "strength": 3,
+      "damage": 2,
+      "crit-chance": 2
+    },
+    "icon": "gloves/glove_emerald.png"
+  },
+  {
+    "id": 4,
+    "name": "Ornstein's Gauntlets of Doom",
+    "display": "Gloves",
+    "type": 3,
+    "value": 5,
+    "quality": 4,
+    "mods": {
+      "strength": 4,
+      "damage": 4,
+      "crit-chance": 3
+    },
+    "icon": "gloves/glove_gold.png"
+  }
+]

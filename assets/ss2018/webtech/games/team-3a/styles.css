@@ -1,0 +1,428 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+/*
+    Raw Elements:
+ */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    color: #F8EFBA;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 3px 3px #B33771;
+    background-color: #6D214F;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+span > img {
+    vertical-align: middle;
+    image-rendering: pixelated;
+}
+
+/*
+    General Layout:
+ */
+
+.container {
+    padding: 1rem;
+}
+
+.button-wrapper {
+    margin: 2rem;
+}
+
+.margin-top-big {
+    margin-top: 2rem;
+}
+
+.margin-top-small {
+    margin-top: 1rem;
+}
+
+.has-text-centered {
+    text-align: center;
+}
+
+.invisible {
+    display: none !important;
+}
+
+/*
+    Table:
+ */
+
+.table {
+    display: table;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+/*
+    Text:
+ */
+
+.title {
+    font-size: calc(4vw + 1vh + .75vmin);
+    animation: title 3s ease-in-out normal infinite;
+}
+
+.subtitle {
+    font-size: calc(.65vw + 1vh + .5vmin);
+    opacity: .9;
+    line-height: 1.3;
+}
+
+.label {
+    display: block;
+    margin-bottom: .5rem;
+    font-size: calc(.60vw + 1vh + .5vmin);
+}
+
+.loading {
+    height: 90px;
+    line-height: 90px;
+    font-size: calc(.60vw + 1vh + .5vmin);
+    font-style: italic;
+    animation: loading-scale 2s ease-in normal infinite;
+}
+
+/*
+    Buttons:
+ */
+
+.button {
+    min-width: 250px;
+    /* width: 16vw; */
+    padding: 2vh 4vw;
+    white-space: nowrap;
+    background-color: #6D214F;
+    color: #F8EFBA;
+    text-shadow: 3px 3px #B33771;
+    text-decoration: none;
+    display: inline-block;
+    margin: .7vh 1.5vw;
+    border: 3px solid #F8EFBA;
+    transition-duration: .4s;
+}
+
+/*
+    Increase button minimum size on bigger screens.
+ */
+@media screen and (min-width: 800px) {
+    .button {
+        min-width: 300px;
+    }
+}
+
+.button.is-small {
+    min-width: auto;
+}
+
+.button:disabled {
+    color: #4b0447;
+}
+
+.button:active {
+    color: #5b1d36;
+    text-shadow: 3px 3px #F8EFBA;
+}
+
+.button:hover {
+    background-color: #B33771;
+    text-shadow: 3px 3px #6D214F;
+    transform: translateY(2px);
+}
+
+/*
+    Game Field:
+ */
+#game {
+    position: relative;
+    z-index: 50;
+    margin: 0 auto;
+    background-color: #AD8543;
+    border: 4px solid #B33771;
+    border-collapse: collapse;
+}
+
+.table-cell div {
+    width: 68px; /* calc(100vw / 8); */ /* calc(38px + 2.5vw); */
+    height: 68px; /* calc(100vw / 8); */ /* calc(38px + 2.5vw); */
+    max-width: 68px;
+    max-height: 68px;
+    position: absolute;
+    display: inline-block;
+    image-rendering: pixelated;
+    vertical-align: middle;
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    .table-cell div {
+        width: 76px;
+        height: 76px;
+    }
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .table-cell div {
+        width: 76px;
+        height: 76px;
+    }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .table-cell div {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+#game .field {
+    z-index: 5;
+    position: relative;
+    background: url("assets/img/terrain.png") no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+    Game Objects:
+ */
+
+.terrain {
+    z-index: 7;
+}
+
+.hedge {
+    background: url("assets/img/hedge.png") no-repeat;
+    background-size: cover;
+    z-index: 8;
+}
+
+.rabbit {
+    background: url("assets/img/rabbit.png") no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+
+.fox {
+    background: url("assets/img/fox.png") no-repeat;
+    background-size: cover;
+    z-index: 9;
+}
+
+.goal {
+    background: url("assets/img/goal.png") no-repeat;
+    background-size: cover;
+    z-index: 8;
+}
+
+.speed_powerup {
+    background: url("assets/img/speed_powerup.png") no-repeat;
+    background-size: cover;
+    z-index: 8;
+}
+
+/*
+    Animations:
+ */
+
+/*
+    => Title
+ */
+@keyframes title {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*
+    => Loading
+ */
+@keyframes loading-scale {
+    0% {
+       transform: scaleX(1.0);
+    }
+    50% {
+        transform: scaleX(1.3);
+    }
+    100% {
+        transform: scaleX(1.0);
+    }
+}
+
+/*
+    => Rabbit
+ */
+@keyframes rabbit-left {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(-19px) translateY(-10px);
+    }
+    100% {
+        transform: translateX(-38px) translateY(0);
+    }
+}
+.rabbit-left {
+    animation: rabbit-left .425s ease-in normal;
+}
+
+@keyframes rabbit-right {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(19px) translateY(-10px);
+    }
+    100% {
+        transform: translateX(38px) translateY(0);
+    }
+}
+.rabbit-right {
+    animation: rabbit-right .425s ease-in normal;
+}
+
+@keyframes rabbit-up {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-19px);
+    }
+    100% {
+        transform: translateY(-38px);
+    }
+}
+.rabbit-up {
+    animation: rabbit-up .425s ease-in normal;
+}
+
+@keyframes rabbit-down {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(19px);
+    }
+    100% {
+        transform: translateY(38px);
+    }
+}
+.rabbit-down {
+    animation: rabbit-down .425s ease-in normal;
+}
+
+/*
+    Progressbar:
+ */
+
+#progressbar {
+    background-color: #B33771;
+    border-radius: 13px; /* (height of inner div) / 2 + padding */
+    padding: 3px;
+    margin: 0 auto;
+    width: 20rem;
+}
+
+#progressbar > div {
+    background-color: #58B19F;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+}
+
+/*
+    Modal:
+ */
+
+.modal {
+    position: fixed;
+    z-index: 90;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #6D214F;
+    margin: 15% auto; /* Was on "20% auto" previously. */
+    padding: 20px;
+    border: 3px solid #B33771;
+    width: 75%
+}
+
+/*
+    Footer:
+ */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: .5rem;
+    width: 100%;
+}
+
+.footer > p {
+    font-size: .5rem;
+}
+
+/*
+    Landscape Warning:
+ */
+
+#landscape_warning {
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: #6D214F;
+    text-align: center;
+}
+
+#landscape_warning > .subtitle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}

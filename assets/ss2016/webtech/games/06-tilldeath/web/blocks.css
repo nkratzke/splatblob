@@ -1,0 +1,190 @@
+.block-med {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: absolute;
+
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.block-low {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: absolute;
+
+    border: 1px solid;
+}
+
+.block {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: absolute;
+}
+
+.Player {
+    width: 20px;
+    height: 50px;
+    z-index: 70;
+
+    background: url("resources/guy.png");
+    background-size: 20px 50px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.Player-low {
+    width: 20px;
+    height: 50px;
+    z-index: 70;
+
+    background: none;
+    border-color: green;
+}
+
+.Ground {
+    z-index: 50;
+    background: url("resources/ground.png");
+}
+
+.Ground-low {
+    z-index: 50;
+    background: none;
+    border-color: black;
+}
+
+.Wall {
+    z-index: 51;
+    background: url("resources/wall.png");
+}
+
+.Wall-low {
+    z-index: 51;
+    background: none;
+    border-color: black;
+}
+
+.Cobble {
+    z-index: 51;
+    background: url("resources/cobble.png");
+}
+
+.Cobble-low {
+    z-index: 51;
+    background: none;
+    border-color: black;
+}
+
+.Finish {
+    z-index: 51;
+    background: url("resources/finish.png");
+    background-size: 32px 64px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.Finish-low {
+    z-index: 51;
+    background: none;
+    border-color: green;
+}
+
+.SpikesTop {
+    z-index: 50;
+    background: url("resources/spikes-bottom.png");
+    background-size: 32px 32px;
+    background-repeat: repeat-x;
+    background-position: left top;
+}
+
+.SpikesTop-low {
+    z-index: 50;
+    background: none;
+    border-color: black;
+    border-top-color: red;
+}
+
+.SpikesBottom {
+    z-index: 50;
+    background: url("resources/spikes-top.png");
+    background-size: 32px 32px;
+    background-repeat: repeat-x;
+    background-position: left bottom;
+}
+
+.SpikesBottom-low {
+    z-index: 50;
+    background: none;
+    border-color: black;
+    border-bottom-color: red;
+}
+
+.Water {
+    background-color: deepskyblue;
+    z-index: 49;
+}
+
+.Water-low {
+    background: none;
+    z-index: 49;
+    border-color: deepskyblue;
+}
+
+.Trigger {
+    /*border-color: white;*/
+    position: absolute;
+    z-index: 40;
+    display: none;
+}
+
+.Teleport {
+    background-color: teal;
+    z-index: 40;
+}
+
+.Teleport-low {
+    background: none;
+    border-color: teal;
+    z-index: 40;
+}
+
+.Bullet {
+    z-index: 59;
+    background: url("resources/bullet.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.Bullet-low {
+    z-index: 59;
+    background: none;
+    border-color: red;
+}
+
+.Coin {
+    z-index: 59;
+    background: url("resources/coin.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.Coin-low {
+    z-index: 59;
+    background: none;
+    border-color: gold;
+}
+
+.Message {
+    z-index: 60;
+    font-family: "Roboto Condensed", SansSerif;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}

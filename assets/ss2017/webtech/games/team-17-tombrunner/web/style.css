@@ -1,0 +1,507 @@
+
+@font-face {
+    font-family: 'Odinson';
+    src: url('graphics/fonts/Odinson.eot'); /* IE9 Compat Modes */
+    src: url('graphics/fonts/Odinson.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('graphics/fonts/Odinson.woff2') format('woff2'), /* Super Modern Browsers */
+    url('graphics/fonts/Odinson.woff') format('woff'), /* Pretty Modern Browsers */
+    url('graphics/fonts/Odinson.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('graphics/fonts/Odinson.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Odinson Light';
+    src: url('graphics/fonts/Odinson_Light.eot'); /* IE9 Compat Modes */
+    src: url('graphics/fonts/Odinson_Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('graphics/fonts/Odinson_Light.woff2') format('woff2'), /* Super Modern Browsers */
+    url('graphics/fonts/Odinson_Light.woff') format('woff'), /* Pretty Modern Browsers */
+    url('graphics/fonts/Odinson_Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('graphics/fonts/Odinson_Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+html, body {
+    font-family: Odinson;
+    font-size: 2.2vmin;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url("graphics/torch.png") no-repeat center;
+}
+
+#mainMenu {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+#startButtonField {
+    margin-top: 3.5rem;
+}
+
+.button, button:visited {
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    width: 18rem;
+    border-radius: 0.3rem;
+    border: 0.17rem solid grey;
+    background: yellowgreen;
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: darkolivegreen;
+    color: #E0E0E0;
+}
+
+.buttonClicked {
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    width: 18rem;
+    border-radius: 0.3rem;
+    border: 0.17rem solid grey;
+    background: darkolivegreen;
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    color: #E0E0E0;
+}
+
+hr {
+    width: 20rem;
+    height: 0.15rem;
+    margin-top: 1rem;
+    color: lightgrey;
+    background-color: lightgrey;
+}
+
+#copyright {
+    margin:  auto;
+    margin-top: 10px;
+    width: 500px;
+    color: #ffffff;
+}
+
+#welcome {
+    text-align: center;
+    margin-top: 3rem;
+    color: #ffffff;
+    font-size: 4em;
+}
+
+
+#bodyGame {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#mainGame {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 0;
+}
+
+#playerField {
+    position: relative;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    height: 100vmin;
+}
+
+#playerInfoTable {
+    color: #ffffff;
+    font-size: 1.5rem;
+    border-collapse: collapse;
+}
+
+#healthPic {
+    background: url("graphics/health.png") no-repeat;
+}
+
+#lifeGif {
+    background: url("graphics/heart.gif") no-repeat;
+}
+
+#scoreGif {
+    background: url("graphics/coin.gif") no-repeat;
+}
+
+#levelPic {
+    background: url("graphics/levelPic.png") no-repeat;
+}
+
+#healthPic, #lifeGif, #scoreGif, #levelPic {
+    background-size: 40%;
+    background-position: center;
+    width: 15%;
+    height: 15%;
+}
+
+#level, #life, #health, #score, #infoMap, #healthPic, #lifeGif, #scoreGif, #levelPic {
+    border-top: 0.17rem solid grey;
+    border-bottom: 0.17rem solid grey;
+}
+
+#level, #life, #health, #score, #infoMap {
+    width: 33vw;
+}
+
+#infoMap {
+    position: relative;
+    align-content: center;
+    background: url("graphics/mapBackground.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+#mapTable {
+    width: 25vmin;
+    height: 25vmin;
+    border-collapse: collapse;
+    margin: 0.7em auto 0.7em  auto;
+}
+
+.mapWall  {
+    background-color: saddlebrown;
+}
+
+#controlField {
+}
+
+.controlButton {
+    padding: 0.8rem 1rem;
+    width: 15vw;
+    height: 15vh;
+    border-radius: 0.4rem;
+    border: 0.17rem solid grey;
+    background: yellowgreen;
+    text-align: center;
+    cursor: pointer;
+}
+
+#gameField {
+    border-right: 0.25rem solid grey;
+    float: left;
+    width: 100vmin;
+    height: 100vmin;
+}
+
+#overlayBloodSplash {
+    width: 100vmin;
+    height: 100vmin;
+    position: absolute;
+    z-index: 2;
+    background-image: url("graphics/bloodsplash.png");
+    background-size: 100% 100%;
+}
+
+#gametable {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: table;
+    background-image: url("graphics/floor.png");
+    border-collapse: collapse;
+}
+
+#gametable tr {
+}
+
+#gametable td {
+    width: 6%;
+    height: 6%;
+    padding: 0 0 0 0;
+}
+
+
+/*
+ * In the following lines, the images for each object in the game are defined.
+ * For each object there are four images for the four possible moving directions.
+ * Definitions are ordered alphabetically.
+ */
+.Arrow_down {
+    background: url("graphics/arrow_down.png") no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+.Arrow_left {
+    background: url("graphics/arrow_left.png") no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+.Arrow_right {
+    background: url("graphics/arrow_right.png") no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+.Arrow_up {
+    background: url("graphics/arrow_up.png") no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+.Coin {
+    background: url("graphics/coin.gif") no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+.Door0 {
+    background: url("graphics/door0.png") no-repeat;
+    background-size: 100%;
+}
+.Door1 {
+    background: url("graphics/door1.png") no-repeat;
+    background-size: 100%;
+}
+.Door2 {
+    background: url("graphics/door2.png") no-repeat;
+    background-size: 100%;
+}
+.Door3 {
+    background: url("graphics/door3.png") no-repeat;
+    background-size: 100%;
+}
+.Hero_female_stand_up {
+    background: url("graphics/hero_female_stand_up.png") no-repeat;
+    background-size: 100%;
+}
+.Hero_female_stand_down {
+    background: url("graphics/hero_female_stand_down.png") no-repeat;
+    background-size: 100%;
+}
+.Hero_female_stand_left {
+    background: url("graphics/hero_female_stand_left.png") no-repeat;
+    background-size: 100%;
+}
+.Hero_female_stand_right {
+    background: url("graphics/hero_female_stand_right.png") no-repeat;
+    background-size: 100%;
+}
+.Hero_male_stand_up {
+    background: url("graphics/hero_male_stand_up.png") no-repeat;
+    background-size: 100%;
+}
+.Hero_male_stand_down {
+    background: url("graphics/hero_male_stand_down.png") no-repeat;
+    background-size: 100%;
+}
+.Hero_male_stand_left {
+    background: url("graphics/hero_male_stand_left.png") no-repeat;
+    background-size: 100%;
+}
+.Hero_male_stand_right {
+    background: url("graphics/hero_male_stand_right.png") no-repeat;
+    background-size: 100%;
+}
+.Mouse_stand_up {
+    background: url("graphics/mouse_stand_up.png") no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+.Mouse_stand_down {
+    background: url("graphics/mouse_stand_down.png") no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+.Mouse_stand_left {
+    background: url("graphics/mouse_stand_left.png") no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+.Mouse_stand_right {
+    background: url("graphics/mouse_stand_right.png") no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+.Mummy_stand_up {
+    background: url("graphics/mummy_stand_up.png") no-repeat;
+    background-size: 100%;
+}
+.Mummy_stand_down {
+    background: url("graphics/mummy_stand_down.png") no-repeat;
+    background-size: 100%;
+}
+.Mummy_stand_left {
+    background: url("graphics/mummy_stand_left.png") no-repeat;
+    background-size: 100%;
+}
+.Mummy_stand_right {
+    background: url("graphics/mummy_stand_right.png") no-repeat;
+    background-size: 100%;
+}
+.Plate {
+    background: url("graphics/plate.png") no-repeat;
+    background-size: 100%;
+}
+.Skeleton_stand_down {
+    background: url("graphics/skeleton_stand_down.png") no-repeat;
+    background-size: 100%;
+}
+.Skeleton_stand_left {
+    background: url("graphics/skeleton_stand_left.png") no-repeat;
+    background-size: 100%;
+}
+.Skeleton_stand_right {
+    background: url("graphics/skeleton_stand_right.png") no-repeat;
+    background-size: 100%;
+}
+.Skeleton_stand_up {
+    background: url("graphics/skeleton_stand_up.png") no-repeat;
+    background-size: 100%;
+}
+.StoneBall1 {
+    background: url("graphics/stoneball1.png") no-repeat;
+    background-size: 100%;
+}
+.StoneBall2 {
+    background: url("graphics/stoneball2.png") no-repeat;
+    background-size: 100%;
+}
+.StoneBall3 {
+    background: url("graphics/stoneball3.png") no-repeat;
+    background-size: 100%;
+}
+.StoneBall4 {
+    background: url("graphics/stoneball4.png") no-repeat;
+    background-size: 100%;
+}
+.Torch {
+    background: url("graphics/torch.gif") no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+.TrapArrowWall {
+    background: url("graphics/traparrowwall.png") no-repeat;
+    background-size: 100%;
+}
+.TrapStoneBallWall {
+    background: url("graphics/trapstoneballwall.png") no-repeat;
+    background-size: 100%;
+}
+.Treasure {
+    background: url("graphics/treasure.gif") no-repeat;
+    background-size: 75%;
+    background-position: center;
+}
+.TunnelWall {
+    background: url("graphics/tunnelwall.png") no-repeat;
+    background-size: 100%;
+}
+.Wall0 {
+    background: url("graphics/wall0.png") no-repeat;
+    background-size: 100%;
+}
+.Wall1 {
+    background: url("graphics/wall1.png") no-repeat;
+    background-size: 100%;
+}
+.Wall2 {
+    background: url("graphics/wall2.png") no-repeat;
+    background-size: 100%;
+}
+.Wall3 {
+    background: url("graphics/wall3.png") no-repeat;
+    background-size: 100%;
+}
+.Wall4 {
+    background: url("graphics/wall4.png") no-repeat;
+    background-size: 100%;
+}
+.Wall5 {
+    background: url("graphics/wall5.png") no-repeat;
+    background-size: 100%;
+}
+
+#buttonarea {
+    margin: 0 auto;
+    width: 100px;
+    height: 75px;
+}
+
+#warningoverlay {
+    margin: 0 auto;
+    width: 540px;
+    background-color: red;
+}
+
+#overlayWrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.overlayMessage {
+    margin-left: 20vw;
+    margin-top: 25vh;
+    width: 60vw;
+    height: auto;
+    padding: 0vh 0.2vh 0.2vh 0.2vh;
+    text-align: center;
+    font-size: 1.7em;
+    border-width: 1.5vh
+}
+
+.overlayMessage p {
+    font-size: 2em;
+}
+
+#overlayFinishLevel {
+    position: absolute;
+    z-index: 1;
+    color: darkgreen;
+    border-style: solid;
+    border-color: darkgreen;
+    background-color: yellowgreen;
+}
+
+#overlayFinishGame {
+    position: absolute;
+    z-index: 2;
+    color: darkgreen;
+    border-style: solid;
+    border-color: darkgreen;
+    background-color: yellowgreen;
+}
+
+#overlayDead {
+    position: absolute;
+    z-index: 2;
+    color: darkred;
+    border-style: solid;
+    border-color: darkred;
+    background-color: red;
+}
+
+#controlHelp, #credits {
+    text-align: center;
+}
+
+#controlHelpImage {
+    height: 80vh;
+    margin-top: 1rem;
+}
+
+#credits h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+#credits h3 {
+    font-family: "Odinson Light";
+    font-size: 1.5rem;
+    color: yellowgreen;
+}
+
+#credits p {
+    font-family: "Odinson Light";
+    font-size: 1rem;
+    color: lightgrey;
+}

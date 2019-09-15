@@ -1,0 +1,134 @@
+* {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  color: aqua;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto 0px auto;
+  text-align: center;
+  padding: 0px 0px 100px 0px;
+}
+
+h1 { 
+  font-size: 2rem; 
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+}
+
+a { 
+  text-decoration: none; 
+  font-style: italic; 
+  color: aqua; 
+  font-weight: normal;
+}
+
+/* Game controls */
+
+#welcome, #message, #legende, #controls {
+  margin: 50px 0px 50px 0px;
+}
+
+#welcome #nextlevel { display: none; }
+
+#message #gameover:empty { visibilty: hidden; }
+#message #reasons:empty { visibilty: hidden; }
+
+#message #gameover {
+  font-size: 5rem;
+  color: #9a001a;
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center
+}
+
+#message #reasons {
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 2rem;
+  color: aqua;
+  text-align: center;
+}
+
+#controls #level:empty { visibility: hidden; }
+#controls #points:empty { visibility: hidden; }
+#controls #life:empty { visibility: hidden; }
+
+#welcome #start, #controls #level, #controls #points, #controls #life, #welcome #nextlevel {
+  padding: 5px 20px 5px 20px;
+  font-style: normal;
+  font-size: 2rem;
+  text-decoration: none;
+  color: aqua;
+  background: gray;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+#legende {
+  color: black;
+  width: 100px;
+  top: 150px;
+  right: 50px;
+  position: fixed;
+}
+
+/* Spielbrett */
+body {
+  background-image: url('img/pacman-background.jpg');
+  /*background-position: center center;*/
+  background-size:cover
+}
+
+#pacmangame {
+  margin: 50px auto 50px auto;
+  border-spacing: 0px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+#pacmangame td {
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ball {
+  background-color: burlywood !important;
+  border-radius: 20px;
+}
+
+.item {
+  background-color: purple !important;
+  border-radius: 20px;
+}
+
+.pacman {
+  background-color: yellow !important;
+  border-radius: 20px;
+}
+.wall {
+  background-color: blue !important;
+}
+.enemyA {
+  background-color: red !important;
+  border-radius: 20px;
+}
+.enemyB {
+  background-color: orange !important;
+  border-radius: 20px;
+}
+.enemyC {
+  background-color: green !important;
+  border-radius: 20px;
+}
+.empty {
+  background-color: black !important;
+  border-radius: 20px;
+}
+.ghost {
+  background-color: white !important;
+  border-radius: 20px;
+}

@@ -1,0 +1,20 @@
+{"config":{
+    "FieldRow" : 9 ,
+    "FieldCol" : 19 ,
+    "ViewRow" : 7 ,
+    "ViewCol" : 17 ,
+
+
+    "Score_JumpInDirection" : 10 ,
+    "Score_Goal" : 50 ,
+    "Score_LadyFrog" : 200 ,
+    "Score_TimeLeftPerUnit" : 10 ,
+    "Score_CompletedLevel" : 1000 ,
+  
+    "JsonLevelNamePattern" : "Level_" ,
+    "maxLevel": 4,
+
+    "updateInterval" : 50 ,
+    "fieldPrintInterval" : 50 ,
+    "froggerDispatchMoveInterval" : 20
+}}

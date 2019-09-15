@@ -1,0 +1,272 @@
+#loadinganim{
+    height:200px;
+    position:relative;
+    left:50%;
+    margin-top:100px;
+    margin-left:-40%;
+}
+
+#loadinganim div{
+    border-radius:50%;
+    position:relative;
+
+    left:50%;
+}
+#loadinganim div:nth-of-type(odd){
+    background-color:rgb(255, 121, 75);
+}
+#loadinganim div:nth-of-type(even){
+    background-color:rgb(153, 255, 102);
+}
+#loadinganim div:nth-of-type(11){
+    height:0.4px;
+    width:0.4px;
+    margin-top:-1.25px;
+    margin-left:-1.25px;
+    -webkit-animation:slide 3s ease-in-out infinite;
+    animation:slide 3s ease-in-out infinite;
+}
+#loadinganim div:nth-of-type(10){
+    height:5px;
+    width:5px;
+    margin-top:-3px;
+    margin-left:-3px;
+    -webkit-animation:slide 3s -2.7s ease-in-out infinite;
+    animation:slide 3s -2.7s ease-in-out infinite;
+}
+#loadinganim div:nth-of-type(9){
+    height:10px;
+    width:10px;
+    margin-top:-5px;
+    margin-left:-5px;
+    -webkit-animation:slide 3s -2.4s ease-in-out infinite;
+    animation:slide 3s -2.4s ease-in-out infinite;
+}
+#loadinganim div:nth-of-type(8){
+    height:15px;
+    width:15px;
+    margin-top:-8px;
+    margin-left:-8px;
+    -webkit-animation:slide 3s -2.1s ease-in-out infinite;
+    animation:slide 3s -2.1s ease-in-out infinite;
+}
+#loadinganim div:nth-of-type(7){
+    height:20px;
+    width:20px;
+    margin-top:-10px;
+    margin-left:-10px;
+    -webkit-animation:slide 3s -1.8s ease-in-out infinite;
+    animation:slide 3s -1.8s ease-in-out infinite;
+}
+#loadinganim div:nth-of-type(6){
+    height:25px;
+    width:25px;
+    margin-top:-13px;
+    margin-left:-13px;
+    -webkit-animation:slide 3s -1.5s ease-in-out infinite;
+    animation:slide 3s -1.5s ease-in-out infinite;
+}
+#loadinganim div:nth-of-type(5){
+    height:30px;
+    width:30px;
+    margin-top:-15px;
+    margin-left:-15px;
+    -webkit-animation:slide 3s -1.2s ease-in-out infinite;
+    animation:slide 3s -1.2s ease-in-out infinite;
+}
+#loadinganim div:nth-of-type(4){
+    height:35px;
+    width:35px;
+    margin-top:-18px;
+    margin-left:-18px;
+    -webkit-animation:slide 3s -0.9s ease-in-out infinite;
+    animation:slide 3s -0.9s ease-in-out infinite;
+}
+#loadinganim div:nth-of-type(3){
+    height:40px;
+    width:40px;
+    margin-top:-20px;
+    margin-left:-20px;
+    -webkit-animation:slide 3s -0.6s ease-in-out infinite;
+    animation:slide 3s -0.6s ease-in-out infinite;
+}
+#loadinganim div:nth-of-type(2){
+    height:45px;
+    width:45px;
+    margin-top:-23px;
+    margin-left:-23px;
+    -webkit-animation:slide 3s -0.3s ease-in-out infinite;
+    animation:slide 3s -0.3s ease-in-out infinite;
+}
+#loadinganim div:nth-of-type(1){
+    height:50px;
+    width:50px;
+    margin-top:-25px;
+    margin-left:-25px;
+    -webkit-animation:slide 3s ease-in-out infinite;
+    animation:slide 3s ease-in-out infinite;
+}
+@keyframes slide {
+  0% { left:50%; }
+  50% { left:10%; }
+  100% { left:50%; }
+}
+@-webkit-keyframes slide {
+  0% { left:50%; }
+  50% { left:10%; }
+  100% { left:50%; }
+}
+
+.face{
+    box-shadow:inset 0 0 0 1px rgba(0, 0, 0, 1);
+}
+.shape,
+.face,
+.face-wrapper,
+.cr{
+    position:absolute;
+    transform-style:preserve-3d;
+}
+.shape{
+    position:relative;
+    width:0;
+    height:0;
+    transform-origin:50%;
+}
+.face,
+.face-wrapper{
+    overflow:hidden;
+    transform-origin:0 0;
+    backface-visibility:hidden;
+    /* hidden by default, prevent blinking and other weird rendering glitchs */
+}
+.face{
+    background-size:100% 100% !important;
+    background-position:center;
+}
+.face-wrapper .face{
+    left:100%;
+    width:100%;
+    height:100%
+}
+.photon-shader{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%
+}
+.side{
+    left:50%;
+}
+.cr,
+.cr .side{
+    height:100%;
+}
+[class *= "cuboid"] .ft,
+[class *= "cuboid"] .bk{
+    width:100%;
+    height:100%;
+}
+[class *= "cuboid"] .bk{
+    left:100%;
+}
+[class *= "cuboid"] .rt{
+    transform:rotateY(-90deg) translateX(-50%);
+}
+[class *= "cuboid"] .lt{
+    transform:rotateY(90deg) translateX(-50%);
+}
+[class *= "cuboid"] .tp{
+    transform:rotateX(90deg) translateY(-50%);
+}
+[class *= "cuboid"] .bm{
+    transform:rotateX(-90deg) translateY(-50%);
+}
+[class *= "cuboid"] .lt{
+    left:100%;
+}
+[class *= "cuboid"] .bm{
+    top:100%;
+}
+/* .cub-1 styles */
+.cub-1{
+    transform:translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    opacity:1;
+    width:30px;
+    height:30px;
+    animation:spin 1s linear infinite;
+    ms-animation:spin 1s linear infinite;
+    -webkit-animation:spin 1s linear infinite;
+}
+.cub-1 .ft{
+    transform:translateZ(15px);
+}
+.cub-1 .bk{
+    transform:translateZ(-15px) rotateY(180deg);
+}
+.cub-1 .rt,
+.cub-1 .lt{
+    width:30px;
+    height:30px;
+}
+.cub-1 .tp,
+.cub-1 .bm{
+    width:30px;
+    height:30px;
+}
+.cub-1 .face{
+    background-color:#FFFFFF;
+}
+.cub-1 .ft{
+    background:url(http://www.wpclipart.com/recreation/games/dice/die_face_3.png);
+}
+.cub-1 .bk{
+    background:url(http://www.wpclipart.com/recreation/games/dice/die_face_4.png);
+}
+.cub-1 .tp{
+    background:url(http://www.wpclipart.com/recreation/games/dice/die_face_1.png);
+}
+.cub-1 .bm{
+    background:url(http://www.wpclipart.com/recreation/games/dice/die_face_6.png);
+}
+.cub-1 .lt{
+    background:url(http://www.wpclipart.com/recreation/games/dice/die_face_2.png);
+}
+.cub-1 .rt{
+    background:url(http://www.wpclipart.com/recreation/games/dice/die_face_5.png);
+}
+
+#cube1{
+    float:left;
+    position:relative;
+    left:50%;
+    margin-left:-150px;
+    margin-top:20px;
+}
+
+#cube2{
+    float:left;
+    position:relative;
+    left:50%;
+    margin-left:37px;
+    margin-top:20px;
+}
+
+@keyframes spin {
+  to {
+    transform:  rotateY(360deg) rotateX(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    transform:  rotateY(360deg) rotateX(360deg);
+  }
+}
+
+@ms-webkit-keyframes spin {
+  to {
+    transform:  rotateY(360deg) rotateX(360deg);
+  }
+}

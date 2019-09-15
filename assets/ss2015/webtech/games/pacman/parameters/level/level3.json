@@ -1,0 +1,23 @@
+{
+  "length": 17,
+  "width": 17,
+  "field": {
+    "f0_0":"#wall","f0_1":"#wall","f0_2":"#wall","f0_3":"#wall","f0_4":"#wall","f0_5":"#wall","f0_6":"#wall","f0_7":"#wall","f0_8":"#ball","f0_9":"#wall","f0_10":"#wall","f0_11":"#wall","f0_12":"#wall","f0_13":"#wall","f0_14":"#wall","f0_15":"#wall","f0_16":"#wall",
+    "f1_0":"#wall","f1_1":"#wall","f1_2":"#wall","f1_3":"#wall","f1_4":"#wall","f1_5":"#wall","f1_6":"#wall","f1_7":"#wall","f1_8":"#ball","f1_9":"#wall","f1_10":"#wall","f1_11":"#wall","f1_12":"#wall","f1_13":"#wall","f1_14":"#wall","f1_15":"#wall","f1_16":"#wall",
+    "f2_0":"#wall","f2_1":"#wall","f2_2":"#enemyA","f2_3":"#ball","f2_4":"#ball","f2_5":"#ball","f2_6":"#ball","f2_7":"#ball","f2_8":"#ball","f2_9":"#ball","f2_10":"#ball","f2_11":"#ball","f2_12":"#ball","f2_13":"#ball","f2_14":"#ball","f2_15":"#wall","f2_16":"#wall",
+    "f3_0":"#wall","f3_1":"#wall","f3_2":"#ball","f3_3":"#wall","f3_4":"#ball","f3_5":"#wall","f3_6":"#wall","f3_7":"#wall","f3_8":"#ball","f3_9":"#wall","f3_10":"#wall","f3_11":"#wall","f3_12":"#ball","f3_13":"#wall","f3_14":"#ball","f3_15":"#wall","f3_16":"#wall",
+    "f4_0":"#wall","f4_1":"#wall","f4_2":"#ball","f4_3":"#ball","f4_4":"#ball","f4_5":"#ball","f4_6":"#ball","f4_7":"#ball","f4_8":"#ball","f4_9":"#ball","f4_10":"#ball","f4_11":"#ball","f4_12":"#enemyA","f4_13":"#ball","f4_14":"#ball","f4_15":"#wall","f4_16":"#wall",
+    "f5_0":"#wall","f5_1":"#wall","f5_2":"#ball","f5_3":"#wall","f5_4":"#ball","f5_5":"#wall","f5_6":"#wall","f5_7":"#ball","f5_8":"#wall","f5_9":"#ball","f5_10":"#wall","f5_11":"#wall","f5_12":"#ball","f5_13":"#wall","f5_14":"#ball","f5_15":"#wall","f5_16":"#wall",
+    "f6_0":"#wall","f6_1":"#wall","f6_2":"#ball","f6_3":"#wall","f6_4":"#ball","f6_5":"#wall","f6_6":"#ball","f6_7":"#ball","f6_8":"#ball","f6_9":"#ball","f6_10":"#ball","f6_11":"#wall","f6_12":"#ball","f6_13":"#wall","f6_14":"#ball","f6_15":"#wall","f6_16":"#wall",
+    "f7_0":"#wall","f7_1":"#wall","f7_2":"#ball","f7_3":"#wall","f7_4":"#ball","f7_5":"#ball","f7_6":"#ball","f7_7":"#wall","f7_8":"#ball","f7_9":"#wall","f7_10":"#ball","f7_11":"#ball","f7_12":"#ball","f7_13":"#wall","f7_14":"#ball","f7_15":"#wall","f7_16":"#wall",
+    "f8_0":"#ball","f8_1":"#ball","f8_2":"#ball","f8_3":"#ball","f8_4":"#ball","f8_5":"#wall","f8_6":"#ball","f8_7":"#wall","f8_8":"#pacman","f8_9":"#wall","f8_10":"#ball","f8_11":"#wall","f8_12":"#ball","f8_13":"#ball","f8_14":"#ball","f8_15":"#ball","f8_16":"#ball",
+    "f9_0":"#wall","f9_1":"#wall","f9_2":"#ball","f9_3":"#wall","f9_4":"#ball","f9_5":"#ball","f9_6":"#ball","f9_7":"#wall","f9_8":"#ball","f9_9":"#wall","f9_10":"#ball","f9_11":"#ball","f9_12":"#ball","f9_13":"#wall","f9_14":"#ball","f9_15":"#wall","f9_16":"#wall",
+    "f10_0":"#wall","f10_1":"#wall","f10_2":"#ball","f10_3":"#wall","f10_4":"#ball","f10_5":"#wall","f10_6":"#ball","f10_7":"#ball","f10_8":"#ball","f10_9":"#ball","f10_10":"#ball","f10_11":"#wall","f10_12":"#ball","f10_13":"#wall","f10_14":"#ball","f10_15":"#wall","f10_16":"#wall",
+    "f11_0":"#wall","f11_1":"#wall","f11_2":"#ball","f11_3":"#wall","f11_4":"#ball","f11_5":"#wall","f11_6":"#wall","f11_7":"#ball","f11_8":"#wall","f11_9":"#ball","f11_10":"#wall","f11_11":"#wall","f11_12":"#ball","f11_13":"#wall","f11_14":"#ball","f11_15":"#wall","f11_16":"#wall",
+    "f12_0":"#wall","f12_1":"#wall","f12_2":"#ball","f12_3":"#ball","f12_4":"#enemyA","f12_5":"#ball","f12_6":"#ball","f12_7":"#ball","f12_8":"#ball","f12_9":"#ball","f12_10":"#ball","f12_11":"#ball","f12_12":"#ball","f12_13":"#ball","f12_14":"#ball","f12_15":"#wall","f12_16":"#wall",
+    "f13_0":"#wall","f13_1":"#wall","f13_2":"#ball","f13_3":"#wall","f13_4":"#ball","f13_5":"#wall","f13_6":"#wall","f13_7":"#wall","f13_8":"#ball","f13_9":"#wall","f13_10":"#wall","f13_11":"#wall","f13_12":"#ball","f13_13":"#wall","f13_14":"#ball","f13_15":"#wall","f13_16":"#wall",
+    "f14_0":"#wall","f14_1":"#wall","f14_2":"#ball","f14_3":"#ball","f14_4":"#ball","f14_5":"#ball","f14_6":"#ball","f14_7":"#ball","f14_8":"#ball","f14_9":"#ball","f14_10":"#ball","f14_11":"#ball","f14_12":"#ball","f14_13":"#ball","f14_14":"#enemyB","f14_15":"#wall","f14_16":"#wall",
+    "f15_0":"#wall","f15_1":"#wall","f15_2":"#wall","f15_3":"#wall","f15_4":"#wall","f15_5":"#wall","f15_6":"#wall","f15_7":"#wall","f15_8":"#ball","f15_9":"#wall","f15_10":"#wall","f15_11":"#wall","f15_12":"#wall","f15_13":"#wall","f15_14":"#wall","f15_15":"#wall","f15_16":"#wall",
+    "f16_0":"#wall","f16_1":"#wall","f16_2":"#wall","f16_3":"#wall","f16_4":"#wall","f16_5":"#wall","f16_6":"#wall","f16_7":"#wall","f16_8":"#ball","f16_9":"#wall","f16_10":"#wall","f16_11":"#wall","f16_12":"#wall","f16_13":"#wall","f16_14":"#wall","f16_15":"#wall","f16_16":"#wall"
+  }
+}

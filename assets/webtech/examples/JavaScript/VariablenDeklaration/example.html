@@ -1,0 +1,25 @@
+<html>
+<head><title>Teuflisches var</title></head>
+<body>
+<script type="text/javascript">
+
+var a = 0;							// Globale Variable a
+var b = 0;							// Globale Variable b
+
+function test() {
+	a++;									// Zugriff auf globale Variable a
+	var b = 1;						// Anlegen lokaler Variablen b
+												// diese über die globale Var. b
+	var c = 2;						// Anlegen lokaler Variablen c
+	d = 5;								// Anlagen GLOBALER Variable d
+}
+
+test();
+
+document.writeln("a: " + a + "<br/>");
+document.writeln("b: " + b + "<br/>");
+document.writeln("d: " + d + "<br/>");
+
+</script>
+</body>
+</html>

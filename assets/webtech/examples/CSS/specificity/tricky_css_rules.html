@@ -1,0 +1,65 @@
+<html>
+<head><title>Einige trickreiche CSS Regeln</title></head>
+<meta charset="UTF-8"/>
+
+<style type="text/css">
+body { font-size: 40px; text-align: center }
+
+/* IDs #ex1, #ex2, #ex3, #ex4 dienen nur dazu die Stylesheets voneinander zu trennen */
+
+#ex1 .content { color: red } /* 10 Punkte (ohne #ex1) */
+#ex1 p { color: black } /* 1 Punkt (ohne #ex1) */
+#ex1 div .content { color: green } /* 11 Punkte (ohne #ex1) */
+#ex1 p.blue { color: blue } /* 11 Punkte (ohne #ex1), letzte notierte Regel bei Punktgleichstand zaehlt */
+
+#ex2 .blue { color: blue } /* 10 Punkte (ohne #ex2) */
+#ex2 #main p { color: green} /* 101 Punkte (ohne #ex2) */
+#ex2 .content { color: red } /* 10 Punkte (ohne #ex2) */
+
+#ex3 div[id="main"] { color: green } /* 11 Punkte (ohne #ex3), ID wird als Attribut abgefragt => nur 10 Punkte */
+#ex3 .blue, #ex3 div p.blue { color: purple } /* 10 Punkte fuer .blue, 12 Punkte für div p.blue (ohne #ex3) */
+#ex3 p.content { color: red } /* 11 Punkte (ohne #ex3) */
+#ex3 div p { color: blue } /* 2 Punkte (ohne #ex3) */
+
+#ex4 p#msg { color: red } /* 101 Punkte (ohne #ex4) */
+#ex4 p[id="msg"] { color: blue } /* 11 Punkte (ohne #ex4), ID wird als Attribut abgefragt => nur 10 Punkte */
+
+</style>
+
+<body>
+
+<div id="ex1">
+<div id="main">
+  <p id="msg" class="content blue">
+    Beispiel 1: Welche Farbe? 
+  </p>
+</div>
+</div>
+
+<div id="ex2">
+<div id="main">
+  <p id="msg" class="content blue">
+    Beispiel 2: Welche Farbe? 
+  </p>
+</div>
+</div>
+
+<div id="ex3">
+<div id="main">
+  <p id="msg" class="content blue">
+    Beispiel 3: Welche Farbe? 
+  </p>
+</div>
+</div>
+
+<div id="ex4">
+<div id="main">
+  <p id="msg" class="content blue">
+    Beispiel 4: Welche Farbe? 
+  </p>
+</div>
+</div>
+
+
+</body>
+</html>

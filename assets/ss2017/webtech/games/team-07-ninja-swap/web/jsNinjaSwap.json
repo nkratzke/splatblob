@@ -1,0 +1,151 @@
+{
+  "config": {
+    "__comment": "The fieldHeight must be eighth or higher and the  fieldWidth four or higher",
+    "fieldHeight": 9,
+    "fieldWidth": 4,
+    "enemyMoveTimer": 1500,
+    "projectilMoveTimer": 750,
+    "ninjaThrowFrequence": 3,
+    "enemySpawnFrequence": 2,
+    "startPoints" : 30,
+    "endlessModusAddEnemyLifepoints" : 10,
+    "endlessModusAddEnemyDamage" : 10,
+    "levelForUpgradeEnemyMoveTimer" : 5,
+    "enemyMoveTimerMultiplikator" : 0.2
+  },
+
+  "ninjas": [
+    {
+      "damagepoints": 20,
+      "max_lifepoints": 100,
+      "colour": 1
+    },
+    {
+      "colour": 2
+    },
+    {
+      "colour": 3
+    }
+  ],
+
+  "items":
+  {
+    "bomb" : {
+      "cost": 30,
+      "damage": 100,
+      "fading_time": 10
+    },
+
+    "heal" : {
+      "cost": 50,
+      "fading_time": 10,
+      "heal_value" : 100
+    },
+    "speedUp": {
+      "cost" : 30,
+      "fading_time" : 10,
+      "duration" : 15,
+      "multiplicator" : 2
+    },
+    "frost": {
+      "cost" : 30,
+      "frozenduration" : 7,
+      "fading_time" : 10
+    },
+    "lightning": {
+      "cost" : 20,
+      "damage" : 10,
+      "fading_time" : 10
+    }
+  },
+
+  "upgrades":{
+    "upgradeLifepoints" :{
+      "startCosts" : 20,
+      "startLifepointsUpdate" : 20
+    },
+    "upgradeDamage" :{
+      "startCosts" : 20,
+      "startDamageUpdate" : 10
+    }
+  },
+
+
+  "levelsystem":
+  [
+      [
+        {
+          "__comment" : "weak Enemy",
+          "amountOfEnemies": 5,
+          "lifepoints": 1,
+          "damagepoints": 20,
+          "value": 2
+        },
+        {
+          "__comment" : "strong Enemy",
+          "amountOfEnemies": 3,
+          "lifepoints": 25,
+          "damagepoints": 20,
+          "value": 7
+        },
+        {
+          "__comment":"Boss",
+          "lifepoints": 50,
+          "damagepoints": 10,
+          "value": 11,
+          "switchChanceInPercent": 10,
+          "throwChanceInPercent": 5
+        }
+      ],
+    [
+      {
+        "__comment" : "weak Enemy",
+        "amountOfEnemies": 6,
+        "lifepoints": 20,
+        "damagepoints": 20,
+        "value": 7
+      },
+      {
+        "__comment" : "strong Enemy",
+        "amountOfEnemies": 4,
+        "lifepoints": 31,
+        "damagepoints": 20,
+        "value": 12
+      },
+      {
+        "__comment":"Boss",
+        "lifepoints": 120,
+        "damagepoints": 25,
+        "value": 16,
+        "switchChanceInPercent": 20,
+        "throwChanceInPercent": 20
+      }
+    ],
+    [
+      {
+        "__comment" : "weak Enemy",
+        "amountOfEnemies": 10,
+        "lifepoints": 50,
+        "damagepoints": 20,
+        "value": 12
+      },
+      {
+        "__comment" : "strong Enemy",
+        "amountOfEnemies": 6,
+        "lifepoints": 100,
+        "damagepoints": 20,
+        "value": 18
+      },
+      {
+        "__comment":"Boss",
+        "lifepoints": 245,
+        "damagepoints": 25,
+        "value": 25,
+        "switchChanceInPercent": 20,
+        "throwChanceInPercent": 25
+      }
+    ]
+  ]
+
+
+}

@@ -1,0 +1,92 @@
+{
+  "towerSmall": {
+    "dmg": 5,
+    "range": 3,
+    "rateOfFire": 4,
+    "freezeTime" : 0,
+    "cost": 10,
+    "upgrade": [
+      {
+        "dmg": 10,
+        "range": 3,
+        "rateOfFire": 4,
+        "freezeTime" : 0,
+        "cost": 150
+      },
+      {
+        "dmg": 10,
+        "range": 4,
+        "rateOfFire": 4,
+        "freezeTime" : 0,
+        "cost": 300
+      },
+      {
+        "dmg": 20,
+        "range": 4,
+        "rateOfFire": 3,
+        "freezeTime" : 0,
+        "cost": 500
+      }
+    ]
+  },
+  "towerBig": {
+    "dmg": 15,
+    "range": 2,
+    "rateOfFire": 4,
+    "freezeTime" : 0,
+    "cost": 50,
+    "upgrade": [
+      {
+        "dmg": 25,
+        "range": 2,
+        "rateOfFire": 4,
+        "freezeTime" : 0,
+        "cost": 200
+      },
+      {
+        "dmg": 25,
+        "range": 3,
+        "rateOfFire": 4,
+        "freezeTime" : 0,
+        "cost": 500
+      },
+      {
+        "dmg": 30,
+        "range": 3,
+        "rateOfFire": 3,
+        "freezeTime" : 0,
+        "cost": 800
+      }
+    ]
+  },
+  "towerFreeze": {
+    "dmg": 0,
+    "range": 1,
+    "rateOfFire": 10,
+    "freezeTime" : 3,
+    "cost": 100,
+    "upgrade": [
+      {
+        "dmg": 0,
+        "range": 1,
+        "rateOfFire": 8,
+        "freezeTime" : 3,
+        "cost": 500
+      },
+      {
+        "dmg": 0,
+        "range": 1,
+        "rateOfFire": 8,
+        "freezeTime" : 5,
+        "cost": 800
+      },
+      {
+        "dmg": 0,
+        "range": 2,
+        "rateOfFire": 8,
+        "freezeTime" : 5,
+        "cost": 1400
+      }
+    ]
+  }
+}

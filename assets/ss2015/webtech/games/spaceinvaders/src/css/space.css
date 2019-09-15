@@ -1,0 +1,285 @@
+* {
+  margin: 0px auto;
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  color: #fff;
+  z-index: 1;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  padding: 20px;
+  font-size: 36px;
+  background: rgba(255, 255, 255, .2);
+}
+
+h2 {
+  font-size: 28px;
+  background: rgba(255, 255, 255, .1);
+}
+
+footer {
+  padding: 0px 10px;
+  width: 100%;
+  position: absolute;
+  bottom : 0;
+  background: rgba(255, 255, 255, .5);
+}
+
+/*-------------------------------------IDs--------------------------------------*/
+
+#standardContainer {
+  width: 50%;
+}
+
+/*----------------Levelinformationsleiste------------------------*/
+#bars {
+  border-spacing: 2px;
+  margin: 10px auto;
+  width: 50%;
+}
+
+#bars td {
+  width: 25%;
+}
+
+#levelbar, #enemybar {
+  padding: 2px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+#notification {
+  margin: 5px auto;
+  padding: 5px;
+  width: 50%;
+  background: rgba(255, 255, 255, .1);
+  font-size: 14px;
+  color: red;
+  text-align: center;
+}
+
+/*----------------------Menü-----------------------*/
+#menu {
+  margin: 150px auto;
+  font-size: 16px;
+}
+
+#start, #help, #next, #back {
+  margin: 5px auto;
+  padding: 2px;
+  width: 100px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+#start:hover, #help:hover, #next:hover, #back:hover {
+  border-color: #aaa;
+  color: #aaa;
+}
+
+/*--------------------Spielfeld------------------*/
+#gamesection {
+  margin: 10px auto;
+}
+
+#board {
+  border-spacing: 0px;
+  background: rgba(255, 255, 255, .3);
+}
+
+#board td {
+  width: 8px;
+  height: 8px;
+}
+
+/*------------------------Overlay---------------------*/
+#overlay {
+  z-index: 2;
+  position: fixed;
+  padding: 50px 0px;
+  width: 100%;
+  top: 150px;
+  left: 0px;
+  right: 0px;
+  background: rgba(0, 153, 0, .3);
+}
+
+/*------------------------How-To-Play-------------------------*/
+#instructions {
+  margin: 0px auto;
+}
+
+#ins {
+  border-spacing: 2px;
+  margin: 10px auto;
+  width: 50%;
+}
+
+#ins td {
+  width: 25%;
+  font-size: 14px;
+  text-align: left;
+}
+
+#ins img {
+  height: 40px;
+}
+
+/*-------------------Spielerstatusleiste--------------------*/
+#status {
+  border-spacing: 2px;
+  margin: 10px auto;
+  width: 50%;
+}
+
+#status td {
+  width: 25%;
+}
+
+#healthpoints {
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+  min-width: 100%;
+}
+
+#healthpoints td {
+  font-size: 14px;
+  width: 16px;
+  height: 16px;
+}
+
+#score {
+  padding: 2px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+  min-width: 100%;
+}
+
+#copyright {
+  font-size: 12px;
+  text-align: left;
+  color: #000;
+}
+
+/*------------------------------------Classes-------------------------------------*/
+
+/*-------------------Gesundheitszustände------------------------*/
+.green {
+  background-image: url("../img/health_green.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.yellow {
+  background-image: url("../img/health_yellow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.red {
+  background-image: url("../img/health_red.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*-----------------------Gegner-Texturen----------------------*/
+.part_75, .part_50, .part_25, .part_0 {
+  background-image: url("../img/enemy.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.part_50 {
+  filter: saturate(75%);
+  -webkit-filter: saturate(75%);
+  -moz-filter: saturate(75%);
+  -o-filter: saturate(75%);
+  -ms-filter: saturate(75%);
+}
+
+.part_25 {
+  filter: saturate(50%);
+  -webkit-filter: saturate(50%);
+  -moz-filter: saturate(50%);
+  -o-filter: saturate(50%);
+  -ms-filter: saturate(50%);
+}
+
+.part_0 {
+  filter: saturate(25%);
+  -webkit-filter: saturate(25%);
+  -moz-filter: saturate(25%);
+  -o-filter: saturate(25%);
+  -ms-filter: saturate(25%);
+}
+
+/*--------------------------Spieler-Texturen---------------------------*/
+.player {
+  background-image: url("../img/player.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cannonPlayer {
+  background-image: url("../img/cannon_player.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*--------------------------Waffen-Texturen----------------------------*/
+.cannonEnemy_75, .cannonEnemy_50, .cannonEnemy_25,.cannonEnemy_0 {
+  background-image: url("../img/cannon_enemy.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cannonEnemy_50 {
+  filter: saturate(75%);
+  -webkit-filter: saturate(75%);
+  -moz-filter: saturate(75%);
+  -o-filter: saturate(75%);
+  -ms-filter: saturate(75%);
+}
+
+.cannonEnemy_25 {
+  filter: saturate(50%);
+  -webkit-filter: saturate(50%);
+  -moz-filter: saturate(50%);
+  -o-filter: saturate(50%);
+  -ms-filter: saturate(50%);
+}
+
+.cannonEnemy_0 {
+  filter: saturate(25%);
+  -webkit-filter: saturate(25%);
+  -moz-filter: saturate(25%);
+  -o-filter: saturate(25%);
+  -ms-filter: saturate(25%);
+}
+
+/*------------------------Projektil-Texturen--------------------------*/
+.enemyProjectile {
+ background-image: url("../img/projectile_red.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+}
+
+.playerProjectile {
+  background-image: url("../img/projectile_blue.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

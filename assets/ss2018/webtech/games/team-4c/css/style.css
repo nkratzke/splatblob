@@ -1,0 +1,396 @@
+body {
+	margin: 0;
+    background-color: black;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.title{
+   text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.secondTitle{
+    text-align: center;
+    font-size: 18px;
+}
+/**
+The playfield
+ */
+#playfield{
+    background-image: url("../Images/background.jpeg");
+	background-color: darkgrey;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	visibility: hidden;
+	width: 300px;
+	height: 400px;
+    border: 3px solid #669966;
+
+}
+
+/**
+	Highscore - Time & Points
+ */
+#highscore{
+	position: absolute;
+	top: 2px;
+	right: 0px;
+	bottom: 0px;
+	left: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+    font-size: 13px;
+
+
+}
+
+/**
+	First button of a menu
+ */
+.firstButton{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	text-align: center;
+	background-color: #669966;
+	width: 150px;
+	height: 50px;
+    border:1px solid black;
+    cursor:pointer;
+    -webkit-box-shadow: 10px -5px 7px 0px #1b1d21;
+    -moz-box-shadow:    10px -5px 7px 0px #1b1d21;
+    box-shadow:         10px -5px 7px 0px #1b1d21;
+
+}
+
+/*
+	Second button of a menu
+ */
+.secondButton{
+	position:absolute;
+	top: 120px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	text-align: center;
+	background-color: #669966;
+	width: 150px;
+	height: 50px;
+    border:1px solid black;
+    cursor:pointer;
+    -webkit-box-shadow: 10px -5px 7px 0px #1b1d21;
+    -moz-box-shadow:    10px -5px 7px 0px #1b1d21;
+    box-shadow:         10px -5px 7px 0px #1b1d21;
+
+}
+
+/*
+    Third button of a menu
+ */
+.thirdButton{
+    position:absolute;
+    top: 240px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    text-align: center;
+    background-color: #669966;
+    width: 150px;
+    height: 50px;
+    border:1px solid black;
+    cursor:pointer;
+    -webkit-box-shadow: 10px -5px 7px 0px #1b1d21;
+    -moz-box-shadow:    10px -5px 7px 0px #1b1d21;
+    box-shadow:         10px -5px 7px 0px #1b1d21;
+}
+/**
+The main menu
+ */
+#mainMenu {
+
+	background-color: #336633;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 300px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+    border: 3px solid #669966;
+
+}
+
+/**
+Holds the game components together
+ */
+#wrapper{
+	position: relative;
+	margin: auto;
+	width: 300px;
+}
+
+/*
+	Holds the divs with the various buffs together
+ */
+#buffchoice{
+	position:absolute;
+	top: 400px;
+	left: 6px;
+	right: 0px;
+	bottom: 0px;
+	margin-left:auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: #336633; /* green */
+	width: 300px;
+	height: 50px;
+	visibility: hidden;
+    border: 3px solid #669966;
+
+}
+
+/*
+	Shows the text of the buffs
+ */
+#bufftext{
+	position:absolute;
+	top: 400px;
+	left: 6px;
+	right: 0px;
+	bottom: 0px;
+	margin-left:auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: #336633;
+	width: 300px;
+	height: 50px;
+	visibility: hidden;
+    border: 3px solid #669966;
+}
+
+/*
+	The buff 'buttons'
+ */
+.buff {
+	float: left;
+	margin: 7px;
+	border: 1px solid #669966;
+	text-align: center;
+	cursor: pointer;
+	-webkit-box-shadow: 5px -5px 7px 0px #1b1d21;
+	-moz-box-shadow:    5px -5px 7px 0px #1b1d21;
+	box-shadow:         5px -5px 7px 0px #1b1d21;
+}
+
+/*
+	GameOver screen
+ */
+#gameOver{
+
+	background-color: #336633;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 300px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	visibility: hidden;
+    border: 3px solid #669966;
+}
+
+/**
+	Little box you can click for a new Level
+ */
+#newLevel{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	text-align: center;
+	background-color: #669966;
+	width: 150px;
+	height: 100px;
+	visibility:  hidden;
+
+}
+
+
+/**
+	Pause/Restart in the right upper corner of the playfield
+ */
+.pause{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin-left: auto;
+	text-align: center;
+	width: 50px;
+	height: 20px;
+	font-size: 10px;
+	border: 1px solid black;
+
+}
+
+/*
+	How-To-Play
+ */
+#manual{
+	background-color: #336633;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 300px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	visibility: hidden;
+    border: 3px solid #669966;
+	font-size: 14px;
+}
+
+/**
+	Copyright of the icons
+ */
+#freepik{
+	position: absolute;
+	top: 430px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	size: 10px;
+	font-size: 8px;
+}
+
+
+/**
+	Hitpoints of house number 1
+ */
+#hitpoints0{
+	position: absolute;
+	top: 350px;
+	left: 42px;
+	right: 0px;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	font-size: 12px;
+}
+
+/**
+	Hitpoints of house number 2
+ */
+#hitpoints1{
+	position: absolute;
+	top: 350px;
+	left: 92px;
+	right: 0px;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	font-size: 12px;
+}
+#hitpoints2{
+	position: absolute;
+	top: 350px;
+	left: 132px;
+	right: 0px;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	font-size: 12px;
+}
+/**
+	Hitpoints of house number 3
+ */
+#hitpoints3{
+	position: absolute;
+	top: 350px;
+	left: 177px;
+	right: 0px;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	font-size: 12px;
+}
+
+/**
+	Hitpoints of house number 4
+ */
+#hitpoints4{
+	position: absolute;
+	top: 350px;
+	left: 222px;
+	right: 0px;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	font-size: 12px;
+}
+
+/**
+	Hitpoints of house number 5
+ */
+#hitpoints5{
+	position: absolute;
+	top: 350px;
+	left: 267px;
+	right: 0px;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	font-size: 12px;
+}
+
+/** Should have been used for a highscore
+#showHighscore{
+    background-color: #336633;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 300px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+    border: 3px solid #669966;
+    font-size: 14px;
+    white-space: pre;
+}
+**/

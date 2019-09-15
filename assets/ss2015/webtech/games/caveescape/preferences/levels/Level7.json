@@ -1,0 +1,15 @@
+{
+  "NAME":"TimeToDrunk!",
+  "MAXFREQUENZ":2000,
+  "MAXPOINTS":60000,
+  "YellowCoin":100,
+  "PowerUp_Multiplier":20,
+  "BlueCoin":100,
+  "RedCoin":100,
+  "PurpleCoin":100,
+  "DrunkenRat":300,
+  "PowerUp_LifeUp":5,
+  "PowerUp_CoinGathering":5,
+  "PowerDown_Multiplier":5
+
+}

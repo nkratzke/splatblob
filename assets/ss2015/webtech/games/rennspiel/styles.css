@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/*Hintergrund und Schrift*/
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('img/background.jpg');
+}
+/*Startknopf*/
+#start{
+  text-align : center;
+  height : 100px;
+}
+#button{
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  background-color: #6484ff ;
+  color:orange;
+  font-size:50 px;
+  border-radius:50px;
+}
+/*Leben Anzeige*/
+#leben h2{
+  color:blue;
+}
+#leben{
+  color:blue;
+  text-align : center;
+  position: relative;
+  color:red;
+  height : 100px;
+  }
+/*Leben Elemente*/
+.live td{
+  background: url('img/lives.gif');
+  padding: 12px;
+}
+/*Score Anzeige*/
+#score{
+  text-align : center;
+  position: relative;
+  color:yellow;
+  height : 5px;
+  }
+  /*Level Anzeige*/
+#level{
+  text-align : center;
+  position: relative;
+  color:orange;
+  height : 5px;
+  }
+/*Das Spielfeld*/
+ #output{
+ position:relative;
+ text-align: center;
+ }
+table {
+  height: 100%;
+  border-collapse:collapse;
+  padding:auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Gameover Anzeige*/
+#gameover{
+  position: relative;
+  font-size:50px;
+  color:orange;
+  text-align:center;
+}
+/*Alle Spielfeld Elemente*/
+#output tr,td{
+  padding: 25px;
+  text-align: center;
+  background-color: #c0c0c0;
+}
+/*Einfache Barriere*/
+.barriere{
+  background-image: url('img/barrier.png');
+}
+
+/*Hinterteil des Autos*/
+.front{
+  background-image: url('img/RBack.jpg');
+}
+
+/*Forderteil des Autos*/
+.back{
+  background-image: url('img/RFront.jpg');
+}
+
+/*Extra Leben*/
+.extraleben{
+   background: url('img/extraleben.gif');
+}
+/*Oil Barriere*/
+.oil{
+  background: url('img/oil.png');
+}
+/*MovingDoor Barriere*/
+.movingdoor{
+  background-image: url('img/wand.jpg');
+}
+/**/
+.moving{
+   background-image: url('img/skull.gif');
+}
+/*Gate Barriere*/
+.gate{
+  background-image: url('img/fire.gif');
+}
+
+/*Forderteil des Autos von Falling Barriere*/
+.falling1{
+  background-image: url('img/FallingFront.jpg');
+}
+
+/*Hinterteil des Autos Falling Barriere*/
+.falling0{/*Hinterteil des Autos*/
+  background-image: url('img/FallingBack.jpg');
+}
+
+/*Rand des Feldes*/
+.rand{
+  padding: 10px;
+   background-image: url('img/rand.jpg');
+  background-color: black;
+}
+.auto{
+  background-color:green;
+}

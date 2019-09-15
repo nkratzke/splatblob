@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!--
+  Copyright (c) 2016, Sönke Gonschorowski, Jannik Kühnemundt. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    <title>Tank Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="tankclient.dart" type="application/dart"></script>
+    <script defer src="packages/browser/dart.js"></script>
+</head>
+
+<body>
+
+<div id="warning">
+    <div id="warningoverlay"></div>
+</div>
+<div id="output"></div>
+<div id="overlaywrapper">
+    <div id="overlaycontent"></div>
+</div>
+<div id="wrapper">
+    <div id="header">
+        <img src="./img/logo.png">
+    </div>
+    <div id="controlhelp">
+        <b>Steuerung:</b><br>
+        Bewegung - Pfeiltasten<br>
+        Schießen - Leertaste<br>
+        Lenkrakete (falls Gegner in Sicht) - L<br>
+    </div>
+    <div id="container">
+
+        <table border="0" cellpadding="0" cellspacing="0" id="tanktable">
+        </table>
+        <table id="steuerkreuz" cellpadding="15">
+            <tr>
+                <td></td>
+                <td class="button" id="buttonUp">&#9650;</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="button" id="buttonLeft">&#9664;</td>
+                <td class="button" id="buttonShoot">&oplus;</td>
+                <td class="button" id="buttonRight">&#9654;</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="button" id="buttonDown">&#9660;</td>
+                <td class="button" id="buttonLenkrakete">Lenkrakete</td>
+            </tr>
+        </table>
+    </div>
+    <div style="clear:both;"></div>
+
+    <div id="stats">
+        <div id="playerleben"></div>
+        <div id="lenkMunition"></div>
+        <div id='highscore'></div>
+        <div id='level'></div>
+        <div id='verbleibendeGegner'></div>
+    </div>
+    <div id="buttonarea">
+        <span id="startButton">Start</span>
+        <span id="nextLevelButton">next Level</span>
+    </div>
+
+    <div id="copyright">Copyright by S&ouml;nke Gonschorowski und Jannik K&uuml;hnemundt</div>
+</div>
+</body>
+</html>

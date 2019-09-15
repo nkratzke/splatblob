@@ -1,0 +1,188 @@
+@font-face{
+    font-family:"KGTenThousandReasons";
+    font-style:normal;
+    font-weight:300;
+    src: url("KGTenThousandReasons.ttf");
+}
+
+html, body{
+    font-family:"KGTenThousandReasons" !important;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width:700px;
+    margin:auto;
+    background:url("Images/background.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+body>div{
+    position:relative;
+    margin:auto;
+    height:100%;
+}
+span.movePhone{
+    position:absolute;
+    top:40%;
+    font-size:20px;
+    text-align:center;
+    left:0;
+    width:100%;
+}
+.legend{
+    width:100%;
+    position:absolute;
+    height:10%;
+    display:flex;
+    z-index:5;
+}
+.gameOver{
+    position:absolute;
+    top:40%;
+    font-size:24px;
+    text-align:center;
+    width:100% !important;
+    left:0;
+}
+
+#gameLife>img{
+    height:auto;
+    width:15px;
+}
+.legend>a{
+    font-size:23px;
+}
+.legend>a:nth-child(1){
+    width:33%;
+    float:left;
+    text-align:left;
+}
+.legend>a:nth-child(2){
+    width:33%;
+    text-align:center;
+
+}
+.legend>a:nth-child(3){
+    width:33%;
+    float:right;
+    text-align:right;
+}
+
+#gameField{
+    width:100%;
+    position:absolute;
+    top:0%;
+    left:0;
+    bottom:0;
+    z-index:0;
+    margin:auto;
+}
+.content{
+    z-index: 9;
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:15px;
+}
+
+.aimbot{
+    background-image: url(./Images/aimbot.gif);
+}
+
+
+.link>a{
+    display:block;
+    margin:25px auto;
+    border-radius:50px;
+    height:50px;
+    line-height:50px;
+    width:75%;
+    border:2px solid lightcoral;
+    text-align:center;
+    background:rgba(240,128,128, 0.5);
+    color:black;
+    text-decoration:none;
+}
+.link>a:hover{
+    background:rgba(240,128,128, 0.8);
+}
+
+.asteroid {
+    background-image: url("./Images/asteroid.gif");
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+.enemyShuttle {
+    background-image: url("./Images/enemyshuttle.gif");
+}
+.pointsMade{
+    z-index:10;
+    color:green;
+    font-size:13px;
+}
+.nextLevel{
+    position:absolute;
+    top:40%;
+    font-size:35px;
+    color:coral;
+    font-weight:bold;
+    left:0;
+    width:100%;
+    text-align:center;
+    transition:0.7s ease-in;
+    opacity:0;
+}
+
+.timeleft{
+    position:absolute;
+    top:0;
+    width:100%;
+    right:0;
+    height:2px;
+    background:#62A3CF;
+}
+
+
+.playerShuttle {
+    bottom:0;
+    top:initial !important;
+    background-image: url("./Images/player.gif");
+}
+
+#gameField>div{
+    background-size:cover;
+    position:absolute;
+    height:auto;
+    opacity:0.8;
+}
+
+
+.enemyShot {
+    background-image: url("./Images/enemyshot.gif");
+}
+
+.playerShot {
+    background-image: url("./Images/playershot.gif");
+}
+.itemLife {
+    background-image: url("./Images/itemlife.gif");
+}
+
+.Point {
+    background-image: url("./Images/itempoints.gif");
+}
+
+
+.about_page, .howto_page, .game_page{
+    display:none;
+}
+
+.content>h2{
+    text-align:center;
+}

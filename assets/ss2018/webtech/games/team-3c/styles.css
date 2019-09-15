@@ -1,0 +1,1735 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body, html {
+    /*height: 100vh;*/
+    max-width: 600px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    /*font-family: "Franklin Gothic Medium";*/
+    font-family: Tahoma;
+}
+
+div {
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+}
+
+@media all and (orientation: landscape) {
+    #device {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #gameover {
+        display: none;
+    }
+
+    #message {
+        display: none;
+    }
+
+    #gameTable {
+        display: none;
+    }
+
+    /* Menu */
+    #menu {
+        height: 100vh;
+        width: 35vw;
+        border: 3px solid #080808;
+        top: 50%;
+        left: 50%
+    }
+
+    #menu_head {
+        font-size: 4vw;
+    }
+
+    .button:nth-child(even) {
+        width: 42.5%;
+        font-size: 2vw;
+    }
+
+    .button:nth-child(odd) {
+        width: 42.5%;
+        font-size: 2vw;
+    }
+
+    #instructionButton {
+        width: 42.5%;
+        top: 90%;
+        left: 50%;
+        font-size: 2vw;
+    }
+
+    .fullscreen {
+        width: 6vw;
+        height: 6vw;
+        top: 90%;
+        left: 85%;
+    }
+
+    #fullscreenbutton {
+        background-size: 100%;
+    }
+
+    #animatedmessage {
+        left: 50%;
+        width: 20vw;
+    }
+
+    #animatedmessagetext {
+        left: 50%;
+        font-size: 2vw;
+        width: 20vw;
+    }
+
+    /* Game Table */
+    #gameTable {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    tbody {
+        top: 50%;
+        left: 50%;
+    }
+
+    #text {
+        font-size: 2vw;
+    }
+
+    /* Gameover */
+    #gameover {
+        top: 50%;
+        left: 50%;
+        right: 0;
+        bottom: 0;
+        height: 40%;
+        width: 30%;
+    }
+
+    #menuGameover {
+        width: 42.5%;
+        top: 55%;
+        left: 50%;
+    }
+
+    #nextGameover {
+        width: 42.5%;
+        top: 75%;
+        left: 50%;
+    }
+
+    #restartGameover {
+        width: 42.5%;
+        top: 75%;
+        left: 50%;
+    }
+
+    #gameoverText {
+        top: 25%;
+        left: 50%;
+        width: 25vw;
+        font-size: 4vw;
+    }
+
+    /* Instruction */
+
+    #instruction {
+        top: 50%;
+        left: 50%;
+        width: 32.5vw;
+        height: 95vh;
+    }
+
+    #headInstruction {
+        top: 5vh;
+        left: 50%;
+        width: 25vw;
+        font-size: 3vw;
+        padding: 0;
+    }
+
+    #pictureInstruction {
+        top: 17.5vh;
+        left: 50%;
+        width: 5.5vw;
+        height: 5.5vw;
+        border-radius: 8px;
+    }
+
+    #messageInstruction {
+        top: 52.5vh;
+        left: 50%;
+        width: 30vw;
+        height: 50vh;
+        font-size: 2vw;
+    }
+
+    .nextIns{
+        top: 82.5vh;
+        left: 50%;
+        width: 42.5%;
+        font-size: 2vw;
+    }
+
+    #backInstruction {
+        top: 90vh;
+        left: 50%;
+        width: 42.5%;
+    }
+
+    /* Message */
+    #message {
+        width: 30vw;
+        height: 100vh;
+    }
+
+    #messageBox {
+        top: 50%;
+        left: 50%;
+        right: 0;
+        bottom: 0;
+        height: 70vh;
+        width: 30vw;
+    }
+
+    #messageLevel {
+        top: 6vh;
+        left: 50%;
+        width: 70vw;
+        font-size: 5vw;
+    }
+
+    #messageText {
+        top: 20vh;
+        left: 50%;
+        width: 29vw;
+        font-size: 2vw;
+    }
+
+    #messageNext {
+        top: 65vh;
+        left: 50%;
+        width: 42.5%;
+    }
+
+    #match {
+        width: 30vw;
+        height: 30vh;
+        top: 45vh;
+        left: 50%;
+    }
+
+    #player {
+        width: 10vw;
+        height: 5vh;
+        top: 5vh;
+        left: 7.5vw;
+        font-size: 2vw;
+    }
+
+    #vs {
+        width: 5vw;
+        height: 5vh;
+        top: 5vh;
+        left: 15vw;
+        font-size: 2vw;
+    }
+
+    #enemyplayer {
+        width: 10vw;
+        height: 5vh;
+        top: 5vh;
+        left: 22.5vw;
+        font-size: 2vw;
+    }
+
+    #playerside {
+        width: 15vw;
+        height: 20vh;
+        top: 17.5vh;
+        left: 7.5vw;
+    }
+
+    #enemyside {
+        width: 15vw;
+        height: 20vh;
+        top: 17.5vh;
+        left: 22.5vw;
+    }
+
+    #playerdestroyer {
+        width: 15vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 7.5vw;
+    }
+
+    #pdpicture {
+        width: 12vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 6vw;
+        background-size: 100%;
+    }
+
+    #pdcount {
+        width: 5vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 12.5vw;
+        font-size: 2vw;
+    }
+
+    #playersubmarine {
+        width: 15vw;
+        height: 5vh;
+        top: 7.5vh;
+        left: 7.5vw;
+    }
+
+    #pspicture {
+        width: 10vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 5vw;
+        background-size: 100%;
+    }
+
+    #pscount {
+        width: 5vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 12.5vw;
+        font-size: 2vw;
+    }
+
+    #playerbattleship {
+        width: 15vw;
+        height: 5vh;
+        top: 12.5vh;
+        left: 7.5vw;
+    }
+
+    #pbpicture {
+        width: 10vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 5vw;
+        background-size: 100%;
+    }
+
+    #pbcount {
+        width: 5vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 12.5vw;
+        font-size: 2vw;
+    }
+
+    #playercarrier {
+        width: 15vw;
+        height: 5vh;
+        top: 17.5vh;
+        left: 7.5vw;
+    }
+
+    #pcpicture {
+        width: 10vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 5vw;
+        background-size: 100%;
+    }
+
+    #pccount {
+        width: 5vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 12.5vw;
+        font-size: 2vw;
+    }
+
+    #enemydestroyer {
+        width: 15vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 7.5vw;
+    }
+
+    #edpicture {
+        width: 12vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 6vw;
+        background-size: 100%;
+    }
+
+    #edcount {
+        width: 5vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 12.5vw;
+        font-size: 2vw;
+    }
+
+    #enemysubmarine {
+        width: 15vw;
+        height: 5vh;
+        top: 7.5vh;
+        left: 7.5vw;
+    }
+
+    #espicture {
+        width: 10vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 5vw;
+        background-size: 100%;
+    }
+
+    #escount {
+        width: 5vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 12.5vw;
+        font-size: 2vw;
+    }
+
+    #enemybattleship {
+        width: 15vw;
+        height: 5vh;
+        top: 12.5vh;
+        left: 7.5vw;
+    }
+
+    #ebpicture {
+        width: 10vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 5vw;
+        background-size: 100%;
+    }
+
+    #ebcount {
+        width: 5vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 12.5vw;
+        font-size: 2vw;
+    }
+
+    #enemycarrier {
+        width: 15vw;
+        height: 5vh;
+        top: 17.5vh;
+        left: 7.5vw;
+    }
+
+    #ecpicture {
+        width: 10vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 5vw;
+        background-size: 100%;
+    }
+
+    #eccount {
+        width: 5vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 12.5vw;
+        font-size: 2vw;
+    }
+}
+
+@media all and (orientation: portrait) {
+
+    #device {
+        display: none;
+    }
+
+    /* Menu */
+    #menu {
+        height: 100vh;
+        width: 100vw;
+        top: 50%;
+        left: 50%;
+    }
+
+    #menu_head {
+        font-size: 9vw;
+    }
+
+    .button:nth-child(even) {
+        width: 42.5%;
+        font-size: 7vw;
+    }
+
+    .button:nth-child(odd) {
+        width: 42.5%;
+        font-size: 7vw;
+    }
+
+    #instructionButton {
+        width: 42.5%;
+        top: 92.5%;
+        left: 50%;
+        font-size: 7vw;
+    }
+
+    .fullscreen {
+        width: 14vw;
+        height: 14vw;
+        top: 92.5%;
+        left: 85%;
+    }
+
+    #fullscreenbutton {
+        background-size: 100%;
+    }
+
+    #animatedmessage {
+        left: 50%;
+        width: 40vw;
+    }
+
+    #animatedmessagetext {
+        left: 50%;
+        font-size: 7vw;
+        width: 40vw;
+    }
+
+    /* Game Table */
+    #gameTable {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    tbody {
+        top: 50%;
+        left: 50%;
+    }
+
+    #text {
+        font-size: 6vw;
+    }
+
+    /* Gameover */
+    #gameover {
+        top: 50%;
+        left: 50%;
+        right: 0;
+        bottom: 0;
+        height: 40%;
+        width: 85%;
+    }
+
+    #menuGameover {
+        top: 55%;
+        left: 50%;
+    }
+
+    #nextGameover {
+        width: 70%;
+        top: 75%;
+        left: 50%;
+    }
+
+    #restartGameover {
+        top: 75%;
+        left: 50%;
+    }
+
+    #gameoverText {
+        top: 25%;
+        left: 50%;
+        width: 70vw;
+        font-size: 12vw;
+    }
+
+    /* Instruction */
+
+    #instruction {
+        top: 50%;
+        left: 50%;
+        width: 90vw;
+        height: 95vh;
+    }
+
+    #headInstruction {
+        top: 5vh;
+        left: 50%;
+        width: 50vw;
+        height: 5vh;
+        font-size: 7vw;
+    }
+
+    #pictureInstruction {
+        top: 17.5vh;
+        left: 50%;
+        width: 20vw;
+        height: 20vw;
+        border-radius: 20px;
+    }
+
+    #messageInstruction {
+        top: 52.5vh;
+        left: 50%;
+        width: 75vw;
+        height: 50vh;
+        font-size: 7vw;
+    }
+
+    .nextIns{
+        top: 82.5vh;
+        left: 50%;
+        width: 42.5%;
+        font-size: 7vw;
+    }
+
+    #backInstruction {
+        top: 90vh;
+        left: 50%;
+        width: 42.5%;
+    }
+
+    /* Message */
+    #message {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #messageBox {
+        top: 50%;
+        left: 50%;
+        right: 0;
+        bottom: 0;
+        height: 70vh;
+        width: 85vw;
+    }
+
+    #messageLevel {
+        top: 6vh;
+        left: 50%;
+        width: 70vw;
+        font-size: 14vw;
+    }
+
+    #messageText {
+        top: 20vh;
+        left: 50%;
+        width: 85vw;
+        font-size: 7vw;
+    }
+
+    #messageNext {
+        top: 65vh;
+        left: 50%;
+        width: 40vw;
+    }
+
+    #match {
+        width: 80vw;
+        height: 30vh;
+        top: 45vh;
+        left: 50%;
+    }
+
+    #player {
+        width: 35vw;
+        height: 5vh;
+        top: 5vh;
+        left: 17.5vw;
+    }
+
+    #vs {
+        width: 10vw;
+        height: 5vh;
+        top: 5vh;
+        left: 40vw;
+    }
+
+    #enemyplayer {
+        width: 35vw;
+        height: 5vh;
+        top: 5vh;
+        left: 62.5vw;
+    }
+
+    #playerside {
+        width: 40vw;
+        height: 20vh;
+        top: 17.5vh;
+        left: 20vw;
+    }
+
+    #enemyside {
+        width: 40vw;
+        height: 20vh;
+        top: 17.5vh;
+        left: 60vw;
+    }
+
+    #playerdestroyer {
+        width: 40vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 20vw;
+    }
+
+    #pdpicture {
+        width: 30vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 15vw;
+        background-size: 110%;
+    }
+
+    #pdcount {
+        width: 10vw;
+        height: 5vh;
+        top: 4vh;
+        left: 35vw;
+    }
+
+    #playersubmarine {
+        width: 40vw;
+        height: 5vh;
+        top: 7.5vh;
+        left: 20vw;
+    }
+
+    #pspicture {
+        width: 30vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 15vw;
+        background-size: 110%;
+    }
+
+    #pscount {
+        width: 10vw;
+        height: 5vh;
+        top: 4vh;
+        left: 35vw;
+    }
+
+    #playerbattleship {
+        width: 40vw;
+        height: 5vh;
+        top: 12.5vh;
+        left: 20vw;
+    }
+
+    #pbpicture {
+        width: 30vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 15vw;
+        background-size: 100%;
+    }
+
+    #pbcount {
+        width: 10vw;
+        height: 5vh;
+        top: 4vh;
+        left: 35vw;
+    }
+
+    #playercarrier {
+        width: 40vw;
+        height: 5vh;
+        top: 17.5vh;
+        left: 20vw;
+    }
+
+    #pcpicture {
+        width: 30vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 15vw;
+        background-size: 100%;
+    }
+
+    #pccount {
+        width: 10vw;
+        height: 5vh;
+        top: 4vh;
+        left: 35vw;
+    }
+
+    #enemydestroyer {
+        width: 40vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 20vw;
+    }
+
+    #edpicture {
+        width: 30vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 15vw;
+        background-size: 110%;
+    }
+
+    #edcount {
+        width: 10vw;
+        height: 5vh;
+        top: 4vh;
+        left: 35vw;
+    }
+
+    #enemysubmarine {
+        width: 40vw;
+        height: 5vh;
+        top: 7.5vh;
+        left: 20vw;
+    }
+
+    #espicture {
+        width: 30vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 15vw;
+        background-size: 110%;
+    }
+
+    #escount {
+        width: 10vw;
+        height: 5vh;
+        top: 4vh;
+        left: 35vw;
+    }
+
+    #enemybattleship {
+        width: 40vw;
+        height: 5vh;
+        top: 12.5vh;
+        left: 20vw;
+    }
+
+    #ebpicture {
+        width: 30vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 15vw;
+        background-size: 100%;
+    }
+
+    #ebcount {
+        width: 10vw;
+        height: 5vh;
+        top: 4vh;
+        left: 35vw;
+    }
+
+    #enemycarrier {
+        width: 40vw;
+        height: 5vh;
+        top: 17.5vh;
+        left: 20vw;
+    }
+
+    #ecpicture {
+        width: 30vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 15vw;
+        background-size: 100%;
+    }
+
+    #eccount {
+        width: 10vw;
+        height: 5vh;
+        top: 4vh;
+        left: 35vw;
+    }
+}
+
+/* Device */
+
+#device {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background-size: 35%;
+    background-color: #080808;
+    background-repeat: no-repeat;
+    background-image: url("images/device.png");
+    background-position: center center;
+}
+
+#deviceButton {
+    position: absolute;
+    width: 18%;
+    height: auto;
+    border: 3px solid #ffffff;
+    color: #FFFFFF;
+    padding: 4px;
+    top: 90%;
+    left: 50%;
+    font-size: 3vw;
+    border-radius: 20px;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* Menu */
+#menu {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-image: url("images/Menu.png");
+    background-position: center bottom;
+    background-size: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#menu_head {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0.5%;
+    margin: 0%;
+    border-bottom: 3px solid #080808;
+    border-top: 3px solid #080808;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    background: linear-gradient(top, #0b7499 0%, #626262 100%);
+    background: -webkit-linear-gradient(top, #0b7499 0%, #626262 100%);
+}
+
+.button:nth-child(even) {
+    color: #FFFFFF;
+    padding: 1%;
+    margin: 0.5% 5% 0.5% 2.5%;
+    border: 3px solid #080808;
+    border-radius: 20px;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+}
+
+.button:nth-child(odd) {
+    color: #FFFFFF;
+    padding: 1%;
+    margin: 0.5% 2.5% 0.5% 5%;
+    border: 3px solid #080808;
+    border-radius: 20px;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+}
+
+#instructionButton {
+    position: fixed;
+    color: #FFFFFF;
+    padding: 1%;
+    margin: 0;
+    border: 3px solid #080808;
+    border-radius: 20px;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.fullscreen {
+    position: fixed;
+    margin: 0;
+    border-radius: 50%;
+    background-color: Transparent;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#fullscreenbutton {
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 3px solid #080808;
+    background-image: url("images/fullscreen.png");
+    z-index: 2;
+}
+
+#fullscreendiv {
+    z-index: 1;
+    background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+}
+
+#animatedmessage {
+    position: fixed;
+    display: none;
+    z-index: 3;
+    background-color: #080808;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-animation: animated 0.5s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: animated 0.5s infinite;
+    animation-iteration-count: 1;
+}
+
+#animatedmessagetext {
+    position: absolute;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-animation: animated 0.5s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: animated 0.5s infinite;
+    animation-iteration-count: 1;
+}
+
+@keyframes animated {
+    0% {
+        opacity: 0;
+        top: 40%;
+    }
+    20% {
+        opacity: 0.25;
+        top: 37.5%;
+    }
+    40% {
+        opacity: 0.5;
+        top: 35%;
+    }
+    60% {
+        opacity: 0.75;
+        top: 32.5%;
+    }
+    100% {
+        opacity: 1;
+        top: 30%;
+    }
+}
+
+/* Game Table */
+#gameTable {
+    border-collapse: collapse;
+    background-color: #626262;
+}
+
+tbody {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border: 2px solid black;
+}
+
+#text {
+    color: #FFFFFF;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+}
+
+th {
+    background: linear-gradient(top, #0b7499 0%, #626262 100%);
+    background: -webkit-linear-gradient(top, #0b7499 0%, #626262 100%);
+    border: 1px solid black;
+}
+
+td {
+    background-position: center center;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+}
+
+#back {
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Gameover */
+
+#gameover {
+    position: fixed;
+    display: none;
+    border: 3px solid #FFFFFF;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#menuGameover {
+    position: absolute;
+    border: 3px solid #080808;
+    margin: 0% 0% 5% 0%;
+    border-radius: 20px;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#nextGameover {
+    position: absolute;
+    display: none;
+    border: 3px solid #080808;
+    margin: 2% 0% 5% 0%;
+    border-radius: 20px;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#restartGameover {
+    position: absolute;
+    display: none;
+    border: 3px solid #080808;
+    margin: 2% 0% 5% 0%;
+    border-radius: 20px;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#gameoverText {
+    position: absolute;
+    text-align: center;
+    padding: 1%;
+    color: #FFFFFF;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    border: 3px solid #080808;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* Gameover */
+
+#instruction {
+    position: fixed;
+    display: none;
+    border: 3px solid #FFFFFF;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#headInstruction {
+    position: absolute;
+    text-align: center;
+    padding: 1%;
+    color: #FFFFFF;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#pictureInstruction {
+    position: absolute;
+    text-align: center;
+    background-size: 100%;
+    border: 3px solid #ffffff;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#messageInstruction {
+    position: absolute;
+    text-align: center;
+    padding: 1%;
+    color: #FFFFFF;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.nextIns {
+    position: absolute;
+    display: none;
+    color: #FFFFFF;
+    padding: 1%;
+    border: 3px solid #ffffff;
+    margin: 2% 0% 5% 0%;
+    border-radius: 20px;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#nextInstruction1{
+    display: block;
+}
+
+#backInstruction {
+    position: absolute;
+    border: 3px solid #ffffff;
+    margin: 2% 0% 5% 0%;
+    border-radius: 20px;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* Message */
+
+#message {
+    position: fixed;
+    z-index: 2;
+}
+
+#messageBox {
+    position: fixed;
+    border: 3px solid #FFFFFF;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#messageLevel {
+    position: absolute;
+    text-align: center;
+    padding: 1%;
+    color: #FFFFFF;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#messageText {
+    position: absolute;
+    text-align: center;
+    padding: 1%;
+    color: #FFFFFF;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#messageNext {
+    position: fixed;
+    border: 3px solid #080808;
+    margin: 0;
+    border-radius: 20px;
+    text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#match {
+    position: fixed;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#player {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#vs {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#enemyplayer {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#playerside {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#enemyside {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#playerdestroyer {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#pdpicture {
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("images/ship_side/kanonenboot_blau.png");
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#pdcount {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#playersubmarine {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#pspicture {
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("images/ship_side/uboot_blau.png");
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#pscount {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#playerbattleship {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#pbpicture {
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("images/ship_side/schlachtschiff_blau.png");
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#pbcount {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#playercarrier {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#pcpicture {
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("images/ship_side/flugzeugträger_blau.png");
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#pccount {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#enemydestroyer {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#edpicture {
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("images/ship_side/kanonenboot_rot.png");
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#edcount {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#enemysubmarine {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#espicture {
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("images/ship_side/uboot_rot.png");
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#escount {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#enemybattleship {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#ebpicture {
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("images/ship_side/schlachtschiff_rot.png");
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#ebcount {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#enemycarrier {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#ecpicture {
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("images/ship_side/flugzeugträger_rot.png");
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#eccount {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.win {
+    background: linear-gradient(top, #22a34f 0%, #196220 100%);
+    background: -webkit-linear-gradient(top, #22a34f 0%, #196220 100%);
+}
+
+.loose {
+    background: linear-gradient(top, #a3262d 0%, #622f2e 100%);
+    background: -webkit-linear-gradient(top, #a3262d 0%, #622f2e 100%);
+}
+
+/* pictures for the tiles */
+
+@keyframes explosion {
+    0% {
+        background-image: url("images/objects/explosion_klein.png");
+        background-size: 100%;
+    }
+    20% {
+        background-image: url("images/objects/explosion_mittel.png");
+        background-size: 100%;
+    }
+    40% {
+        background-image: url("images/objects/explosion_groß.png");
+        background-size: 100%;
+    }
+    60% {
+        background-image: url("images/objects/explosion_mittel.png");
+        background-size: 100%;
+    }
+    100% {
+        background-image: url("images/objects/explosion_klein.png");
+        background-size: 100%;
+    }
+}
+
+.empty {
+}
+
+.animationRed {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    -webkit-animation: explosion 0.5s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: explosion 0.5s infinite;
+    animation-iteration-count: 1;
+    background-image: url("images/objects/kreuz_rot.png");
+}
+
+.animationWhite {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    -webkit-animation: explosion 0.5s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: explosion 0.5s infinite;
+    animation-iteration-count: 1;
+    background-image: url("images/objects/kreuz_weiß.png");
+}
+
+/* objects */
+
+.shipbuilder_north {
+    background-size: 100%;
+    background-image: url("images/objects/start_top.png");
+}
+
+.shipbuilder_east {
+    background-size: 100%;
+    background-image: url("images/objects/start_right.png");
+}
+
+.shipbuilder_south {
+    background-size: 100%;
+    background-image: url("images/objects/start_down.png");
+}
+
+.shipbuilder_west {
+    background-size: 100%;
+    background-image: url("images/objects/start_left.png");
+}
+
+.shipbuilder_center {
+    background-size: 100%;
+    background-image: url("images/objects/ship_start.png");
+}
+
+.back {
+    background-size: 100%;
+    background-image: url("images/objects/back.png");
+}
+
+/* rocks */
+
+.rock_1 {
+    background-size: 100%;
+    background-image: url("images/rocks/insel_1.png");
+}
+
+.rock_2 {
+    background-size: 100%;
+    background-image: url("images/rocks/insel_2.png");
+}
+
+.rock_3 {
+    background-size: 100%;
+    background-image: url("images/rocks/insel_3.png");
+}
+
+/*water_fog*/
+
+.water {
+    background-size: 100%;
+    background-image: url("images/water_fog/wasser.png");
+}
+
+.fog {
+    background-size: 100%;
+    background-image: url("images/water_fog/nebel.png");
+}
+
+/* powerups */
+
+.powerup_water {
+    background-size: 100%;
+    background-image: url("images/powerups/wasser_powerup.png");
+}
+
+.powerup_fog {
+    background-size: 100%;
+    background-image: url("images/powerups/nebel_powerup.png");
+}
+
+/* ships */
+
+/* two */
+.ship_2_horizontal_back {
+    background-size: 100%;
+    background-image: url("images/ships/two/boot2_horizontal_hinten.png");
+}
+
+.ship_2_horizontal_front {
+    background-size: 100%;
+    background-image: url("images/ships/two/boot2_horizontal_vorne.png");
+}
+
+.ship_2_vertical_back {
+    background-size: 100%;
+    background-image: url("images/ships/two/boot2_vertikal_hinten.png");
+}
+
+.ship_2_vertical_front {
+    background-size: 100%;
+    background-image: url("images/ships/two/boot2_vertikal_vorne.png");
+}
+
+/* three */
+
+.ship_3_horizontal_back {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_horizontal_hinten.png");
+}
+
+.ship_3_horizontal_middel {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_horizontal_mitte.png");
+}
+
+.ship_3_horizontal_front {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_horizontal_vorne.png");
+}
+
+.ship_3_vertical_back {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_vertikal_hinten.png");
+}
+
+.ship_3_vertical_middel {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_vertikal_mitte.png");
+}
+
+.ship_3_vertical_front {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_vertikal_vorne.png");
+}
+
+/* four */
+
+.ship_4_horizontal_back {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_horizontal_hinten.png");
+}
+
+.ship_4_horizontal_middel_1 {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_horizontal_mitte1.png");
+}
+
+.ship_4_horizontal_middel_2 {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_horizontal_mitte2.png");
+}
+
+.ship_4_horizontal_front {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_horizontal_vorne.png");
+}
+
+.ship_4_vertical_back {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_vertikal_hinten.png");
+}
+
+.ship_4_vertical_middel_1 {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_vertikal_mitte1.png");
+}
+
+.ship_4_vertical_middel_2 {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_vertikal_mitte2.png");
+}
+
+.ship_4_vertical_front {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_vertikal_vorne.png");
+}
+
+/* five */
+
+.ship_5_horizontal_back {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_horizontal_hinten.png");
+}
+
+.ship_5_horizontal_middel_1 {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_horizontal_mitte1.png");
+}
+
+.ship_5_horizontal_middel_2 {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_horizontal_mitte2.png");
+}
+
+.ship_5_horizontal_middel_3 {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_horizontal_mitte3.png");
+}
+
+.ship_5_horizontal_front {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_horizontal_vorne.png");
+}
+
+.ship_5_vertical_back {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_vertikal_hinten.png");
+}
+
+.ship_5_vertical_middel_1 {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_vertikal_mitte1.png");
+}
+
+.ship_5_vertical_middel_2 {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_vertikal_mitte2.png");
+}
+
+.ship_5_vertical_middel_3 {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_vertikal_mitte3.png");
+}
+
+.ship_5_vertical_front {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_vertikal_vorne.png");
+}

@@ -1,0 +1,181 @@
+{
+  "scrollSpeed": 2,
+  "moveTimerMillis": 50,
+  "checkTimerMillis": 333,
+  "beginnTop": 40,
+  "bars":
+  [
+    {
+      "whitespaces":
+      [
+        {
+          "id": "ws1",
+          "type": "static",
+          "width": 40,
+          "marginLeft": 15
+        },
+        {
+          "id": "ws2",
+          "type": "static",
+          "width": 20,
+          "marginLeft": 75
+        }
+      ],
+      "powerups":
+      [
+        {
+          "id": "pu1",
+          "type": "maximize",
+          "marginLeft": 75
+        }
+      ]
+    },
+    {
+      "whitespaces":
+      [
+        {
+          "id": "ws3",
+          "type": "static",
+          "width": 30,
+          "marginLeft": 2
+        },
+        {
+          "id": "ws4",
+          "type": "static",
+          "width": 20,
+          "marginLeft": 30
+        }
+      ],
+      "powerups":
+      [
+		{
+          "id": "pu2",
+          "type": "minimize",
+          "marginLeft": 50
+        }
+      ]
+    },
+	{
+      "whitespaces":
+      [
+        {
+          "id": "ws5",
+          "type": "static",
+          "width": 40,
+          "marginLeft": 45
+        },
+        {
+          "id": "ws6",
+          "type": "static",
+          "width": 20,
+          "marginLeft": 25
+        }
+      ],
+      "powerups":
+      [
+	  
+      ]
+    },
+	{
+      "whitespaces":
+      [
+        {
+          "id": "ws7",
+          "type": "static",
+          "width": 40,
+          "marginLeft": 15
+        },
+        {
+          "id": "ws8",
+          "type": "static",
+          "width": 20,
+          "marginLeft": 75
+        }
+      ],
+      "powerups":
+      [
+        
+      ]
+    },
+	{
+      "whitespaces":
+      [
+        {
+          "id": "ws9",
+          "type": "static",
+          "width": 30,
+          "marginLeft": 15
+        },
+        {
+          "id": "ws10",
+          "type": "static",
+          "width": 30,
+          "marginLeft": 45
+        }
+      ],
+      "powerups":
+      [
+        
+      ]
+    },
+	{
+      "whitespaces":
+      [
+        {
+          "id": "ws11",
+          "type": "static",
+          "width": 40,
+          "marginLeft": 45
+        },
+        {
+          "id": "ws12",
+          "type": "static",
+          "width": 20,
+          "marginLeft": 35
+        }
+      ],
+      "powerups":
+      [
+       
+      ]
+    },
+	{
+      "whitespaces":
+      [
+        {
+          "id": "ws13",
+          "type": "static",
+          "width": 20,
+          "marginLeft": 25
+        },
+        {
+          "id": "ws14",
+          "type": "static",
+          "width": 40,
+          "marginLeft": 55
+        }
+      ],
+      "powerups":
+      [
+		{
+          "id": "pu3",
+          "type": "speed",
+          "marginLeft": 15
+        }
+      ]
+    }
+  ],
+  "fallObjects":
+  [
+    {
+      "id": "fallObj1",
+      "type": "static",
+      "width": 15
+    },
+    {
+      "id": "fallObj2",
+      "type": "static",
+      "width": 15
+    }
+  ]
+}

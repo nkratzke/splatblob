@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    <title>starSpeeder</title>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <!--Media queries for different device types-->
+    <link rel="stylesheet" type="text/css" href="css/screen.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 767px) and (orientation: portrait)" href="css/smartphone.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-width: 1023px)" href="css/tablet.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1024px) and (orientation: portrait)" href="css/largeTablet.css">
+    <script defer="" src="main.dart.js"></script>
+    
+</head>
+
+<body>
+<!--Overlay for loading screen-->
+<div class="overlay" id="loadingOverlay">
+    <img id="loadingImg" src="img/premium.png">
+    <h2>LOADING</h2>
+</div>
+
+<!--Warning if browser does not support LocalStorage-->
+<div class="overlay" id="localStorageWarningOverlay">
+    <span id="localStorageWarning">WARNING: Your Browser does not support LocalStorage - tap to exit</span>
+</div>
+
+<!--Warning displayed while autopilot item is active-->
+<div class="overlay" id="autopilotFeedbackOverlay">
+        <span id="autopilotFeedback">AUTOPILOT</span>
+</div>
+
+<!--Menu for saving highscores-->
+<div class="overlay" id="saveoverlay">
+    <div class="overlayTagSmall">
+        <p class="overlayTagBig">SAVE HIGHSCORE</p>
+        <form>
+            <input id="textFieldSave" type="text" name="name" placeholder="*your name" class="textFieldSave">
+        </form>
+        <br>
+        <button id="btnSave" type="button" class="btnSave">save highscore</button>
+        <br><br>
+        <button id="btnCancel" type="button" class="btnSkip">cancel</button>
+    </div>
+</div>
+
+<!--Main menu of the game-->
+<div class="overlay" id="menuOverlay">
+    <div id="menuContent">
+        <table id="menuTable">
+            <tbody><tr id="playButton"><td> <a href="#"><h2>PLAY</h2></a></td></tr>
+            <tr id="manualButton"><td><a href="#"><h2>DESCRIPTION</h2></a></td></tr>
+            <tr id="gameplayButton"><td><a href="#"><h2>GAMEPLAY</h2></a></td></tr>
+            <tr id="highscoreButton"><td><a href="#"><h2>HIGHSCORE</h2></a></td></tr>
+            <tr id="creditsButton"><td><a href="#"><h2>CREDITS</h2></a></td></tr>
+        </tbody></table>
+    </div>
+</div>
+
+<!--Menu for displaying highscores-->
+<div class="overlay" id="highscoreOverlay">
+    <h1>HALL OF FAME</h1>
+    <div id="highscore">
+        <table id="topThreeScores" class="overlayTagSmall"></table>
+    </div>
+    <h2 id="highscoreBackButton"><a href="#">BACK</a></h2>
+
+</div>
+
+<!--Menu displaying after game was lost-->
+<div class="overlay" id="gameoveroverlay">
+    <p class="overlayTagBig">GAME OVER<br></p>
+    <div class="overlayTagSmall"><button id="btnGoToSave" type="button" class="btnSave">save highscore</button></div>
+    <br>
+    <div class="overlayTagSmall"><button id="btnSkip" type="button" class="btnSkip">new game</button></div>
+</div>
+
+<!--Menu for changing player input-->
+<div class="overlay" id="gameplayOverlay">
+    <h1>GAMEPLAY</h1>
+    <div id="settings">
+        <input id="checkboxAlternativeInput" type="checkbox" title="checkboxAlternativeInput" value="AlternativeInput"> <span id="controlDeviceText">Control via device rotation</span>
+    </div>
+
+    <div id="gameplayExplanation"></div>
+
+    <h2 class="backToMenuButton" id="gameplayBackButton"><a href="#">BACK</a></h2>
+
+</div>
+
+<!--Menu explaining items-->
+<div class="overlay" id="manualOverlay">
+    <h1>DESCRIPTION</h1>
+    <table id="tableManual">
+        <tbody><tr>
+            <!--Entry for Coin-->
+            <td class="manualItem">
+                <img src="img/coin.png">
+            </td>
+            <td class="manualDescription"><p>collect points and raise your highscore</p></td>
+        </tr>
+        <tr>
+            <!--Entry for Premium-->
+            <td class="manualItem">
+                <img src="img/premium.png">
+            </td>
+            <td class="manualDescription"><p>get some extra points</p></td>
+        </tr>
+        <tr>
+            <!--Entry for Autopilot-->
+            <td class="manualItem">
+                <img src="img/autopilot.png">
+            </td>
+            <td class="manualDescription"><p>an autopilot will control the spaceship</p></td>
+        </tr>
+        <tr>
+            <!--Entry for Multiplicator-->
+            <td class="manualItem">
+                <img src="img/multiplikator.png">
+            </td>
+            <td class="manualDescription"><p>get twice as many points</p></td>
+        </tr>
+        <tr>
+            <!--Entry for SpeedDown-->
+            <td class="manualItem">
+                <img src="img/speedDown.png">
+            </td>
+            <td class="manualDescription"><p>reduce the speed of your spaceship</p></td>
+        </tr>
+        <tr>
+            <!--Entry for SpeedUp-->
+            <td class="manualItem">
+                <img src="img/speedUp.png">
+            </td>
+            <td class="manualDescription"><p>raise the speed of your spaceship</p></td>
+        </tr>
+        <tr>
+            <!--Entry for Wall-->
+            <td class="manualItem">
+                <img src="img/wall.png">
+            </td>
+            <td class="manualDescription"><p>a collision ends the game</p></td>
+        </tr>
+        <tr>
+            <!--Entry for PointReduce-->
+            <td class="manualItem">
+                <img src="img/pointReduce.png">
+            </td>
+            <td class="manualDescription"><p>reduce your points</p></td>
+        </tr>
+    </tbody></table>
+
+    <h2 class="backToMenuButton" id="manualBackButton"><a href="#">BACK</a></h2>
+
+</div>
+
+<!--Menu showing credits-->
+<div class="overlay" id="creditsOverlay">
+    <h1>CREDITS</h1>
+    <div id="creditsContent">
+        <h3 class="credits">idea and implementation</h3>
+        <p>Niclas zum Felde</p>
+        <p>Léon Klick</p>
+        <p>Tim-Pascal Lau</p>
+        <h3 class="credits">supported by</h3>
+        <p>Nane Kratzke</p>
+        <h3 class="credits">powered by</h3>
+        <p>A lot of coffee</p>
+    </div>
+
+    <h2 class="backToMenuButton" id="creditsBackButton"><a href="#">BACK</a></h2>
+
+</div>
+
+<!--Game-->
+<div class="gameContainer">
+
+    <!--GameLayout-->
+    <div id="game">
+
+        <!--Information About GameState (Level/Score)-->
+        <div id="informationBar">
+            <table id="information">
+                <tbody>
+                <tr>
+                    <td id="levelField" class="informationFields">
+                        <div id="level"><h5>LEVEL <br>1</h5></div>
+                    </td>
+                    <td id="scoreField" class="informationFields">
+                        <div id="score"><h5>SCORE <br>0</h5></div>
+
+                    </td>
+                    <td id="menuField" class="informationFields">
+                        <a id="menuButton" href="#">
+                            <div id="menuButton1"><h5>MENU</h5></div>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--Gamefield-->
+        <table id="gameField"></table>
+    </div>
+
+    <!--Controls-->
+    <div id="controlField">
+        <!--Buttons for control-->
+        <table id="control">
+            <tbody><tr>
+                <!--Button for moving left-->
+                <td id="left" class="controllField"></td>
+                <!--Button for moving right-->
+                <td id="right" class="controllField"></td>
+            </tr>
+        </tbody></table>
+    </div>
+
+</div>
+
+</body></html>

@@ -1,0 +1,28 @@
+[
+  {
+    "id": 0,
+    "health": 15,
+    "speed": 1,
+    "baseXp": 100,
+    "attributes": {
+      "strength": 5,
+      "constitution": 5,
+      "luck": 5
+    },
+    "talents": {
+      "crit-chance": 5,
+      "crit-damage-mod": 1.30
+    },
+    "armor": {
+      "helmet": 0,
+      "chest": 0,
+      "gloves": 0,
+      "legs": 0,
+      "boots": 0
+    },
+    "weapon": [
+      "daggers", 0
+    ],
+    "potions": [2, 0, 0]
+  }
+]

@@ -1,0 +1,214 @@
+.overlay {
+    /* let it fill the whole container */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: deepskyblue;
+    z-index: 200;
+}
+
+.overlay:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.button-container {
+    font-family: "Roboto Condensed", SansSerif;
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    bottom: 20%;
+    width: 40%;
+    padding: .5em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 100px;
+    z-index: 110;
+}
+
+.button {
+    font-family: "Roboto Condensed", SansSerif;
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    background: orangered;
+
+    width: 60%;
+    padding: .5em;
+    display: inline-block;
+    /*vertical-align: middle;*/
+    z-index: 110;
+
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.button-pad {
+    margin-top: 5px;
+}
+
+/*Overrides*/
+
+#restart-overlay-login-submit {
+    margin-top: 20px;
+}
+
+/*Specific Elements*/
+
+#menu-title {
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    text-align: center;
+    font-family: "Roboto Condensed", SansSerif;
+    font-size: 3em;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 15%;
+}
+
+#restart-overlay-message {
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    text-align: center;
+    font-family: "Roboto Condensed", SansSerif;
+    font-size: 3em;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 15%;
+}
+
+#restart-overlay-highscores {
+    background: rgba(192, 192, 192, 0.7);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30%;
+    height: 80%;
+    /*padding: .5em;*/
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 110;
+
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#restart-overlay-highscores-list {
+    font-family: "Roboto Condensed", SansSerif;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    margin: 0;
+
+    list-style-type:none;
+}
+
+#restart-overlay-highscores-list li {
+    font-family: "Roboto Condensed", SansSerif;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    text-align: left;
+    list-style-position:inside;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#menu-overlay-level-select {
+    font-family: "Roboto Condensed", SansSerif;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    text-align: center;
+    background: orangered;
+
+    width: 60%;
+    padding: .5em;
+    font-size: 16px;
+    line-height: 1;
+    -webkit-appearance: none;
+    margin-top: 5px;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+    box-sizing:content-box;
+    z-index: 210;
+    display: inline-block;
+
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#menu-overlay-level-select option {
+    font-family: "Roboto Condensed", SansSerif;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    text-align: center;
+
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#restart-overlay-login {
+    /*background: firebrick;*/
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    width: 30%;
+    height: 40%;
+    /*padding: .5em;*/
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 110;
+
+    border-radius: 5px;
+}
+
+#restart-overlay-login-user {
+    margin-top: 1px;
+    border-radius: 5px;
+}
+
+#restart-overlay-login-password {
+    margin-top: 20px;
+    border-radius: 5px;
+}

@@ -1,0 +1,162 @@
+{
+	"1Level":
+	{
+		"cBallDropProbability": "40",
+		"eBallDropProbability": "30",
+		"dropSpeed": "2",
+		"slow": "12",
+		"fast": "12",
+		"1up": "7",
+		"whiteStar": "8",
+		"fieldClear": "8",
+		"shield": "10",
+		"colorChange": "10",
+		"2xBoost": "15",
+		"3xBoost": "12",
+		"autoCatch": "6"
+	},
+	"2Level":
+	{
+		"cBallDropProbability": "45",
+		"eBallDropProbability": "20",
+		"dropSpeed": "2",
+		"slow": "12",
+		"fast": "12",
+		"1up": "7",
+		"whiteStar": "8",
+		"fieldClear": "8",
+		"shield": "10",
+		"colorChange": "10",
+		"2xBoost": "15",
+		"3xBoost": "12",
+		"autoCatch": "6"
+	},
+	"3Level":
+	{
+		"cBallDropProbability": "40",
+		"eBallDropProbability": "30",
+		"dropSpeed": "3",
+		"slow": "12",
+		"fast": "12",
+		"1up": "7",
+		"whiteStar": "8",
+		"fieldClear": "8",
+		"shield": "10",
+		"colorChange": "10",
+		"2xBoost": "15",
+		"3xBoost": "12",
+		"autoCatch": "6"
+	},
+	"4Level":
+	{
+		"cBallDropProbability": "45",
+		"eBallDropProbability": "25",
+		"dropSpeed": "3",
+		"slow": "12",
+		"fast": "12",
+		"1up": "7",
+		"whiteStar": "8",
+		"fieldClear": "8",
+		"shield": "10",
+		"colorChange": "10",
+		"2xBoost": "15",
+		"3xBoost": "12",
+		"autoCatch": "6"
+	},
+	"5Level":
+	{
+		"cBallDropProbability": "50",
+		"eBallDropProbability": "20",
+		"dropSpeed": "3",
+		"slow": "12",
+		"fast": "12",
+		"1up": "7",
+		"whiteStar": "8",
+		"fieldClear": "8",
+		"shield": "10",
+		"colorChange": "10",
+		"2xBoost": "15",
+		"3xBoost": "12",
+		"autoCatch": "6"
+	},
+	"6Level":
+	{
+		"cBallDropProbability": "50",
+		"eBallDropProbability": "15",
+		"dropSpeed": "3",
+		"slow": "12",
+		"fast": "12",
+		"1up": "7",
+		"whiteStar": "8",
+		"fieldClear": "8",
+		"shield": "10",
+		"colorChange": "10",
+		"2xBoost": "15",
+		"3xBoost": "12",
+		"autoCatch": "6"
+	},
+	"7Level":
+	{
+		"cBallDropProbability": "40",
+		"eBallDropProbability": "20",
+		"dropSpeed": "4",
+		"slow": "12",
+		"fast": "12",
+		"1up": "7",
+		"whiteStar": "8",
+		"fieldClear": "8",
+		"shield": "10",
+		"colorChange": "10",
+		"2xBoost": "15",
+		"3xBoost": "12",
+		"autoCatch": "6"
+	},
+	"8Level":
+	{
+		"cBallDropProbability": "50",
+		"eBallDropProbability": "20",
+		"dropSpeed": "4",
+		"slow": "12",
+		"fast": "12",
+		"1up": "7",
+		"whiteStar": "8",
+		"fieldClear": "8",
+		"shield": "10",
+		"colorChange": "10",
+		"2xBoost": "15",
+		"3xBoost": "12",
+		"autoCatch": "6"
+	},
+	"9Level":
+	{
+		"cBallDropProbability": "60",
+		"eBallDropProbability": "10",
+		"dropSpeed": "4",
+		"slow": "12",
+		"fast": "12",
+		"1up": "7",
+		"whiteStar": "8",
+		"fieldClear": "8",
+		"shield": "10",
+		"colorChange": "10",
+		"2xBoost": "15",
+		"3xBoost": "12",
+		"autoCatch": "6"
+	},
+	"10Level":
+	{
+		"cBallDropProbability": "60",
+		"eBallDropProbability": "15",
+		"dropSpeed": "5",
+		"slow": "12",
+		"fast": "12",
+		"1up": "7",
+		"whiteStar": "8",
+		"fieldClear": "8",
+		"shield": "10",
+		"colorChange": "10",
+		"2xBoost": "15",
+		"3xBoost": "12",
+		"autoCatch": "6"
+	}
+}

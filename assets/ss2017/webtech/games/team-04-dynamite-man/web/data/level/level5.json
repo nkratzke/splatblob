@@ -1,0 +1,23 @@
+{
+  "level": {
+      "blocks" : [
+        "P","E","E","S","E","E","E","E","E","S",
+        "B","B","B","B","B","B","B","B","B","S",
+        "E","E","E","E","E","E","E","E","E","S",
+        "E","B","B","B","B","B","B","B","B","B",
+        "R","E","D","D","R","R","R","E","E","E",
+        "B","B","B","B","B","B","B","B","B","D",
+        "Z","M","M","M","M","M","D","M","D","E"
+      ],
+      "field_width" : "10",
+      "field_height" : "7"
+  },
+  "maxDynamites": 5,
+  "exp_monster" : "100",
+  "exp_destroyable_block" : "10",
+  "speedBuffSpawnRate" : 50,
+  "speedBuffAddSpeed" : 100,
+  "dynamiteRangeSpawnRate" : 50,
+  "description" : "This Level is a special Level. You can see the speed buffs and dynamite range extentions, collect them and kill the enemies easier",
+  "maxLevelTime" : 60
+}

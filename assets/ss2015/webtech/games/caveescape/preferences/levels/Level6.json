@@ -1,0 +1,14 @@
+{
+  "NAME":"Rattenfänger",
+  "MAXFREQUENZ":2000,
+  "MAXPOINTS":25000,
+  "YellowCoin":100,
+  "PowerUp_Multiplier":12,
+  "BlueCoin":100,
+  "Rat":200,
+  "RedCoin":50,
+  "PowerUp_LifeUp":3,
+  "PowerUp_CoinGathering":5,
+  "PowerDown_Multiplier":5
+
+}

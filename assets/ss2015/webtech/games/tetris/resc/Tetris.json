@@ -1,0 +1,122 @@
+{
+    "Tetriminos": [
+        {
+            "type": "I",
+            "alignments": [
+                "0x0F00",
+                "0x2222",
+                "0x00F0",
+                "0x4444"
+            ],
+            "level": 1
+        },
+        {
+            "type": "J",
+            "alignments": [
+                "0x44C0",
+                "0x8E00",
+                "0x6440",
+                "0x0E20"
+            ],
+            "level": 1
+        },
+        {
+            "type": "L",
+            "alignments": [
+                "0x4460",
+                "0x0E80",
+                "0xC440",
+                "0x2E00"
+            ],
+            "level": 1
+        },
+        {
+            "type": "Q",
+            "alignments": [
+                "0xCC00",
+                "0xCC00",
+                "0xCC00",
+                "0xCC00"
+            ],
+            "level": 1,
+            "joker": true
+        },
+        {
+            "type": "S",
+            "alignments": [
+                "0x06C0",
+                "0x8C40",
+                "0x6C00",
+                "0x4620"
+            ],
+            "level": 1
+        },
+        {
+            "type": "T",
+            "alignments": [
+                "0x0E40",
+                "0x4C40",
+                "0x4E00",
+                "0x4640"
+            ],
+            "level": 1
+        },
+        {
+            "type": "Z",
+            "alignments": [
+                "0x0C60",
+                "0x4C80",
+                "0xC600",
+                "0x2640"
+            ],
+            "level": 1
+        },
+        {
+            "type": "U",
+            "alignments": [
+                "0x5700",
+                "0x6460",
+                "0x7500",
+                "0x6260"
+            ],
+            "level": 3
+        },
+        {
+            "type": "O",
+            "alignments": [
+                "0x7570",
+                "0x7570",
+                "0x7570",
+                "0x7570"
+            ],
+            "level": 4
+        },
+        {
+            "type": "+",
+            "alignments": [
+                "0x4E40",
+                "0x4E40",
+                "0x4E40",
+                "0x4E40"
+            ],
+            "level": 5
+        },
+        {
+            "type": "Br",
+            "alignments": [
+                "0xEEE0",
+                "0xEEE0",
+                "0xEEE0",
+                "0xEEE0"
+            ],
+            "level": 6
+        }
+    ],
+    "LevelStart": {
+        "Reihe1": 40,
+        "Reihe2": 100,
+        "Reihe3": 300,
+        "Reihe4": 500,
+        "Levelaufstieg": 500
+    }
+}

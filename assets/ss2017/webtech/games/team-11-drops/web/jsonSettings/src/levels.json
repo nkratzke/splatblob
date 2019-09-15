@@ -1,0 +1,1736 @@
+{
+    "1" : {
+      "settings": {
+        "count" : 6,
+        "duration": 20,
+        "maxAddTimeoutPu" : 600,
+        "minTimeoutPu": 500
+      },
+      "compFigure" : {
+        "friend" : {
+          "probability" : 2,
+          "types" : {
+
+            "1" : {
+              "diameter" : 25,
+              "speedX" : 0,
+              "speedY" : 2,
+              "shrinkRate" : 3,
+              "probability" : 1
+            }
+          }
+
+        },
+
+        "enemy" : {
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 10,
+              "speedX" : 0,
+              "speedY" : 2,
+              "damage" : 1,
+              "probability" : 1
+            }
+          }
+        }
+
+      },
+
+      "player" : {
+        "growthRate" : 0.04
+      },
+
+      "powerup" : {
+        "pu_life" : {
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_delete_enemies" : {
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_shrink":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_less_enemies":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_automatic":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 700
+            }
+          }
+        },
+        "pu_slow_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 70,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 600,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.1
+            }
+          }
+        },
+        "pu_stop_growing":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 60,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_growing_friends":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 3
+            }
+          }
+        },
+        "pu_small_enemies":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.3
+            }
+          }
+        }
+      }
+    },
+    "2" : {
+      "settings": {
+        "count" : 8,
+        "duration": 30,
+        "maxAddTimeoutPu" : 400,
+        "minTimeoutPu": 800
+      },
+      "compFigure" : {
+        "friend" : {
+          "probability" : 2,
+          "types" : {
+
+            "1" : {
+              "diameter" : 22,
+              "speedX" : 0,
+              "speedY" : 2,
+              "shrinkRate" : 3,
+              "probability" : 1
+            }
+          }
+
+        },
+
+        "enemy" : {
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 10,
+              "speedX" : 0,
+              "speedY" : 2,
+              "damage" : 1,
+              "probability" : 1
+            }
+          }
+        }
+
+      },
+
+      "player" : {
+        "growthRate" : 0.04
+      },
+
+      "powerup" : {
+        "pu_life" : {
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_delete_enemies" : {
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_shrink":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_less_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 60,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_slow_enemies":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 600,
+              "probability" : 0,
+              "activeDuration" : 600,
+              "changeRate" : 0.1
+            }
+          }
+        },
+        "pu_stop_growing":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_automatic":{
+          "probability" : 2,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 800
+            }
+          }
+        },
+        "pu_growing_friends":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 50,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 3
+            }
+          }
+        },
+        "pu_small_enemies":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.3
+            }
+          }
+        }
+      }
+    },
+    "3" : {
+      "settings": {
+        "count" : 30,
+        "duration": 20,
+        "maxAddTimeoutPu" : 400,
+        "minTimeoutPu": 800
+      },
+      "compFigure" : {
+        "friend" : {
+          "probability" : 2,
+          "types" : {
+
+            "1" : {
+              "diameter" : 17,
+              "speedX" : 0,
+              "speedY" : 5,
+              "shrinkRate" : 2,
+              "probability" : 1
+            }
+          }
+
+        },
+
+        "enemy" : {
+          "probability" : 3,
+          "types" : {
+            "1" : {
+              "diameter" : 17,
+              "speedX" : 0,
+              "speedY" : 4,
+              "damage" : 1,
+              "probability" : 1
+            },
+            "2" : {
+              "diameter" : 15,
+              "speedX" : 0,
+              "speedY" : 6,
+              "damage" : 1,
+              "probability" : 1
+            }
+          }
+        }
+
+      },
+
+      "player" : {
+        "growthRate" : 0.03
+      },
+
+      "powerup" : {
+        "pu_life" : {
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_delete_enemies" : {
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_shrink":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 55,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_less_enemies":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_slow_enemies":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 600,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.1
+            }
+          }
+        },
+        "pu_stop_growing":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_automatic":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 800
+            }
+          }
+        },
+        "pu_growing_friends":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 3
+            }
+          }
+        },
+        "pu_small_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 50,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.3
+            }
+          }
+        }
+      }
+    },
+    "4" : {
+      "settings": {
+        "count" : 12,
+        "duration": 50,
+        "maxAddTimeoutPu" : 400,
+        "minTimeoutPu": 800
+      },
+      "compFigure" : {
+        "friend" : {
+          "probability" : 3,
+          "types" : {
+
+            "1" : {
+              "diameter" : 18,
+              "speedX" : 0,
+              "speedY" : 3,
+              "shrinkRate" : 3,
+              "probability" : 1
+            }
+          }
+
+        },
+
+        "enemy" : {
+          "probability" : 2,
+          "types" : {
+            "1" : {
+              "diameter" : 13,
+              "speedX" : 0,
+              "speedY" : 3,
+              "damage" : 1,
+              "probability" : 1
+            }
+          }
+        }
+
+      },
+
+      "player" : {
+        "growthRate" : 0.03
+      },
+
+      "powerup" : {
+        "pu_life" : {
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_delete_enemies" : {
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_shrink":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_less_enemies":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_slow_enemies":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 600,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.1
+            }
+          }
+        },
+        "pu_stop_growing":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_growing_friends":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 3
+            }
+          }
+        },
+        "pu_automatic":{
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 800
+            }
+          }
+        },
+        "pu_small_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.3
+            }
+          }
+        }
+      }
+    },
+    "5" : {
+      "settings": {
+        "count" : 10,
+        "duration": 30,
+        "maxAddTimeoutPu" : 200,
+        "minTimeoutPu": 1000
+      },
+      "compFigure" : {
+        "friend" : {
+          "probability" : 2,
+          "types" : {
+
+            "1" : {
+              "diameter" : 14,
+              "speedX" : 0,
+              "speedY" : 3,
+              "shrinkRate" : 3,
+              "probability" : 5
+            },
+            "2" : {
+              "diameter" : 10,
+              "speedX" : 0,
+              "speedY" : 7,
+              "shrinkRate" : 20,
+              "probability" : 1
+            }
+          }
+
+        },
+
+        "enemy" : {
+          "probability" : 4,
+          "types" : {
+            "1" : {
+              "diameter" : 13,
+              "speedX" : 0,
+              "speedY" : 4,
+              "damage" : 1,
+              "probability" : 1
+            }
+          }
+        }
+
+      },
+
+      "player" : {
+        "growthRate" : 0.04
+      },
+
+      "powerup" : {
+        "pu_life" : {
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_delete_enemies" : {
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_shrink":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_less_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_slow_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 600,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.1
+            }
+          }
+        },
+        "pu_stop_growing":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_automatic":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 900
+            }
+          }
+        },
+        "pu_growing_friends":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 3
+            }
+          }
+        },
+        "pu_small_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.3
+            }
+          }
+        }
+      }
+    },
+    "6" : {
+      "settings": {
+        "count" : 14,
+        "duration": 70,
+        "maxAddTimeoutPu" : 100,
+        "minTimeoutPu": 800
+      },
+      "compFigure" : {
+        "friend" : {
+          "probability" : 2,
+          "types" : {
+
+            "1" : {
+              "diameter" : 10,
+              "speedX" : 0,
+              "speedY" : 4,
+              "shrinkRate" : 3,
+              "probability" : 2
+            },
+            "2" : {
+              "diameter" : 5,
+              "speedX" : 0,
+              "speedY" : 7,
+              "shrinkRate" : 20,
+              "probability" : 1
+            }
+          }
+
+        },
+
+        "enemy" : {
+          "probability" : 3,
+          "types" : {
+            "1" : {
+              "diameter" : 13,
+              "speedX" : 0,
+              "speedY" : 4,
+              "damage" : 1,
+              "probability" : 1
+            },
+            "2" : {
+              "diameter" : 15,
+              "speedX" : 0,
+              "speedY" : 3,
+              "damage" : 1,
+              "probability" : 1
+            }
+          }
+        }
+
+      },
+
+      "player" : {
+        "growthRate" : 0.04
+      },
+
+      "powerup" : {
+        "pu_life" : {
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_delete_enemies" : {
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_shrink":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_less_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_slow_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 600,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.1
+            }
+          }
+        },
+        "pu_automatic":{
+          "probability" : 2,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 900
+            }
+          }
+        },
+        "pu_stop_growing":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_growing_friends":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 3
+            }
+          }
+        },
+        "pu_small_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.3
+            }
+          }
+        }
+      }
+    },
+    "7" : {
+      "settings": {
+        "count" : 30,
+        "duration": 30,
+        "maxAddTimeoutPu" : 100,
+        "minTimeoutPu": 800
+      },
+      "compFigure" : {
+        "friend" : {
+          "probability" : 1,
+          "types" : {
+
+            "1" : {
+              "diameter" : 10,
+              "speedX" : 0,
+              "speedY" : 4,
+              "shrinkRate" : 3,
+              "probability" : 2
+            },
+            "2" : {
+              "diameter" : 5,
+              "speedX" : 0,
+              "speedY" : 7,
+              "shrinkRate" : 20,
+              "probability" : 1
+            }
+          }
+
+        },
+
+        "enemy" : {
+          "probability" : 3,
+          "types" : {
+            "1" : {
+              "diameter" : 13,
+              "speedX" : 0,
+              "speedY" : 4,
+              "damage" : 1,
+              "probability" : 1
+            },
+            "2" : {
+              "diameter" : 15,
+              "speedX" : 0,
+              "speedY" : 3,
+              "damage" : 1,
+              "probability" : 1
+            }
+          }
+        }
+
+      },
+
+      "player" : {
+        "growthRate" : 0.04
+      },
+
+      "powerup" : {
+        "pu_life" : {
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_delete_enemies" : {
+          "probability" : 0,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_shrink":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_less_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_slow_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 600,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.1
+            }
+          }
+        },
+        "pu_stop_growing":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_automatic":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 900
+            }
+          }
+        },
+        "pu_growing_friends":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 3
+            }
+          }
+        },
+        "pu_small_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.3
+            }
+          }
+        }
+      }
+    },
+    "8" : {
+      "settings": {
+        "count" : 17,
+        "duration": 80,
+        "maxAddTimeoutPu" : 200,
+        "minTimeoutPu": 600
+      },
+      "compFigure" : {
+        "friend" : {
+          "probability" : 2,
+          "types" : {
+
+            "1" : {
+              "diameter" : 10,
+              "speedX" : 0,
+              "speedY" : 4,
+              "shrinkRate" : 3,
+              "probability" : 2
+            },
+            "2" : {
+              "diameter" : 5,
+              "speedX" : 0,
+              "speedY" : 7,
+              "shrinkRate" : 20,
+              "probability" : 1
+            }
+          }
+
+        },
+
+        "enemy" : {
+          "probability" : 4,
+          "types" : {
+            "1" : {
+              "diameter" : 15,
+              "speedX" : 0,
+              "speedY" : 4,
+              "damage" : 1,
+              "probability" : 2
+            },
+            "2" : {
+              "diameter" : 17,
+              "speedX" : 0,
+              "speedY" : 5,
+              "damage" : 1,
+              "probability" : 1
+            }
+          }
+        }
+
+      },
+
+      "player" : {
+        "growthRate" : 0.04
+      },
+
+      "powerup" : {
+        "pu_life" : {
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_delete_enemies" : {
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_shrink":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_less_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_slow_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 600,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.1
+            }
+          }
+        },
+        "pu_stop_growing":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_automatic":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 900
+            }
+          }
+        },
+        "pu_growing_friends":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 3
+            }
+          }
+        },
+        "pu_small_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.3
+            }
+          }
+        }
+      }
+    },
+    "9" : {
+      "settings": {
+        "count" : 19,
+        "duration": 90,
+        "maxAddTimeoutPu" : 100,
+        "minTimeoutPu": 600
+      },
+      "compFigure" : {
+        "friend" : {
+          "probability" : 2,
+          "types" : {
+
+            "1" : {
+              "diameter" : 10,
+              "speedX" : 0,
+              "speedY" : 5,
+              "shrinkRate" : 4,
+              "probability" : 2
+            },
+            "2" : {
+              "diameter" : 5,
+              "speedX" : 0,
+              "speedY" : 8,
+              "shrinkRate" : 20,
+              "probability" : 1
+            },
+            "3" : {
+              "diameter" : 7,
+              "speedX" : 0,
+              "speedY" : 4,
+              "shrinkRate" : 2,
+              "probability" : 2
+            }
+          }
+
+        },
+
+        "enemy" : {
+          "probability" : 4,
+          "types" : {
+            "1" : {
+              "diameter" : 15,
+              "speedX" : 0,
+              "speedY" : 5,
+              "damage" : 1,
+              "probability" : 2
+            },
+            "2" : {
+              "diameter" : 17,
+              "speedX" : 0,
+              "speedY" : 6,
+              "damage" : 1,
+              "probability" : 2
+            },
+            "3" : {
+              "diameter" : 25,
+              "speedX" : 0,
+              "speedY" : 3,
+              "damage" : 1,
+              "probability" : 1
+            }
+          }
+        }
+
+      },
+
+      "player" : {
+        "growthRate" : 0.045
+      },
+
+      "powerup" : {
+        "pu_life" : {
+          "probability" : 2,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_delete_enemies" : {
+          "probability" : 2,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_shrink":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_less_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_slow_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 600,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.1
+            }
+          }
+        },
+        "pu_stop_growing":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_automatic":{
+          "probability" : 2,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 900
+            }
+          }
+        },
+        "pu_growing_friends":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 3
+            }
+          }
+        },
+        "pu_small_enemies":{
+          "probability" : 2,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.3
+            }
+          }
+        }
+      }
+    },
+    "10" : {
+      "settings": {
+        "count" : 21,
+        "duration": 100,
+        "maxAddTimeoutPu" : 200,
+        "minTimeoutPu": 400
+      },
+      "compFigure" : {
+        "friend" : {
+          "probability" : 1,
+          "types" : {
+
+            "1" : {
+              "diameter" : 10,
+              "speedX" : 0,
+              "speedY" : 5,
+              "shrinkRate" : 4,
+              "probability" : 2
+            },
+            "2" : {
+              "diameter" : 5,
+              "speedX" : 0,
+              "speedY" : 8,
+              "shrinkRate" : 20,
+              "probability" : 1
+            },
+            "3" : {
+              "diameter" : 7,
+              "speedX" : 0,
+              "speedY" : 4,
+              "shrinkRate" : 2,
+              "probability" : 2
+            }
+          }
+
+        },
+
+        "enemy" : {
+          "probability" : 2,
+          "types" : {
+            "1" : {
+              "diameter" : 15,
+              "speedX" : 0,
+              "speedY" : 6,
+              "damage" : 1,
+              "probability" : 2
+            },
+            "2" : {
+              "diameter" : 17,
+              "speedX" : 0,
+              "speedY" : 7,
+              "damage" : 1,
+              "probability" : 2
+            },
+            "3" : {
+              "diameter" : 25,
+              "speedX" : 0,
+              "speedY" : 4,
+              "damage" : 1,
+              "probability" : 1
+            }
+          }
+        }
+
+      },
+
+      "player" : {
+        "growthRate" : 0.05
+      },
+
+      "powerup" : {
+        "pu_life" : {
+          "probability" : 2,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_delete_enemies" : {
+          "probability" : 2,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_shrink":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1
+            }
+          }
+        },
+        "pu_less_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_slow_enemies":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 600,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.1
+            }
+          }
+        },
+        "pu_stop_growing":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600
+            }
+          }
+        },
+        "pu_automatic":{
+          "probability" : 2,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 900
+            }
+          }
+        },
+        "pu_growing_friends":{
+          "probability" : 1,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 3
+            }
+          }
+        },
+        "pu_small_enemies":{
+          "probability" : 2,
+          "types" : {
+            "1" : {
+              "diameter" : 40,
+              "speedX" : 0,
+              "speedY" : 0,
+              "viewDuration": 120,
+              "probability" : 1,
+              "activeDuration" : 600,
+              "changeRate" : 0.3
+            }
+          }
+        }
+      }
+    },
+
+
+}

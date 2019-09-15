@@ -1,0 +1,173 @@
+{
+  "levelCount": 7,
+  "level": [
+    {
+      "levelNumber": 0,
+      "spaceBetweenPlatforms": 80,
+      "platformWidth": 30,
+      "platformCount": 350,
+      "pickupCount": 200,
+      "goal": {
+        "coins": 3,
+        "height": 0
+      },
+      "platforms": {
+        "simplePlatform": true,
+        "breakablePlatform": false,
+        "jumpPlatform": false
+      },
+      "pickups": {
+        "coin": true,
+        "mirror": false,
+        "enemy": false,
+        "jetpack": false,
+        "shield": false
+      },
+      "setting": "normal"
+    },
+    {
+      "levelNumber": 1,
+      "spaceBetweenPlatforms": 80,
+      "platformWidth": 25,
+      "platformCount": 350,
+      "pickupCount": 100,
+      "goal": {
+        "coins": 5,
+        "height": 0
+      },
+      "platforms": {
+        "simplePlatform": true,
+        "breakablePlatform": false,
+        "jumpPlatform": false
+      },
+      "pickups": {
+        "coin": true,
+        "mirror": false,
+        "enemy": false,
+        "jetpack": false,
+        "shield": false
+      },
+      "setting": "otherworld"
+    },
+    {
+      "levelNumber": 2,
+      "spaceBetweenPlatforms": 100,
+      "platformWidth": 20,
+      "platformCount": 350,
+      "pickupCount": 10,
+      "goal": {
+        "coins": 0,
+        "height": 1000
+      },
+      "platforms": {
+        "simplePlatform": false,
+        "breakablePlatform": true,
+        "jumpPlatform": true
+      },
+      "pickups": {
+        "coin": false,
+        "mirror": false,
+        "enemy": false,
+        "jetpack": false,
+        "shield": false
+      },
+      "setting": "normal"
+    },
+    {
+      "levelNumber": 3,
+      "spaceBetweenPlatforms": 100,
+      "platformWidth": 15,
+      "platformCount": 400,
+      "pickupCount": 100,
+      "goal": {
+        "coins": 3,
+        "height": 1000
+      },
+      "platforms": {
+        "simplePlatform": true,
+        "breakablePlatform": false,
+        "jumpPlatform": false
+      },
+      "pickups": {
+        "coin": true,
+        "mirror": false,
+        "enemy": true,
+        "jetpack": false,
+        "shield": false
+      },
+      "setting": "otherworld"
+    },
+    {
+      "levelNumber": 4,
+      "spaceBetweenPlatforms": 100,
+      "platformWidth": 15,
+      "platformCount": 350,
+      "pickupCount": 100,
+      "goal": {
+        "coins": 0,
+        "height": 1500
+      },
+      "platforms": {
+        "simplePlatform": true,
+        "breakablePlatform": true,
+        "jumpPlatform": false
+      },
+      "pickups": {
+        "coin": false,
+        "mirror": true,
+        "enemy": true,
+        "jetpack": false,
+        "shield": true
+      },
+      "setting": "normal"
+    },
+    {
+      "levelNumber": 5,
+      "spaceBetweenPlatforms": 130,
+      "platformWidth": 20,
+      "platformCount": 350,
+      "pickupCount": 100,
+      "goal": {
+        "coins": 0,
+        "height": 2000
+      },
+      "platforms": {
+        "simplePlatform": false,
+        "breakablePlatform": true,
+        "jumpPlatform": false
+      },
+      "pickups": {
+        "coin": false,
+        "mirror": true,
+        "enemy": false,
+        "jetpack": true,
+        "shield": false
+      },
+      "setting": "normal"
+    },
+    {
+      "levelNumber": 6,
+      "spaceBetweenPlatforms": 150,
+      "platformWidth": 10,
+      "platformCount": 500,
+      "pickupCount": 300,
+      "goal": {
+        "coins": 2,
+        "height": 3000
+      },
+      "platforms": {
+        "simplePlatform": false,
+        "breakablePlatform": true,
+        "jumpPlatform": false
+      },
+      "pickups": {
+        "coin": true,
+        "mirror": true,
+        "enemy": true,
+        "jetpack": true,
+        "shield": false
+      },
+      "setting": "otherworld"
+    }
+  ]
+}

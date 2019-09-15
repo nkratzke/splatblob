@@ -1,0 +1,40 @@
+[
+  {
+    "id": 0,
+    "name":"Shortsword",
+    "display": "Sword",
+    "type": 0,
+    "quality": 0,
+    "value": 3,
+    "icon":"swords/sword_iron_common.png"
+  },
+  {
+    "id": 1,
+    "name":"Moonlight Greatsword",
+    "display": "Sword",
+    "type": 0,
+    "quality": 3,
+    "value": 6,
+    "mods": {
+      "strength": 3,
+      "constitution": 2,
+      "crit-chance": 1
+    },
+    "icon":"swords/moonlight_sword.png"
+  },
+  {
+    "id": 2,
+    "name":"Harvest Moon",
+    "display": "Sword",
+    "type": 0,
+    "quality": 4,
+    "value": 7,
+    "mods": {
+      "strength": 3,
+      "damage": 2,
+      "constitution": 3
+    },
+    "icon":"swords/sword_greatlord_epic.png"
+  }
+
+]

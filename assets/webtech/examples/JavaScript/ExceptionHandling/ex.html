@@ -1,0 +1,38 @@
+<html>
+<head><title>Exception Handling mit JavaScript</title></head>
+<body>
+<script type="text/javascript">
+var op = function (x, y) { return x / y; };
+
+// Ohne eigene Exception läuft das Skript durch
+// => In JavaScript kann man ohne eine Terminierung zu erzwingen durch 0 teilen
+// 0 / 0 = NaN (Not a number)
+// x / 0 = Infinity (unendlich, wenn x > 0)
+try {
+  for (var i = 0; i <= 3; i++) {
+    for (var j = 3; j >= 0; j--) {
+      document.writeln(i + " / " + j + " == " + op(i,j) + "<br>"); 
+    }
+  }
+}
+catch(ex) {
+  window.alert("Es ist die Exception " + ex + "aufgetreten");
+}
+
+// Mit eigener Excpetion
+// so kennen wir es aus den meisten Programmiersprachen ...
+try {
+  for (var i = 0; i <= 3; i++) {
+    for (var j = 3; j >= 0; j--) {
+      if (j == 0) throw "'Durch Null teilen!'";
+      document.writeln(i + " / " + j + " == " + op(i,j) + "<br>"); 
+    }
+  }
+}
+catch(ex) {
+  window.alert("Es ist die Exception " + ex + "aufgetreten");
+}
+
+</script>
+</body>
+</html>

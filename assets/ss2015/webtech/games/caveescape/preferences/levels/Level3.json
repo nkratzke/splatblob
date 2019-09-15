@@ -1,0 +1,11 @@
+{
+  "NAME":"Rocktastisch",
+  "MAXFREQUENZ":100,
+  "MAXPOINTS":2000,
+  "YellowCoin":20,
+  "PowerUp_Multiplier":3,
+  "Rock":30,
+  "BlueCoin":5,
+  "PowerUp_LifeUp":1
+
+}

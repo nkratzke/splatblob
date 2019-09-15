@@ -1,0 +1,8 @@
+{
+  "1": {
+    "tetrisFieldSize": 16,
+    "levelConfigurationLocation" :"json/levels.json",
+    "stoneConfigurationLocation" : "json/stones.json"
+  }
+}
+

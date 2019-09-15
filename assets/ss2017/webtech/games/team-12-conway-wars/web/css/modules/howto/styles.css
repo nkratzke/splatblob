@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 18px;
+}
+html,
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #FFFFFF;
+    min-width: 385px;
+    min-height: 188px;
+    width: 100%;
+    height: 100%;
+}
+#background {
+    z-index: 0;
+    position: fixed;
+}
+#foreground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#background {
+    background-color: black;
+}
+.centered * {
+    margin-bottom: 15px;
+}
+.content {
+    width: 100%;
+}
+.centered {
+    width: 80%;
+    margin: auto;
+}
+.centered * {
+    float: right;
+    text-align: left;
+    width: 100%;
+}
+.example {
+    height: 200px;
+    width: 200px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+
+}
+
+.powericon{
+    float: left;
+    margin-right: 20px;
+    width: 100px;
+}
+
+#overview {
+    width: 100%;
+    height: auto;
+}

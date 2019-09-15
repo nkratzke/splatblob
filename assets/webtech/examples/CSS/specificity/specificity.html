@@ -1,0 +1,28 @@
+<html>
+<head><title>Spezifizität von Regeln in CSS</title></head>
+<meta charset="UTF-8"/>
+
+<style type="text/css">
+p { color: blue; }
+
+.c1 { color: red; }
+
+.c2 { color: purple; }
+
+#me { color: green; }
+
+/* Nur zum Darstellen */
+body { 
+	text-align: center; 
+  	padding: 200px;
+  	font-size: 100px; 
+}   
+</style>
+
+<body>
+
+
+<p class="c1 c2" id="me">Diese Farbe!</p>
+
+</body>
+</html>

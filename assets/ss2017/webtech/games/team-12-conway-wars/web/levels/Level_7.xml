@@ -1,0 +1,46 @@
+<game>
+    <players count="1"></players>
+    <ais count="1"></ais>
+    <field width='20' height='20'>
+        <cell player='0' life = '1' weight = '1' data_x = '4' data_y = '7'></cell>
+        <cell player='0' life = '1' weight = '1' data_x = '4' data_y = '8'></cell>
+        <cell player='0' life = '1' weight = '1' data_x = '4' data_y = '9'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '4' data_y = '10'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '4' data_y = '11'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '4' data_y = '12'></cell>
+        <cell player='0' life = '1' weight = '1' data_x = '5' data_y = '6'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '5' data_y = '13'></cell>
+        <cell player='0' life = '1' weight = '1' data_x = '6' data_y = '5'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '6' data_y = '14'></cell>
+        <cell player='0' life = '1' weight = '1' data_x = '7' data_y = '5'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '7' data_y = '8'></cell>
+        <cell player='0' life = '1' weight = '1' data_x = '7' data_y = '11'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '7' data_y = '14'></cell>
+        <cell player='0' life = '1' weight = '1' data_x = '8' data_y = '5'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '8' data_y = '8'></cell>
+        <cell player='0' life = '1' weight = '1' data_x = '8' data_y = '11'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '8' data_y = '14'></cell>
+        <cell player='0' life = '1' weight = '1' data_x = '9' data_y = '5'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '9' data_y = '14'></cell>
+        <cell player='0' life = '1' weight = '1' data_x = '10' data_y = '6'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '10' data_y = '13'></cell>
+        <cell player='0' life = '1' weight = '1' data_x = '11' data_y = '6'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '11' data_y = '13'></cell>
+        <cell player='0' life = '1' weight = '1' data_x = '12' data_y = '7'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '12' data_y = '12'></cell>
+        <cell player='0' life = '1' weight = '1' data_x = '14' data_y = '7'></cell>
+        <cell player='0' life = '1' weight = '1' data_x = '14' data_y = '9'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '14' data_y = '10'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '14' data_y = '12'></cell>
+        <cell player='0' life = '1' weight = '1' data_x = '15' data_y = '8'></cell>
+        <cell player='1' life = '1' weight = '1' data_x = '15' data_y = '11'></cell>
+    </field>
+    <powerups>
+        <powerup type="LIFE" life="0" weight="0" range="0"></powerup>
+        <powerup type="REPEAT" life="0" weight="0" range="0"></powerup>
+        <powerup type="AWAKE" life="3" weight="1" range="0"></powerup>
+        <powerup type="LIFE" life="0" weight="0" range="0" delay="5"></powerup>
+        <powerup type="AWAKE" life="3" weight="1" range="0"  delay="5"></powerup>
+        <powerup type="ERASE" life="0" weight="0" range="0"  delay="9"></powerup>
+    </powerups>
+</game>

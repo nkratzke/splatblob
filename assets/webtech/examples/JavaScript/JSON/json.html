@@ -1,0 +1,25 @@
+<html>
+<head><title>JSON und JavaScript</title></head>
+<body>
+<script type="text/javascript">
+
+var persons = [
+  { "vn" : "Max", 
+  	"nn" : "Mustermann", 
+  	"toString" : function () { return this.vn + " " + this.nn } 
+  },
+  { "vn" : "Maren", 
+  	"nn" : "Musterfrau", 
+  	"toString" : function () { return this.vn + " " + this.nn } 
+  },
+  { "vn" : "Tessa", 
+  	"nn" : "Loniki", 
+  	"toString" : function () { return this.vn + " " + this.nn } 
+  }  
+];
+
+for (var p in persons) document.writeln(persons[p] + "<br><br>");
+
+</script>
+</body>
+</html>

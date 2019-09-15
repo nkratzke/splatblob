@@ -1,0 +1,15 @@
+         GGG YYY YYY YYY YYY YYY YYY YYY YYY GGG
+      GGG                                       GGG
+   GGG                                             GGG
+GGG                                                   GGG
+GGG                                                   GGG
+GGG            ZZZ                     ZZZ            GGG
+GGG            ZZZ                     ZZZ            GGG
+GGG                                                   GGG
+GGG                                                   GGG
+GGG            RRR                     RRR            GGG
+GGG             RRR                   RRR             GGG
+GGG                RRR RRR RRR RRR RRR                GGG
+   GGG                                             GGG
+      GGG                                       GGG
+         GGG YYY YYY YYY YYY YYY YYY YYY YYY GGG

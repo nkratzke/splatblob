@@ -1,0 +1,388 @@
+@CHARSET "utf-8";
+
+@font-face {
+	font-family: perrygothic;
+	src: url('perrygothic.ttf');
+}
+
+body {
+	background: black;
+	color: #c6c6c6;
+	overflow-x: hidden;
+}
+
+li {
+	list-style-type: none;
+}
+
+nav {
+	width: 100%;
+	text-align: center;
+}
+
+nav a {
+	display: block;
+	padding: 15px 0;
+	border-bottom: 1px solid #C3AA6E;
+	color: #F0EADC;
+}
+
+nav li:last-child a {
+	border-bottom: none;
+}
+
+/*-----------------------------------------*/
+.menu {
+	z-index: 100;
+	width: 240px;
+	height: auto;
+	position: absolute;
+	background: rgba(217, 201, 163, 0.3);
+	border-radius: 10px;
+	left: -240px;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+}
+
+.menu-icon {
+	position: absolute;
+	padding: 10px 20px;
+	background: #000;
+	color: rgb(126, 107, 93);
+	cursor: pointer;
+	float: left;
+	margin: 6px 6px 0 0;
+	border-radius: 5px;
+}
+
+#menuToggle {
+	position: absolute;
+	display: none;
+	z-index: 10;
+	display: none;
+}
+
+#menuToggle:checked ~ .menu {
+	position: absolute;
+	left: 0;
+}
+
+#map>table {
+	margin: auto;
+}
+
+#mainmenu, #take_revenge {
+	-webkit-filter: grayscale(50%);
+	filter: grayscale(50%);
+}
+
+#game {
+	position: absolute;
+	width: 100%;
+}
+
+#overlay {
+	position: absolute;
+	vertical-align: middle;
+	margin: 80px 40% auto;
+	z-index: 666;
+}
+
+.focussed {
+	-webkit-filter: grayscale(0%) blur(0px);
+	filter: grayscale(0%) blur(0px);
+}
+
+.blurred {
+	-webkit-filter: grayscale(80%) blur(2px);
+	filter: grayscale(80%) blur(2px);
+}
+
+#gameover {
+	background: rgba(217, 201, 163, 1);
+	border-radius: 5px;
+}
+
+#gameovertext, #score, #scoretext {
+	color: black;
+}
+
+#gameovertext {
+	padding: 30px;
+}
+
+#actions {
+	position: absolute;
+	right: 30%;
+	vertical-align: middle;
+	z-index: 20;
+}
+
+#movement {
+	/*	display:none; /*DEBUG*/
+	position: absolute;
+	left: 30%;
+	vertical-align: middle;
+	z-index: 20;
+}
+
+#hallofheroes {
+	position: absolute;
+	right: 0px;
+	top: 85px;
+	border-style: ridge;
+	border-color: #800080;
+	font-family: perrygothic;
+	padding: 1.5em;
+}
+
+#move_north {
+	top: 0px;
+	left: 64px;
+	background-image: url('imgs/buttons/arrow_up.png');
+}
+
+#move_south {
+	top: 128px;
+	left: 64px;
+	background-image: url('imgs/buttons/arrow_down.png');
+}
+
+#move_west {
+	top: 64px;
+	left: 0px;
+	background-image: url('imgs/buttons/arrow_left.png');
+}
+
+#move_east {
+	top: 64px;
+	left: 128px;
+	background-image: url('imgs/buttons/arrow_right.png');
+}
+
+#move_north, #move_south, #move_east, #move_west {
+	position: absolute;
+	z-index: 100;
+	margin-left: 50%;
+	font-size: 40px;
+	width: 64px;
+	height: 64px;
+	border: 1px solid #000;
+	box-shadow: 0 3px 0 #444, inset 0 0 10px rgba(255, 255, 255, 0.3);
+	-webkit-appearance: none;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+#menu_button {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 25px;
+	height: 25px;
+}
+
+#title, #gameovertext, #score, #scoretext {
+	text-align: center;
+	font-family: perrygothic;
+}
+
+#mainmenu>input, #take_revenge {
+	margin: 20px auto;
+	display: block;
+}
+
+#start, #load, #save, #continue, #take_revenge {
+	background-size: 100%;
+	border-radius: 13px;
+	height: 75px;
+	width: 200px;
+}
+
+#login, #register, #logout {
+	border-radius: 5px;
+}
+
+input[disabled] {
+	-webkit-filter: grayscale(95%) blur(2px);
+	filter: grayscale(95%) blur(2px);
+}
+
+#start {
+	background-image: url('imgs/buttons/new_adventure.png');
+}
+
+#continue {
+	background-image: url('imgs/buttons/continue.png');
+}
+
+#load {
+	background-image: url('imgs/buttons/load.png');
+}
+
+#save {
+	background-image: url('imgs/buttons/save.png');
+}
+
+#take_revenge {
+	background-image: url('imgs/buttons/revenge.png');
+}
+
+#attack_action {
+	/*	display:none; /*DEBUG*/
+	width: 100px; /*same as the height*/
+	height: 100px; /*same as the width*/
+	background-color: #ff0000;
+	border: 1px solid #ff0000; /*same colour as the backgaction1*/
+	color: #fff;
+	font-size: 2em;
+	font-weight: bolder;
+	/*set the border-radius at half the size of the width and height*/
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	/*give the button a small drop shadow*/
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .75);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, .75);
+	box-shadow: 2px 2px 15px rgba(0, 0, 0, .75);
+}
+
+input#attack_action {
+	background-size: 100%;
+	background-image: url('imgs/buttons/sword_icon.png');
+	background-repeat: no-repeat;
+}
+
+#use_action {
+	font-family: perrygothic;
+	padding-top:1.2em;
+	font-size: 4em;
+	width: 120px;
+	height: 200px;
+	background-color: #000;
+	border: none;
+}
+
+input#use_action {
+	background-size: 100%;
+	background-image: url('imgs/hud_elements/flask_red_big.png');
+	background-repeat: no-repeat;
+	-webkit-filter: grayscale(30%);
+	filter: grayscale(30%);
+}
+
+#credits {
+	position: absolute;
+	bottom: 0;
+}
+
+td {
+	width: 64px;
+	height: 64px;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	background-size: 100% !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+}
+
+td>* {
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	bottom: 0px;
+	left: 0px;
+	background-size: 100% !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+}
+
+.healthbar {
+	height: 4px;
+	bottom: 3px;
+	left: 0px;
+	position: absolute;
+	background-color: rgba(0, 255, 0, 0.5);
+}
+
+#heart_container {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: 100%;
+	right: 53%;
+}
+
+#pc_health {
+	position: absolute;
+	font-family: perrygothic;
+	text-align: center;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+	background-image: url("./imgs/heart.png"), url("./imgs/heart_empty.png");
+	background-position: center bottom, center;
+	background-repeat: no-repeat, no-repeat;
+	background-clip: content-box, border-box;
+	background-size: 100%;
+}
+
+.rotate0 {
+	
+}
+
+.rotate90 {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.rotate180 {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.rotate270 {
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+input#debug {
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+}
+
+.path_layer {
+	z-index: 1;
+}
+
+.loot_layer {
+	z-index: 2;
+}
+
+.unit_layer {
+	z-index: 3;
+}
+
+.obstacles_layer {
+	z-index: 4;
+}
+
+.flying_unit_layer {
+	z-index: 5;
+	-webkit-filter: hue-rotate(190deg);
+	filter: hue-rotate(190deg);
+}

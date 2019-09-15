@@ -1,0 +1,21 @@
+{
+  "arrow":
+    {"moveDelay": 0, "initialHealth": 10000, "harm": 20},
+  "coin":
+    {"value": 10},
+  "door":
+    {"openDelay": 1},
+  "game":
+    {"updateTime": 125},
+  "hero":
+    {"moveDelay": 1, "initialHealth": 100, "initialLifes": 3, "harm": 25},
+  "mouse":
+    {"moveDelay": 2, "initialHealth": 10, "harm": 5},
+  "mummy":
+    {"moveDelay": 3, "initialHealth": 50, "harm": 20},
+  "skeleton":
+    {"moveDelay": 3, "initialHealth": 50, "harm": 10},
+  "startLevel": 1,
+  "stoneball":
+    {"moveDelay": 2, "initialHealth": 10000, "harm": 50}
+}

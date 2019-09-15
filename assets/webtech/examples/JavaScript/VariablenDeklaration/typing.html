@@ -1,0 +1,25 @@
+<html>
+<head><title>Dynamische Typisierung</title></head>
+<body>
+<script type="text/javascript">
+
+function id(x) { return x; }
+
+var v = parseInt(47);
+document.writeln("v: " + v + " (" + typeof v + ")<br/>");
+
+v = parseFloat("47.11");
+document.writeln("v: " + v + " (" + typeof v + ")<br/>");
+
+v = "Hello World";
+document.writeln("v: " + v + " (" + typeof v + ")<br/>");
+
+v = true;
+document.writeln("v: " + v + " (" + typeof v + ")<br/>");
+
+v = id;
+document.writeln("v: " + v + " (" + typeof v + ")<br/>");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,449 @@
+@font-face {
+    font-family: 'Creative Block BB';
+    src: url('font/CREABBRG.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Creative Block BB Bold';
+    src: url('font/CREABBB_.TTF') format('truetype');
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Creative Block BB Bold', serif;
+    position: relative;
+    overflow: hidden;
+}
+
+#output {
+    padding: 20px;
+    text-align: center;
+    color: #ffa500;
+}
+
+#top {
+    height: 8%;
+    background-color: lightgrey;
+    width: 100%;
+}
+
+#game {
+    background-color: grey;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+#bottom {
+    height: 8%;
+    background-color: lightgrey;
+    width: 100%;
+}
+
+p {
+    color: #ffa500;
+}
+
+h1 {
+    color: dodgerblue;
+    text-align: left;
+    font-family: 'Creative Block BB', sans-serif;
+    font-size: 4vw;
+    margin: auto;
+    float: left;
+}
+
+h2 {
+    color: black;
+    text-align: left;
+    font-family: 'Creative Block BB', sans-serif;
+    font-size: 10px;
+    margin: auto;
+    float: left;
+}
+
+h3 {
+    color: #ffa500;
+    margin-bottom: 20px;
+    font-size: 4vh;
+}
+
+#head {
+    margin: auto auto auto 20px;
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    width: calc(100% - 20px);
+}
+
+#headline {
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+
+#headline-logo {
+    width: 8vh;
+    float: left;
+    position: relative;
+    margin: auto 2% auto auto;
+}
+
+.spacer {
+    width: 10%;
+    height: 100%;
+    background-color: white;
+    float: left;
+}
+
+#rspacer {
+    float: right;
+}
+
+#lspacer {
+    float: left;
+}
+
+#navbar {
+    width: 20%;
+    height: 100%;
+    background: rosybrown url("../img/Navibar/navbar.png") no-repeat;
+    background-size: 100% 100%;
+    left: 80%;
+    float: right;
+    overflow: hidden;
+    position: static;
+    z-index: 1;
+}
+
+#field {
+    width: 80%;
+    height: 100%;
+    color: inherit;
+    float: left;
+    overflow: hidden;
+    background-image: url("../img/Map/feldpsd Kopie.png");
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+table {
+    display: table;
+    width: 300px;
+    height: 150px;
+}
+
+#collapseNavBar {
+    position: absolute;
+    left: calc(70% - 40px);
+    width: 40px;
+    height: 40px;
+    top: 8%;
+    text-align: left;
+    font-size: 30px;
+    color: #FAA13E;
+    font-family: 'Creative Block BB Bold', serif;
+}
+
+.button {
+    background-color: white;
+    border: none;
+}
+
+.buttonplay {
+    background: url("../img/buttons/playbutton Kopie.png") no-repeat scroll 0 0 transparent;
+    border-radius: 0;
+    width: 40px;
+    height: 30px;
+    background-size: 100% 100%;
+    border: none;
+    float: right;
+    margin-top: 7%;
+    margin-right: 26%;
+
+}
+
+.buttonlvl {
+    background: url("../img/buttons/playbutton Kopie.png") no-repeat scroll 0 0 transparent;
+    border-radius: 0;
+    width: 40px;
+    height: 30px;
+    background-size: 100% 100%;
+    border: none;
+    float: right;
+    margin-top: -10%;
+    margin-right: 40%;
+}
+
+.buttonwave {
+    background: url("../img/buttons/playbutton Kopie.png") no-repeat scroll 0 0 transparent;
+    border-radius: 0;
+    width: 40px;
+    height: 30px;
+    background-size: 100% 100%;
+    border: none;
+    float: right;
+    margin-top: -20%;
+    margin-right: 20%;
+}
+
+.gameovertext {
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+#fullScreen {
+    height: 5vw;
+    width: 5vw;
+    float: right;
+    font-size: 10px;
+}
+
+.ellipse {
+    background-image: url("../img/Waffen/Version2.png");
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.dartshot {
+    height: 2vw;
+    width: 2vh;
+    background: url("../img/Waffen/Pfeil.png") no-repeat;
+    background-size: 2vw 2vh;
+    position: absolute;
+    z-index: 1;
+}
+
+.waveshock {
+    height: 2vw;
+    width: 2vw;
+    background: url("../img/Waffen/magic_sphere.gif") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 3;
+}
+
+.nonVisibleShot {
+    background-color: red;
+}
+
+#fps {
+    float: right;
+}
+
+#objectCounter {
+    float: right;
+    margin-top: 2%;
+}
+
+.path {
+    float: left;
+    background-image: url("../img/Rohstoffe/path.png");
+}
+
+.emptyPathDiv {
+    float: left;
+    background-size: auto;
+}
+
+.testDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: black;
+    border: none;
+    position: absolute;
+}
+
+#pause {
+    background-size: 100% 100%;
+    font-size: 50%;
+    padding-left: 0;
+}
+
+#play {
+    background-size: 100% 100%;
+    font-size: 50%;
+    padding-left: 0;
+}
+
+.pause {
+    height: 7vh;
+    width: 7vh;
+    background: url("../img/buttons/pause.png");
+    background-size: 100% 100%;
+    vertical-align: bottom;
+}
+
+#stayActive {
+    width: 10px;
+    height: 10px;
+    float: left;
+}
+
+.tower {
+    float: left;
+    width: 5vw;
+    height: 8vh;
+    transform: rotate(180deg);
+    z-index: 2;
+}
+
+.tower.azrael {
+    background: url("../img/Figuren/Azmael.gif");
+    background-size: 6vw 11vh;
+    width: 6vw;
+    height: 11vh;
+}
+
+.tower.azrael.dragged {
+    width: 10vw;
+    height: 10vh;
+    background-size: 20vw 10vh;
+    background: url("../img/Figuren/Azmael.png");
+    background-size: 5vw 8vh;
+    transform: rotate(0deg);
+}
+
+.tower.gargamel {
+    background: url("../img/Figuren/gargamel_klein.png");
+    background-size: 5vw 8vh;
+    transform: rotate(0deg);
+}
+
+.tower.scruple {
+    background: url("../img/Figuren/rotznase.png");
+    background-size: 5vw 8vh;
+    transform: rotate(0deg);
+}
+
+.smurf {
+    width: 3vw;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    z-index: 100;
+}
+
+.smurf.whitesmurf {
+    background-image: url("../img/Figuren/schlumpf.gif");
+    background-size: 100% 100%;
+}
+
+.smurf.yellowsmurf {
+    background: url("../img/Figuren/yellowschlumpf1.gif");
+    background-size: 100% 100%;
+}
+
+.smurf.violetsmurf {
+    background: url("../img/Figuren/violetschlumpf1.gif");
+    background-size: 100% 100%;
+}
+
+.smurf.greensmurf {
+    background: url("../img/Figuren/greenschlumpf1.gif");
+    background-size: 100% 100%;
+}
+
+.popupWelcome {
+    position: absolute;
+    background: url("../img/Popup/Holzwandschildg.png");
+    margin-right: 60%;
+    color: #AFAEAE;
+    font-size: calc(2vh + 1px);
+    z-index: 5;
+}
+
+.popupGeneral {
+    position: absolute;
+    background: url("../img/Popup/HolzwandschildEinleitung.png");
+    margin-right: 60%;
+    z-index: 5;
+}
+
+.popupGameover {
+    position: absolute;
+    background: url("../img/Popup/HolzwandschildEinleitung.png");
+    margin-right: 60%;
+    z-index: 5;
+}
+
+tr, td {
+    padding: 3% 0 3% 3%;
+}
+
+#gameinfo {
+    border-bottom: 3px solid #ae4f0b;
+    text-align: left;
+    padding-top: 0 !important;
+    padding-left: 1% !important;
+}
+
+#characterinfo {
+    border-bottom: 3px solid #ae4f0b;
+    text-align: left;
+    padding-top: 3% !important;
+    padding-left: 1% !important;
+}
+
+#t {
+    padding-top: 3% !important;
+    padding-left: 1% !important;
+    border-bottom: 3px solid #ae4f0b;
+}
+
+#pause {
+
+}
+
+h6 {
+    font-size: 1vw;
+}
+
+#landscape {
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    text-align: center;
+}
+
+#textLandscape {
+    margin-top: 78%;
+}
+
+#textLandscape > p {
+    font-family: Calibri sans-serif;
+    color: white;
+    font-size: 4vw;
+}
+
+#money {
+    color: green;
+}
+
+@media (orientation: portrait) {
+    #landscape {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        visibility: visible;
+        background-color: black;
+        z-index: 200;
+    }
+
+    #textLandscape {
+        margin-top: 80%;
+        font-family: Arial sans-serif;
+        font-color: white;
+    }
+}

@@ -1,0 +1,26 @@
+<html>
+<head><title>Lambda Funktionen mit JavaScript</title></head>
+<body>
+<script type="text/javascript">
+var f = function(a,b) { return a + b };
+document.writeln(f(5,6) + "<br><br>");
+
+var g = function(f, a) { return f(a) };
+document.writeln(g(function (x) { return 2*x }, 10) + "<br><br>");
+
+var q = function(a) { return a*a };
+
+var map = function(f, xs) {
+	if (xs.length == 0) return [];
+	return [f(xs[0])].concat(map(f, xs.slice(1))); 
+}
+
+var mapper = function(f, xs, s) {
+  return map(f, xs).join(s);
+}
+
+document.writeln(mapper(q, [3, 4, 5, 6], ", ") + "<br><br>");
+
+</script>
+</body>
+</html>

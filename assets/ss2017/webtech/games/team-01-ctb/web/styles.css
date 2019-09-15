@@ -1,0 +1,398 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background: url("./img/background.jpg");
+    background-size: cover;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#NewGame {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 70px);
+}
+
+#NewGame:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+#Menu {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    position: absolute;
+    top: calc(50% + 80px);
+    left: calc(50% - 45px);
+}
+
+#Menu:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+#startButton {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    border-radius: 28px;
+    text-shadow: 0px 4px 3px #666666;
+    font-family: Courier New;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 50px);
+
+}
+
+#startButton:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+#infoButton {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    border-radius: 28px;
+    text-shadow: 0px 4px 3px #666666;
+    font-family: Courier New;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    position: absolute;
+    top: calc(50% + 80px);
+    left: calc(50% - 44px);
+
+
+}
+
+#infoButton:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+.logo {
+    background: url("./img/Logo300.png") no-repeat center;
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    margin: auto;
+}
+
+#spielfeld {
+    width: 100%;
+    height: calc(100% - 1em);
+    border-spacing: 0;
+
+}
+
+#status{
+    width: 100%;
+    height: 1em;
+    margin: 0;
+    font-size: 95%;
+    text-align: center;
+}
+
+
+.korbrot {
+    display: block;
+    background: url("./img/RedBasketSmall.png") no-repeat center;
+    height:36px;
+    width: 64px;
+    position: absolute;
+    z-index: 10000;
+   bottom: 0;
+}
+
+.korbblau {
+    display: block;
+    background: url("./img/BlueBasketSmall.png") no-repeat center;
+    height:36px;
+    width: 64px;
+    position: absolute;
+    z-index: 10000;
+    bottom: 0;
+}
+
+.korbgelb {
+    display: block;
+    background: url("./img/YellowBasketSmall.png") no-repeat center;
+    height:36px;
+    width: 64px;
+    position: absolute;
+    bottom: 0;
+    z-index: 10000;
+}
+
+.rot {
+    display: block;
+    background: black;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    background: radial-gradient(circle at 20px 20px, red, #000);
+    z-index: 100;
+    position: absolute;
+    top:0px;
+}
+
+.blau {
+    display: block;
+    background: black;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    background: radial-gradient(circle at 20px 20px, blue, #000);
+    z-index: 100;
+    position: absolute;
+    top:0px;
+}
+
+.gelb {
+    display: block;
+    background: black;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    background: radial-gradient(circle at 20px 20px, yellow, #000);
+    z-index: 100;
+    position: absolute;
+    top:0px;
+}
+
+.mod {
+    display: block;
+    background: black;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    background: radial-gradient(circle at 30px 30px, blanchedalmond, transparent);
+    position: absolute;
+    top:20px;
+    left: 15px;
+
+}
+
+.pause{
+    background: url("./img/PauseTrans30.png") no-repeat center;
+    top: 20px;
+    right: 15px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+}
+
+.start{
+    background: url("./img/PlayTrans30.png") no-repeat center;
+    top: 20px;
+    right: 15px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+}
+
+.WhiteStarIcon{
+    background: url("./img/Star20.png") no-repeat center;
+    top: 6px;
+    left: 6px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+
+}
+
+.ShieldIcon{
+    background: url("./img/Shield20.png") no-repeat center;
+    top: 6px;
+    left: 6px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
+
+.AutoCatchIcon{
+    background: url("./img/AutoCatch20.png") no-repeat center;
+    top: 6px;
+    left: 6px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
+
+.dump {
+    display: block;
+    background: transparent;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+}
+
+
+.Boost2 {
+    background: url("./img/LittleBoost25.png") no-repeat center;
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    z-index: 100;
+    position: absolute;
+
+}
+
+.Boost3 {
+    background: url("./img/BigBoost25.png") no-repeat center;
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    z-index: 100;
+    position: absolute;
+
+}
+
+.AutoCatch {
+    background: url("./img/AutoCatch25.png") no-repeat center;
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    z-index: 100;
+    position: absolute;
+
+}
+
+
+.ColorChange {
+    background: url("./img/Color25.png") no-repeat center;
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    z-index: 100;
+    position: absolute;
+
+}
+
+.WhiteStar {
+    background: url("./img/Star25.png") no-repeat center;
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    z-index: 100;
+    position: absolute;
+
+}
+
+.FieldClear{
+    background: url("./img/Clear25.png") no-repeat center;
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    z-index: 100;
+    position: absolute;
+
+}
+
+.Life{
+    background: url("./img/Heart25.png") no-repeat center;
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    z-index: 100;
+    position: absolute;
+
+}
+
+.Shield{
+    background: url("./img/Shield25.png") no-repeat center;
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    z-index: 100;
+    position: absolute;
+
+}
+
+.Fast {
+    background: url("./img/SpeedUp25.png") no-repeat center;
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    z-index: 100;
+    position: absolute;
+
+}
+
+.Slow {
+    background: url("./img/SpeedDown25.png") no-repeat center;
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    z-index: 100;
+    position: absolute;
+
+}
+
+

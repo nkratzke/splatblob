@@ -1,0 +1,16 @@
+{
+  "NAME":"Hard as Holes",
+  "MAXFREQUENZ":1500,
+  "MAXPOINTS":200000,
+  "Bat":100,
+  "BlueCoin":100,
+  "Rat":100,
+  "RedCoin":150,
+  "PurpleCoin":200,
+  "DrunkenRat":100,
+  "Hole":200,
+  "PowerUp_OnlyCoins":15,
+  "PowerUp_CoinGathering":5,
+  "PowerUp_CoinMagnet":10
+
+}

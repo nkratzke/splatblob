@@ -1,0 +1,414 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width:680px) {
+    h1 {
+        position: relative;
+        z-index: 2;
+        margin: 2vh;
+        text-align: center;
+        font-weight: bold;
+        font-size: 7vw;
+    }
+}
+
+@media only screen and (min-width:681px) {
+    h1 {
+        position: relative;
+        z-index: 2;
+        margin: 2vh;
+        text-align: center;
+        font-weight: bold;
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    h2 {
+        position: relative;
+        z-index: 2;
+        margin: 2vh;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 6vw;
+    }
+}
+
+@media only screen and (min-width:681px) {
+    h2 {
+        z-index: 2;
+        position: center;
+        margin: 1vh auto;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    h3 {
+        z-index: 2;
+        position: center;
+        margin: 0vh auto;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 5vw;
+        color: white;
+    }
+}
+
+@media only screen and (min-width:681px) {
+    h3 {
+        z-index: 2;
+        position: center;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 2vw;
+        color: white;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    h4 {
+        z-index: 2;
+        position: center;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: lighter;
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (min-width:681px) {
+    h4 {
+        z-index: 2;
+        position: center;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: lighter;
+        font-size: 3vw;
+    }
+}
+
+
+@media only screen and (min-width:1000px) {
+    h4 {
+        z-index: 2;
+        position: center;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: lighter;
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    #startbutton {
+        margin-left: 10vw;
+        width: 80vw;
+        height: 20vh;
+        background-repeat: no-repeat;
+        background-image: url("images/startbutton.png");
+        background-position: center;
+        background-size: contain;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media only screen and (min-width:681px) {
+    #startbutton {
+        margin-top: 10vh;
+        margin-left: 10vw;
+        width: 80vw;
+        height: 15vh;
+        background-repeat: no-repeat;
+        background-image: url("images/startbutton.png");
+        background-position: center;
+        background-size: contain;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    #howto {
+        z-index: 10;
+        position: fixed;
+        margin-top: -70vh;
+        background-image: url("images/howtoimage.png");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-position-y: 65vh;
+        background-size: 80%;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width:681px) {
+    #howto {
+        z-index: 10;
+        position: fixed;
+        margin-top: -80vh;
+        background-image: url("images/howtoimage.png");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-position-y: 60vh;
+        background-size: 50vh;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#headertext {
+    position: center;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width:680px) {
+    #howtobutton {
+        position: center;
+        margin: 0 auto;
+        background-image: url("images/howtobutton.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 15vh;
+        width: 15vw;
+    }
+}
+
+@media only screen and (min-width:681px) {
+    #howtobutton {
+        position: center;
+        margin: 10vh auto;
+        background-image: url("images/howtobutton.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 10vh;
+        width: 10vw;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    #player {
+        /* Is needed to force the gpu acceleration */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+
+        z-index: 2;
+        position: fixed;
+        width: 8vw;
+        height: 10vh;
+        background-image: url("images/player.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (min-width:681px) {
+    #player {
+        /* Is needed to force the gpu acceleration */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+
+        z-index: 2;
+        position: fixed;
+        width: 4vw;
+        height: 6vh;
+        background-image: url("images/player.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    #jetpack {
+        position: absolute;
+        z-index: 2;
+        width: 8vw;
+        height: 8vh;
+        background-image: url("images/pickups/jetpack.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+    }
+}
+
+@media only screen and (min-width:681px) {
+    #jetpack {
+        position: absolute;
+        z-index: 2;
+        width: 3vw;
+        height: 5vh;
+        margin-top: 2.5vh;
+        margin-left: 0.1vw;
+        background-image: url("images/pickups/jetpack.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+    }
+}
+
+@media only screen and (max-width:680px) {
+    #shield {
+        position: absolute;
+        margin: 0 auto;
+        z-index: 2;
+        width: 6vw;
+        height: 6vh;
+        margin-top: -5vh;
+        margin-left: 1vw;
+        background-image: url("images/pickups/shield2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: rotate3d(2, 0, 0, 45deg);
+    }
+}
+
+@media only screen and (min-width:681px) {
+    #shield {
+        position: absolute;
+        margin: 0 auto;
+        z-index: 2;
+        width: 4vw;
+        height: 5vh;
+        margin-top: -5vh;
+        margin-left: -0.3vw;
+        background-image: url("images/pickups/shield2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: rotate3d(2, 0, 0, 45deg);
+    }
+}
+
+@media only screen and (max-width:680px) {
+    #activepickup {
+        z-index: 2;
+        position: absolute;
+        left: calc(50% - 3vw);
+        margin: 0 auto;
+        width: 6vw;
+        height: 8vh;
+        background-image: url("images/pickups/mirror.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (min-width:681px) {
+    #activepickup {
+        z-index: 2;
+        position: absolute;
+        left: calc(50% - 2vw);
+        margin: 2vh auto;
+        width: 3vw;
+        height: 5vh;
+        background-image: url("images/pickups/mirror.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    #goaltext {
+        z-index: 2;
+        position: center;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width:681px) {
+    #goaltext {
+        z-index: 2;
+        position: center;
+        margin: 0 auto;
+        margin-top: 10vh;
+    }
+}
+
+.platformwrapper {
+    z-index: 1;
+    will-change: transform;
+}
+
+@media only screen and (max-width:680px) {
+    .platform {
+        z-index: 1;
+        position: fixed;
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (min-width:681px) {
+    .platform {
+        z-index: 1;
+        position: fixed;
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        max-width: 15vw;
+    }
+}
+
+.pickupwrapper {
+    /* Is needed to force the gpu acceleration */
+    z-index: 1;
+    will-change: transform;
+}
+
+@media only screen and (max-width:680px) {
+    .pickup {
+        z-index: 1;
+        position: fixed;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (min-width:681px) {
+    .pickup {
+        z-index: 1;
+        position: fixed;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        max-width: 2vw;
+        max-height: 2vh;
+    }
+}
+
+.show {
+    display: flex !important;
+}
+
+.hide{
+    display: none !important;
+}
